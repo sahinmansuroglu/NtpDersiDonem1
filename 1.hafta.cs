@@ -9,10 +9,10 @@ namespace hafta1
         {
             var ad = "Şahin";
             var soyad = "MANSUROĞLU";
-            var yas = 34;
-           
+                   
             var mesaj1 = "Merhaba " + ad + " " + soyad ; // metinleri "+" operatörü ile birleştirdik 
             var mesaj2 = $"Merhaba {ad} {soyad}"; // metinleri String interpolation yönetim ile birleştirdik
+            
             Console.WriteLine(mesaj1);
             Console.WriteLine(mesaj2);
         }
