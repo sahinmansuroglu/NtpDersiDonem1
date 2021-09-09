@@ -24,10 +24,15 @@ namespace hafta1
             // 15. karakterden itibaren 5 karakter msj3'e atılır.("Güzel" kelimesi atanır)
             string msj3 = orjinalMesaj.Trim().Substring(15, 5);
 
-            Console.WriteLine($"msj1:{msj1}");
+
+            // orjinal mesajın son 10 karakterini alma
+            string msj4 = orjinalMesaj.Substring(orjinalMesaj.Length-10, 10);
+
+            Console.WriteLine($"msj1:{msj1}.");
             
-            Console.WriteLine($"msj2:{msj2}");
-            Console.WriteLine($"msj3:{msj3}");
+            Console.WriteLine($"msj2:{msj2}.");
+            Console.WriteLine($"msj3:{msj3}.");
+            Console.WriteLine($"msj4:{msj4}.");
 
 
 
