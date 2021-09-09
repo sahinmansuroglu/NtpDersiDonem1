@@ -1,4 +1,4 @@
-// sTring operatörleri
+// string operatörleri
 using System;
 
 
@@ -17,6 +17,9 @@ namespace hafta1
 
             Console.WriteLine($"Tum harfler büyük:{msj1}");
             Console.WriteLine($"Tum harfler küçük:{msj2}");
+
+            string msj3 = "Mezitli MTAL".ToUpper();
+            Console.WriteLine($"Tum harfler büyük:{msj3}");
         }
     }
 }
