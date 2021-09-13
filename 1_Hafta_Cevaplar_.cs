@@ -1,4 +1,5 @@
-1. Soru
+## 1. Soru
+```csharp
 static void Main(string[] args)
         {
             string sehirAdi = "Mersin";
@@ -8,7 +9,9 @@ static void Main(string[] args)
             Console.WriteLine($"{sehirAdi} şehrinin en güzel yeri {enGuzelYeri}, en güzel Yiyeceği de {neYenir}.");
 
         }
-2.Soru
+```
+## 2.Soru
+```csharp
 static void Main(string[] args)
         {
             string metin1 = "        Programlama       ";
@@ -18,7 +21,9 @@ static void Main(string[] args)
             Console.WriteLine($" {metin1.Trim()} {metin2.Trim()} {metin3.Trim()}") ;
 
         }
-3. Soru
+```
+## 3. Soru
+```csharp
 using System;
 
 namespace cEgitim
@@ -41,7 +46,9 @@ namespace cEgitim
         }
     }
 }
-4. Soru
+```
+## 4. Soru
+```csharp
 static void Main(string[] args)
         {
             string metin = "Türkiyenin En BÜYÜK Şehri İstanbul'dur ";
@@ -51,3 +58,4 @@ static void Main(string[] args)
             metin = metin.Replace(arananKelime, yeniDegeri);
             Console.WriteLine(metin);
         }
+```
