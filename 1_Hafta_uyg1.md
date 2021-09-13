@@ -3,7 +3,7 @@
 
 ## Açıklama: var ile değişken tanımlarken değişkenin tipi ilk atanan değere göre ayarlanır. 
 ## Not: C# programlama dilinde bir değişkeni kullanmadan önce tanımlamamız gerekir.
-
+```
 
 using System;
 namespace hafta1{
@@ -22,3 +22,5 @@ namespace hafta1{
         }
     }
 }
+
+```
