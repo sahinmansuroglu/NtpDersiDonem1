@@ -15,7 +15,7 @@ namespace hafta1{
             var soyad = "MANSUROĞLU";
                    
             var mesaj1 = "Merhaba " + ad + " " + soyad ; // metinleri "+" operatörü ile birleştirdik 
-            var mesaj2 = $"Merhaba {ad} {soyad}"; // metinleri String interpolation yönetim ile birleştirdik
+            var mesaj2 = $"Merhaba {ad} {soyad}"; // metinleri String interpolation yöntemi ile birleştirdik
             
             Console.WriteLine(mesaj1);
             Console.WriteLine(mesaj2);
