@@ -42,6 +42,8 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
 int sayi; 
 double sayi:
 ```
+
+<font color="red">Yukarıda sayi adında bir değişken hem int hem de  double tipinde tanımlandığından hatalıdırç
           
 
 
