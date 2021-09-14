@@ -53,7 +53,7 @@ double sayi:
 
 ### 5.Değişken isimleri sayı ile başlamamalı
 
-#### <del>string 1isi </del> --> Yanlış
+#### <del>string 1Kisi </del> --> Yanlış
 #### string kisi1  --> Doğru
 
           
