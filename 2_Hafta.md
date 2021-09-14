@@ -37,6 +37,10 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
   3. Değişken isimlendirmede ingiliz alfabesindeki harfler tercih edilir.
   
   5. Aynı isimde birden fazla değişken tanımlanamaz.
-      #### <del>int sayi; \ double sayi: </del> -->Yanlış
+           ```csharp
+            int sayi; 
+            double sayi:
+          ```
+          
 
 
