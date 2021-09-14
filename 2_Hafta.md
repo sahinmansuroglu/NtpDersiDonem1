@@ -30,13 +30,13 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
       
   2.  Değişken isimleri içerisinde özel karakter bulunamaz. (alt çizgi hariç)
   
-     #### <del>Ogrenci#Adi </del> -->Yanlış
-     #### OgrenciAdi --> Dogru
-     #### Ogrenci_Adi --> Dogru
+      #### <del>Ogrenci#Adi </del> -->Yanlış
+      #### OgrenciAdi --> Dogru
+      #### Ogrenci_Adi --> Dogru
      
   3. Değişken isimlendirmede ingiliz alfabesindeki harfler tercih edilir.
   
   5. Aynı isimde birden fazla değişken tanımlanamaz.
-     #### |<del>int sayi; \newline double sayi: </del>| -->Yanlış
+      #### |<del>int sayi; \newline double sayi: </del>| -->Yanlış
 
 
