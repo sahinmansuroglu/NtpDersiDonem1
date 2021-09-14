@@ -8,4 +8,12 @@ Diğer bir ifade ile değişkenler aynı kodu farklı değerlerle çalıştırma
   değişkenTipi değişkenAdı;
 ```
 
+## Örnek Tanımlar
+
+```csahrp
+  string adSoyad;
+  int yas;
+```
+
+
 
