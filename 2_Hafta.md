@@ -77,12 +77,166 @@ static void Main(string[] args)
         }
 ```
 
+> Konsol Çıktısı
 ```
 sbyte tipinde değer aralığı: 127 .. -128
 sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
 
 ```
+#### b) byte
 
+```csharp
+static void Main(string[] args)
+        {
+            byte max = byte.MaxValue;
+            byte min = byte.MinValue;
+            byte boyut = sizeof(byte);
+
+            Console.WriteLine($"byte tipinde değer aralığı: {min} .. {max}");
+            Console.WriteLine($"byte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+byte tipinde değer aralığı: 0 .. 255
+byte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### c) short
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### d) ushort
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### a) sbyte
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### a) sbyte
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### a) sbyte
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+#### a) sbyte
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+> Konsol Çıktısı
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
 
 
 ###2. İlkel olmayan veri tipleri
