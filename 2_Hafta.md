@@ -61,7 +61,7 @@ double sayi:
 ### 1.İlkel Veri Tipleri
 > sbyte, byte, short, ushort,int ,uint, long, ulong,float, double,decimal,char, bool
 
-#### sbyte
+#### a) sbyte
 
 ```csharp
 static void Main(string[] args)
