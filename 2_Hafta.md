@@ -10,7 +10,7 @@ Diğer bir ifade ile değişkenler aynı kodu farklı değerlerle çalıştırma
 
 ## Örnek Tanımlar
 
-```csahrp
+```csharp
   string adSoyad;
   int yas;
 ```
