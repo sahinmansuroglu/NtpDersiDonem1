@@ -50,4 +50,10 @@ double sayi:
 #### <del>string void </del> -->Yanlış
 #### <del>string class </del> -->Yanlış
 #### <del>string static </del> -->Yanlış
+
+### 5.Değişken isimleri sayı ile başlamamalı
+
+#### <del>string 1isi </del> --> Yanlış
+#### string kisi1  --> Doğru
+
           
