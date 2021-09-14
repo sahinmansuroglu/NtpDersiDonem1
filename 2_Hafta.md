@@ -24,6 +24,9 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
 
 ##Değişken Tanımlama kuralları
   1.  Değişken Adları  boşluk içeremez
-     <strike>ogrenci adi </strike>
+    ```csharp
+    <del>ogrenci adi </del>
+    ```
+     
 
 
