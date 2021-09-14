@@ -43,7 +43,7 @@ int sayi;
 double sayi:
 ```
 
-<font color="red">Yukarıda sayi adında bir değişken hem int hem de  double tipinde tanımlandığından hatalıdır.</font>
+<font color='red'>Yukarıda sayi adında bir değişken hem int hem de  double tipinde tanımlandığından hatalıdır.</font>
           
 
 > Roses are [red and **bold**]{color="red"} and
