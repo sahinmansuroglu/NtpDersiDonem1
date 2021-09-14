@@ -22,5 +22,8 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
   int yas;
 ```
 
+##Değişken Tanımlama kuralları
+  1.  Değişken Adları  boşluk içeremez
+     <strike>ogrenci adi </strike>
 
 
