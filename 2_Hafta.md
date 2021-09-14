@@ -127,7 +127,7 @@ sbyte tipinde değer aralığı: 127 .. -128
 sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
 
 ```
-#### d) ushort
+#### d) int
 
 ```csharp
 static void Main(string[] args)
@@ -149,7 +149,7 @@ sbyte tipinde değer aralığı: 127 .. -128
 sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
 
 ```
-#### a) sbyte
+#### a) long
 
 ```csharp
 static void Main(string[] args)
@@ -171,7 +171,7 @@ sbyte tipinde değer aralığı: 127 .. -128
 sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
 
 ```
-#### a) sbyte
+#### a) short
 
 ```csharp
 static void Main(string[] args)
@@ -193,7 +193,7 @@ sbyte tipinde değer aralığı: 127 .. -128
 sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
 
 ```
-#### a) sbyte
+#### a) double
 
 ```csharp
 static void Main(string[] args)
