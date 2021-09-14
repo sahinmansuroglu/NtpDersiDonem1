@@ -43,7 +43,11 @@ int sayi;
 double sayi:
 ```
 
-<font color='red'>Yukarıda sayi adında bir değişken hem int hem de  double tipinde tanımlandığından hatalıdır.</font>
-          
+> Yukarıda sayi adında bir değişken hem int hem de  double tipinde tanımlandığından hatalıdır.
 
-> Roses are [red and **bold**]{color="red"} and
+### 5.C# kullanılan anahtar kelimeler(komutlar) değişken ismi olarak kullanılamaz
+
+#### <del>string void </del> -->Yanlış
+#### <del>string class </del> -->Yanlış
+#### <del>string static </del> -->Yanlış
+          
