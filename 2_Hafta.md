@@ -38,10 +38,10 @@ Değişkenler ram belleğin stack(yığın) bölümünde saklanır
   
   5. Aynı isimde birden fazla değişken tanımlanamaz.
           
-          ```csharp
+           ```csharp
             int sayi; 
             double sayi:
-          ```
+           ```
           
 
 
