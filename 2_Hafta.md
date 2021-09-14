@@ -56,4 +56,16 @@ double sayi:
 #### <del>string 1Kisi </del> --> Yanlış
 #### string kisi1  --> Doğru
 
-          
+```csharp      
+  static void Main(string[] args)
+        {
+
+            string ad;
+            Console.Write("Adınızı Giriniz:");
+            ad = Console.ReadLine();
+
+            Console.WriteLine($"Merhaba sayin {ad}");
+            Console.ReadKey();
+            
+        }
+```
