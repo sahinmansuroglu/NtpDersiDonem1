@@ -56,6 +56,38 @@ double sayi:
 #### <del>string 1Kisi </del> --> Yanlış
 #### string kisi1  --> Doğru
 
+## Veri Tipleri 
+>ilkel(primitive) ve ilkel olmayan (non primitive) veri tipi olmak üzere ikiye ayrılır. Aralarındaki en büyük fark ilkel veri tipleri içerisinde sadece tek bir veri tutarken ilkel olmayan veri tipleri içerisinde bir veya birden fazla veri tutabilir. 
+### 1.İlkel Veri Tipleri
+> sbyte, byte, short, ushort,int ,uint, long, ulong,float, double,decimal,char, bool
+
+#### sbyte
+
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte boyut = sizeof(sbyte);
+
+            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
+            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
+
+            Console.ReadKey();
+        }
+```
+
+```
+sbyte tipinde değer aralığı: 127 .. -128
+sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
+
+```
+
+
+
+###2. İlkel olmayan veri tipleri
+> string, classes, interfaces, structes, Enumarationa
+
 ```csharp      
   static void Main(string[] args)
         {
