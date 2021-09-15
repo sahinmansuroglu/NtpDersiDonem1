@@ -14,7 +14,7 @@ static void Main(string[] args)
         }
 ```
 
-````diff
+````
 + Green Text
 - Red Text
 
