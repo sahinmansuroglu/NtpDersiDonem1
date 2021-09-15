@@ -86,6 +86,30 @@ double sayi:
 
 > String veri tipi karakter dizileri oluştumak için kullanılır.
 > String veri tipindeki değişkenler bellekte karakter sayısı * 2Byte kadar yer kaplar
+
+## Değişken türleri ile ilgili örnekler
+### Örnek-1
+```csharp
+static void Main(string[] args)
+        {
+            sbyte max = sbyte.MaxValue;
+            sbyte min = sbyte.MinValue;
+            sbyte varsayılan = default(sbyte);
+            Console.WriteLine("sbyte veri tipinin değer aralığı:");
+            Console.WriteLine($"{min} .. {max} ");
+            Console.WriteLine($"Varsayılan Değeri:{varsayılan}");
+            Console.WriteLine($"Bellekte kapladığı alan:{sizeof(sbyte)} Byte");
+        }
+ ```
+ 
+ #### Ekran Çıktısı
+ ```
+ sbyte veri tipinin değer aralığı:
+-128 .. 127
+Varsayılan Değeri:0
+Bellekte kapladığı alan:1 Byte
+ ```
+visau
 ````diff
 + Green Text
 - Red Text
