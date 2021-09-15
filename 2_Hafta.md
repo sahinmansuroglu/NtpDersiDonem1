@@ -86,5 +86,4 @@ double sayi:
 
 > String veri tipi karakter dizileri oluştumak için kullanılır.
 > String veri tipindeki değişkenler bellekte karakter sayısı * 2Byte kadar yer kaplar
-
-<span style="color:blue">some *blue* text</span>.
++ kalem
