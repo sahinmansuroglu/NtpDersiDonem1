@@ -44,7 +44,7 @@ static void Main(string[] args)
         }
 ```
   #### Ekran Çıktısı
-```diff
+```
 Lütfen adınızı ve soyadınızı giriniz: **Şahin MANSUROĞLU** 
 Lütfen yaşınızı giriniz:38
 Lütfen boyunuzu giriniz:1,77
