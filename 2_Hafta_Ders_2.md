@@ -58,6 +58,6 @@ double bolum = (double) sayi1 / sayi2;
 |---	  |---	                |---	sayi1 = 5 | 
 |   +=	  |   Toplama ve atama        |  sayi1 += 5  | sayi1 = sayi1 + 5 |
 |   -=	  |   Çıkartma ve atama	        |   sayi1 -= 5 	        | sayi1 = sayi1 - 5 |
-|   *=	  |   Çarpma ve atama	        |   sayi1 *= 5 	        | sayi1 = sayi1 * 5 |  
-|   /=	  |   Bölme ve atama	         |   sayi1 /= 5 	        |  sayi1 = sayi1 / 5 | 	
+|   \*=	  |   Çarpma ve atama	        |   sayi1 \*= 5 	        | sayi1 = sayi1 * 5 |  
+|   / =	  |   Bölme ve atama	         |   sayi1 /= 5 	        |  sayi1 = sayi1 / 5 | 	
 |   %=	  |   Mod alma (Kalan) ve atama  |   sayi1 %= 5 	|sayi1 = sayi1 % 5 |
