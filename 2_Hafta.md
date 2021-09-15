@@ -125,14 +125,15 @@ Bellekte kapladığı alan:1 Byte
             puan = 95;
             short uzaklik = 1000;
             int nufus = 250000;
-            float sicaklik = 23.4f;
+            float sicaklik = 23.4f;// float tipinde değer ataması yapılırken değerin sonuna "f" son eki yazılır.
             double ortalama = 34.4565664;
-            long longSayi = 457825114l;
-            decimal decimalSayi = 14353.12m;
-            char cinsiyet = 'E';
+ 
+            long longSayi = 457825114; 
+            decimal decimalSayi = 14353.12m; // deciamal tipinde değer ataması yapılırken değerin sonuna "m" son eki yazılır.
+            char cinsiyet = 'E'; //char tipinde karakter ataması yapılırken karakter tek tırnaklar içerisine yerleştirilir.
             bool calisiyorMu = true;
             string mesaj;
-            mesaj = "Merhaba dünya";
+            mesaj = "Merhaba dünya";// string tipinde değer ataması yapılırken atanacak karakter dizisi çift tırnaklar arasına yerleştirilir.
             Console.WriteLine($"puan:{puan}");
             Console.WriteLine($"uzaklik:{uzaklik}");
             Console.WriteLine($"nufus:{nufus}");
