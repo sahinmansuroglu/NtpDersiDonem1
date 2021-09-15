@@ -20,3 +20,35 @@ Merhaba sayın Şahin MANSUROĞLU
 ```
 
 
+#### Örnek
+Kullanıcıdan alınan ad soyad, yas ve boy bilgisini ekrana yazdıran program.
+
+```csharp
+static void Main(string[] args)
+        {
+
+            Console.Write("Lütfen adınızı ve soyadınızı giriniz:");
+            string adSoyad = Console.ReadLine();
+
+            Console.Write("Lütfen yaşınızı giriniz:");
+            byte yas = Convert.ToByte(Console.ReadLine());
+
+            Console.Write("Lütfen boyunuzu giriniz:");
+            double boy = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"Ad ve Soyadınız:{adSoyad}");
+            Console.WriteLine($"Yaşınız:{yas}");
+            Console.WriteLine($"Boyunuz:{boy}");
+
+            Console.ReadKey();
+        }
+```
+  #### Ekran Çıktısı
+```diff
+Lütfen adınızı ve soyadınızı giriniz:**Şahin MANSUROĞLU**
+Lütfen yaşınızı giriniz:38
+Lütfen boyunuzu giriniz:1,77
+Ad ve Soyadınız:Şahin MANSUROĞLU
+Yaşınız:38
+Boyunuz:1,77
+```
