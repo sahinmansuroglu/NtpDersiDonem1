@@ -62,3 +62,32 @@ double bolum = (double) sayi1 / sayi2;
 |   \*=	  |   Çarpma ve atama	        |   sayi1 \*= 5 	        | sayi1 = sayi1 * 5 |  
 |   / =	  |   Bölme ve atama	         |   sayi1 /= 5 	        |  sayi1 = sayi1 / 5 | 	
 |   %=	  |   Mod alma (Kalan) ve atama  |   sayi1 %= 5 	|sayi1 = sayi1 % 5 |
+
+#### Örnek:
+Aşağıdaki uygulama 2 sayı üzerinde toplama, çıkartma, çarpma, bölme, ve mod alma işlemleri yapmaktadır.
+```csharp
+static void Main(string[] args)
+        {
+            int sayi1 = 10;
+            sayi1 += 5;
+            Console.WriteLine($"+= İşlemi sonrası sayi1:{sayi1}");
+            sayi1 -= 3;
+            Console.WriteLine($"-= İşlemi sonrası sayi1:{sayi1}");
+            sayi1 *= 2;
+            Console.WriteLine($"*= İşlemi sonrası sayi1:{sayi1}");
+            sayi1 /= 4;
+            Console.WriteLine($"/= İşlemi sonrası sayi1:{sayi1}");
+            sayi1 %= 5;
+            Console.WriteLine($"%= İşlemi sonrası sayi1:{sayi1}");
+
+            Console.ReadKey();
+        }
+```
+**Ekran Çıktısı**
+```
++= İşlemi sonrası sayi1:15
+-= İşlemi sonrası sayi1:12
+*= İşlemi sonrası sayi1:24
+/= İşlemi sonrası sayi1:6
+%= İşlemi sonrası sayi1:1
+```
