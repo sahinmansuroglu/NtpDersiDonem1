@@ -13,14 +13,14 @@ static void Main(string[] args)
             Console.ReadKey();
         }
 ```
-  #### Ekran Çıktısı
+  #### Ekran Çıktısı :rocket
 ```diff
 Lütfen adınızı ve soyadınızı giriniz:  Şahin MANSUROĞLU 
 Merhaba sayın Şahin MANSUROĞLU
 ```
 
 
-#### Örnek
+#### Örnek :rocket
 Kullanıcıdan alınan ad soyad, yas ve boy bilgisini ekrana yazdıran program.
 
 ```csharp
@@ -45,7 +45,7 @@ static void Main(string[] args)
 ```
   #### Ekran Çıktısı
 ```
-Lütfen adınızı ve soyadınızı giriniz: **Şahin MANSUROĞLU** 
+Lütfen adınızı ve soyadınızı giriniz: Şahin MANSUROĞLU
 Lütfen yaşınızı giriniz:38
 Lütfen boyunuzu giriniz:1,77
 Ad ve Soyadınız:Şahin MANSUROĞLU
