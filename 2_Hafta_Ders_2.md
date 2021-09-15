@@ -13,16 +13,17 @@ static void Main(string[] args)
             Console.ReadKey();
         }
 ```
-  #### Ekran Çıktısı :rocket
+  #### Ekran Çıktısı 
 ```diff
 Lütfen adınızı ve soyadınızı giriniz:  Şahin MANSUROĞLU 
 Merhaba sayın Şahin MANSUROĞLU
 ```
 
 
-#### Örnek :rocket
+#### Örnek 
 Kullanıcıdan alınan ad soyad, yas ve boy bilgisini ekrana yazdıran program.
-
+**Önemli:** Eğer Konsol ekranında kullanıcıdan alınan veri string tipinde değilde başka bir  veri tipinde tanımlanmış bir değişkene atanırsa
+girilen değerin o veri tipine dönüştürülmesi gerekir. Örneği yas değişkenin tipi byte tanımlanmıştır. Bundan dolayı kalvyeden girilen veri Convert.ToByte ile string'den byte'a çevrilmiştir.
 ```csharp
 static void Main(string[] args)
         {
