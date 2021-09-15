@@ -13,8 +13,11 @@ static void Main(string[] args)
             Console.ReadKey();
         }
 ```
+  #### Ekran Çıktısı
+````diff
 
-````
+Lütfen adınızı ve soyadınızı giriniz: - Şahin MANSUROĞLU
+Merhaba sayın Şahin MANSUROĞLU
 + Green Text
 - Red Text
 
