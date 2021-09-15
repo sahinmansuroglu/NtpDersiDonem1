@@ -69,15 +69,15 @@ Aşağıdaki uygulama 2 sayı üzerinde toplama, çıkartma, çarpma, bölme, ve
 static void Main(string[] args)
         {
             int sayi1 = 10;
-            sayi1 += 5;
+            sayi1 += 5;  // sayi1 = sayi1 + 5;
             Console.WriteLine($"+= İşlemi sonrası sayi1:{sayi1}");
-            sayi1 -= 3;
+            sayi1 -= 3;  // sayi1 = sayi1 - 5;
             Console.WriteLine($"-= İşlemi sonrası sayi1:{sayi1}");
-            sayi1 *= 2;
+            sayi1 *= 2;  // sayi1 = sayi1 * 5;
             Console.WriteLine($"*= İşlemi sonrası sayi1:{sayi1}");
-            sayi1 /= 4;
+            sayi1 /= 4;  // sayi1 = sayi1 / 5;
             Console.WriteLine($"/= İşlemi sonrası sayi1:{sayi1}");
-            sayi1 %= 5;
+            sayi1 %= 5;  // sayi1 = sayi1 % 5;
             Console.WriteLine($"%= İşlemi sonrası sayi1:{sayi1}");
 
             Console.ReadKey();
