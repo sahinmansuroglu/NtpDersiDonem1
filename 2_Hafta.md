@@ -93,7 +93,7 @@ Aşağıdaki uygulamda sbyte veri tipinini maximum, minimum, varsayılan değeri
 ```csharp
 static void Main(string[] args)
         {
-        +//sbyte veri tipinde max isminde bir değişken tanımlanmış ve bu değişkene sbyte.MaxValue ile sbyte veri tipinin maximum değeri atanmıştır.
+        - //sbyte veri tipinde max isminde bir değişken tanımlanmış ve bu değişkene sbyte.MaxValue ile sbyte veri tipinin maximum değeri atanmıştır. - 
             sbyte max = sbyte.MaxValue;
          //sbyte veri tipinde min isminde bir değişken tanımlanmış ve bu değişkene sbyte.MinValue ile sbyte veri tipinin minimum değeri atanmıştır.
             sbyte min = sbyte.MinValue;
