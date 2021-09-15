@@ -116,6 +116,46 @@ static void Main(string[] args)
 Varsayılan Değeri:0
 Bellekte kapladığı alan:1 Byte
  ```
+ ### Örnek-1
+ Aşağıdaki örnekte farklı tip te değişkenler tanımlanmıştır. Bazı değişkenlerin değerleri tanımlanma anında verilmişken bazılarında ise tanımlandıktan sonraki başka bir satırda verilmiştir. Örneğin puan değişkenin değeri tanımlama yapıldıktan sonra verilmişken, nufus değişkeninin değeri tanımlamadan sonraki satırda verilmiştir. Son olarak da tüm değişkenlerin değerleri ekrana yazdırılmıştır.
+ ```csharp
+ static void Main(string[] args)
+        {
+            byte puan;
+            puan = 95;
+            short uzaklik = 1000;
+            int nufus = 250000;
+            float sicaklik = 23.4f;
+            double ortalama = 34.4565664;
+            long longSayi = 457825114l;
+            decimal decimalSayi = 14353.12m;
+            char cinsiyet = 'E';
+            bool calisiyorMu = true;
+            string mesaj;
+            mesaj = "Merhaba dünya";
+            Console.WriteLine($"puan:{puan}");
+            Console.WriteLine($"uzaklik:{uzaklik}");
+            Console.WriteLine($"nufus:{nufus}");
+            Console.WriteLine($"sicaklik:{sicaklik}");
+            Console.WriteLine($"ortalama:{ortalama}");
+            Console.WriteLine($"longSayi:{longSayi}");
+            Console.WriteLine($"decimalSayi:{decimalSayi}");
+            Console.WriteLine($"cinsiyet:{cinsiyet}");
+            Console.WriteLine($"calisiyorMu:{calisiyorMu}");
+            Console.WriteLine($"mesaj:{mesaj}");
+        }
+ ```
+  #### Ekran Çıktısı
+ ```
+nufus:250000
+sicaklik:23,4
+ortalama:34,4565664
+longSayi:457825114
+decimalSayi:14353,12
+cinsiyet:E
+calisiyorMu:True
+mesaj:Merhaba dünya
+ ```
 visau
 ````diff
 + Green Text
