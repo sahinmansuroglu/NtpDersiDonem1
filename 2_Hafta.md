@@ -61,7 +61,7 @@ double sayi:
 ### 1.İlkel Veri Tipleri
 > sbyte, byte, short, ushort,int ,uint, long, ulong,float, double,decimal,char, bool
 
-| Veir Tipi     | Tanım           | Aralık  |Son ek |
+| Veri Tipi     | Tanım           | Aralık  |Son ek |
 | ------------- |:---------------:| -----:  |-----:|
 | byte    		| 8 bitlik işaretsiz tam sayı| 0 .. 255 |  
 | sbyte    		| 8 bitlik işaretli tam sayı| -128 .. 127 |
@@ -74,7 +74,7 @@ double sayi:
 | float    		| 32 bitlik  ondalıklı sayı|-3.402823e38 .. 3.402823e38 |  f |
 | double    		| 64 bitlik  ondalıklı sayı|-1.79769313486232e308 .. 1.79769313486232e308 |  d |
 | deciamal   		| 128 bitlik  decimal sayı (mali hesaplamalar için)  |-1.79769313486232e308 .. 1.79769313486232e308  |  m |
-| 'char'    		| 16 bit unicode karakter| Herhangi bir geçerli karakter |
+| `char`   		| 16 bit unicode karakter| Herhangi bir geçerli karakter |
 | bool    		| 8 bitlik mantıksal doğru/yanlış değer| True veya False |
 
 
