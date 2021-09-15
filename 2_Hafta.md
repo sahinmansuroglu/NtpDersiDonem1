@@ -89,3 +89,8 @@ double sayi:
 ````diff
 + Green Text
 - Red Text
+
++ some-text +
+- some-text -
+# some-text #
+* some-text *
