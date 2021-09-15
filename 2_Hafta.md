@@ -93,18 +93,18 @@ Aşağıdaki uygulamda sbyte veri tipinini maximum, minimum, varsayılan değeri
 ```csharp
 static void Main(string[] args)
         {
-         //sbyte veri tipinde max isminde bir değişken tanımlanmış ve bu değişkene sbyte.MaxValue ile sbyte veri tipinin maximum değeri atanmıştır. 
+//sbyte veri tipinde max isminde bir değişken tanımlanmış ve bu değişkene sbyte.MaxValue ile sbyte veri tipinin maximum değeri atanmıştır. 
             sbyte max = sbyte.MaxValue;
-         //sbyte veri tipinde min isminde bir değişken tanımlanmış ve bu değişkene sbyte.MinValue ile sbyte veri tipinin minimum değeri atanmıştır.
+//sbyte veri tipinde min isminde bir değişken tanımlanmış ve bu değişkene sbyte.MinValue ile sbyte veri tipinin minimum değeri atanmıştır.
             sbyte min = sbyte.MinValue;
-         //sbyte veri tipinde varsayılan isminde bir değişken tanımlanmış ve bu değişkene default(sbyte) ile sbyte veri tipinin varsayılan değeri atanmıştır.
+//sbyte veri tipinde varsayılan isminde bir değişken tanımlanmış ve bu değişkene default(sbyte) ile sbyte veri tipinin varsayılan değeri atanmıştır.
             sbyte varsayılan = default(sbyte);
          
             Console.WriteLine("sbyte veri tipinin değer aralığı:");
             Console.WriteLine($"{min} .. {max} "); // max ve min değişkenlerinin değerleri ekrana yazdırılmıştır
             Console.WriteLine($"Varsayılan Değeri:{varsayılan}"); // varsayılan değişkeninin değeri ekrana  yazdırılmıştır.
             
-         //Sizeof komutu ile sbyte veritipinin bellekte kapladığı yer ekrana yazdırılmıştır.
+//Sizeof komutu ile sbyte veritipinin bellekte kapladığı yer ekrana yazdırılmıştır.
             Console.WriteLine($"Bellekte kapladığı alan:{sizeof(sbyte)} Byte");
         }
  ```
