@@ -14,7 +14,7 @@ static void Main(string[] args)
         }
 ```
   #### Ekran Çıktısı
-````diff
+```diff
 
 + Lütfen adınızı ve soyadınızı giriniz: - Şahin MANSUROĞLU - +
 Merhaba sayın Şahin MANSUROĞLU
@@ -25,6 +25,6 @@ Merhaba sayın Şahin MANSUROĞLU
 - some-text -
 # some-text #
 * some-text *
-````
+```
 
 
