@@ -47,7 +47,7 @@ Bölüm:4
 Çarpım:450
 Kalan:5
 ```
->  **Not:** Ekran çıktısını incelediğimizde bölme işleminin sonucunun ondalıklı olmasına rağmen çıktıda tam sayı olarak gözükmektedir. Nedeni ise int/int sonucu her zaman int olarak çıkar. Bundan dolayı bölen veya bölünen sayılardan en az birinin tipinin kayan noktalı(float, double) sayı olması gerekmektedir. Çözüm için cast yöntemi dediğimiz yöntemle sayılardan birini double'a çevirebiliriz. 
+>  **Not:** Ekran çıktısını incelediğimizde bölme işleminin sonucunu ondalıklı olmasına rağmen çıktıda tam sayı olarak gözükmektedir. Nedeni ise int/int sonucu her zaman int olarak çıkar. Bundan dolayı bölen veya bölünen sayılardan en az birinin tipinin kayan noktalı(float, double) sayı olması gerekmektedir. Çözüm için cast yöntemi dediğimiz yöntemle sayılardan birini double'a çevirebiliriz. 
 >  Sonucun ondalıklı çıkabilmesi için çözüm aşağıdadır 
 ```csharp
 double bolum = (double) sayi1 / sayi2;
