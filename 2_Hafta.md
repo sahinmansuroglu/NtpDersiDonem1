@@ -78,33 +78,11 @@ double sayi:
 | bool    		| 8 bitlik mantıksal doğru/yanlış değer| True veya False |
 
 
-#### a) sbyte
-
-```csharp
-static void Main(string[] args)
-        {
-            sbyte max = sbyte.MaxValue;
-            sbyte min = sbyte.MinValue;
-            sbyte boyut = sizeof(sbyte);
-
-            Console.WriteLine($"sbyte tipinde değer aralığı: {max} .. {min}");
-            Console.WriteLine($"sbyte tipindeki değişkenin bellekte kapladığı alan: {boyut} Byte'dir.");
-
-            Console.ReadKey();
-        }
-```
-
-> Konsol Çıktısı
-```
-sbyte tipinde değer aralığı: 127 .. -128
-sbyte tipindeki değişkenin bellekte kapladığı alan: 1 Byte'dir.
-
-```
 
 
-###2. İlkel olmayan veri tipleri
+### 2. İlkel olmayan veri tipleri
 > string, classes, interfaces, structes, Enumaration vb.
 > Bu bölümde sadece ilkel olmayan veri tiplerinden string veri tipi incelenecektir. Diğer veri tipleri ilerleyen haftalarda incelenecektir.
 
 > String veri tipi karakter dizileri oluştumak için kullanılır.
-> String veri tipindeki değişken bellekte karakter sayısı * 2Byte kadar yer kaplar
+> String veri tipindeki değişkenler bellekte karakter sayısı * 2Byte kadar yer kaplar
