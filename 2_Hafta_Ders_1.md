@@ -157,16 +157,61 @@ cinsiyet:E
 calisiyorMu:True
 mesaj:Merhaba dünya
  ```
-visau
-````diff
-+ Green Text
-- Red Text
+## Console Ekranında kullanıcıdan veri alma
+Konsole ekranında kullanıcının girdiği veri satırının tümünü okumak için Console.ReadLine() metodu kullanılır. 
+Bu metot ile kullanıcının alınan verinin tipi string'dir. 
+#### Örnek
+Kullanıcıdan alınan ad soyad bilgisi kullanılarak kişiye hoşgeldin mesajı veren uygulama.
+```csharp
+static void Main(string[] args)
+        {
 
-+ some-text +
-- some-text -
-# some-text #
-* some-text *
-````
-selaml
+            Console.Write("Lütfen adınızı ve soyadınızı giriniz:");
+            string adSoyad = Console.ReadLine();
+            Console.WriteLine($"Merhaba sayın {adSoyad}");
+            Console.ReadKey();
+        }
+```
+  #### Ekran Çıktısı 
+```diff
+Lütfen adınızı ve soyadınızı giriniz:  Şahin MANSUROĞLU 
+Merhaba sayın Şahin MANSUROĞLU
+```
+
+
+#### Örnek 
+Kullanıcıdan alınan ad soyad, yas ve boy bilgisini ekrana yazdıran program.
+**Önemli:** Eğer Konsol ekranında kullanıcıdan alınan veri string tipinde değilde başka bir  veri tipinde tanımlanmış bir değişkene atanırsa
+girilen değerin o veri tipine dönüştürülmesi gerekir. Örneği yas değişkenin tipi byte tanımlanmıştır. Bundan dolayı kalvyeden girilen veri Convert.ToByte ile string'den byte'a çevrilmiştir.
+```csharp
+static void Main(string[] args)
+        {
+
+            Console.Write("Lütfen adınızı ve soyadınızı giriniz:");
+            string adSoyad = Console.ReadLine();
+
+            Console.Write("Lütfen yaşınızı giriniz:");
+            byte yas = Convert.ToByte(Console.ReadLine());
+
+            Console.Write("Lütfen boyunuzu giriniz:");
+            double boy = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine($"Ad ve Soyadınız:{adSoyad}");
+            Console.WriteLine($"Yaşınız:{yas}");
+            Console.WriteLine($"Boyunuz:{boy}");
+
+            Console.ReadKey();
+        }
+```
+  #### Ekran Çıktısı
+```
+Lütfen adınızı ve soyadınızı giriniz: Şahin MANSUROĞLU
+Lütfen yaşınızı giriniz:38
+Lütfen boyunuzu giriniz:1,77
+Ad ve Soyadınız:Şahin MANSUROĞLU
+Yaşınız:38
+Boyunuz:1,77
+```
+
 
 
