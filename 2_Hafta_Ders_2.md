@@ -55,7 +55,8 @@ double bolum = (double) sayi1 / sayi2;
 ### 2. Atama Operatörleri
 
 | Operatör| Açıklama 	        | Örnek Kullanım  |   Uzun Gösterim |
-|---	  |---	                |---	sayi1 = 5 | 
+|---	  |---	                |---	|---
+|   =	  |   Aatama        |  sayi1 = 5  | |
 |   +=	  |   Toplama ve atama        |  sayi1 += 5  | sayi1 = sayi1 + 5 |
 |   -=	  |   Çıkartma ve atama	        |   sayi1 -= 5 	        | sayi1 = sayi1 - 5 |
 |   \*=	  |   Çarpma ve atama	        |   sayi1 \*= 5 	        | sayi1 = sayi1 * 5 |  
