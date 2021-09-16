@@ -138,11 +138,11 @@ static void Main(string[] args)
         {
             byte a = 6, b=5;
 
-            //a++ yerine a=a + 1 veya a += 1'de yazılabilir
-            a++;// a nın değerini 1 arttırır (a=7 oldu)
+            //a++ yerine a = a + 1 veya a += 1'de yazılabilir
+            a++;// a nın değerini 1 arttırır (a = 7 oldu)
 
-            //b-- yerine b=b - 1 veya b -= 1'de yazılabilir
-            b--;//b nin değerini 1 azaltır.(b=4 oldu)
+            //b-- yerine b = b - 1 veya b -= 1'de yazılabilir
+            b--;//b nin değerini 1 azaltır.(b = 4 oldu)
 
             Console.WriteLine($"a:{a} b:{b}");
                        
@@ -151,13 +151,6 @@ static void Main(string[] args)
 ```
 
 
-**Ekran Çıktısı**
-```
-1. Puanı giriniz:85
-2. Puanı giriniz:36
-3. Puanı giriniz:45
-Girilen 3 puanın ortalaması:55,333333333333336
-```
 
 
 **Ekran Çıktısı**
