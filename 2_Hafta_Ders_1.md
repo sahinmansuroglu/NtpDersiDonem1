@@ -181,6 +181,7 @@ Merhaba sayın Şahin MANSUROĞLU
 
 #### Örnek 
 > Kullanıcıdan alınan ad soyad, yas ve boy bilgisini ekrana yazdıran program.
+> 
 >  __Önemli__ Eğer Konsol ekranında kullanıcıdan alınan veri string tipinde değilde başka bir  veri tipinde tanımlanmış bir değişkene atanırsa
 girilen değerin o veri tipine dönüştürülmesi gerekir. Örneği yas değişkenin tipi byte tanımlanmıştır. Bundan dolayı kalvyeden girilen veri Convert.ToByte ile string'den byte'a çevrilmiştir.
 ```csharp
