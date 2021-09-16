@@ -5,5 +5,7 @@
 
 1. Parantez içleri
 2. Üs alma
-3. Çarpma Bölme
-4. 
+3. Çarpma ve Bölme
+4. Toplama ve Çıkarma
+
+> **Not:** Aynı önceliğe sahip işlemlerde işlemler soldan soğa yapılır
