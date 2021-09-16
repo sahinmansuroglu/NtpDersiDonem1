@@ -92,21 +92,20 @@ static void Main(string[] args)
 %= İşlemi sonrası sayi1:1
 ```
 #### Örnek:
-Soru: Klavyeden girilen 3 puanın ortalamasını bulan program.
+Soru: Klavyeden girilen 2 puanın ortalamasını bulan program.
 ```csharp
 static void Main(string[] args)
         {
-            short puan1, puan2, puan3;
+            short puan1, puan2 ;
             Console.Write("1. Puanı giriniz:");
             puan1 = Convert.ToInt16(Console.ReadLine());
             Console.Write("2. Puanı giriniz:");
             puan2 = Convert.ToInt16(Console.ReadLine());
-            Console.Write("3. Puanı giriniz:");
-            puan3 = Convert.ToInt16(Console.ReadLine());
+       
 
-            double ortalama = (puan1 + puan2 + puan3) / 3.0;
+            double ortalama = (puan1 + puan2 ) / 2.0;
 
-            Console.WriteLine($"Girilen 3 puanın ortalaması:{ortalama} ");
+            Console.WriteLine($"Girilen 2 puanın ortalaması:{ortalama} ");
 
             Console.ReadKey();
         }
@@ -117,8 +116,8 @@ static void Main(string[] args)
 ```
 1. Puanı giriniz:85
 2. Puanı giriniz:36
-3. Puanı giriniz:45
-Girilen 3 puanın ortalaması:55,333333333333336
+
+Girilen 2 puanın ortalaması:60,5
 ```
 
 ### 3. Arttırma Azaltma  Operatörleri
