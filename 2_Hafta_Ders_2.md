@@ -304,4 +304,8 @@ sonuc3:True
 ```
 ### 6.Özel Amaçlı operatörler 
 #### Ternary operatör `(? :)`
-Ternary operatörü bir koşula bağlı olarak istenilen sonuçlardan birini veren operatördür
+> Ternary operatörü bir şart bağlı olarak istenilen sonuçlardan birini veren operatördür
+**Genel Kullanım
+```
+Şart ? `Şart doğuysa Dönecek Değe`r : `Şart Yanlışsa Dönecek Değer`
+```
