@@ -157,3 +157,43 @@ static void Main(string[] args)
 a:7 b:4
 ```
 
+#### Örnek:
+
+```csharp
+static void Main(string[] args)
+        {
+            byte a = 6, c ;
+            
+            //Aşağıda önce arttır operatörü kullanılmıştır
+            c=++a; // ilk olarak anın değeri 1 arttırılır ardından a nın değeri c'ye atanır.
+            Console.WriteLine($"c:{c} a:{a}");
+
+            //Aşağıda sonra arttır operatörü kullanılmıştır
+            c = a++;// ilk olarak anın değeri c'ye atanır ardından a nın değeri bir arttırılır
+            Console.WriteLine($"c:{c} a:{a}");
+
+            a = 10;
+
+            //Aşağıda önce azalt operatörü kullanılmıştır
+            c = --a; // ilk olarak anın değeri 1 azaltılıt ardından a nın değeri c'ye atanır.
+
+            Console.WriteLine($"c:{c} a:{a}");
+            //Aşağıda sonra azalt operatörü kullanılmıştır
+            c = a--;// ilk olarak anın değeri c'ye atanır ardından a nın değeri bir azaltılır.
+
+            Console.WriteLine($"c:{c} a:{a}");
+
+            Console.ReadKey();
+        }
+```
+
+
+**Ekran Çıktısı**
+```
+c:7 a:7
+c:7 a:8
+c:9 a:9
+c:9 a:8
+```
+
+
