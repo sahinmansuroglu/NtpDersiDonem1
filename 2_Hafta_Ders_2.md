@@ -28,7 +28,7 @@ static void Main(string[] args)
             int sayi1 = 45;
             int sayi2 = 10;
             int toplam = sayi1 + sayi2;
-            int fark = sayi1 + sayi2;
+            int fark = sayi1 - sayi2;
             double bolum = sayi1 / sayi2;
             int carpim = sayi1 * sayi2;
             int kalan = sayi1 % sayi2;
@@ -42,7 +42,7 @@ static void Main(string[] args)
 **Ekran Çıktısı**
 ```
 Toplam:55
-Fark:55
+Fark:35
 Bölüm:4
 Çarpım:450
 Kalan:5
