@@ -9,3 +9,10 @@
 4. Toplama ve Çıkarma
 
 > **Not:** Aynı önceliğe sahip işlemlerde işlemler soldan soğa yapılır
+
+**Örnekler**
+```csharp
+double sonuc;
+            sonuc = 45 - 65 * 2 + 5;
+            Console.WriteLine(sonuc); // -80 Yazar
+```
