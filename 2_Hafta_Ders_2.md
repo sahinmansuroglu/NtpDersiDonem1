@@ -272,18 +272,35 @@ sonuc6:True
 
 **! Operatörü**
 
-> Mantıksal ifadenin değilini alır. Yani true ise false, false ise true yapar.
+> Mantıksal ifadenin değilini alır. Yani true ise false, false ise true değeri verir.
 
 | 1. Koşul| `!(1. Koşul)`        |   
 |---	  |---	                |
 |   true  |    false	        |  
 |   false  |     true 	        |  
 
+**Örnek**
 ```csharp
+static void Main(string[] args)
+        {
+            int a = 5, b=15;
+            bool sonuc1 = a == 5 && b < 10;
+            Console.WriteLine($"sonuc1:{sonuc1}"); // false yazar
 
+            bool sonuc2 = a != 5 || b > 10;
+            Console.WriteLine($"sonuc2:{sonuc2}"); // true yazar
+
+            bool sonuc3 = !(a < 5);
+            Console.WriteLine($"sonuc3:{sonuc3}"); // true yazar
+            
+            Console.ReadKey();
+      
+        }
 ```
 **Ekran Çıktısı**
 ```
-
+sonuc1:False
+sonuc2:True
+sonuc3:True
 ```
 
