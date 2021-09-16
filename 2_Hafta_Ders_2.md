@@ -7,8 +7,7 @@ Opetörler işlemleri yerine getirmek için kullanılan sembollerdir. Örneğin 
 3. Arttırma-Azaltma operatörleri.
 4. Karşılaştırma operatörler.
 5. Mantıksal operatörler.
-6. Atama ve işlemli atama operatörleri.
-7. Özel amaçlı operatörler.
+6. Özel Amaçlı operatörler (ternary operatör)
 
 ### 1. Aritmetik Operatörler
 
@@ -303,4 +302,6 @@ sonuc1:False
 sonuc2:True
 sonuc3:True
 ```
-
+### 6.Özel Amaçlı operatörler 
+#### Ternary operatör `(? :)`
+Ternary operatörü bir koşula bağlı olarak istenilen sonuçlardan birini veren operatördür
