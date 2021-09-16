@@ -4,7 +4,7 @@ Opetörler işlemleri yerine getirmek için kullanılan sembollerdir. Örneğin 
 
 1. Aritmetik operatörler.
 2. Atama Operatörleri
-3. Karşılaştırma operatörleri.
+3. Arttırma operatörleri.
 4. Bitsel operatörler.
 5. Mantıksal operatörler.
 6. Atama ve işlemli atama operatörleri.
@@ -120,3 +120,15 @@ static void Main(string[] args)
 3. Puanı giriniz:45
 Girilen 3 puanın ortalaması:55,333333333333336
 ```
+
+### 3. Arttırma Azaltma  Operatörleri
+
+| Operatör| Açıklama 	        |   
+|---	  |---	                |
+|   n++	  |   Sonra  Arttırma   |   
+|   ++n	  |   Önce Arttırma	|   
+|   n--	  |   Sonra Çıkartma	|   
+|   --n	  |   Önce Çıkartma	|    	
+
+
+#### Örnek:
