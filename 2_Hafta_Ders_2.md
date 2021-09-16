@@ -125,10 +125,43 @@ Girilen 3 puanın ortalaması:55,333333333333336
 
 | Operatör| Açıklama 	        |   
 |---	  |---	                |
-|   n++	  |   Sonra  Arttırma   |   
-|   ++n	  |   Önce Arttırma	|   
-|   n--	  |   Sonra Çıkartma	|   
-|   --n	  |   Önce Çıkartma	|    	
+|   n++	  |   Sonra  Arttırma (ilk olarak atama işlemi gerçekleşir sonra arttırılır)  |   
+|   ++n	  |   Önce Arttırma   (ilk olarak arttırma işlemi gerçekleşir sonra atama yapılır)	|   
+|   n--	  |   Sonra Çıkartma  (ilk olarak atama işlemi gerçekleşir sonra azaltılır)	|   
+|   --n	  |   Önce Çıkartma   ((ilk olarak azaltma işlemi gerçekleşir sonra atama yapılır))|    	
 
 
 #### Örnek:
+
+```csharp
+static void Main(string[] args)
+        {
+            byte a = 6, b=5;
+
+            //a++ yerine a=a + 1 veya a += 1'de yazılabilir
+            a++;// a nın değerini 1 arttırır (a=7 oldu)
+
+            //b-- yerine b=b - 1 veya b -= 1'de yazılabilir
+            b--;//b nin değerini 1 azaltır.(b=4 oldu)
+
+            Console.WriteLine($"a:{a} b:{b}");
+                       
+            Console.ReadKey();
+        }
+```
+
+
+**Ekran Çıktısı**
+```
+1. Puanı giriniz:85
+2. Puanı giriniz:36
+3. Puanı giriniz:45
+Girilen 3 puanın ortalaması:55,333333333333336
+```
+
+
+**Ekran Çıktısı**
+```
+a:7 b:4
+```
+
