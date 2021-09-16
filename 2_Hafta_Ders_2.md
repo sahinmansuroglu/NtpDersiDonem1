@@ -206,3 +206,34 @@ c:9 a:8
 |   >	  |   Büyük	        |   a > b	  |   	
 |   <=	  |   Küçük Eşit        |   a <= b	  |
 |   >=	  |   Büyük Eşit        |   a >= b	  |
+
+
+```csharp
+static void Main(string[] args)
+        {
+            int a = 5;
+            bool sonuc1 = a == 5;
+            Console.WriteLine($"sonuc1:{sonuc1}"); // true yazar
+            bool sonuc2 = a != 5;
+            Console.WriteLine($"sonuc2:{sonuc2}"); // false yazar
+            bool sonuc3 = a < 5;
+            Console.WriteLine($"sonuc3:{sonuc3}"); // false yazar
+            bool sonuc4 = a > 5;
+            Console.WriteLine($"sonuc4:{sonuc4}"); // false yazar
+            bool sonuc5 = a <= 5;
+            Console.WriteLine($"sonuc5:{sonuc5}"); // true yazar
+            bool sonuc6 = a >= 5;
+            Console.WriteLine($"sonuc6:{sonuc6}"); // true yazar
+            Console.ReadKey();
+      
+        }
+```
+**Ekran Çıktısı**
+```
+sonuc1:True
+sonuc2:False
+sonuc3:False
+sonuc4:False
+sonuc5:True
+sonuc6:True
+```
