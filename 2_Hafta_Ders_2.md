@@ -91,3 +91,32 @@ static void Main(string[] args)
 /= İşlemi sonrası sayi1:6
 %= İşlemi sonrası sayi1:1
 ```
+#### Örnek:
+Soru: Klavyeden girilen 3 puanın ortalamasını bulan program.
+```csharp
+static void Main(string[] args)
+        {
+            short puan1, puan2, puan3;
+            Console.Write("1. Puanı giriniz:");
+            puan1 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("2. Puanı giriniz:");
+            puan2 = Convert.ToInt16(Console.ReadLine());
+            Console.Write("3. Puanı giriniz:");
+            puan3 = Convert.ToInt16(Console.ReadLine());
+
+            double ortalama = (puan1 + puan2 + puan3) / 3.0;
+
+            Console.WriteLine($"Girilen 3 puanın ortalaması:{ortalama} ");
+
+            Console.ReadKey();
+        }
+```
+
+
+**Ekran Çıktısı**
+```
+1. Puanı giriniz:85
+2. Puanı giriniz:36
+3. Puanı giriniz:45
+Girilen 3 puanın ortalaması:55,333333333333336
+```
