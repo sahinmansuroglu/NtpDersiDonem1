@@ -196,6 +196,8 @@ c:9 a:8
 ```
 ### 4. Karşılaştırma Operatörler
 > Karşılaştırma operatörleri 2 değeri kıyaslayarak 'true (Doğru)' veya false (Yanlış) değeri döndüren operatörlerdir
+
+
 | Operatör| Açıklama 	        | Örnek Kullanım  |   
 |---	  |---	                |---	          |
 |   =	  |   Eşit 	        |   a = b 	  |
