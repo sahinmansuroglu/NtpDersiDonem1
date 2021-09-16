@@ -87,7 +87,34 @@ ________________________________________________
   
 ### Soru-2
 ### Soru-3
-  Klavyeden girilen 5 sayının ortalamasını bulan programı tasarlayınız
+  Klavyeden girilen 4 puanın ortalamasını bulan programı tasarlayınız
+  ```csharp
+  static void Main(string[] args)
+        {
+            byte puan1, puan2, puan3,puan4;
+            Console.Write("1. Puanı Giriniz:");
+            puan1 = Convert.ToByte(Console.ReadLine());
+            Console.Write("2. Puanı Giriniz:");
+            puan2 = Convert.ToByte(Console.ReadLine());
+            Console.Write("3. Puanı Giriniz:");
+            puan3 = Convert.ToByte(Console.ReadLine());
+            Console.Write("4. Puanı Giriniz:");
+            puan4 = Convert.ToByte(Console.ReadLine());
+
+            double ortalama = (puan1 + puan2 + puan3 + puan4) / 4.0;
+            Console.WriteLine($"{puan1}, {puan2}, {puan3} ve {puan4} puanlarının ortalaması {ortalama}'dır. ");
+            Console.ReadKey();
+      
+        }
+  
+  ```
+  ```
+  1. Puanı Giriniz:10
+2. Puanı Giriniz:20
+3. Puanı Giriniz:30
+4. Puanı Giriniz:40
+10, 20, 30 ve 40 puanlarının ortalaması 25'dır.
+ ```
 ### Soru-3
   Klavyeden girilen 3 basamaklı sayının rakamlarını alt alta yazdırınız.
 ### Soru-4
