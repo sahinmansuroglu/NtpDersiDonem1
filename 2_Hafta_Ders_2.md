@@ -307,5 +307,28 @@ sonuc3:True
 > Ternary operatörü bir şart bağlı olarak istenilen sonuçlardan birini veren operatördür
 **Genel Kullanım
 ```
-Şart ? `Şart doğuysa Dönecek Değe`r : `Şart Yanlışsa Dönecek Değer`
+Şart ? Şart doğuysa Dönecek Değer : Şart Yanlışsa Dönecek Değer
+```
+
+**Örnek
+```csharp
+static void Main(string[] args)
+        {
+            double ortalama;
+            ortalama = 65;
+            // Aşağıdaki ifadede eğer ortalama 50 'den küçükse durum değişkenine 
+            // "Kaldı" büyük veya eşitse   "Geçti" kelimesi atılır.
+            string durum = ortalama < 50 ? " Kaldı" : "Geçti";
+
+            Console.WriteLine($"durum:{durum}"); 
+            
+            Console.ReadKey();
+      
+        }
+```
+
+**Ekran Çıktısı
+
+```
+durum:Geçti
 ```
