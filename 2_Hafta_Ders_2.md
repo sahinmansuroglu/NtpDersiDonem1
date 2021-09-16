@@ -4,7 +4,7 @@ Opetörler işlemleri yerine getirmek için kullanılan sembollerdir. Örneğin 
 
 1. Aritmetik operatörler.
 2. Atama Operatörleri
-3. Arttırma operatörleri.
+3. Arttırma-Azaltma operatörleri.
 4. Bitsel operatörler.
 5. Mantıksal operatörler.
 6. Atama ve işlemli atama operatörleri.
