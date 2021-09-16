@@ -310,7 +310,8 @@ sonuc3:True
 Şart ? Şart doğuysa Dönecek Değer : Şart Yanlışsa Dönecek Değer
 ```
 
-**Örnek
+**Örnek**
+
 ```csharp
 static void Main(string[] args)
         {
@@ -327,7 +328,7 @@ static void Main(string[] args)
         }
 ```
 
-**Ekran Çıktısı
+**Ekran Çıktısı**
 
 ```
 durum:Geçti
