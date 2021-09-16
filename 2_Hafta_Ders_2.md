@@ -200,7 +200,7 @@ c:9 a:8
 
 | Operatör| Açıklama 	        | Örnek Kullanım  |   
 |---	  |---	                |---	          |
-|   =	  |   Eşit 	        |   a = b 	  |
+|   ==	  |   Eşit 	        |   a = b 	  |
 |   !=	  |   Eşit değil	|   a != b	  | 
 |   <	  |   Küçük	        |   a < b	  |   
 |   >	  |   Büyük	        |   a > b	  |   	
@@ -237,3 +237,32 @@ sonuc4:False
 sonuc5:True
 sonuc6:True
 ```
+
+### 5. Mantıksal Operatörler
+> Mantıksal operatörler mantıksal ifadeleri(sonucu true veya false olan ifadeler)  birbirine bağlamak için kullanılır. Sonucta 
+
+
+| Operatör| Açıklama 	        | Örnek Kullanım        |   
+|---	  |---	                |---	                |
+|   &&	  |     Ve 	        |   a == b &&  a < b	  |
+|   ||	  |    veya	        |   a == b ||  a < b	  | 
+|   !	  |    değil	        |   !(a < b)	        |   
+
+** && Operatörü**
+
+| 1. Koşul| 2. Koşul 	        | `1. Koşul && 2. Koşul`        |   
+|---	  |---	                |---	                |
+|   false  |    false	        |  false	  |
+|   false  |     true 	        |   false	  |
+|   true   |    false	|  false	  | 
+|   true   |    true	|  true	        |   
+
+
+```csharp
+
+```
+**Ekran Çıktısı**
+```
+
+```
+
