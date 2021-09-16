@@ -165,23 +165,22 @@ static void Main(string[] args)
             byte a = 6, c ;
             
             //Aşağıda önce arttır operatörü kullanılmıştır
-            c=++a; // ilk olarak anın değeri 1 arttırılır ardından a nın değeri c'ye atanır.
-            Console.WriteLine($"c:{c} a:{a}");
+            c=++a; // ilk olarak a'nın değeri 1 arttırılır ardından a nın değeri c'ye atanır.
+            Console.WriteLine($"c:{c} a:{a}");    // c:7 a:7
 
             //Aşağıda sonra arttır operatörü kullanılmıştır
-            c = a++;// ilk olarak anın değeri c'ye atanır ardından a nın değeri bir arttırılır
-            Console.WriteLine($"c:{c} a:{a}");
+            c = a++;// ilk olarak a'nın değeri c'ye atanır ardından a nın değeri bir arttırılır
+            Console.WriteLine($"c:{c} a:{a}");   // c:7 a:8
 
             a = 10;
 
             //Aşağıda önce azalt operatörü kullanılmıştır
-            c = --a; // ilk olarak anın değeri 1 azaltılıt ardından a nın değeri c'ye atanır.
-
-            Console.WriteLine($"c:{c} a:{a}");
+            c = --a; // ilk olarak a'nın değeri 1 azaltılıt ardından a nın değeri c'ye atanır.
+            Console.WriteLine($"c:{c} a:{a}");   // c:9 a:9
+            
             //Aşağıda sonra azalt operatörü kullanılmıştır
-            c = a--;// ilk olarak anın değeri c'ye atanır ardından a nın değeri bir azaltılır.
-
-            Console.WriteLine($"c:{c} a:{a}");
+            c = a--;// ilk olarak a'nın değeri c'ye atanır ardından a nın değeri bir azaltılır.
+            Console.WriteLine($"c:{c} a:{a}");  // c:9 a:8
 
             Console.ReadKey();
         }
