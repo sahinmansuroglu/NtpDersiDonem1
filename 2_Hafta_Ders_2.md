@@ -248,15 +248,36 @@ sonuc6:True
 |   ||	  |    veya	        |   a == b ||  a < b	  | 
 |   !	  |    değil	        |   !(a < b)	        |   
 
-** && Operatörü**
+**&& Operatörü**
+> Sadece koşullardan ikisinin de `true` olduğu durumlarda sonucu `true` veren diğer durumlarda `false` değerini veren öperatördür. 
 
 | 1. Koşul| 2. Koşul 	        | `1. Koşul && 2. Koşul`        |   
 |---	  |---	                |---	                |
-|   false  |    false	        |  false	  |
-|   false  |     true 	        |   false	  |
-|   true   |    false	|  false	  | 
-|   true   |    true	|  true	        |   
+|   false  |    false	        |  `false`	  |
+|   false  |     true 	        |   `false`	  |
+|   true   |    false	|  `false`	  | 
+|   true   |    true	|  `true`	        |   
 
+
+**|| Operatörü**
+
+> Koşullardan herhandi birinin `true` olduğu durumlarda sonucu `true` veren , diğer durumlarda `false` değeri veren operatördür.
+
+| 1. Koşul| 2. Koşul 	        | `1. Koşul || 2. Koşul`        |   
+|---	  |---	                |---	                |
+|   false  |    false	        |  `false`	  |
+|   false  |     true 	        |   `true`	  |
+|   true   |    false	|  `true`	  | 
+|   true   |    true	|  `true`	        |
+
+**! Operatörü**
+
+> Mantıksal ifadenin değilini alır. Yani true ise false, false ise true yapar.
+
+| 1. Koşul| `!(1. Koşul)`        |   
+|---	  |---	                |
+|   true  |    false	        |  
+|   false  |     true 	        |  
 
 ```csharp
 
