@@ -5,7 +5,7 @@ Opetörler işlemleri yerine getirmek için kullanılan sembollerdir. Örneğin 
 1. Aritmetik operatörler.
 2. Atama Operatörleri
 3. Arttırma-Azaltma operatörleri.
-4. Bitsel operatörler.
+4. Karşılaştırma operatörler.
 5. Mantıksal operatörler.
 6. Atama ve işlemli atama operatörleri.
 7. Özel amaçlı operatörler.
@@ -194,5 +194,13 @@ c:7 a:8
 c:9 a:9
 c:9 a:8
 ```
-
-
+### 4. Karşılaştırma Operatörler
+> Karşılaştırma operatörleri 2 değeri kıyaslayarak 'true (Doğru)' veya false (Yanlış) değeri döndüren operatörlerdir
+| Operatör| Açıklama 	        | Örnek Kullanım  |   
+|---	  |---	                |---	          |
+|   =	  |   Eşit 	        |   a = b 	  |
+|   !=	  |   Eşit değil	|   a != b	  | 
+|   <	  |   Küçük	        |   a < b	  |   
+|   >	  |   Büyük	        |   a > b	  |   	
+|   <=	  |   Küçük Eşit        |   a <= b	  |
+|   >=	  |   Büyük Eşit        |   a >= b	  |
