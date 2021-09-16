@@ -263,7 +263,7 @@ sonuc6:True
 
 > Koşullardan herhandi birinin `true` olduğu durumlarda sonucu `true` veren , diğer durumlarda `false` değeri veren operatördür.
 
-| 1. Koşul| 2. Koşul 	        | `1. Koşul || 2. Koşul`        |   
+| 1. Koşul| 2. Koşul 	        | `1. Koşul \|\| 2. Koşul`        |   
 |---	  |---	                |---	                |
 |   false  |    false	        |  `false`	  |
 |   false  |     true 	        |   `true`	  |
