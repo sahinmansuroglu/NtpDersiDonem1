@@ -86,6 +86,7 @@ ________________________________________________
   
   
 ### Soru-2
+
 ### Soru-3
   Klavyeden girilen 4 puanın ortalamasını bulan programı tasarlayınız
   ```csharp
@@ -108,12 +109,14 @@ ________________________________________________
         }
   
   ```
+  
+   **Ekran Çıktısı**
   ```
   1. Puanı Giriniz:10
-2. Puanı Giriniz:20
-3. Puanı Giriniz:30
-4. Puanı Giriniz:40
-10, 20, 30 ve 40 puanlarının ortalaması 25'dır.
+  2. Puanı Giriniz:20
+  3. Puanı Giriniz:30
+  4. Puanı Giriniz:40
+  10, 20, 30 ve 40 puanlarının ortalaması 25'dır.
  ```
 ### Soru-3
   Klavyeden girilen 3 basamaklı sayının rakamlarını alt alta yazdırınız.
