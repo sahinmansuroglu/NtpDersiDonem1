@@ -251,11 +251,11 @@ Program Sonlandı..
     case değer1:
       //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler
       break;
-    case değer1:
-      //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler;
+    case değer2:
+      //değişkenin değeri değer2'e eşit olduğunda yapılacak işlemler;
       break;
-    case değer1:
-      //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler;
+    case değer3:
+      //değişkenin değeri değer3'e eşit olduğunda yapılacak işlemler;
       break;
     ...
     default:
@@ -267,12 +267,51 @@ Program Sonlandı..
 #### Örnek ####
 
 ```csharp
- 
+ static void Main(string[] args)
+        {
+            Console.Write("1-5 Arası notunuzu giriniz:");
+            byte ogrNotu= Convert.ToByte(Console.ReadLine());
+            string notAciklama;
+            switch (ogrNotu)
+            {
+                case 1:
+                    notAciklama = "Başarısız";
+                    break;
+                case 2:
+                    notAciklama = "Geçer";
+                    break;
+                case 3:
+                    notAciklama = "Orta";
+                    break;
+                case 4:
+                    notAciklama = "İyi";
+                    break;
+                case 5:
+                    notAciklama = "Pekiyi";
+                    break;
+                default:
+                    notAciklama = "Geçersiz Not!!!";
+                    break;
+            }
+
+            Console.WriteLine(notAciklama);
+            Console.ReadKey();
+    }
  
 ```
 
-**Ekran Çıktısı**
+**Farklı veri girişlerine göre Ekran Çıktıları**
+```
+1-5 Arası notunuzu giriniz:4
+İyi
 ```
 
+```
+1-5 Arası notunuzu giriniz:2
+Geçer
+```
 
+```
+1-5 Arası notunuzu giriniz:10
+Geçersiz Not!!!
 ```
