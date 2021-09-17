@@ -55,3 +55,10 @@ int puan = 55;
 bool sonuc = puan <= 100 && puan >= 50;
 Console.WriteLine(sonuc); // true yazar
 ```
+
+```csharp           
+int puan = 55;
+bool sonuc = puan <= 100 && puan >= 50;
+string durum = sonuc==true ? "Geçti" : "Kaldı";
+Console.WriteLine(durum); // Geçti yazar
+```
