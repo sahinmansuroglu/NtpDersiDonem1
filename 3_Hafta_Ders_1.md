@@ -315,3 +315,97 @@ Geçer
 1-5 Arası notunuzu giriniz:10↵
 Geçersiz Not!!!
 ```
+#### Örnek ####
+> Klavyeden girilen 2 sayı ve işlem (+, - , *, / )'e göre hesaplama yapan  uygulama tasarımı. (hem if-else if hem de switch case yapısı ile ayrı ayrı yapılacak)
+
+
+**Switch-Case ile Çözüm**
+```csharp
+ static void Main(string[] args)
+        {
+            Console.Write("1. Sayıyı giriniz:");
+            int sayi1= Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı giriniz:");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("İşlem giriniz(+,-,*,/) :");
+            char islem = Console.ReadLine()[0];
+            double sonuc=0;
+            
+            switch (islem)
+            {
+                case '+':
+                    sonuc = sayi1+sayi2;
+                    break;
+                case '-':
+                    sonuc = sayi1 - sayi2;
+                    break;
+                case '*':
+                    sonuc = sayi1 * sayi2;
+                    break;
+                case '/':
+                    sonuc = (double)sayi1 / sayi2;
+                    break;
+                default:
+                    Console.WriteLine("Hatalı işlem girdiniz....");
+                    break;
+            }
+
+            Console.WriteLine($"sonuç={sonuc}");
+            Console.ReadKey();
+        }
+ 
+```
+
+**if-else if ile Çözüm**
+```csharp
+ static void Main(string[] args)
+        {
+            Console.Write("1. Sayıyı giriniz:");
+            int sayi1= Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı giriniz:");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("İşlem giriniz(+,-,*,/) :");
+            char islem = Console.ReadLine()[0];
+            double sonuc=0;
+            
+            if (islem == '+')
+            {
+                sonuc = sayi1+sayi2;
+            }
+            else if (islem == '-')
+            {
+                sonuc = sayi1 - sayi2;
+            }
+            else if (islem == '*')
+            {
+                sonuc = sayi1 * sayi2;
+            }
+            else if (islem == '/')
+            {
+                sonuc = (double)sayi1 / sayi2;
+            }
+            else
+            {
+                Console.WriteLine("Hatalı işlem girdiniz....");
+            }
+            Console.WriteLine($"sonuç={sonuc}");
+            Console.ReadKey();
+        }
+ 
+```
+
+**Farklı veri girişlerine göre Ekran Çıktıları**
+```
+1. Sayıyı giriniz:65
+2. Sayıyı giriniz:13
+İşlem giriniz(+,-,*,/) :/
+sonuç=5
+```
+
+```
+1. Sayıyı giriniz:45
+2. Sayıyı giriniz:25
+İşlem giriniz(+,-,*,/) :+
+sonuç=70
+```
+ 
