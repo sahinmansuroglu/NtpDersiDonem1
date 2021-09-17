@@ -319,7 +319,7 @@ Geçersiz Not!!!
 > Klavyeden girilen 2 sayı ve işlem (+, - , *, / )'e göre hesaplama yapan  uygulama tasarımı. (hem if-else if hem de switch case yapısı ile ayrı ayrı yapılacak)
 
 
-**Switch-Case ile Çözüm**
+**Switch-Case yapısı ile Çözüm**
 ```csharp
  static void Main(string[] args)
         {
@@ -356,7 +356,7 @@ Geçersiz Not!!!
  
 ```
 
-**if-else if ile Çözüm**
+**if-else if yapısı ile Çözüm**
 ```csharp
  static void Main(string[] args)
         {
