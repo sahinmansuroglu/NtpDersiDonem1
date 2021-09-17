@@ -20,7 +20,7 @@ if (şart){
 ```
 > __*Şart Mantıksal bir ifade olmalı*__
 
-> **Not: C#'da aşağıdaki gibi süslü parantezin açılıp kapatıldığı yağıya blok denilmektedir. 
+> **Not:** C#'da aşağıdaki gibi süslü parantezin açılıp kapatıldığı yağıya blok denilmektedir. 
 ```csharp
   {
     //Kod Bloğu
