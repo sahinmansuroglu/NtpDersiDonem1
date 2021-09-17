@@ -243,9 +243,25 @@ Program Sonlandı..
 ```
 
 ### 4. Switch-Case Yapısı ###
+> Switch case yapısı bir değişkenin değerini bir çok farklı durum için kontrol etmek istediğimiz zaman kullanılırız.
+
 > Genel Kullanım
 ```csharp
-
+  switch (değişken){
+    case değer1:
+      //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler
+      break;
+    case değer1:
+      //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler;
+      break;
+    case değer1:
+      //değişkenin değeri değer1'e eşit olduğunda yapılacak işlemler;
+      break;
+    ...
+    default:
+      //değişken yukarıdaki değerlerden herhangi birine eşit olmadığında yapılacak işlemler;
+      break;
+  }
 ```
 
 #### Örnek ####
