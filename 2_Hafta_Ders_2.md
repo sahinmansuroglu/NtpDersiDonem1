@@ -244,7 +244,7 @@ sonuc6:True
 | Operatör| Açıklama 	        | Örnek Kullanım        |   
 |---	  |---	                |---	                |
 |   &&	  |     Ve 	        |   a == b &&  a < b	  |
-|   ||	  |    veya	        |   a == b ||  a < b	  | 
+|   \|\|	  |    veya	        |   a == b ||  a < b	  | 
 |   !	  |    değil	        |   !(a < b)	        |   
 
 **&& Operatörü**
