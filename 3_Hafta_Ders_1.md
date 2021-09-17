@@ -14,7 +14,8 @@
 ### 1. if Yapısı ###
 > Genel Kullanım
 ```csharp
-if (şart){
+if (şart)
+{
   // şart doğru olduğunda bu kod bloğu çalışır.
 }
 ```
@@ -71,9 +72,11 @@ Program Sonlandı..
 ### 2. if-else Yapısı ###
 > Genel Kullanım
 ```csharp
-if (şart){
+if (şart)
+{
   // şart doğru olduğunda bu kod bloğu çalışır.
-}else{
+}else
+{
   // şart yanlış olduğunda bu kod bloğu çalışır.
 }
 ```
@@ -128,4 +131,24 @@ static void Main(string[] args)
 c sayısı 5'den büyük veya eşittir.
 Program Sonlandı..
 
+```
+### 3. else-if Yapısı ###
+> Genel Kullanım
+```csharp
+if (şart1)
+{
+  // şart1 doğru olduğunda bu kod bloğu çalışır.
+}
+else if (şart2)
+{
+ // şart2 doğru olduğunda bu kod bloğu çalışır.
+}
+else if (şart3)
+{
+ // şart3 doğru olduğunda bu kod bloğu çalışır.
+}
+else
+{
+ // Tüm şartlar yanlış olduğunda bu kod bloğu çalışır.
+}
 ```
