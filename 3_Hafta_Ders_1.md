@@ -302,16 +302,16 @@ Program Sonlandı..
 
 **Farklı veri girişlerine göre Ekran Çıktıları**
 ```
-1-5 Arası notunuzu giriniz:4
+1-5 Arası notunuzu giriniz:4↵
 İyi
 ```
 
 ```
-1-5 Arası notunuzu giriniz:2
+1-5 Arası notunuzu giriniz:2↵
 Geçer
 ```
 
 ```
-1-5 Arası notunuzu giriniz:10
+1-5 Arası notunuzu giriniz:10↵
 Geçersiz Not!!!
 ```
