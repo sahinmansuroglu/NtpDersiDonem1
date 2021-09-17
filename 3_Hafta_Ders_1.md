@@ -153,7 +153,7 @@ else
 }
 ```
 #### Örnek ####
-
+Aşağıdaki uygulamada plakaKodu değiştikçe programın çalışma akışı da değişecektir.
 ```csharp
 static void Main(string[] args)
         {
@@ -172,7 +172,7 @@ static void Main(string[] args)
             }
             else
             {
-                Console.WriteLine("Plaka kodu Mersin,Gaziantep ve Samsuna ait değil ");
+                Console.WriteLine("Plaka kodu Mersin,Gaziantep ve Samsun'a ait değil ");
             }
             Console.WriteLine("Program Sonlandı..");
             Console.ReadKey();
@@ -184,4 +184,58 @@ static void Main(string[] args)
 Gaziantep
 Program Sonlandı..
 
+```
+#### Örnek ####
+Klavyeden girilen puanın not karşılığını bulan program
+```csharp
+static void Main(string[] args)
+        {
+            Console.Write("Puanınızı Giriniz:");
+            byte puan=Convert.ToByte(Console.ReadLine());
+
+            if (puan >= 85 && puan <= 100)
+            {
+                Console.WriteLine("Notunuz:5");
+            }
+            else if (puan>=70 && puan<85)
+            {
+                Console.WriteLine("Notunuz:4");
+            }
+            else if (puan >= 60 && puan < 70)
+            {
+                Console.WriteLine("Notunuz:3");
+            }
+            else if (puan >= 50 && puan < 60)
+            {
+                Console.WriteLine("Notunuz:2");
+            }
+            else if (puan >= 0 && puan < 50)
+            {
+                Console.WriteLine("Notunuz:1");
+            }
+            else
+            {
+                Console.WriteLine("Geçersiz Puan");
+            }
+            Console.WriteLine("Program Sonlandı..");
+            Console.ReadKey();
+        }
+```
+
+**Örnek Ekran Çıktıları**
+```
+Puanınızı Giriniz:63
+Notunuz:3
+Program Sonlandı..
+
+```
+Puanınızı Giriniz:76
+Notunuz:4
+Program Sonlandı..
+```
+
+```
+Puanınızı Giriniz:45
+Notunuz:1
+Program Sonlandı..
 ```
