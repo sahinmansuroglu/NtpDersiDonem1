@@ -223,10 +223,12 @@ static void Main(string[] args)
 ```
 
 **Örnek Ekran Çıktıları**
+
 ```
 Puanınızı Giriniz:63
 Notunuz:3
 Program Sonlandı..
+```
 
 ```
 Puanınızı Giriniz:76
@@ -239,3 +241,4 @@ Puanınızı Giriniz:45
 Notunuz:1
 Program Sonlandı..
 ```
+
