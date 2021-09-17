@@ -152,3 +152,13 @@ else
  // Tüm şartlar yanlış olduğunda bu kod bloğu çalışır.
 }
 ```
+#### Örnek ####
+
+```csharp
+
+```
+
+**Ekran Çıktısı**
+```
+
+```
