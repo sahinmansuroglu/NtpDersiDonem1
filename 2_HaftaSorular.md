@@ -116,14 +116,16 @@ ________________________________________________
   10, 20, 30 ve 40 puanlarının ortalaması 25'dır.
  ```
 ### Soru-3
-  Bir öğrencinin girdiği sınavlarda yıl sonu puanı hesaplanırken ilk 2 sınavının % 25'i son sın sınavının ise % 50'si toplanarak bulunmaktadır. Buna göre 3 sınav puanı klavyeden girilen bir öğrencinin yıl sonu puanını hesaplayınız.
-  
+  Bir öğrencinin girdiği sınavlarda yıl sonu puanı hesaplanırken ilk 2 sınavının % 25'i son  sınavının ise % 50'si toplanarak bulunmaktadır. Buna göre 3 sınav puanı klavyeden girilen bir öğrencinin yıl sonu puanını hesaplayınız.
   
 ### Soru-4
   Klavyeden Girilen bir sayının tek mi çift mi olduğunu ekrana yazdırınız. (% ve ternary oparatörü kullanılacak)
   
-### Soru-4
-  Klavyeden Girilen 2 puanın ortalamasına göre eğer ortalama 50'den küçükse "Kaldı" büyük veya eşitse "Geçti" yazdıran programı tasasrlşa. (% ve ternary oparatörü kullanılacak)
+### Soru-5
+  Klavyeden Girilen 2 puanın ortalamasına göre eğer ortalama 50'den küçükse "Kaldı" büyük veya eşitse "Geçti" yazdıran programı tasarlayınız. (ternary oparatörü kullanılacak)
   
-### Soru-4
+### Soru-6
    Klavyeden girilen 3 basamaklı sayının rakamlarını alt alta yazdırınız.
+   
+### Soru-7
+   Klavyedem 3 basamaklı bir sayı girilecektir. Eğer son rakam tek ise ilk 2 rakamın toplamı ekrana yazdırılacak, çift ise farkı ekrana yazdırılacaktır.((% ve ternary oparatörü kullanılacak))
