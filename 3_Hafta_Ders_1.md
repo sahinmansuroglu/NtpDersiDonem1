@@ -242,3 +242,40 @@ Notunuz:1
 Program Sonlandı..
 ```
 
+### 4. Switch-Case Yapısı ###
+> Genel Kullanım
+```csharp
+if (şart)
+{
+  // şart doğru olduğunda bu kod bloğu çalışır.
+}else
+{
+  // şart yanlış olduğunda bu kod bloğu çalışır.
+}
+```
+
+#### Örnek ####
+
+```csharp
+ static void Main(string[] args)
+        {
+            int a = 10;
+            //Eğer aşağıdaki şart doğru ise if'in altındaki kod bloğu,yanlış ise else'nin altındaki kod bloğu çalışır.
+            if (a > 5)
+            {
+                Console.WriteLine("a sayısı 5'den büyüktür.");
+            }
+            else
+            {
+                Console.WriteLine("a sayısı 5'den küçük veya eşittir.");
+            }
+            Console.WriteLine("Program Sonlandı");
+            Console.ReadKey();
+        }
+```
+
+**Ekran Çıktısı**
+```
+a sayısı 5'den büyüktür.
+Program Sonlandı
+```
