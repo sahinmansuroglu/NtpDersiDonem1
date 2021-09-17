@@ -27,3 +27,11 @@ if (şart){
   }
 ```
 #### Örnek ####
+> Aşağdaki örnek uygulamada int tipinde a değişkeni tanımlanmış ve değeri 10 olarak verilmiştir. if ile de a değerinin 5'den büyük olup olmadığı kontrol edilmiştir.Eğer büyük ise if'den sonraki kod bloğu çalışmış ve ekrana "a sayısı 5'den büyüktür." yazmıştır.
+```csharp
+int a = 10;
+            if (a > 5)
+            {
+                Console.WriteLine("a sayısı 5'den büyüktür.");
+            }
+           ```
