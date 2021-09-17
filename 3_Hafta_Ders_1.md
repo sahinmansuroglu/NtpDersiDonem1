@@ -155,10 +155,33 @@ else
 #### Örnek ####
 
 ```csharp
-
+static void Main(string[] args)
+        {
+            byte plakaKodu=27;
+            if (plakaKodu == 33)
+            {
+                Console.WriteLine("Mersin");
+            }
+            else if (plakaKodu == 27)
+            {
+                Console.WriteLine("Gaziantep");
+            }
+            else if (plakaKodu == 55)
+            {
+                Console.WriteLine("Samsun");
+            }
+            else
+            {
+                Console.WriteLine("Plaka kodu Mersin,Gaziantep ve Samsuna ait değil ");
+            }
+            Console.WriteLine("Program Sonlandı..");
+            Console.ReadKey();
+        }
 ```
 
 **Ekran Çıktısı**
 ```
+Gaziantep
+Program Sonlandı..
 
 ```
