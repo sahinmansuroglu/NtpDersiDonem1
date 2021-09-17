@@ -67,3 +67,65 @@ Program Sonlandı..
 ```
 Program Sonlandı..
 ```
+
+### 2. if-else Yapısı ###
+> Genel Kullanım
+```csharp
+if (şart){
+  // şart doğru olduğunda bu kod bloğu çalışır.
+}else{
+  // şart yanlış olduğunda bu kod bloğu çalışır.
+}
+```
+
+#### Örnek ####
+
+```csharp
+ static void Main(string[] args)
+        {
+            int a = 10;
+            //Eğer aşağıdaki şart doğru ise if'in altındaki kod bloğu,yanlış ise else'nin altındaki kod bloğu çalışır.
+            if (a > 5)
+            {
+                Console.WriteLine("a sayısı 5'den büyüktür.");
+            }
+            else
+            {
+                Console.WriteLine("a sayısı 5'den küçük veya eşittir.");
+            }
+            Console.WriteLine("Program Sonlandı");
+            Console.ReadKey();
+        }
+```
+
+**Ekran Çıktısı**
+```
+a sayısı 5'den büyüktür.
+Program Sonlandı
+```
+#### Örnek ####
+
+```csharp
+static void Main(string[] args)
+        {
+            int c = 10;
+             //Eğer aşağıdaki şart doğru ise if'in altındaki kod bloğu,yanlış ise else'nin altındaki kod bloğu çalışır.
+            if (c < 5)
+            {
+                Console.WriteLine("c sayısı 5'den küçüktür.");
+            }
+            else
+            {
+                Console.WriteLine("c sayısı 5'den büyük veya eşittir.");
+            }
+            Console.WriteLine("Program Sonlandı..");
+            Console.ReadKey();
+        }
+```
+
+**Ekran Çıktısı**
+```
+c sayısı 5'den büyük veya eşittir.
+Program Sonlandı..
+
+```
