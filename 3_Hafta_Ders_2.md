@@ -6,6 +6,7 @@
 1. while döngüsü
 2. do-while döngüsü
 3. for döngüsü
+4. foreach döngüsü(Diziler-listeler konusuna geçildiğinde anlatılacak)
 
 ### 1. while döngüsü ###
 > Genel Kullanım
@@ -59,7 +60,7 @@ do
   // şart doğru olduğu sürece bu kod bloğu sürekli tekrar eder.
   // While Döngüsünden farkı başlangıçta şart yanlış bile olsa bu blok en az 1 kere çalışır. Çünkü şart sonda kontrol edilmektedir.
   //  burada veri işleme, arttırma veya azaltma işlemi yapılabilir
-}while (şart);
+} while (şart);
 ```
 
 #### Örnek ####
@@ -186,4 +187,58 @@ for (başlangıç;şart;adım)
 ```
 10 9 8 7 6 5 4 3 2 1
 ```
+
+#### Örnek ####
+> 10 ile 30 arasındaki çift sayıları ekrana yazdıran programın tasarımı.
+
+#### Çözüm-1 ####
+```csharp
+           for (int i = 10; i <= 30; i+=2)
+            {
+                Console.Write($"{i} ");
+            }
+            
+            Console.ReadKey();
+```
+
+
+#### Çözüm-2 ####
+```csharp
+           for (int i = 10; i <= 30; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.Write($"{i} ");
+                }
+            }
+            Console.ReadKey();
+```
+
+**Ekran Çıktısı**
+```
+10 12 14 16 18 20 22 24 26 28 30
+```
+
+#### Örnek ####
+> 1 den 10'a kadar olan sayıların toplamını hesaplayan program tasarımı
+
+
+```csharp
+            int toplam = 0;
+            for (int i = 1; i <=10; i++)
+            {
+                toplam = toplam + i; // toplam += i
+            }
+            Console.WriteLine($"1. ile 10 arasındaki sayıların toplamı:{toplam} ");
+            Console.ReadKey();
+```
+
+
+
+
+**Ekran Çıktısı**
+```
+1. ile 10 arasındaki sayıların toplamı:55
+```
+
 
