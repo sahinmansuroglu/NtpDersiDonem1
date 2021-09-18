@@ -1,6 +1,6 @@
 ## Döngülerde Break ve Continue Kullanımı ##
 
-### Break### 
+### Break ### 
 > Döngülerde döngü sonunda gelmeden döngüyü sonlandırmak istediğimizde `break` komutunu kullanırız.
 
 #### Örnek ####
