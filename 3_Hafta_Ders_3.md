@@ -24,7 +24,7 @@ Aşağıdaki programda i'nin değeri 6 olduğunda break komutu çalışacağı i
 1 2 3 4 5 
 ```
 
-### Continue### 
+### Continue ### 
 > Döngülerin bazı adımlarında o adımın atlanıp diğer adıma geçmesi istenebilir. Bu durumlarda Continue komutu kullanılır
 
 #### Örnek ####
