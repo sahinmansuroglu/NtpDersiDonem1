@@ -138,5 +138,49 @@ Program Sonlandı.
 ```
 
 
-> **Not:** Do-while ve While Döngüleri özellikle tekrar edecek kodun  kaç kez tekrar edeceği bilinmediği durumlarda kullanılır.
+> **Not:** Do-while ve While Döngüleri özellikle tekrar edecek kodun  `kaç kez tekrar edeceği bilinmediği` durumlarda kullanılır.
 > Yukarıdaki örnekte dikkat edilirse döngünün kaç kez döneceği bilinmediğinden do-while döngüsü tercih edilmiştir.
+
+### 3. For döngüsü ###
+
+För döngüsü tekrar edecek kodun  `kaç kez tekrar edeceği bilindiği` durumlarda kullanılır.
+> Genel Kullanım
+```csharp
+while (şart)
+{
+  // şart doğru olduğu sürece bu kod bloğu sürekli tekrar eder.
+  // burada veri işleme, arttırma veya azaltma işlemi yapılabilir
+}
+```
+
+#### Örnek ####
+
+```csharp
+            int i = 1;
+            while (i < 10)
+            {
+                Console.Write($"{i} ");
+                i++;
+            }
+            Console.ReadKey();
+```
+
+**Ekran Çıktısı**
+```
+1 2 3 4 5 6 7 8 9
+```
+#### Örnek ####
+```csharp
+            int i = 10;
+            while (i > 0)
+            {
+                Console.Write($"{i} ");
+                i--;
+            }
+            Console.ReadKey();
+```
+
+**Ekran Çıktısı**
+```
+10 9 8 7 6 5 4 3 2 1
+```
