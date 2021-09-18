@@ -137,3 +137,6 @@ Girilen Sayı Çift
 Program Sonlandı.
 ```
 
+
+> **Not:** Do-while ve While Döngüleri özellikle yazılan kodun  kaç kez tekrar edileceği bilinmediği durumlarda kullanılır.
+> Yukarıdaki örnekte dikkat edilirse döngünün kaç kez döneceği bilinmediğinden do-while döngüsü tercih edilmiştir.
