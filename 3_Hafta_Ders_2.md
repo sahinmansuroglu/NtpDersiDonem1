@@ -241,4 +241,33 @@ for (başlangıç;şart;adım)
 1. ile 10 arasındaki sayıların toplamı:55
 ```
 
+#### Örnek ####
+> Klavyeden girilen 10 sayının toplamını hesaplayan program tasarımı
+
+
+```csharp
+            int toplam = 0;
+            int girilenSayi;
+            for (int i = 1; i <=6; i++)
+            {
+                Console.Write($"{i}. sayıyı Giriniz:");
+                girilenSayi = Convert.ToInt32(Console.ReadLine());
+                toplam = toplam + girilenSayi; // toplam += girilenSayi
+            }
+            Console.WriteLine($"Girilen 6 altı sayının toplamı:{toplam} ");
+            Console.ReadKey();
+```
+
+
+**Ekran Çıktısı**
+```
+1. sayıyı Giriniz:45
+2. sayıyı Giriniz:65
+3. sayıyı Giriniz:77
+4. sayıyı Giriniz:23
+5. sayıyı Giriniz:34
+6. sayıyı Giriniz:54
+Girilen 6 altı sayının toplamı:298
+```
+****
 
