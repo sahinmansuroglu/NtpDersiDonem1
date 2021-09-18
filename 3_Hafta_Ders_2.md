@@ -1,5 +1,6 @@
 ## Döngü yapıları ##
 > Genel olarak  döngüler belirli bir kod bloğunu belirlenen koşul doğru olduğu sürece çalıştırmaya yarayan yapılardır.
+> Özellikle bir birini tekrar eden kodların bulunduğu durumlarda döngü yapıları daha az kod yazmamıza olanak sağlar
 
 > C#'da kullanılabilecek  döngü yapıları
 1. while döngüsü
@@ -91,5 +92,48 @@ do
 **Ekran Çıktısı**
 ```
 10 9 8 7 6 5 4 3 2 1
+```
+
+#### Örnek ####
+> Kullanıcıdan sürekli bir sayı girmesi istenecek ve her sayıyı girip enter'a bastıktan sonra girdiği sayının tek mi çift mi olduğu consol ekranında yazdırılacak. Bu işlem kullanıcı 0 sayısını girene kadar sürekli tekrar edecek. 0 girdiği an döngü sonlandıralacaktır.
+
+
+```csharp
+            static void Main(string[] args)
+        {
+            int girilenSayi;
+            do
+            {
+                Console.Write("Sayi Giriniz:");
+                girilenSayi = Convert.ToInt32(Console.ReadLine());
+                if (girilenSayi % 2 == 0)
+                {
+                    Console.WriteLine("Girilen Sayı Çift");
+                }
+                else
+                {
+                    Console.WriteLine("Girilen Sayı Tek");
+                }
+                
+            } while (girilenSayi!=0);
+
+            Console.WriteLine("Program Sonlandı.");
+            Console.ReadKey();
+        }
+```
+
+**Ekran Çıktısı**
+```
+Sayi Giriniz:45
+Girilen Sayı Tek
+Sayi Giriniz:23
+Girilen Sayı Tek
+Sayi Giriniz:34
+Girilen Sayı Çift
+Sayi Giriniz:56
+Girilen Sayı Çift
+Sayi Giriniz:0
+Girilen Sayı Çift
+Program Sonlandı.
 ```
 
