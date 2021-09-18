@@ -271,3 +271,24 @@ Girilen 6 altı sayının toplamı:298
 ```
 ****
 
+#### Örnek ####
+> 8 sayısının faktöriyelini hesaplayan program tasarımı. (8!=8x7x6x5x4x3x2x1)
+
+
+```csharp
+            int fakt = 1;
+            
+            for (int i = 1; i <=8; i++)
+            {
+                fakt = fakt * i;  //fakt*=i;
+            }
+            Console.WriteLine($"8!={fakt} ");
+            Console.ReadKey();
+```
+
+
+**Ekran Çıktısı**
+```
+8!=40320
+```
+****
