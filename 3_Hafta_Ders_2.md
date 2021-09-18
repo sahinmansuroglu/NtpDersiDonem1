@@ -95,7 +95,7 @@ do
 ```
 
 #### Örnek ####
-> Kullanıcıdan sürekli bir sayı girmesi istenecek ve her sayıyı girip enter'a bastıktan sonra girdiği sayının tek mi çift mi olduğu consol ekranında yazdırılacak. Bu işlem kullanıcı 0 sayısını girene kadar sürekli tekrar edecek. 0 girdiği an döngü sonlandıralacaktır.
+> Kullanıcıdan sürekli bir sayı girmesi istenecek ve her sayıyı girip enter'a bastıktan sonra girdiği sayının tek mi çift mi olduğu consol ekranında yazdırılacak. Bu işlem kullanıcı 0 sayısını girene kadar sürekli tekrar edecek. 0 sayısını girdiği an döngü sonlandıralacaktır.
 
 
 ```csharp
