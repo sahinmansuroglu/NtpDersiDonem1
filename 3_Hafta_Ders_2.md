@@ -138,7 +138,7 @@ Program Sonlandı.
 ```
 
 
-> **Not:** Do-while ve While Döngüleri özellikle tekrar edecek kodun  `kaç kez tekrar edeceği bilinmediği` durumlarda kullanılır.
+> **Not:** Do-while ve While Döngüleri özellikle tekrar edecek kodun  ` __kaç kez tekrar edeceği bilinmediği__` durumlarda kullanılır.
 > Yukarıdaki örnekte dikkat edilirse döngünün kaç kez döneceği bilinmediğinden do-while döngüsü tercih edilmiştir.
 
 ### 3. For döngüsü ###
