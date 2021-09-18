@@ -144,24 +144,24 @@ Program Sonlandı.
 ### 3. For döngüsü ###
 
 För döngüsü tekrar edecek kodun  `kaç kez tekrar edeceği bilindiği` durumlarda kullanılır.
+
 > Genel Kullanım
 ```csharp
-while (şart)
+for (başlangıç;şart;adım)
 {
   // şart doğru olduğu sürece bu kod bloğu sürekli tekrar eder.
-  // burada veri işleme, arttırma veya azaltma işlemi yapılabilir
+  
 }
 ```
 
 #### Örnek ####
 
 ```csharp
-            int i = 1;
-            while (i < 10)
+            for (int i = 1; i < 10; i++)
             {
                 Console.Write($"{i} ");
-                i++;
             }
+            
             Console.ReadKey();
 ```
 
@@ -171,16 +171,19 @@ while (şart)
 ```
 #### Örnek ####
 ```csharp
-            int i = 10;
-            while (i > 0)
+       
+
+            for (int i = 10; i > 0; i--)
             {
                 Console.Write($"{i} ");
-                i--;
             }
+            
             Console.ReadKey();
+        
 ```
 
 **Ekran Çıktısı**
 ```
 10 9 8 7 6 5 4 3 2 1
 ```
+
