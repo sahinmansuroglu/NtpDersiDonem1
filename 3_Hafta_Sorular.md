@@ -54,9 +54,9 @@ Sonuç=57
 >  10 ile 20 arasındaki sayıların toplamını hesaplatınız. (Döngü yapıları kullanılacak)
 
 ### Soru-13 ###
->  Döngü yardımıyla kullanıcının sürekli  sayı girmesini isteyiniz. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayı adedini ekrana yazdırınız
+>  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayı adedini ekrana yazdırınız
 
 ### Soru-14 ###
->  Döngü yardımıyla kullanıcının sürekli  sayı girmesini isteyiniz. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayıların ortalamasını hesaplatınız.
+>  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayıların ortalamasını hesaplatınız.
 
 
