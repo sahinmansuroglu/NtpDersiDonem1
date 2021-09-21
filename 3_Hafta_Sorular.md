@@ -62,5 +62,6 @@ Sonuç=57
 ### Soru-14 ###
 > Aşağıdaki gibi bir menü sistemini console ekranında while Döngüsünü ve switch case yapısını kullanarak tasarlayınız 
 
-![image](https://user-images.githubusercontent.com/28144917/134159302-29ae2f57-eac2-4039-afb8-67f610bf27f2.png)
+![image](https://user-images.githubusercontent.com/28144917/134159505-077f2260-2da3-4f41-a9b4-9a6bc012e5e7.png)
+
 
