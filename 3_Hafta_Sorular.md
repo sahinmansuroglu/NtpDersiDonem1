@@ -59,4 +59,8 @@ Sonuç=57
 ### Soru-14 ###
 >  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayıların ortalamasını hesaplatınız.
 
+### Soru-14 ###
+> Aşağıdaki gibi bir menü sistemini console ekranında while Döngüsünü ve switch case yapısını kullanarak tasarlayınız 
+
+![image](https://user-images.githubusercontent.com/28144917/134159302-29ae2f57-eac2-4039-afb8-67f610bf27f2.png)
 
