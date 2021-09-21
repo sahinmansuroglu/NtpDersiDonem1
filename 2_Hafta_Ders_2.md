@@ -199,7 +199,7 @@ c:9 a:8
 
 | Operatör| Açıklama 	        | Örnek Kullanım  |   
 |---	  |---	                |---	          |
-|   ==	  |   Eşit 	        |   a = b 	  |
+|   ==	  |   Eşit 	        |   a == b 	  |
 |   !=	  |   Eşit değil	|   a != b	  | 
 |   <	  |   Küçük	        |   a < b	  |   
 |   >	  |   Büyük	        |   a > b	  |   	
