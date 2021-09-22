@@ -123,8 +123,8 @@ Program Sonlandırıldı.
                     sayac--;
                     double ortalama =(double) toplam / sayac;
                     Console.WriteLine($"{sayac} tane sayının toplamı:{toplam}");
-                    // 0.## ifadesi virgülden sonra 2 basamak alınabilmesi içindir.
-                    Console.WriteLine($"{sayac} tane sayının ortalaması:{ortalama:0.##}"); 
+                    // #.## ifadesi virgülden sonra 2 basamak alınabilmesi içindir.
+                    Console.WriteLine($"{sayac} tane sayının ortalaması:{ortalama:#.##}"); 
                     Console.WriteLine("Program Sonlandırıldı.");
                     break;
                 }
