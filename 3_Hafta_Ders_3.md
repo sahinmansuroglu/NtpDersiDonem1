@@ -154,14 +154,134 @@ Program Sonlandırıldı.
 Program Sonlandırıldı.
 ```
 
+
 #### Örnek-5 ####
+> Aşağıdaki gibi bir menü oluşturarak kullanıcının isteğine uygun işlemleri yapan uygulamayı tasarlayınız
 
 
+```
+Yapılacak İşlemler
+A) 2 Sayıyı Topla
+B) 2 Sayının Ortalaması hesapla
+C) 2 Sayıdan büyük olanı bul
+D) 1 Sayının karesini bul
+E) Çıkış
+Seçiminiz(A, B, C, D, E)==>A
+```
+
+__Program Kodu__
 ```csharp
-           
+   static void Main(string[] args)
+        {
+
+            int sayi1, sayi2,toplam;
+
+            double ortalama;
+            char secim;
+            do
+            {
+                Console.WriteLine("Yapılacak İşlemler");
+                Console.WriteLine("A) 2 Sayıyı Topla");
+                Console.WriteLine("B) 2 Sayının Ortalaması hesapla");
+                Console.WriteLine("C) 2 Sayıdan büyük olanı bul");
+                Console.WriteLine("D) 1 Sayının karesini bul");
+                Console.WriteLine("E) Çıkış");
+                Console.Write("Seçiminiz(A, B, C, D, E)==>");
+                secim = Console.ReadLine()[0];
+                switch (secim)
+                {
+                    case 'A':
+                        Console.Write("1. Sayıyı Giriniz:");
+                        sayi1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("2. Sayıyı Giriniz:");
+                        sayi2 = Convert.ToInt32(Console.ReadLine());
+                        toplam = sayi1 + sayi2;
+                        Console.WriteLine($"{sayi1} ve {sayi2} sayısının toplamı:{toplam} ");
+                        Console.ReadKey();
+                        break;
+                    case 'B':
+                        Console.Write("1. Sayıyı Giriniz:");
+                        sayi1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("2. Sayıyı Giriniz:");
+                        sayi2 = Convert.ToInt32(Console.ReadLine());
+                        ortalama = (sayi1 + sayi2) / 2.0;
+                        Console.WriteLine($"{sayi1} ve {sayi2} sayısının ortalaması:{ortalama} ");
+                        Console.ReadKey();
+                        break;
+                    case 'C':
+                        Console.Write("1. Sayıyı Giriniz:");
+                        sayi1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("2. Sayıyı Giriniz:");
+                        sayi2 = Convert.ToInt32(Console.ReadLine());
+                        if (sayi1 > sayi2)
+                        {
+                            Console.WriteLine("1. Sayı daha büyük");
+                        }
+                        else if (sayi2 > sayi1)
+                        {
+                            Console.WriteLine("2. Sayı daha büyük");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Sayılar birbirine eşittir.");
+                        }
+                        Console.ReadKey();
+                        break;
+                    case 'D':
+                        Console.Write("Bir Sayı Giriniz:");
+                        sayi1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"{sayi1} sayısının karesi: {sayi1 * sayi1}");
+                        Console.ReadKey();
+                        break;
+                    default:
+                        break;
+                }
+            }while (secim != 'E') ;
+
+            Console.WriteLine("Program Sonlandırıldı..");
+            
+            
+            
+        }         
 ```
 
 **Ekran Çıktısı**
 ```
-
+Yapılacak İşlemler
+A) 2 Sayıyı Topla
+B) 2 Sayının Ortalaması hesapla
+C) 2 Sayıdan büyük olanı bul
+D) 1 Sayının karesini bul
+E) Çıkış
+Seçiminiz(A, B, C, D, E)==>A
+1. Sayıyı Giriniz:25
+2. Sayıyı Giriniz:65
+25 ve 65 sayısının toplamı:90
+Yapılacak İşlemler
+A) 2 Sayıyı Topla
+B) 2 Sayının Ortalaması hesapla
+C) 2 Sayıdan büyük olanı bul
+D) 1 Sayının karesini bul
+E) Çıkış
+Seçiminiz(A, B, C, D, E)==>C
+1. Sayıyı Giriniz:65
+2. Sayıyı Giriniz:85
+2. Sayı daha büyük
+Yapılacak İşlemler
+A) 2 Sayıyı Topla
+B) 2 Sayının Ortalaması hesapla
+C) 2 Sayıdan büyük olanı bul
+D) 1 Sayının karesini bul
+E) Çıkış
+Seçiminiz(A, B, C, D, E)==>D
+Bir Sayı Giriniz:12
+12 sayısının karesi: 144
+Yapılacak İşlemler
+A) 2 Sayıyı Topla
+B) 2 Sayının Ortalaması hesapla
+C) 2 Sayıdan büyük olanı bul
+D) 1 Sayının karesini bul
+E) Çıkış
+Seçiminiz(A, B, C, D, E)==>E
+Program Sonlandırıldı..
 ```
