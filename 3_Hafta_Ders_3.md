@@ -50,7 +50,7 @@ Aşağıdaki programda i'nin değeri 6 olduğunda break komutu çalışacağı i
 
 #### Örnek-3 ####
 
-Sonsuz bir while döngü oluşturunuz. Bu sonsuz döngü içerisinde kullanıcıdan  her seferinde 1 sayı girmesini isteyiniz. Bu sayının tek mi? çift mi? olduğunu bulup ekrana yazdırınız. Bu işlem  kullanıcı negatif bir sayı girene kadar devam etsin. Negatif bir sayı girildiği an döngü break ile kırılarak program sonladırılsın.
+> Sonsuz bir while döngü oluşturunuz. Bu sonsuz döngü içerisinde kullanıcıdan  her seferinde 1 sayı girmesini isteyiniz. Bu sayının tek mi? çift mi? olduğunu bulup ekrana yazdırınız. Bu işlem  kullanıcı negatif bir sayı girene kadar devam etsin. Negatif bir sayı girildiği an döngü break ile kırılarak program sonladırılsın.
 
 ```csharp
      
@@ -101,15 +101,57 @@ Program Sonlandırıldı.
 
 #### Örnek-4 ####
 
+> Sonsuz bir while döngü oluşturunuz. Bu sonsuz döngü içerisinde kullanıcıdan  her seferinde 1 sayı girmesini isteyiniz. Girilen sayının kaç tane olduğunu, toplamını ve ortalamasını hesaplatınız. Bu işlem  kullanıcı 0 syısını girene kadar devam etsin. 0 sayısı girildiği an döngü break ile kırılarak  hesaplatılan bilgiler ekranda gösterilerek program sonladırılsın.
 
 
 ```csharp
-           
+ 
+ static void Main(string[] args)
+        {
+            int girilenSayi;
+            int sayac = 1;
+            int toplam = 0;
+
+            while (true)
+            {
+                Console.Write($"{sayac}. Sayıyı Giriniz: ");
+
+                girilenSayi = Convert.ToInt32(Console.ReadLine());
+                if (girilenSayi == 0)
+                {
+                    // son girilen 0 sayısı dahil olmaması için sayacı bir azalttık
+                    sayac--;
+                    double ortalama =(double) toplam / sayac;
+                    Console.WriteLine($"{sayac} tane sayının toplamı:{toplam}");
+                    // 0.## ifadesi virgülden sonra 2 basamak alınabilmesi içindir.
+                    Console.WriteLine($"{sayac} tane sayının ortalaması:{ortalama:0.##}"); 
+                    Console.WriteLine("Program Sonlandırıldı.");
+                    break;
+                }
+                else
+                {
+                    toplam = toplam + girilenSayi;
+                    sayac++;
+                }
+            }
+            
+            Console.ReadKey();
+        }
 ```
 
 **Ekran Çıktısı**
 ```
-
+1. Sayıyı Giriniz: 65
+2. Sayıyı Giriniz: 25
+3. Sayıyı Giriniz: 36
+4. Sayıyı Giriniz: 35
+5. Sayıyı Giriniz: 85
+6. Sayıyı Giriniz: 14
+7. Sayıyı Giriniz: 87
+8. Sayıyı Giriniz: 0
+7 tane sayının toplamı:347
+7 tane sayının ortalaması:49,57
+Program Sonlandırıldı.
 ```
 
 #### Örnek-5 ####
