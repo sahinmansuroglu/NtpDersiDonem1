@@ -144,7 +144,7 @@ Program Sonlandı.
 
 ### 3. For döngüsü ###
 
-För döngüsü tekrar edecek kodun  `kaç kez tekrar edeceği bilindiği` durumlarda kullanılır.
+For döngüsü tekrar edecek kodun  `kaç kez tekrar edeceği bilindiği` durumlarda kullanılır.
 
 > Genel Kullanım
 ```csharp
