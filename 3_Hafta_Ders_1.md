@@ -21,7 +21,7 @@ if (şart)
 ```
 > __*Şart Mantıksal bir ifade olmalı*__
 
-> **Not:** C#'da aşağıdaki gibi süslü parantezin açılıp kapatıldığı yağıya blok denilmektedir. 
+> **Not:** C#'da aşağıdaki gibi süslü parantezin açılıp kapatıldığı yapıya blok denilmektedir. 
 ```csharp
   {
     //Kod Bloğu
@@ -243,7 +243,7 @@ Program Sonlandı..
 ```
 
 ### 4. Switch-Case Yapısı ###
-> Switch case yapısı bir değişkenin değerini bir çok farklı durum için kontrol etmek istediğimiz zaman kullanılırız.
+> Switch case yapısı bir değişkenin değerine göre farklı farklı işlemler yaptırmak  istediğimiz zaman kullanılırız.
 
 > Genel Kullanım
 ```csharp
