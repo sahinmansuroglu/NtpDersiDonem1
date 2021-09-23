@@ -315,6 +315,46 @@ Geçer
 1-5 Arası notunuzu giriniz:10↵
 Geçersiz Not!!!
 ```
+
+__Yukarıdaki Örneğin if-else if-else yapısı ile çözümü__
+
+```csharp
+ static void Main(string[] args)
+        {
+            Console.Write("1-5 Arası notunuzu giriniz:");
+            byte ogrNotu = Convert.ToByte(Console.ReadLine());
+            string notAciklama;
+            if (ogrNotu == 1) 
+            {
+                notAciklama = "Başarısız";
+            } 
+            else if (ogrNotu == 2)
+            {
+                notAciklama = "Geçer";
+            }
+            else if (ogrNotu == 3)
+            {
+                notAciklama = "Orta";
+            }
+            else if (ogrNotu == 4)
+            {
+                notAciklama = "İyi";
+            }
+            else if (ogrNotu == 5)
+            {
+                notAciklama = "Pekiyi";
+            }
+            else
+            {
+                notAciklama = "Geçersiz Not!!!";
+            }
+            Console.WriteLine(notAciklama);
+            Console.ReadKey();
+        }
+```
+
+
+
 #### Örnek ####
 > Klavyeden girilen 2 sayı ve işlem (+, - , *, / )'e göre hesaplama yapan  uygulama tasarımı. (hem if-else if hem de switch case yapısı ile ayrı ayrı yapılacak)
 
