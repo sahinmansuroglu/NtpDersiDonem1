@@ -21,7 +21,7 @@ Sonuç=57
 > Klavyeden girilen 3 sayıyı büyükten küçüğe sıralayan programı tasarlayınız.
 
 ### Soru-6 ###
->  Aşağıdaki çıktıyı veren programı tasarlayınız (Döngü yapıları kullanılacak)
+>  Aşağıdaki çıktıyı veren programı tasarlayınız (Uygulamayı Hem for hem while hem de do-while döngüsü ile tasarlayınız.)(3 Farklı Program olacak)
 
 1 2 3 4 5 6 7 8 9 10 11 12
 
