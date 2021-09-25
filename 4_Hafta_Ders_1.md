@@ -7,15 +7,16 @@
 ```csharp
             try
             {
-                int a = 5;
+                // Hata oluşuturabilme ihtimali bulunan kodların yazılacağı blok
             }
             catch 
             {
 
-                throw;
+                //try bloğunda herhangi bir hata olduğunda çalışacak olan kod bloğu
             }
             finally
             {
+            // Hata oluşsa da oluşmasa da çalıştırlacak kodların yazılacağı  kod bloğu
 
             }
 ```
