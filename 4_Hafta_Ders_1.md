@@ -7,7 +7,7 @@
 ```csharp
             try
             {
-                // Hata oluşuturabilme ihtimali bulunan kodların yazılacağı blok
+                // Hata oluşturabilme ihtimali bulunan kodların yazılacağı blok
             }
             catch 
             {
