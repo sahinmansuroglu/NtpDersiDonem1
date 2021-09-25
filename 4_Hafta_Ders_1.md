@@ -4,8 +4,8 @@
 
 > Genel Kullanım
 
-```
-try
+```csharp
+            try
             {
                 int a = 5;
             }
