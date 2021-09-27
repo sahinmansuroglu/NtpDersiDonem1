@@ -73,4 +73,41 @@ static void Main(string[] args)
 
 ![image](https://user-images.githubusercontent.com/28144917/134907867-e1c5d0a7-4ee3-40c2-a324-684e0e0270e8.png)
 
+> Yukarıdaki örnekte oluşabilecek her bir hatayı farklı bir catch bloğu ile  de yakalayabiliriz. Bunun için aşağıdaki programı inceleyelim.
+
+```csharp
+ static void Main(string[] args)
+        {
+            
+            try
+            {
+                Console.Write("1. Sayıyı Giriniz:");
+                int sayi1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("2. Sayıyı Giriniz:");
+                int sayi2 = Convert.ToInt32(Console.ReadLine());
+                double sonuc = sayi1 / sayi2;
+                Console.WriteLine($"Bölme İşleminin Sonucu={sonuc}");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Rakam Girilmediği için sonuç hesaplanamadı ");
+             }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Bölen Sayı 0 girildiği için sonuç hesaplanamadı");
+            }
+            
+            Console.ReadKey();
+        }
+```
+
+**Örnek Ekran Çıktıları**
+
+![image](https://user-images.githubusercontent.com/28144917/134908933-d0e3858d-ef0d-460e-9139-058a237060dd.png)
+
+![image](https://user-images.githubusercontent.com/28144917/134909021-9f9db3aa-7453-45c7-9a28-f21196370c2a.png)
+
+![image](https://user-images.githubusercontent.com/28144917/134909115-711627ef-1b02-46a7-a021-ec54c5066355.png)
+
+
 
