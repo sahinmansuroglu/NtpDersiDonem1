@@ -11,11 +11,11 @@
             }
             catch 
             {
-                //try bloğunda herhangi bir hata olduğunda çalışacak olan kod lar bu bloğa yazılır
+                //try bloğunda herhangi bir hata olduğunda çalışacak olan kodlar bu bloğa yazılır
             }
             finally
             {
-                        // Hata oluşsa da oluşmasa da çalıştırlacak kodların bu bloğa yazılır
+                        // Hata oluşsa da oluşmasa da çalıştırlacak kodlar bu bloğa yazılır
                         // Finally bloğu isteğe bağlıdır. yazma zorunluluğu yoktur.
             }
 ```
