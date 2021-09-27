@@ -66,6 +66,7 @@ static void Main(string[] args)
 ```
 
 **Örnek Ekran Çıktıları**
+
 ![image](https://user-images.githubusercontent.com/28144917/134907763-8b77bc09-04f2-48b1-b648-d0baf3180f65.png)
 
 ![image](https://user-images.githubusercontent.com/28144917/134907805-af46fccf-245a-4667-b18a-8fe7a4d8db32.png)
