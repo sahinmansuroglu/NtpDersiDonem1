@@ -41,11 +41,35 @@
         }
 ```
 > Yukarıdaki programı oluşabilecek hatalara karşı koruyabilmek için try catch yapısını kullanarak tekrar yazalım.
-> 
 
+```csharp
+static void Main(string[] args)
+        {
+            try
+            {
+                Console.Write("1. Sayıyı Giriniz:");
+                int sayi1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("2. Sayıyı Giriniz:");
+                int sayi2 = Convert.ToInt32(Console.ReadLine());
+                double sonuc = sayi1 / sayi2;
+                Console.WriteLine($"Bölme İşleminin Sonucu={sonuc}");
+            }
+            catch (Exception hata)
+            {
+                Console.WriteLine("Hata Oluştu Program Kapanacak");
+                Console.WriteLine($"Oluşan Hata: {hata.Message}");
+               
+            }
+            Console.ReadKey();
+        }
 
-
-**Ekran Çıktısı**
 ```
-1 2 3 4 5 6 7 8 9
-```
+
+**Örnek Ekran Çıktıları**
+![image](https://user-images.githubusercontent.com/28144917/134907763-8b77bc09-04f2-48b1-b648-d0baf3180f65.png)
+
+![image](https://user-images.githubusercontent.com/28144917/134907805-af46fccf-245a-4667-b18a-8fe7a4d8db32.png)
+
+![image](https://user-images.githubusercontent.com/28144917/134907867-e1c5d0a7-4ee3-40c2-a324-684e0e0270e8.png)
+
+
