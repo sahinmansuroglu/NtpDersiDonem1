@@ -23,14 +23,24 @@
 #### Örnek ####
 
 ```csharp
-            int i = 1;
-            while (i < 10)
-            {
-                Console.Write($"{i} ");
-                i++;
-            }
+        static void Main(string[] args)
+        {
+
+            Console.Write("1. Sayıyı Giriniz:");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı Giriniz:");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            double sonuc = sayi1 / sayi2;
+
+            Console.WriteLine($"Bölme İşleminin Sonucu={sonuc}");
+           
+          
             Console.ReadKey();
+        }
 ```
+
+
+
 
 **Ekran Çıktısı**
 ```
