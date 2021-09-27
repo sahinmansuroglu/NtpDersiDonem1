@@ -21,6 +21,8 @@
 ```
 
 #### Örnek ####
+> Aşağıdaki programda klavyeden girilen iki sayı üzerinde bölme işlemi gerçekleştirilmiş ve sonuç ekrana yazdırılmıştır.
+> Uygulama çalıştırıldığında klavyeden rakam yerine rakam dışında bir karakter girilirse girilen değer tam sayıya çevirilirken program hata verip kapanacaktır. Ayrıca sayi2' ye 0 girilirse sayi2 bölen sayı olduğu için 0'a bölünme hatası verip  program sonlanacaktır.
 
 ```csharp
         static void Main(string[] args)
@@ -38,7 +40,8 @@
             Console.ReadKey();
         }
 ```
-
+> Yukarıdaki programı oluşabilecek hatalara karşı koruyabilmek için try catch yapısını kullanarak tekrar yazalım.
+> 
 
 
 
