@@ -63,11 +63,7 @@ Aşağıdaki programda i'nin değeri 6 olduğunda break komutu çalışacağı i
                 Console.Write("Sayi Giriniz: ");
 
                 girilenSayi = Convert.ToInt32(Console.ReadLine());
-                if (girilenSayi < 0)
-                {
-                    Console.WriteLine("Program Sonlandırıldı.");
-                    break;
-                }
+                
                 if(girilenSayi%2==0)
                 {
                     Console.WriteLine($" {girilenSayi} sayisi çift sayıdır.");
@@ -75,6 +71,11 @@ Aşağıdaki programda i'nin değeri 6 olduğunda break komutu çalışacağı i
                 else
                 {
                     Console.WriteLine($" {girilenSayi} sayisi tek sayıdır.");
+                }
+                if (girilenSayi < 0)
+                {
+                    Console.WriteLine("Program Sonlandırıldı.");
+                    break;
                 }
             }
             
