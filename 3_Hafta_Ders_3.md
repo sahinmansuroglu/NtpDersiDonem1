@@ -107,35 +107,32 @@ Program Sonlandırıldı.
 
 ```csharp
  
- static void Main(string[] args)
+static void Main(string[] args)
         {
             int girilenSayi;
-            int sayac = 1;
             int toplam = 0;
-
+            int sayac = 0;
             while (true)
             {
-                Console.Write($"{sayac}. Sayıyı Giriniz: ");
-
+                
+                Console.Write($" {sayac+1}. Sayıyı Giriniz:");
                 girilenSayi = Convert.ToInt32(Console.ReadLine());
+                toplam = toplam + girilenSayi;
                 if (girilenSayi == 0)
                 {
-                    // son girilen 0 sayısı dahil olmaması için sayacı bir azalttık
-                    sayac--;
-                    double ortalama =(double) toplam / sayac;
-                    Console.WriteLine($"{sayac} tane sayının toplamı:{toplam}");
-                    // #.## ifadesi virgülden sonra 2 basamak alınabilmesi içindir.
-                    Console.WriteLine($"{sayac} tane sayının ortalaması:{ortalama:#.##}"); 
-                    Console.WriteLine("Program Sonlandırıldı.");
+                    double ortalama =(double)toplam / sayac;
+                    Console.WriteLine($"Sayi Adedi:{sayac}");
+                    Console.WriteLine($"Toplam:{toplam}");
+                    Console.WriteLine($"Ortalama:{ortalama}");
+                    Console.WriteLine("Program Sonlandırıldı..");
                     break;
                 }
                 else
                 {
-                    toplam = toplam + girilenSayi;
                     sayac++;
                 }
+
             }
-            
             Console.ReadKey();
         }
 ```
