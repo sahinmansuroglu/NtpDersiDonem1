@@ -476,18 +476,6 @@ static void Main(string[] args)
 
 
 ### Soru-13 ###
->  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayı adedini ekrana yazdırınız
-
-
-```csharp
-
-```
-
-**Ekran Çıktısı**
-```
-
-
-### Soru-14 ###
 >  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayıların ortalamasını hesaplatınız.
 
 
@@ -528,7 +516,7 @@ static void Main(string[] args)
 ![image](https://user-images.githubusercontent.com/28144917/135039036-1d44288f-05e0-4c12-9d51-22596d500a0c.png)
 
 
-### Soru-15 ###
+### Soru-14 ###
 > Aşağıdaki gibi bir menü sistemini console ekranında while Döngüsünü ve switch case yapısını kullanarak tasarlayınız 
 
 ![image](https://user-images.githubusercontent.com/28144917/134159505-077f2260-2da3-4f41-a9b4-9a6bc012e5e7.png)
