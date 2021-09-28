@@ -151,9 +151,45 @@ static void Main(string[] args)
 7 tane sayının ortalaması:49,57
 Program Sonlandırıldı.
 ```
-
-
 #### Örnek-5 ####
+> Sonsuz bir while döngü oluşturunuz. Bu sonsuz döngü içerisinde kullanıcıdan  her seferinde 1 sayı girmesini isteyiniz. Girilen sayılardan kaç tanesinin tek olduğunu hesaplatınız. Bu işlem  kullanıcı 0 sayısını girene kadar devam etsin. 0 sayısı girildiği an döngü break ile kırılarak  hesaplatılan bilgiler ekranda gösterilerek program sonladırılsın.
+
+__Program Kodu__
+
+```csharp
+static void Main(string[] args)
+        {
+            int girilenSayi;
+            int tekAdet = 0;
+            while (true)
+            {
+                Console.Write("Lütfen Sayı Giriniz:");
+                girilenSayi = Convert.ToInt32(Console.ReadLine());
+
+                if (girilenSayi % 2 == 1)
+                {
+                    tekAdet++;
+                }
+
+                if (girilenSayi ==  0)
+                {
+                    Console.WriteLine($" Girilen Sayılardan {tekAdet} tanesi tek sayıdır.");
+                    Console.WriteLine("Döngü Kırıldı..");
+                    break;
+                }
+            }
+
+
+            Console.ReadKey();
+          
+        }
+
+```
+
+![image](https://user-images.githubusercontent.com/28144917/135065672-210b50cb-6265-48aa-976e-f3d7c1445437.png)
+
+
+#### Örnek-6 ####
 > Aşağıdaki gibi bir menü oluşturarak kullanıcının isteğine uygun işlemleri yapan uygulamayı tasarlayınız
 
 
