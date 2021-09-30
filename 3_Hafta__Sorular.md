@@ -53,13 +53,11 @@ Sonuç=57
 ### Soru-12 ###
 >  10 ile 20 arasındaki sayıların toplamını hesaplatınız. (Döngü yapıları kullanılacak)
 
-### Soru-13 ###
->  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayı adedini ekrana yazdırınız
 
-### Soru-14 ###
+### Soru-13 ###
 >  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayıların ortalamasını hesaplatınız.
 
-### Soru-15 ###
+### Soru-14 ###
 > Aşağıdaki gibi bir menü sistemini console ekranında while Döngüsünü ve switch case yapısını kullanarak tasarlayınız 
 
 ![image](https://user-images.githubusercontent.com/28144917/134159505-077f2260-2da3-4f41-a9b4-9a6bc012e5e7.png)
