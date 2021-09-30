@@ -524,6 +524,188 @@ static void Main(string[] args)
 
 
 ```csharp
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                
+                Console.WriteLine("----Öğrenci İşleri Programı----");
+                Console.WriteLine("1-   Öğrenci İşlemleri");
+                Console.WriteLine("2-   Ders İşlemleri");
+                Console.WriteLine("3-   Not İşlemleri");
+                Console.WriteLine("4-   Çıkış");
+                Console.Write("Seçiminiz (1, 2, 3, 4)---->");
+                int secim = Convert.ToInt32(Console.ReadLine());
+               if (secim == 1)
+               {
+                    Console.Clear();
+                    ogrenciIslemleri();
+
+               }else if(secim == 2) 
+                {
+                    Console.Clear();
+                    dersIslemleri();
+
+                }
+                else if (secim == 3)
+                {
+                    Console.Clear();
+                    notIslemleri();
+                }
+                else if (secim == 4)
+                {
+                    Console.Clear();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen Seçeneklerden birini seçiniz...");
+                }
+
+            }
+            Console.WriteLine("Program Sonlandı...");
+            Console.ReadKey();
+        }
+
+        static void ogrenciIslemleri()
+        {
+            while (true)
+            {
+                Console.WriteLine("----Öğrenci İşlemleri Menüsü----");
+                Console.WriteLine("1-   Öğrenci ekle");
+                Console.WriteLine("2-   Öğrenci Ara");
+                Console.WriteLine("3-   Öğrenci Listele");
+                Console.WriteLine("4-   Ana Menüye Dön");
+                Console.Write("Seçiminiz (1, 2, 3, 4)---->");
+                int secim = Convert.ToInt32(Console.ReadLine());
+                if (secim == 1)
+                {
+                    Console.WriteLine("Öğrenci Ekle Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 2)
+                {
+                    Console.WriteLine("Öğrenci Ara Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 3)
+                {
+                    Console.WriteLine("Öğrenci Listele Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 4)
+                {
+                    Console.WriteLine("Ana menüye Dönülüyor....");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen Seçeneklerden birini seçiniz...");
+                }
+            }
+         
+        }
+        static void dersIslemleri()
+        {
+            while (true)
+            {
+                Console.WriteLine("----Ders İşlemleri Menüsü----");
+                Console.WriteLine("1-   Ders ekle");
+                Console.WriteLine("2-   Ders Ara");
+                Console.WriteLine("3-   Ders Listele");
+                Console.WriteLine("4-   Ana Menüye Dön");
+                Console.Write("Seçiminiz (1, 2, 3, 4)---->");
+                int secim = Convert.ToInt32(Console.ReadLine());
+                if (secim == 1)
+                {
+                    Console.WriteLine("Ders Ekle Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 2)
+                {
+                    Console.WriteLine("Ders Ara Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 3)
+                {
+                    Console.WriteLine("Ders Listele Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 4)
+                {
+                    Console.WriteLine("Ana menüye Dönülüyor....");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen Seçeneklerden birini seçiniz...");
+                }
+            }
+        }
+        static void notIslemleri()
+        {
+
+            while (true)
+            {
+                Console.WriteLine("----Not İşlemleri Menüsü----");
+                Console.WriteLine("1-   Not ekle");
+                Console.WriteLine("2-   Not Ara");
+                Console.WriteLine("3-   Not Listele");
+                Console.WriteLine("4-   Ana Menüye Dön");
+                Console.Write("Seçiminiz (1, 2, 3, 4)---->");
+                int secim = Convert.ToInt32(Console.ReadLine());
+                if (secim == 1)
+                {
+                    Console.WriteLine("Not Ekle Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 2)
+                {
+                    Console.WriteLine("Not Ara Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 3)
+                {
+                    Console.WriteLine("Not Listele Seçildi");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                }
+                else if (secim == 4)
+                {
+                    Console.WriteLine("Ana menüye Dönülüyor....");
+                    System.Threading.Thread.Sleep(1000);
+                    Console.Clear();
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen Seçeneklerden birini seçiniz...");
+                }
+            }
+        }
+        
+
+    }
+}
 
 ```
 
