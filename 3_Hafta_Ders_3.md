@@ -319,3 +319,83 @@ E) Çıkış
 Seçiminiz(A, B, C, D, E)==>E
 Program Sonlandırıldı..
 ```
+
+> Yukarıdaki örnekte switch case yapısı yerine if - else if - else yapısı da kullanılabilir. Örnek uygulama aşağıdadır.
+
+```csharp
+static void Main(string[] args)
+        {
+            int sayi1, sayi2, toplam;
+            double ortalama;
+            string secim;
+            while (true)
+            {
+                Console.WriteLine("Yapılacak İşlemler");
+                Console.WriteLine("A) 2 Sayıyı Topla");
+                Console.WriteLine("B) 2 Sayının Ortalaması hesapla");
+                Console.WriteLine("C) 2 Sayıdan büyük olanı bul");
+                Console.WriteLine("D) 1 Sayının karesini bul");
+                Console.WriteLine("E) Çıkış");
+                Console.Write("Seçiminiz(A, B, C, D, E)==>");
+                secim = Console.ReadLine();
+                if (secim=="A" || secim=="a")
+                {
+                    Console.Write("1. Sayıyı Giriniz:");
+                    sayi1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("2. Sayıyı Giriniz:");
+                    sayi2 = Convert.ToInt32(Console.ReadLine());
+                    toplam = sayi1 + sayi2;
+                    Console.WriteLine($"{sayi1} ve {sayi2} sayısının toplamı:{toplam} ");
+                   
+                }
+                else if (secim == "B" || secim =="b")
+                {
+                    Console.Write("1. Sayıyı Giriniz:");
+                    sayi1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("2. Sayıyı Giriniz:");
+                    sayi2 = Convert.ToInt32(Console.ReadLine());
+                    ortalama = (sayi1 + sayi2) / 2.0;
+                    Console.WriteLine($"{sayi1} ve {sayi2} sayısının ortalaması:{ortalama} ");
+             
+
+                }
+                else if (secim == "C" || secim== "c")
+                {
+                    Console.Write("1. Sayıyı Giriniz:");
+                    sayi1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("2. Sayıyı Giriniz:");
+                    sayi2 = Convert.ToInt32(Console.ReadLine());
+                    if (sayi1 > sayi2)
+                    {
+                        Console.WriteLine("1. Sayı daha büyük");
+                    }
+                    else if (sayi2 > sayi1)
+                    {
+                        Console.WriteLine("2. Sayı daha büyük");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sayılar birbirine eşittir.");
+                    }
+                }
+                else if (secim == "D" || secim == "d")
+                {
+                    Console.Write("Bir Sayı Giriniz:");
+                    sayi1 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"{sayi1} sayısının karesi: {sayi1 * sayi1}");
+                }
+                else if (secim=="E" || secim == "e")
+                {           
+                    break;       
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen A, B, C, D, E harflerinden birini seçiniz..");
+                }
+                Console.WriteLine("\n\n\n");
+                Console.ReadKey();
+            }
+            Console.WriteLine("Program Sonlandı");
+            Console.ReadKey();
+        }
+```
