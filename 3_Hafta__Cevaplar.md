@@ -549,6 +549,7 @@ static void Main(string[] args)
         }
 ```
 **Ekran Çıktısı**
+
 ![image](https://user-images.githubusercontent.com/28144917/135578987-3b66d774-9ec1-4e10-9ad1-358cf6e3b9af.png)
 
 ### Soru-15 ###
