@@ -515,8 +515,43 @@ static void Main(string[] args)
 
 ![image](https://user-images.githubusercontent.com/28144917/135039036-1d44288f-05e0-4c12-9d51-22596d500a0c.png)
 
-
 ### Soru-14 ###
+>  Döngü yardımıyla kullanıcının sürekli  sayı girmesini sağlayınız. Ne zaman 0 sayısını girerse döngüyü sonlandırıp girdiği sayılardan tek olanların ortalamasını hesaplatınız.
+```csharp
+static void Main(string[] args)
+        {
+            int toplam = 0;
+          
+            int tekSayiAdet = 0;
+            while (true)
+            {
+                Console.Write("Sayı Giriniz:");
+                int girilenSayi = Convert.ToInt32(Console.ReadLine());
+                if (girilenSayi % 2==1)
+                {
+                    tekSayiAdet++;
+                    toplam = toplam + girilenSayi;
+                }
+
+                
+                if (girilenSayi == 0)
+                {
+                    double ortalama = (double)toplam / tekSayiAdet;
+                    Console.WriteLine($"{tekSayiAdet} tane tek sayının toplamı: {toplam}");
+                    Console.WriteLine($"{tekSayiAdet} tane tek sayının ortalaması: {ortalama}");
+
+                    break;
+                }
+               
+            }
+
+            Console.ReadKey();
+        }
+```
+**Ekran Çıktısı**
+![image](https://user-images.githubusercontent.com/28144917/135578987-3b66d774-9ec1-4e10-9ad1-358cf6e3b9af.png)
+
+### Soru-15 ###
 > Aşağıdaki gibi bir menü sistemini console ekranında while Döngüsünü ve switch case yapısını kullanarak tasarlayınız 
 
 ![image](https://user-images.githubusercontent.com/28144917/134159505-077f2260-2da3-4f41-a9b4-9a6bc012e5e7.png)
