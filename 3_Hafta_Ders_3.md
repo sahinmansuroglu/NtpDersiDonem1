@@ -399,3 +399,112 @@ static void Main(string[] args)
             Console.ReadKey();
         }
 ```
+
+
+> Yukarıdaki uygulamanın metotlar ile tasarlanmış hali aşağıdadır.
+```csharp
+class Program
+    {
+
+        static void Main(string[] args)
+        {
+            
+            while (true)
+            {
+                islemMenusu();
+                Console.Write("Seçiminiz(A, B, C, D, E)==>");
+                String secim = Console.ReadLine();
+                if (secim == "A")
+                {
+                    ikiSayiyiTopla();
+                }
+                else if (secim == "B")
+                {
+                    ikiSayininOrtalamasiniAl();
+                }
+                else if (secim == "C")
+                {
+                    buyukKucukBul();
+                }
+                else if (secim == "D")
+                {
+                    karesiniBul();
+                }
+                else if (secim == "E")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen A, B, C, D, E harflerinden birini seçiniz...");
+                }
+                
+            }
+            Console.WriteLine("Program Sonlandırıldı..");
+        }
+        static void islemMenusu()
+        {
+            Console.WriteLine("Yapılacak İşlemler");
+            Console.WriteLine("A) 2 Sayıyı Topla");
+            Console.WriteLine("B) 2 Sayının Ortalaması hesapla");
+            Console.WriteLine("C) 2 Sayıdan büyük olanı bul");
+            Console.WriteLine("D) 1 Sayının karesini bul");
+            Console.WriteLine("E) Çıkış");
+        }
+        static void ikiSayiyiTopla()
+        {
+            int sayi1, sayi2, toplam;
+            Console.Write("1. Sayıyı Giriniz:");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı Giriniz:");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            toplam = sayi1 + sayi2;
+            Console.WriteLine($"{sayi1} ve {sayi2} sayısının toplamı:{toplam} ");
+            Console.ReadKey();
+        }
+        static void ikiSayininOrtalamasiniAl()
+        {
+            int sayi1, sayi2;
+            double ortalama;
+            Console.Write("1. Sayıyı Giriniz:");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı Giriniz:");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            ortalama = (sayi1 + sayi2) / 2.0;
+            Console.WriteLine($"{sayi1} ve {sayi2} sayısının ortalaması:{ortalama} ");
+            Console.ReadKey();
+
+        }
+        static void buyukKucukBul()
+        {
+            int sayi1, sayi2;
+            Console.Write("1. Sayıyı Giriniz:");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2. Sayıyı Giriniz:");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            if (sayi1 > sayi2)
+            {
+                Console.WriteLine("1. Sayı daha büyük");
+            }
+            else if (sayi2 > sayi1)
+            {
+                Console.WriteLine("2. Sayı daha büyük");
+            }
+            else
+            {
+                Console.WriteLine("Sayılar birbirine eşittir.");
+            }
+            Console.ReadKey();
+        }
+        static void karesiniBul()
+        {
+            int sayi1;
+            Console.Write("Bir Sayı Giriniz:");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"{sayi1} sayısının karesi: {sayi1 * sayi1}");
+            Console.ReadKey();
+        }
+
+    }
+
+```
