@@ -12,9 +12,9 @@
 
 ![image](https://user-images.githubusercontent.com/28144917/135962939-17c547d4-8370-48a3-b92d-617defe5ef8f.png)
 
-> Bu nesneleri bilgisayar ortamında tutmak için  yapılması gereken bir araba modelinin oluşturulmasıdır. Ardından bu modelden 3 tane yukarıdaki gibi nesne oluşturulmasıdır. 
+> Bu nesneleri bilgisayar ortamında tutmak için  yapılması gereken bir araba modelinin tasarlanmasıdır. Ardından bu modelden 3 tane yukarıdaki gibi nesne oluşturulur. 
 
-> Bu oluşturulan araba modeline  nesneye yönelik programlama yaklaşımında "sınıf(class)" oluşturulan herbir araba nesnesine de "nesne (obejct)" denilmektedir.
+> Bu oluşturulan araba modeline  nesneye yönelik programlama yaklaşımında "sınıf(class)" oluşturulan her bir araba nesnesine de "nesne (object)" denilmektedir.
 
 ### Sınıf Tanımlama ###
 
