@@ -66,3 +66,21 @@ static void Main(string[] args)
             return mesaJ;
         }
 ```
+> Yukarıdaki örneği Geriye Değer Döndürmeyen Metot ile tasarlayalım
+
+```csharp
+static void Main(string[] args)
+        {
+
+           mesajGetir("Ahmet ER");
+           mesajGetir("Ali VELİ");
+           mesajGetir("Mehmet CAN");
+           Console.ReadKey();
+        }
+        
+       static void mesajGetir(string ad)
+        {
+            string mesaj = $"Merhaba {ad} \n Bugün Nasılsınız?";
+            Console.WriteLine(mesaj);
+        }
+```
