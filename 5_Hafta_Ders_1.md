@@ -1,6 +1,6 @@
 ## Metot Kavramı ##
 
-> Programlama dillerinde kodların tekrar tekrar yazılması yerine 
+> Programlama dillerinde tekrar eden kodları bir kez tanımlayıp daha sonra tekrar tekrar kullanmamıza yarayan yapılara metot denir. Metot kullanımı ile yazılan uygulamalar alt programlara ayrıldığı için de daha anlaşılır hale gelirler. 
 
 ### Metot Tanımlama ###
 
