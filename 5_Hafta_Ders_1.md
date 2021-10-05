@@ -114,3 +114,44 @@ namespace ConsoleApp8
     }
 }
 ```
+
+**Örnek**
+> Yukarıdaki uygulamaya çıkart, çarp ve böl metotlarını da ekleyip ana programda da çağırınız.
+
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine($"Toplama işleminin Sonucu:{topla(15, 20)}");
+            Console.WriteLine($"Çıkartma işleminin Sonucu:{cikart(15, 20)}");
+            Console.WriteLine($"Çarpma işleminin Sonucu:{carp(15, 20)}");
+            Console.WriteLine($"Bölme işleminin Sonucu:{bol(15, 20)}");
+            Console.ReadKey();
+        }
+        static int topla(int sayi1,int sayi2)
+        {
+            int sonuc = sayi1 + sayi2;
+            return sonuc;
+        }
+
+     
+        static int cikart(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 - sayi2;
+            return sonuc;
+        }
+        static int carp(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 * sayi2;
+            return sonuc;
+        }
+        static int bol(int sayi1, int sayi2)
+        {
+            int sonuc = sayi1 / sayi2;
+            return sonuc;
+        }
+    }
+```
+
