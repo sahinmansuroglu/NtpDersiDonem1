@@ -5,9 +5,15 @@
 ### Metot Tanımlama ###
 
 > Geriye Değer Döndürmeyen Metot Tanımlama
->
-```csharp
 
+
+```csharp
+void metotadi ()
+{
+
+//metot içerisinde gerçekleştirilecek işlemler ;
+
+}
 ```
 
 > Geriye Değer Döndürmeyen Metot Tanımlama
