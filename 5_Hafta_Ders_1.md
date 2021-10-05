@@ -19,7 +19,6 @@ void metotadi ( parametreler)
 }
 ```
 **Örnek**
-Aşağıdak
 ```csharp
  void mesajYaz()
  {
