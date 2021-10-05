@@ -69,7 +69,11 @@ static void Main(string[] args)
 > Yukarıdaki örneği Geriye Değer Döndürmeyen Metot ile tasarlayalım
 
 ```csharp
-static void Main(string[] args)
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
         {
 
            mesajGetir("Ahmet ER");
@@ -83,4 +87,7 @@ static void Main(string[] args)
             string mesaj = $"Merhaba {ad} \n Bugün Nasılsınız?";
             Console.WriteLine(mesaj);
         }
+        
+}
+}
 ```
