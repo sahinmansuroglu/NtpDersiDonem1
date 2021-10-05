@@ -124,10 +124,14 @@ namespace ConsoleApp8
         static void Main(string[] args)
         {
 
-            Console.WriteLine($"Toplama işleminin Sonucu:{topla(15, 20)}");
-            Console.WriteLine($"Çıkartma işleminin Sonucu:{cikart(15, 20)}");
-            Console.WriteLine($"Çarpma işleminin Sonucu:{carp(15, 20)}");
-            Console.WriteLine($"Bölme işleminin Sonucu:{bol(15, 20)}");
+            Console.Write("1. Sayı:");
+            int s1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("1. Sayı:");
+            int s2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Toplama işleminin Sonucu:{topla(s1, s2)}");
+            Console.WriteLine($"Çıkartma işleminin Sonucu:{cikart(s1, s2)}");
+            Console.WriteLine($"Çarpma işleminin Sonucu:{carp(s1, s2)}");
+            Console.WriteLine($"Bölme işleminin Sonucu:{bol(s1, s2)}");
             Console.ReadKey();
         }
         static int topla(int sayi1,int sayi2)
