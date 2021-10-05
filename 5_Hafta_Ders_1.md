@@ -25,7 +25,7 @@ void metotadi ()
 ```
 
 > Geriye Değer Döndüren Metot Tanımlama
-
+> Geriye değer döndüren metotlarda metot adının başına void yerine hangi tipte değer döndürecekse o tip(Tür) yazılır. Ayrıca döndüreceği  değer de metot tanımlama blokları içerisinde return ile döndürülmelidir.
 ```csharp
 dönüş_tipi metotadi ()
 {
