@@ -6,7 +6,6 @@
 
 > Geriye Değer Döndürmeyen Metot Tanımlama
 
-
 ```csharp
 void metotadi ()
 {
@@ -15,10 +14,25 @@ void metotadi ()
 
 }
 ```
-
-> Geriye Değer Döndürmeyen Metot Tanımlama
+**Örnek**
 
 ```csharp
+ void mesajYaz()
+ {
+            Console.WriteLine("Merhaba 11 ATBA");
+            Console.WriteLine("Bugün Nasılsınız?");
+  }
+```
+
+> Geriye Değer Döndüren Metot Tanımlama
+
+```csharp
+dönüş_tipi metotadi ()
+{
+
+  //metot içerisinde gerçekleştirilecek işlemler ;
+  return dönüş_Değeri
+}
 
 ```
 
