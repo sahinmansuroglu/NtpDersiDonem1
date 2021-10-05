@@ -186,32 +186,32 @@ namespace ConsoleApp8
             int s1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("1. Sayı:");
             int s2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Toplama işleminin Sonucu:{topla(s1, s2)}");
-            Console.WriteLine($"Çıkartma işleminin Sonucu:{cikart(s1, s2)}");
-            Console.WriteLine($"Çarpma işleminin Sonucu:{carp(s1, s2)}");
-            Console.WriteLine($"Bölme işleminin Sonucu:{bol(s1, s2)}");
+            topla(s1, s2);
+            cikart(s1, s2);
+            carp(s1, s2);
+            bol(s1, s2);
             Console.ReadKey();
         }
-        static int topla(int sayi1,int sayi2)
+        static void topla(int sayi1, int sayi2)
         {
             int sonuc = sayi1 + sayi2;
-            return sonuc;
+            Console.WriteLine($"Toplama İşleminin Sonucu {sonuc}");
         }
-    
-        static int cikart(int sayi1, int sayi2)
+
+        static void cikart(int sayi1, int sayi2)
         {
             int sonuc = sayi1 - sayi2;
-            return sonuc;
+            Console.WriteLine($"Çıkartma İşleminin Sonucu {sonuc}");
         }
-        static int carp(int sayi1, int sayi2)
+        static void carp(int sayi1, int sayi2)
         {
             int sonuc = sayi1 * sayi2;
-            return sonuc;
+            Console.WriteLine($"Çarpma İşleminin Sonucu {sonuc}");
         }
-        static int bol(int sayi1, int sayi2)
+        static void bol(int sayi1, int sayi2)
         {
             int sonuc = sayi1 / sayi2;
-            return sonuc;
+            Console.WriteLine($"Bölme İşleminin Sonucu {sonuc}");
         }
     }
 ```
