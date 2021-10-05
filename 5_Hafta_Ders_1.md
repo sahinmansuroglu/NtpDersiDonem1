@@ -91,3 +91,26 @@ namespace ConsoleApp8
 }
 }
 ```
+
+**Örnek**
+> Parametre alarak aldığı iki sayıyı toplayan geriye değer döndüren metot tanımlayınız...
+
+```csharp
+namespace ConsoleApp8
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+             Console.WriteLine(topla(15, 20));
+             Console.ReadKey();
+        }
+        static int topla(int sayi1,int sayi2)
+        {
+            int sonuc = sayi1 + sayi2;
+            return sonuc;
+        }
+    }
+}
+```
