@@ -36,6 +36,17 @@ dönüş_tipi metotadi ()
 
 ```
 
+**Örnek**
+
+```csharp
+  string mesajGetir()
+        {
+            string mesaJ = "Merhaba 11ATBA \n Bugün Nasılsınız?";
+            return mesaJ;
+        }
+        
+```
+
 > Dışardan Parametre Alan  Metot Tanımlama
 
 ```csharp
