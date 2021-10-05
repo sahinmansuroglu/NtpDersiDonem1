@@ -1,13 +1,17 @@
 ## Metot Kavramı ##
 
-> Programlama dillerinde tekrar eden kodları bir kez tanımlayıp daha sonra tekrar tekrar kullanmamıza yarayan yapılara metot denir. Metot kullanımı ile yazılan uygulamalar alt programlara ayrıldığı için de daha anlaşılır hale gelirler. 
+> Programlama dillerinde tekrar eden kodları bir kez tanımlayıp daha sonra tekrar tekrar kullanmamıza yarayan yapılara metot denir. Metot kullanımı ile yazılan uygulamalar alt programlara ayrıldığı için de daha anlaşılır hale gelirler. Her metodun bir ismi olur ve bu isim altında tanımlanır. Ayrıca bu isim kullanılarak istenilen yerde çağırlabilir.
+
+**Not:** Metotlar kod tekrarını azaltır, kodun tekrar kullanılabilirliğini arttırır.
 
 ### Metot Tanımlama ###
+> Metotlar  ihtiyaca göre geriye değer döndüren veya geriye değer döndürmeyen metot olarak tanımlanabilirler.  Eğer metodun içerisinde yapılan işlem sonucunda çağırıldığı yere bir değer döndürülmesi gerekiyorsa, geriye değer döndüren metot kullanılmalıdır.
 
-> Geriye Değer Döndürmeyen Metot Tanımlama
+#### Geriye Değer Döndürmeyen Metot Tanımlama ####
 
 ```csharp
-void metotadi ()
+
+void metotadi ( parametreler)
 {
 
 //metot içerisinde gerçekleştirilecek işlemler ;
@@ -15,7 +19,7 @@ void metotadi ()
 }
 ```
 **Örnek**
-
+Aşağıdak
 ```csharp
  void mesajYaz()
  {
@@ -24,19 +28,20 @@ void metotadi ()
   }
 ```
 
-> Geriye Değer Döndüren Metot Tanımlama
-> Geriye değer döndüren metotlarda metot adının başına void yerine hangi tipte değer döndürecekse o tip(Tür) yazılır. Ayrıca döndüreceği  değer de metot tanımlama blokları içerisinde return ile döndürülmelidir.
-```csharp
-dönüş_tipi metotadi ()
-{
+#### Geriye Değer Döndüren Metot Tanımlama ####
+> Geriye değer döndüren metotlarda metot adının başına void yerine hangi tipte değer döndürecekse o tip (string, int, double, vs) yazılır. Ayrıca döndüreceği  değer de metot tanımlama blokları içerisinde return ile döndürülmelidir.
 
+
+```csharp
+dönüş_tipi metotadi (dışarıdan alınacak parametreler)
+{
   //metot içerisinde gerçekleştirilecek işlemler ;
   return dönüş_Değeri
 }
 
 ```
-
 **Örnek**
+Aşağıdaki metot çağrıldığı yere  "Merhaba 11ATBA \n Bugün Nasılsınız?" metinini döndürür.
 
 ```csharp
   string mesajGetir()
@@ -46,8 +51,19 @@ dönüş_tipi metotadi ()
         }
         
 ```
+> iki Sayıyı toplayıp sonucu döndüren metot tanımlaması
 
-> Dışardan Parametre Alan  Metot Tanımlama
+```csharp
+  int topla(int sayi1, int sayi2)
+        {
+           return sayi1+sayi2;
+        }
+        
+```
+**Örnek**
+> Aşağıda geriye değer döndüren ve dışardan ad isminde parametre alan bir metot tanımlanmış ve Main metodu içerisinden çağırılmıştır.
+
+> **Not:  Konsol uygulamalarında yazılan metotlara  Main metodu içerisinden ulaşabilmek için başına "static" anahtar kelimesi yazılmalıdır.**
 
 ```csharp
 static void Main(string[] args)
