@@ -50,5 +50,19 @@ dönüş_tipi metotadi ()
 > Dışardan Parametre Alan  Metot Tanımlama
 
 ```csharp
+static void Main(string[] args)
+        {
 
+           Console.WriteLine( mesajGetir("Ahmet ER"));
+           Console.WriteLine(mesajGetir("Ali VELİ"));
+           Console.WriteLine(mesajGetir("Mehmet CAN"));
+            Console.ReadKey();
+
+        }
+        
+       static string mesajGetir(string ad)
+        {
+            string mesaJ = $"Merhaba {ad} \n Bugün Nasılsınız?";
+            return mesaJ;
+        }
 ```
