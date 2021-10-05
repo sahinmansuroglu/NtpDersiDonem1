@@ -159,3 +159,38 @@ namespace ConsoleApp8
     }
 ```
 
+**Örnek**
+> Tek bir Metot içerisinde alınan parametreye göre dikdörtgenin alanı ve çevresine hesaplayıp döndüren metodu tasarlayınız.
+```csharp
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Dikdörtgenin Kısa Kenarı:");
+            int girilenKisaKenar = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Dikdörtgenin Uzun Kenarı:");
+            int girilenUzunKenar = Convert.ToInt32(Console.ReadLine());
+            int alan = hesapla(girilenKisaKenar, girilenUzunKenar, "Alan1");
+            int cevre = hesapla(girilenKisaKenar, girilenUzunKenar, "Çevre");
+            Console.WriteLine($"Alan: {alan} \nÇevre: {cevre}");
+            Console.ReadKey();
+        }
+        //secim eger "Alan" ise alan hesaplanacak 
+        //secim eger "Çevre" ise alan hesaplanacak.
+       static int hesapla(int kisaKenar, int uzunKenar, string secim)
+        {
+            if (secim == "Alan")
+            {
+                return kisaKenar * uzunKenar;
+            }else if (secim == "Çevre")
+            {
+                return (kisaKenar + uzunKenar) * 2;
+            }
+            else
+            {
+                return 0;
+            }
+
+        }
+    }
+```
