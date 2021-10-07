@@ -68,4 +68,5 @@
   
 }
 ```
-
+**Örnek** 
+> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp daha sonra nesne oluştururken de verebiliriz.
