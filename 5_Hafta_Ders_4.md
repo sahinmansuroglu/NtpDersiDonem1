@@ -33,6 +33,9 @@ class Araba
 
 **Ekran Çıktısı**
 
-![image](https://user-images.githubusercontent.com/28144917/136355635-cba4560f-4345-48cf-972d-a08a90e2061d.png)
+![image](https://user-images.githubusercontent.com/28144917/136355835-492c0206-e4aa-40fb-93f9-d6d9a1eb5aa7.png)
+
+
+### Kurucu Metoda Parametre Gönderme ###
 
 
