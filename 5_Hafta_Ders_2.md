@@ -85,7 +85,9 @@ class Araba
 ```
 
 **Örnek**
-> Bir Araba classı oluşturunuz. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında özellikleri(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından bir nesne oluşturarak tüm özelliklerini ekrana yazdırınız.
+> Bir Araba class'ı tasarlayınız. Tasarladığınız class'dan aşağıdaki gibi 3 farklı nesne oluşturup bilgilerini ekrana yazdırınız. 
+![image](https://user-images.githubusercontent.com/28144917/136335354-b4bb7d0d-b119-4bba-8fd7-c7d2b703d74c.png)
+
 
 
 ```csharp
@@ -94,6 +96,7 @@ class Araba
     string marka = "BMW";
     short yili = 2010;
     double depoKapasitesi = 50.0;
+    double ortalamaTuketim = 8.0;
     string yakitTuru = "Benzin";
 
     static void Main(string[] args)
@@ -102,9 +105,41 @@ class Araba
         Console.WriteLine($"ArabaNesne1 marka:{ArabaNesne1.marka}");
         Console.WriteLine($"ArabaNesne1 yılı:{ArabaNesne1.yili}");
         Console.WriteLine($"ArabaNesne1 depo kapasitesi:{ArabaNesne1.depoKapasitesi} lt");
+        Console.WriteLine($"ArabaNesne1 ortalama Tüketim:{ArabaNesne1.ortalamaTuketim} lt/100km");
         Console.WriteLine($"ArabaNesne1 yakıt türü:{ArabaNesne1.yakitTuru}");
+        Console.WriteLine("---------------");
+        Araba ArabaNesne2 = new Araba();
+        ArabaNesne2.marka = "AUDI";
+        ArabaNesne2.yili = 2010;
+        ArabaNesne2.depoKapasitesi = 50;
+        ArabaNesne2.ortalamaTuketim = 6.0;
+        ArabaNesne2.yakitTuru = "Dizel";
+        Console.WriteLine($"ArabaNesne2 marka:{ArabaNesne2.marka}");
+        Console.WriteLine($"ArabaNesne2 yılı:{ArabaNesne2.yili}");
+        Console.WriteLine($"ArabaNesne2 depo kapasitesi:{ArabaNesne2.depoKapasitesi} lt");
+        Console.WriteLine($"ArabaNesne2 ortalama Tüketim:{ArabaNesne2.ortalamaTuketim} lt/100km");
+        Console.WriteLine($"ArabaNesne2 yakıt türü:{ArabaNesne2.yakitTuru}");
+
+        Console.WriteLine("---------------");
+        Araba ArabaNesne3 = new Araba();
+        ArabaNesne3.marka = "JAGUAR";
+        ArabaNesne3.yili = 2010;
+        ArabaNesne3.depoKapasitesi = 50;
+        ArabaNesne3.ortalamaTuketim = 8.0;
+        ArabaNesne3.yakitTuru = "Benzin";
+        Console.WriteLine($"ArabaNesne3 marka:{ArabaNesne3.marka}");
+        Console.WriteLine($"ArabaNesne3 yılı:{ArabaNesne3.yili}");
+        Console.WriteLine($"ArabaNesne3 depo kapasitesi:{ArabaNesne3.depoKapasitesi} lt");
+        Console.WriteLine($"ArabaNesne3 ortalama Tüketim:{ArabaNesne3.ortalamaTuketim} lt/100km");
+        Console.WriteLine($"ArabaNesne3 yakıt türü:{ArabaNesne3.yakitTuru}");
         Console.ReadKey();
     }
 }
 
 ```
+
+**Ekran Çıktısı**
+
+
+![image](https://user-images.githubusercontent.com/28144917/136336496-35f9d0d9-f007-4d2f-9aed-c262e8010fc5.png)
+
