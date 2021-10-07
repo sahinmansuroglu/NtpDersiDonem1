@@ -103,4 +103,7 @@ class Araba
 ![image](https://user-images.githubusercontent.com/28144917/136370831-bd7ed951-92bd-4812-ba73-10cfc1aa954c.png)
 
 **Örnek**
-Aşağıdaki 
+> Bir Araba class'ı tasarlayınız. Tasarladığınız class'dan aşağıdaki gibi 3 farklı nesne oluşturup bilgilerini ekrana yazdırınız. 
+
+> **Not:** Kurucu Metot kullanılmalıdır.
+![image](https://user-images.githubusercontent.com/28144917/136335354-b4bb7d0d-b119-4bba-8fd7-c7d2b703d74c.png)
