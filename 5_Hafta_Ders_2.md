@@ -34,7 +34,7 @@ class Araba
 > **Not:Bir sınıfı kullanabilmek için o sınıftan bir nesne oluşturmamız gerekir.**
 
 **Temel Kullanım**
-```
+```csharp
 SinifAdi nesneAdi=new SinifAdi();
 ```
 **Örnek**
