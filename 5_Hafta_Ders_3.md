@@ -13,7 +13,7 @@
       }
  }
 ```
-> Yukarıdaki Örneğin Çalışan Uygulaması aşıdadir.
+> Yukarıdaki sınıftan nesne oluşturan Uygulama aşağıdadir.
 
 ```csharp
 class Araba
@@ -26,7 +26,7 @@ class Araba
 
     static void Main(string[] args)
     {
-        Araba arabaNesne1 = new Araba();
+        Araba arabaNesne1 = new Araba(); // Araba sınıfından arabaNesne1 nesnesi oluşturulmustur.
         arabaNesne1.bilgileriEkranaYaz();
 
         Console.ReadKey();
