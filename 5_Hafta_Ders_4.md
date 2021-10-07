@@ -38,14 +38,14 @@ class Araba
 
 ### Kurucu Metoda Parametre Gönderme ###
 
-> Normal metotlarda olduğu gibi kurucu metotlara da parametre gönderebiliriz. Özellikle sınıfların özelliklerine değer ataması yaparken kullanırız
+> Normal metotlarda olduğu gibi kurucu metotlara da parametre gönderebiliriz. Özellikle sınıfların özelliklerine değer ataması yaparken kullanırız.
 
 ```csharp
 class Araba
 {
     string renk;
 
-    Araba( string renkParametre) // Kurucu metot dışardan renkParametre adına bir parametre almıştır. bu değer renk özelliğine atanmak için kullanılmıştır.
+    Araba(string renkParametre) // Kurucu metot dışardan renkParametre adına bir parametre almıştır. bu değer renk özelliğine atanmak için kullanılmıştır.
     {
         renk = renkParametre;
         Console.WriteLine("Yeni bir Nesne oluşturuldu...");
@@ -63,3 +63,6 @@ class Araba
     }
 }
 ```
+
+Örnek
+
