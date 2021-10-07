@@ -29,7 +29,7 @@ class Araba
 > **Not:C# da sınıf isimlerinin baş harfi büyük olmalıdır. Ayrıca araba sınıfın içerisinde tanımlanan string tipindeki renk özelliği NTP yaklaşımında field veya attribute olarak adlandırılır.**
 
 ### Nesne Oluşturma ###
-> C# da nesne oluşturmak için "new" anahtar sözcüğü ile oluşturulur
+> C# da nesne oluşturmak için "new" anahtar sözcüğü kullanılır.
 
 > **Not:Bir sınıfı kullanabilmek için o sınıftan bir nesne oluşturmamız gerekir.**
 
@@ -42,4 +42,20 @@ SinifAdi nesneAdi = new SinifAdi();
 
 ```csharp
   Araba arabaNesnesi = new Araba();
+```
+> Yukarıdaki örneği çalışabilen bir uygulama olarak tasarlayalım
+
+
+```csharp
+class Araba
+{
+    string renk = "mavi";
+
+    static void Main(string[] args)
+    {
+        Araba arabaNesnesi = new Araba();
+        Console.WriteLine($"Nesnemizin Rengi:{arabaNesnesi.renk}");
+        Console.ReadKey();
+    }
+}
 ```
