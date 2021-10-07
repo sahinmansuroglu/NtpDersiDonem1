@@ -2,16 +2,16 @@
 
 > Sınıf içerisinde tanımlanmış özelliklere ve metotlara sınıf üyeleri denir. 
 
-
-
-
-
-
-**Örnek**
-> Örnek olarak Araba sınıfından bir nesne oluşturalım. Adı da arabaNesnesi1 olsun.
-
+> Aşağıdaki Örnekte Araba sınıf'ının üyeleri arasında "renk" özelliği ve "bilgileriEkranaYaz()" metodu bulunmaktadır.
 ```csharp
-  Araba arabaNesnesi = new Araba();
+ class Araba
+ {
+      string renk="mavi";
+      void bilgileriEkranaYaz()
+      {
+          Console.WriteLine($"Renk:{renk} ");
+      }
+ }
 ```
 
 
