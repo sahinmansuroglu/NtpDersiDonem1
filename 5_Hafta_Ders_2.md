@@ -83,3 +83,28 @@ class Araba
 }
 
 ```
+
+**Örnek**
+> Bir Araba classı oluşturunuz. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında özellikleri(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından bir nesne oluşturarak tüm özelliklerini ekrana yazdırınız.
+
+
+```csharp
+class Araba
+{
+    string marka = "BMW";
+    short yili = 2010;
+    double depoKapasitesi = 50.0;
+    string yakitTuru = "Benzin";
+
+    static void Main(string[] args)
+    {
+        Araba ArabaNesne1 = new Araba();
+        Console.WriteLine($"ArabaNesne1 marka:{ArabaNesne1.marka}");
+        Console.WriteLine($"ArabaNesne1 yılı:{ArabaNesne1.yili}");
+        Console.WriteLine($"ArabaNesne1 depo kapasitesi:{ArabaNesne1.depoKapasitesi} lt");
+        Console.WriteLine($"ArabaNesne1 yakıt türü:{ArabaNesne1.yakitTuru}");
+        Console.ReadKey();
+    }
+}
+
+```
