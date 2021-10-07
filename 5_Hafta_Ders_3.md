@@ -6,8 +6,8 @@
 ```csharp
  class Araba
  {
-      string renk="mavi";
-      void bilgileriEkranaYaz()
+      string renk="mavi";    // Özellik (field)
+      void bilgileriEkranaYaz() // Metot
       {
           Console.WriteLine($"Renk:{renk} ");
       }
