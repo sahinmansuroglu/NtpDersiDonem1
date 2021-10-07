@@ -134,34 +134,34 @@ class Araba
     static void Main(string [] paramatreler)
     {
         Araba arabaNesne1 = new Araba();
-        ArabaNesne1.marka = "BMW";
-        ArabaNesne1.yili = 2010;
-        ArabaNesne1.depoKapasitesi = 50;
-        ArabaNesne1.ortalamaTuketim = 8.0;
-        ArabaNesne1.yakitTuru = "Benzin";
+        arabaNesne1.marka = "BMW";
+        arabaNesne1.yili = 2010;
+        arabaNesne1.depoKapasitesi = 50;
+        arabaNesne1.ortalamaTuketim = 8.0;
+        arabaNesne1.yakitTuru = "Benzin";
 
         Console.WriteLine("----- Araba Nesnesi - 1 -----");
         arabaNesne1.bilgileriEkranaYaz();
 
-        Araba ArabaNesne2 = new Araba();
-        ArabaNesne2.marka = "AUDI";
-        ArabaNesne2.yili = 2010;
-        ArabaNesne2.depoKapasitesi = 50;
-        ArabaNesne2.ortalamaTuketim = 6.0;
-        ArabaNesne2.yakitTuru = "Dizel";
+        Araba arabaNesne2 = new Araba();
+        arabaNesne2.marka = "AUDI";
+        arabaNesne2.yili = 2010;
+        arabaNesne2.depoKapasitesi = 50;
+        arabaNesne2.ortalamaTuketim = 6.0;
+        arabaNesne2.yakitTuru = "Dizel";
 
         Console.WriteLine("----- Araba Nesnesi - 2 -----");
-        ArabaNesne2.bilgileriEkranaYaz();
+        arabaNesne2.bilgileriEkranaYaz();
 
-        Araba ArabaNesne3 = new Araba();
-        ArabaNesne3.marka = "JAGUAR";
-        ArabaNesne3.yili = 2010;
-        ArabaNesne3.depoKapasitesi = 50;
-        ArabaNesne3.ortalamaTuketim = 8.0;
-        ArabaNesne3.yakitTuru = "Benzin";
+        Araba arabaNesne3 = new Araba();
+        arabaNesne3.marka = "JAGUAR";
+        arabaNesne3.yili = 2010;
+        arabaNesne3.depoKapasitesi = 50;
+        arabaNesne3.ortalamaTuketim = 8.0;
+        arabaNesne3.yakitTuru = "Benzin";
 
         Console.WriteLine("----- Araba Nesnesi - 3 -----");
-        ArabaNesne3.bilgileriEkranaYaz();
+        arabaNesne3.bilgileriEkranaYaz();
 
         Console.ReadKey();
     }
