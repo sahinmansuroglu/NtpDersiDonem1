@@ -2,7 +2,7 @@
 
 > Sınıf içerisinde tanımlanmış özelliklere ve metotlara sınıf üyeleri denir. 
 
-> Aşağıdaki Örnekte Araba sınıf'ının üyeleri arasında "renk" özelliği ve "bilgileriEkranaYaz()" metodu bulunmaktadır.
+> Aşağıdaki Örnekte Araba sınıf'ının üyeleri olarak "renk" özelliği ve "bilgileriEkranaYaz()" metodu bulunmaktadır.
 ```csharp
  class Araba
  {
@@ -13,10 +13,40 @@
       }
  }
 ```
+> Yukarıdaki Örneğin Çalışan Uygulaması aşıdadir.
 
+```csharp
+class Araba
+{
+    string renk = "mavi";    // Özellik (field)
+    void bilgileriEkranaYaz() // Metot
+    {
+        Console.WriteLine($"Renk:{renk} ");
+    }
+
+    static void Main(string[] args)
+    {
+        Araba arabaNesne1 = new Araba();
+        arabaNesne1.bilgileriEkranaYaz();
+
+        Console.ReadKey();
+
+    }
+}
+```
 **Örnek** 
-> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp daha sonra nesne oluşturduktan sonra da değer ataması yapabiliriz.
+> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp nesne oluşturduktan sonra da değer ataması yapabiliriz.
 
+```csharp
+ class Araba
+ {
+      string renk="mavi";    // Özellik (field)
+      void bilgileriEkranaYaz() // Metot
+      {
+          Console.WriteLine($"Renk:{renk} ");
+      }
+ }
+```
 
 ```csharp
 class Araba
@@ -81,16 +111,16 @@ class Araba
 
 
 **Örnek**
-> Aşağıdaki örnekte sınıf içerisinde özellikler (field) ve  metotlar bulunmaktadır. bilgileriEkranaYaz() butonu oluşturulan nesnenin bilgilerini ekrana yazmaktadır.
+> Aşağıdaki örnekte sınıf içerisinde özellikler (field) ve  metotlar bulunmaktadır. bilgileriEkranaYaz() metodu oluşturulan nesnenin bilgilerini ekrana yazmaktadır.
 
 ```csharp
  class Araba
 {
-    string marka = "BMW";
-    short yili = 2010;
-    double depoKapasitesi = 50.0;
-    double ortalamaTuketim = 8.0;
-    string yakitTuru = "Benzin";
+    string marka;
+    short yili;
+    double depoKapasitesi;
+    double ortalamaTuketim;
+    string yakitTuru;
 
     void bilgileriEkranaYaz()
     {
@@ -104,7 +134,12 @@ class Araba
     static void Main(string [] paramatreler)
     {
         Araba arabaNesne1 = new Araba();
-        
+        ArabaNesne1.marka = "BMW";
+        ArabaNesne1.yili = 2010;
+        ArabaNesne1.depoKapasitesi = 50;
+        ArabaNesne1.ortalamaTuketim = 8.0;
+        ArabaNesne1.yakitTuru = "Benzin";
+
         Console.WriteLine("----- Araba Nesnesi - 1 -----");
         arabaNesne1.bilgileriEkranaYaz();
 
