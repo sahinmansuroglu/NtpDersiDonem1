@@ -107,3 +107,51 @@ class Araba
 
 > **Not:** Kurucu Metot kullanılmalıdır.
 ![image](https://user-images.githubusercontent.com/28144917/136335354-b4bb7d0d-b119-4bba-8fd7-c7d2b703d74c.png)
+
+
+```csharp
+using System;
+class Araba
+{
+    string marka;
+    short yili;
+    double depoKapasitesi;
+    double ortalamaTuketim;
+    string yakitTuru;
+
+    Araba(string markaP, short yiliP, double depoKapasitesiP, double ortalamaTuketimP, string yakıtTuruP)
+    {
+
+        marka = markaP;
+        yili = yiliP;
+        depoKapasitesi = depoKapasitesiP;
+        ortalamaTuketim = ortalamaTuketimP;
+        yakitTuru = yakıtTuruP;
+    
+        Console.WriteLine("\n----- Yeni Nesne oluşturuldu -----");    // "\n"  bir satır boşluk bırakır.
+    }
+    void bilgileriEkranaYaz()
+    {
+        Console.WriteLine($"Marka:{marka} ");
+        Console.WriteLine($"Yılı:{yili} ");
+        Console.WriteLine($"Depo Kapasitesi:{depoKapasitesi} ");
+        Console.WriteLine($"Ortalama Tüketim:{ortalamaTuketim} ");
+        Console.WriteLine($"Yakıt türü:{yakitTuru} ");
+    }
+
+    static void Main(string[] paramatreler)
+    {
+        Araba arabaNesne1 = new Araba("BMW",2010,50,8.0,"Benzin");
+        arabaNesne1.bilgileriEkranaYaz();
+
+        Araba arabaNesne2 = new Araba("AUDI",2010,50,6.0,"Dizel");
+        arabaNesne2.bilgileriEkranaYaz();
+
+        Araba arabaNesne3 = new Araba("JAGUAR",2010,50,8.0,"Benzin");
+        arabaNesne3.bilgileriEkranaYaz();
+
+        Console.ReadKey();
+    }
+
+}
+```
