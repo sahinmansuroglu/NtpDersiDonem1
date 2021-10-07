@@ -35,7 +35,7 @@ class Araba
 
 **Temel Kullanım**
 ```csharp
-SinifAdi nesneAdi=new SinifAdi();
+SinifAdi nesneAdi = new SinifAdi();
 ```
 **Örnek**
 > Örnek olarak Araba sınıfından bir nesne oluşturalım. Adı da arabaNesnesi1 olsun.
