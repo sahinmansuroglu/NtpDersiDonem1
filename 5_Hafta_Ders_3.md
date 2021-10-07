@@ -69,4 +69,31 @@
 }
 ```
 **Örnek** 
-> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp daha sonra nesne oluştururken de verebiliriz.
+> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp daha sonra nesne oluşturduktan sonra da değer ataması yapabiliriz.
+
+
+```csharp
+class Araba
+{
+    string renk;
+    int hiz;
+    void bilgileriEkranaYaz()
+    {
+        Console.WriteLine($"Renk:{renk}");
+        Console.WriteLine($"Hız:{hiz}");
+    }
+    static void Main(string [] args)
+    {
+
+
+        Araba nesne1 = new Araba();
+        nesne1.renk = "Beyaz";
+        nesne1.hiz = 170;
+        nesne1.bilgileriEkranaYaz();
+        Console.ReadKey();
+
+    }
+
+}
+
+```
