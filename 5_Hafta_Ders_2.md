@@ -17,9 +17,29 @@
 > Bu oluşturulan araba modeline  nesneye yönelik programlama yaklaşımında "sınıf(class)" oluşturulan her bir araba nesnesine de "nesne (object)" denilmektedir.
 
 ### Sınıf Tanımlama ###
+> İlk olarak çok basit bir sınıf oluşturalım. Aşağıdaki sınıfın Araba'dır ve renk isiminde tek bir özelliği vardır.
 
 ```csharp 
-class
+class Araba
+{
+    string renk="mavi";
+}
 
 ```
+> **Not:C# da sınıf isimlerinin baş harfi büyük olmalıdır. Ayrıca araba sınıfın içerisinde tanımlanan string tipindeki renk özelliği NTP yaklaşımında field veya attribute olarak adlandırılır.**
 
+### Nesne Oluşturma ###
+> C# da nesne oluşturmak için "new" anahtar sözcüğü ile oluşturulur
+
+> **Not:Bir sınıfı kullanabilmek için o sınıftan bir nesne oluşturmamız gerekir.**
+
+**Temel Kullanım**
+```
+SinifAdi nesneAdi=new SinifAdi();
+```
+**Örnek**
+> Örnek olarak Araba sınıfından bir nesne oluşturalım. Adı da arabaNesnesi1 olsun.
+
+```csharp
+  Araba arabaNesnesi = new Araba();
+```
