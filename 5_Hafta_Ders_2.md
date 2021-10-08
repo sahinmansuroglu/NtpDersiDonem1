@@ -61,7 +61,10 @@ class Araba
 ```
 
 **Örnek**
-> Bir Araba classı tasarlayınız. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında özellikleri(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından bir nesne oluşturarak tüm özelliklerini ekrana yazdırınız.
+> Bir Araba classı tasarlayınız. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında özellikleri(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından aşağıdaki gibi bir nesne oluşturarak tüm özelliklerini ekrana yazdırınız.
+
+![image](https://user-images.githubusercontent.com/28144917/136508050-604f937c-a892-4ad1-b76c-1cd6dd1c6ffb.png)
+
 
 ```csharp
 class Araba
