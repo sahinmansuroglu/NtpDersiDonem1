@@ -69,10 +69,10 @@ class Araba
 ```csharp
 class Araba
 {
-    string marka = "BMW";
-    short yili = 2010;
-    double depoKapasitesi = 50.0;
-    string yakitTuru = "Benzin";
+    string marka = "BMW"; // Varsayılan olarak "BMW" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
+    short yili = 2010; // Varsayılan olarak "2010" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
+    double depoKapasitesi = 50.0;  // Varsayılan olarak "50.0" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
+    string yakitTuru = "Benzin"; // Varsayılan olarak "Benzin" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
 
     static void Main(string[] args)
     {
@@ -86,6 +86,8 @@ class Araba
 }
 
 ```
+
+
 
 **Örnek**
 > Bir Araba class'ı tasarlayınız. Tasarladığınız class'dan aşağıdaki gibi 3 farklı nesne oluşturup bilgilerini ekrana yazdırınız. 
