@@ -40,7 +40,7 @@ class Araba
 ```csharp
  class Araba
  {
-      string renk="mavi";    // Özellik (field)
+      string renk;    // Özellik (field)
       void bilgileriEkranaYaz() // Metot
       {
           Console.WriteLine($"Renk:{renk} ");
