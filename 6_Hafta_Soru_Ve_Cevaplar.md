@@ -82,7 +82,89 @@ class Personel
 **Sorunun Çözümü**
 
 ```python
+using System;
 
+class Ogrenci
+{
+    string adSoyad;
+    short okulNo;
+    int puan1, puan2, puan3;
+
+    Ogrenci(string adSoyad, short okulNo, int puan1, int puan2, int puan3)
+    {
+        this.adSoyad = adSoyad;
+        this.okulNo = okulNo;
+        this.puan1 = puan1;
+        this.puan2 = puan2;
+        this.puan3 = puan3;
+
+        Console.WriteLine("--------Yeni Nesne Oluşturuldu--------");
+    }
+
+    double ortalamaHesapla()
+    {
+        return (puan1 + puan2 + puan3) / 3.0;
+    }
+
+    string kaldiGectiHesapla()
+    {
+        return ortalamaHesapla() < 50 ? "Kaldı":"Geçti";
+    }
+    //Alttaki metot yukarıdaki ile aynı işi yapmaktadır.
+    //Yukarıda ternary(?) operatörü kullanılmıştır.
+    string kaldiGectiHesaplaDiger()
+    {
+        if (ortalamaHesapla()< 50)
+        {
+            return "Kaldı";
+        }
+        else
+        {
+            return "Geçti";
+        }
+    }
+    void bilgileriEkranaYaz()
+    {
+        Console.WriteLine("-----Öğrenci Bilgileri------");
+        Console.WriteLine($"Ad Soyad: {adSoyad}");
+        Console.WriteLine($"Okul No: {okulNo}");
+        Console.WriteLine($"1. Puan: {puan1}");
+        Console.WriteLine($"2. Puan: {puan2}");
+        Console.WriteLine($"3. Puan: {puan3}");
+        Console.WriteLine($"Ortalama: {ortalamaHesapla()}");
+        Console.WriteLine($"Durum: {kaldiGectiHesapla()} ");
+    }
+
+    static void Main(string [] args)
+    {
+        Ogrenci ogrenci1 = new Ogrenci("Ali Veli", 352, 65, 85, 45);
+        Ogrenci ogrenci2 = new Ogrenci("Serdar AR", 85, 15, 25, 45);
+        Ogrenci ogrenci3 = new Ogrenci("Erhan UÇAR", 241, 100, 85, 45);
+
+        ogrenci1.bilgileriEkranaYaz();
+        ogrenci2.bilgileriEkranaYaz();
+        ogrenci3.bilgileriEkranaYaz();
+        Console.ReadKey();
+    }
+
+}
 ```
 
 **Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/136907119-92ebf530-39ef-43d2-8241-1ceaaa66984a.png)
+
+
+**Soru-3**
+> Aşağdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız ve 3 farklı dikdortgen nesnesi oluşturup alanını ve çevresini hesaplatarak ekrana yazdırınız.
+
+**a.** kisaKenar ve uzunKenar özellikleri bulunacak
+
+**b.** alanHesapla, cevreHesapla bilgileriEkranaYaz metotları olacak
+
+> **Not:** Kurucu metot kullanılmalı
+
+
+**Sorunun Çözümü**
+
+```python
