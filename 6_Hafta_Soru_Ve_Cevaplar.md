@@ -158,13 +158,15 @@ class Ogrenci
 **Soru-3**
 > Aşağdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız ve 3 farklı dikdortgen nesnesi oluşturup alanını ve çevresini hesaplatarak ekrana yazdırınız.
 
-**a.** kisaKenar ve uzunKenar özellikleri bulunacak
+**a.** kisaKenarUzunlugu ve uzunKenarUzunlugu özellikleri bulunacak
 
 **b.** alanHesapla, cevreHesapla bilgileriEkranaYaz metotları olacak
 
-> **Not:** Kurucu metot kullanılmalı
+> **Not:**  Oluşturulan 3 yeni nesnenin  bilgileri(kisaKenarUzunlugu ve uzunKenarUzunlugu) ana programda for döngüsü yardımı ile kullanıcıdan alınacaktır.
 
 
 **Sorunun Çözümü**
+
+```python
 
 ```python
