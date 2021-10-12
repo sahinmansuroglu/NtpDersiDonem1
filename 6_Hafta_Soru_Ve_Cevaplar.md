@@ -168,5 +168,56 @@ class Ogrenci
 **Sorunun Çözümü**
 
 ```python
+using System;
 
-```python
+class Dikdortgen
+{
+    int kisaKenarUzunlugu;
+    int uzunKenarUzunlugu;
+    Dikdortgen(int kisaKenarUzunlugu, int uzunKenarUzunlugu)
+    {
+        this.kisaKenarUzunlugu = kisaKenarUzunlugu;
+        this.uzunKenarUzunlugu = uzunKenarUzunlugu;
+    }
+
+    int alanHesapla()
+    {
+        return kisaKenarUzunlugu * uzunKenarUzunlugu;
+    }
+    int cevreHesapla()
+    {
+        return (kisaKenarUzunlugu + uzunKenarUzunlugu) * 2;
+    }
+    void bilgileriEkranaYaz()
+    {
+        Console.WriteLine($"Alan={alanHesapla()}");
+        Console.WriteLine($"Çevre={cevreHesapla()}");
+    }
+
+    static void Main(string [] args)
+    {
+
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine($"{i + 1}. Dikdörtgen Bilgileri");
+            Console.Write("Kisa Kenar uzunluğunuzu Giriniz:");
+            int girilenKisaKenarUzunlugu =Convert.ToInt32( Console.ReadLine());
+            Console.Write("Uzun Kenar uzunluğunuzu Giriniz:");
+            int girilenUzunKenarUzunlugu = Convert.ToInt32(Console.ReadLine());
+
+            Dikdortgen yeniNesne = new Dikdortgen(girilenKisaKenarUzunlugu, girilenUzunKenarUzunlugu);
+
+            yeniNesne.bilgileriEkranaYaz();
+
+        }
+        Console.ReadKey();
+
+    }
+
+}
+```
+
+**Sorunu Çözümü**
+
+![image](https://user-images.githubusercontent.com/28144917/136916693-6b27c637-dde9-4d5a-9f64-c41a0448470f.png)
+
