@@ -6,7 +6,7 @@
 
 **b.** yasHesapla ve bilgileriEkranaYaz metodları bulunacak
 
-> **Not:**Kurucu metot kullanılmalı
+> **Not:** Kurucu metot kullanılmalı
 
 
 **Sorunun Çözümü**
@@ -76,7 +76,7 @@ class Personel
 
 **b.** ortalamaHesapla, kaldiGectiHesapla, bilgileriEkranaYaz metotları olacak
 
-> **Not:**Kurucu metot kullanılmalı
+> **Not:** Kurucu metot kullanılmalı
 
 
 **Sorunun Çözümü**
