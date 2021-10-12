@@ -6,7 +6,7 @@
 
 **b.** yasHesapla ve bilgileriEkranaYaz metodları bulunacak
 
-> **Kurucu metot kullanılmalı**
+> **Not:**Kurucu metot kullanılmalı
 
 
 **Sorunun Çözümü**
@@ -65,4 +65,24 @@ class Personel
 ```
 
 **Ekran Çıktısı**
+
 ![image](https://user-images.githubusercontent.com/28144917/136901701-33404da5-4c38-4c37-9bcc-b761f3463e98.png)
+
+
+**Soru-2**
+> Aşağdaki verilenler göre Ogrenci adında bir sınıf tasarlayınız ve 3 farklı öğrenci nesnesi oluşturup bilgilerini ekrana yazdırınız
+
+**a.** adSoyad, okulNo, puan1,puan2,puan3 özellikleri bulunacak
+
+**b.** ortalamaHesapla, kaldiGectiHesapla, bilgileriEkranaYaz metotları olacak
+
+> **Not:**Kurucu metot kullanılmalı
+
+
+**Sorunun Çözümü**
+
+```python
+
+```
+
+**Ekran Çıktısı**
