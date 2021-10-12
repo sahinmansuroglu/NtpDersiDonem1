@@ -2,8 +2,9 @@
 **Soru-1**
 > Aşağıda verilenlere göre  bir sınıf tasarlayınız.Ve bu sınıftan 3 nesne oluşturup bilgilerini ve yaşını ekrana yazdırınız.
 
-a. adSoyad, dogumTarihi, dogumYeri, okulNo,  özellikleri bulunacak.
-b. yasHesapla ve bilgileriEkranaYaz metodları bulunacak
+**a.** adSoyad, dogumTarihi, dogumYeri, okulNo,  özellikleri bulunacak.
+
+**b.** yasHesapla ve bilgileriEkranaYaz metodları bulunacak
 
 > **Kurucu metot kullanılmalı**
 
