@@ -5,7 +5,7 @@
 > Kurucu metotlar geriye değer döndürmezler ve aynı zamanda void olarak  da tanımlanmazlar.
 
 **Örnek**
-Aşağıdaki örnekte sınıf içerisinde renk özelliğinin değeri tanımlama anında değil kurucu metot içerisinde "Mavi" olarak verilmiştir.
+Aşağıdaki örnekte sınıf içerisinde renk alanının değeri tanımlama anında değil kurucu metot içerisinde "Mavi" olarak verilmiştir.
 
 ```csharp
 class Araba
@@ -38,14 +38,14 @@ class Araba
 
 ### Kurucu Metoda Parametre Gönderme ###
 
-> Normal metotlarda olduğu gibi kurucu metotlara da parametre gönderebiliriz. Özellikle sınıfların özelliklerine değer ataması yaparken kullanırız.
+> Normal metotlarda olduğu gibi kurucu metotlara da parametre gönderebiliriz. Özellikle sınıfların alanlarına değer ataması yaparken kullanırız.
 
 ```csharp
 class Araba
 {
     string renk;
 
-    Araba(string renkParametre) // Kurucu metot dışardan renkParametre adına bir parametre almıştır. bu değer renk özelliğine atanmak için kullanılmıştır.
+    Araba(string renkParametre) // Kurucu metot dışardan renkParametre adına bir parametre almıştır. bu değer renk alanına değer atanmak için kullanılmıştır.
     {
         renk = renkParametre;
         Console.WriteLine("Yeni bir Nesne oluşturuldu...");
@@ -65,7 +65,7 @@ class Araba
 ```
 
 **Örnek**
-Aşağıdaki Örnekte Araba sınıfına özellik olarak hiz da eklenmiştir. Bu hiz özelliğinin değeri de kurucu metot ile verilmiştir
+Aşağıdaki Örnekte Araba sınıfına alan olarak hiz da eklenmiştir. Bu alan özelliğinin değeri de kurucu metot ile verilmiştir
 
 ```csharp
 
@@ -74,7 +74,7 @@ class Araba
     string renk;
     int hiz;
 
-    Araba(string renkParametre,int hizParametre) // Kurucu metot dışardan renkParametre ve hizParametre adında  parametre almıştır. bu değer renk özelliğine atanmak için kullanılmıştır.
+    Araba(string renkParametre,int hizParametre) // Kurucu metot dışardan renkParametre ve hizParametre adında  parametre almıştır. bu değer renk alanına atanmak için kullanılmıştır.
     {
         renk = renkParametre;
         hiz = hizParametre;
@@ -163,7 +163,7 @@ class Araba
 
 **This Keyword'ü**
 > This anahtar kelimesi bir sınıfın hangi nesnesi ile çalışılıyorsa o nesnenin üyelerine erişmek için kullanılır.
-> Aşağıdaki Örnekte sınıfın özellikleri  ile kurucu metot'un aldığı parametrelerin adları aynıdır. Dikkat edilirse kurucu metot içerisinde gelen parametrelerin o anki yaratılan nesnenin özelliklerine atanabilmesi için özelliklerin başına this anahtar kelimesi getirilmiştir.
+> Aşağıdaki Örnekte sınıfın alanlarının adları  ile kurucu metot'un aldığı parametrelerin adları aynıdır. Dikkat edilirse kurucu metot içerisinde gelen parametrelerin o anki yaratılan nesnenin alanlarına atanabilmesi için özelliklerin başına this anahtar kelimesi getirilmiştir.
 
 ```csharp
 using System;
