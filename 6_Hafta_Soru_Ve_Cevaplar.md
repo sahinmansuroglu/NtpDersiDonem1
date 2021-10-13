@@ -2,7 +2,7 @@
 **Soru-1**
 > Aşağıda verilenlere göre  bir sınıf tasarlayınız.Ve bu sınıftan 3 nesne oluşturup bilgilerini ve yaşını ekrana yazdırınız.
 
-**a.** adSoyad, dogumTarihi, dogumYeri, okulNo,  özellikleri bulunacak.
+**a.** adSoyad, dogumTarihi, dogumYeri, okulNo,  alanları bulunacak.
 
 **b.** yasHesapla ve bilgileriEkranaYaz metodları bulunacak
 
@@ -72,7 +72,7 @@ class Personel
 **Soru-2**
 > Aşağdaki verilenler göre Ogrenci adında bir sınıf tasarlayınız ve 3 farklı öğrenci nesnesi oluşturup bilgilerini ekrana yazdırınız
 
-**a.** adSoyad, okulNo, puan1,puan2,puan3 özellikleri bulunacak
+**a.** adSoyad, okulNo, puan1,puan2,puan3 alanları bulunacak
 
 **b.** ortalamaHesapla, kaldiGectiHesapla, bilgileriEkranaYaz metotları olacak
 
@@ -158,7 +158,7 @@ class Ogrenci
 **Soru-3**
 > Aşağdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız ve 3 farklı dikdortgen nesnesi oluşturup alanını ve çevresini hesaplatarak ekrana yazdırınız.
 
-**a.** kisaKenarUzunlugu ve uzunKenarUzunlugu özellikleri bulunacak
+**a.** kisaKenarUzunlugu ve uzunKenarUzunlugu alanları bulunacak
 
 **b.** alanHesapla, cevreHesapla bilgileriEkranaYaz metotları olacak
 
