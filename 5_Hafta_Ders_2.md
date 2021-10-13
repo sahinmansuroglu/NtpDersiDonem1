@@ -17,7 +17,7 @@
 > Bu oluşturulan araba modeline  nesneye yönelik programlama yaklaşımında "sınıf(class)" oluşturulan her bir araba nesnesine de "nesne (object)" denilmektedir.
 
 ### Sınıf Tanımlama ###
-> İlk olarak çok basit bir sınıf oluşturalım. Aşağıdaki sınıfın Araba'dır ve renk isiminde tek bir özelliği vardır.
+> İlk olarak çok basit bir sınıf oluşturalım. Aşağıdaki sınıfın Araba'dır ve renk isiminde tek bir alan(field) vardır.
 
 ```csharp 
 class Araba
@@ -26,7 +26,7 @@ class Araba
 }
 
 ```
-> **Not:C# da sınıf isimlerinin baş harfi büyük olmalıdır. Ayrıca araba sınıfın içerisinde tanımlanan string tipindeki renk özelliği NTP yaklaşımında field veya attribute olarak adlandırılır.**
+> **Not:C# da sınıf isimlerinin baş harfi büyük olmalıdır. Ayrıca araba sınıfın içerisinde tanımlanan string tipindeki renk alanına NTP yaklaşımında field veya attribute olarak adlandırılır.**
 
 ### Nesne Oluşturma ###
 > C# da nesne oluşturmak için "new" anahtar sözcüğü kullanılır.
@@ -61,7 +61,7 @@ class Araba
 ```
 
 **Örnek**
-> Bir Araba classı tasarlayınız. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında özellikleri(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından aşağıdaki gibi bir nesne oluşturarak tüm özelliklerini ekrana yazdırınız.
+> Bir Araba classı tasarlayınız. Bu oluşturduğunuz Araba class'ının "marka", "yıl", "depoKapasitesi", "ortalamaTuketim", "yakitTuru" adında alanlar(field, attribute) olsun. Son olarak Main metodu içerisinde oluşturdugunuz Araba class'ından aşağıdaki gibi bir nesne oluşturarak tüm alanlar ekrana yazdırınız.
 
 ![image](https://user-images.githubusercontent.com/28144917/136508050-604f937c-a892-4ad1-b76c-1cd6dd1c6ffb.png)
 
@@ -69,10 +69,10 @@ class Araba
 ```csharp
 class Araba
 {
-    string marka = "BMW"; // Varsayılan olarak "BMW" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
-    short yili = 2010; // Varsayılan olarak "2010" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
-    double depoKapasitesi = 50.0;  // Varsayılan olarak "50.0" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
-    string yakitTuru = "Benzin"; // Varsayılan olarak "Benzin" verdik ancak nesne oluşturduktan sonra bu özelliğin değeri değiştirilebilir.
+    string marka = "BMW"; // Varsayılan olarak "BMW" verdik ancak nesne oluşturduktan sonra bu alanın değeri değiştirilebilir.
+    short yili = 2010; // Varsayılan olarak "2010" verdik ancak nesne oluşturduktan sonra bu alanın değeri değiştirilebilir.
+    double depoKapasitesi = 50.0;  // Varsayılan olarak "50.0" verdik ancak nesne oluşturduktan sonra bu alanın değeri değiştirilebilir.
+    string yakitTuru = "Benzin"; // Varsayılan olarak "Benzin" verdik ancak nesne oluşturduktan sonra bu alanın değeri değiştirilebilir.
 
     static void Main(string[] args)
     {
