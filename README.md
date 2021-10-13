@@ -1,5 +1,5 @@
-# Nesne Tabanlı Programlama Dersi
-(Hazırlayan: Şahin MANSUROĞLU)
+# Nesne Tabanlı Programlama Dersi İçerikleri
+**Hazırlayan:** Şahin MANSUROĞLU
 ## Konular ##
 ### 1. Hafta ###
 1. [C# programlamaya giriş](https://github.com/sahinmansuroglu/NtpDersi/blob/main/1_Hafta_Ders.md)
