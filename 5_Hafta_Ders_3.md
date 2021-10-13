@@ -1,12 +1,12 @@
 ## Sınıf Üyeleri ##
 
-> Sınıf içerisinde tanımlanmış özelliklere ve metotlara sınıf üyeleri denir. 
+> Sınıf içerisinde tanımlanmış alan (field, attribute) ve metotlara sınıf üyeleri denir. 
 
-> Aşağıdaki Örnekte Araba sınıf'ının üyeleri olarak "renk" özelliği ve "bilgileriEkranaYaz()" metodu bulunmaktadır.
+> Aşağıdaki Örnekte Araba sınıf'ının üyeleri olarak "renk" alanı ve "bilgileriEkranaYaz()" metodu bulunmaktadır.
 ```csharp
  class Araba
  {
-      string renk="mavi";    // Özellik (field)
+      string renk="mavi";    // Alan (field)
       void bilgileriEkranaYaz() // Metot
       {
           Console.WriteLine($"Renk:{renk} ");
@@ -18,7 +18,7 @@
 ```csharp
 class Araba
 {
-    string renk = "mavi";    // Özellik (field)
+    string renk = "mavi";    // Alan (field)
     void bilgileriEkranaYaz() // Metot
     {
         Console.WriteLine($"Renk:{renk} ");
@@ -35,12 +35,12 @@ class Araba
 }
 ```
 **Örnek** 
-> Aşağadaki örnekte olduğu gibi sınıf özelliklerini tanımlama anında boş bırakıp nesne oluşturduktan sonra da değer ataması yapabiliriz.
+> Aşağadaki örnekte olduğu gibi sınıf alanları tanımlama anında boş bırakıp nesne oluşturduktan sonra da değer ataması yapabiliriz.
 
 ```csharp
  class Araba
  {
-      string renk;    // Özellik (field)
+      string renk;    // alan (field)
       void bilgileriEkranaYaz() // Metot
       {
           Console.WriteLine($"Renk:{renk} ");
@@ -74,8 +74,8 @@ class Araba
 ![image](https://user-images.githubusercontent.com/28144917/136350459-8a7b1ad7-eed1-439b-8acf-90e050de1a2e.png)
 
 
-> Yukarıdaki örnekte Araba sınıfının renk ve hız özellikleri varsayılan olarak boş bırakılmıştır. 
-> Araba sınıfından nesne1 nesnesi oluşturulduktan sonra renk ve hız özellikleri değiştirilmiştir.
+> Yukarıdaki örnekte Araba sınıfının renk ve hız alanı değerleri varsayılan olarak boş bırakılmıştır. 
+> Araba sınıfından nesne1 nesnesi oluşturulduktan sonra renk ve hız alanlarının değerleri değiştirilmiştir.
 
 **Örnek**
 > İstersek aşağıdaki uygulamada olduğu gibi renk ve hız bilgilerini kullanıcıdan da alabiliriz.
@@ -111,7 +111,7 @@ class Araba
 
 
 **Örnek**
-> Aşağıdaki örnekte sınıf içerisinde özellikler (field) ve  metotlar bulunmaktadır. bilgileriEkranaYaz() metodu oluşturulan nesnenin bilgilerini ekrana yazmaktadır.
+> Aşağıdaki örnekte sınıf içerisinde alanlar (field) ve  metotlar bulunmaktadır. bilgileriEkranaYaz() metodu oluşturulan nesnenin bilgilerini ekrana yazmaktadır.
 
 ```csharp
  class Araba
