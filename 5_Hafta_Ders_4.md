@@ -161,4 +161,53 @@ class Araba
 ![image](https://user-images.githubusercontent.com/28144917/136376442-af9238d0-c346-4a1e-92c8-49b096166540.png)
 
 
-**This Keyword'u**
+**This Keyword'ü**
+> This anahtar kelimesi bir sınıfın hangi nesnesi ile çalışılıyorsa o nesnenin üyelerine erişmek için kullanılır.
+> Aşağıdaki Örnekte sınıfın özellikleri  ile kurucu metot'un aldığı parametrelerin adları aynıdır. Dikkat edilirse kurucu metot içerisinde gelen parametrelerin o anki yaratılan nesnenin özelliklerine atanabilmesi için özelliklerin başına this anahtar kelimesi getirilmiştir.
+
+```csharp
+using System;
+class Araba
+{
+    string marka;
+    short yili;
+    double depoKapasitesi;
+    double ortalamaTuketim;
+    string yakitTuru;
+
+    Araba(string marka, short yili, double depoKapasitesi, double ortalamaTuketim, string yakıtTuru)
+    {
+
+        this.marka = marka;
+        this.yili = yili;
+        this.depoKapasitesi = depoKapasitesi;
+        this.ortalamaTuketim = ortalamaTuketim;
+        this.yakitTuru = yakıtTuru;
+    
+        Console.WriteLine("\n----- Yeni Nesne oluşturuldu -----");    // "\n"  bir satır boşluk bırakır.
+    }
+    void bilgileriEkranaYaz()
+    {
+        Console.WriteLine($"Marka:{marka} ");
+        Console.WriteLine($"Yılı:{yili} ");
+        Console.WriteLine($"Depo Kapasitesi:{depoKapasitesi} ");
+        Console.WriteLine($"Ortalama Tüketim:{ortalamaTuketim} ");
+        Console.WriteLine($"Yakıt türü:{yakitTuru} ");
+    }
+
+    static void Main(string[] paramatreler)
+    {
+        Araba arabaNesne1 = new Araba("BMW",2010,50,8.0,"Benzin");
+        arabaNesne1.bilgileriEkranaYaz();
+
+        Araba arabaNesne2 = new Araba("AUDI",2010,50,6.0,"Dizel");
+        arabaNesne2.bilgileriEkranaYaz();
+
+        Araba arabaNesne3 = new Araba("JAGUAR",2010,50,8.0,"Benzin");
+        arabaNesne3.bilgileriEkranaYaz();
+
+        Console.ReadKey();
+    }
+
+}
+```
