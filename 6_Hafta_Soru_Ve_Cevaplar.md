@@ -224,6 +224,7 @@ class Dikdortgen
 **Soru-4**
 > Solution explorer penceresinde iki tane console uygulaması (anaProgram ve hesaplamaProjesi adında) oluşturunuz.
 > hesaplamaProjesi içerisinde aşağıdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız
+
 **a.** kisaKenarUzunlugu ve uzunKenarUzunlugu alanları bulunacak
 
 **b.** alanHesapla, cevreHesapla bilgileriEkranaYaz metotları olacak
