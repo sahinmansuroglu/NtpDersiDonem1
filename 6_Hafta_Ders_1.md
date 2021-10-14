@@ -21,4 +21,38 @@
 ![image](https://user-images.githubusercontent.com/28144917/137263672-8490fef1-c8b0-4d0a-aa87-c9da99a1e793.png)
 
 **Çözüm**
-Yukarıdaki hatayı ortadan kaldırabilmek için adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodunun başına public erişim belirleyicisi yazılmalıdır.
+> Yukarıdaki hatayı ortadan kaldırabilmek için adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodunun başına public erişim belirleyicisi yazılmalıdır.
+
+
+```csharp
+using System;
+
+namespace proje3
+{
+    class Program
+    {
+        int a;
+        static void Main(string[] args)
+        {
+            Person kisi1 = new Person();
+            kisi1.adSoyad = "Arda AR";
+            kisi1.yas = 35;
+            kisi1.bilgileriEkranaYaz();
+            Console.WriteLine("Hello World!");
+        }
+    }
+
+    class Person
+    {
+       public string adSoyad;
+       public int yas;
+       public void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Ad Soyad:{adSoyad}");
+            Console.WriteLine($"Yaş:{yas}");
+        }
+
+    }
+
+}
+```
