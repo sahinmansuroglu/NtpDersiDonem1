@@ -77,7 +77,7 @@ Aşağıdaki uygulama dikdörtgen sınıfındaki kisaKenar ve uzunKenar alanlar�
             return KisaKenar * UzunKenar;
         }
     }
-}
+
 ```
 **Dikdortgen Class'ını kullanan ana program**
 ```csharp
@@ -95,3 +95,97 @@ Aşağıdaki uygulama dikdörtgen sınıfındaki kisaKenar ve uzunKenar alanlar�
     }
 
 ```
+**Örnek**
+> Aşağıdaki örnekte Araba class'ı tanımlanmış içerisinde yili, markasi ve hizi alanları tanımlanmıştır. Kapsülleme ile yili'nın 1900 den büyük olması, hizi'nın negatif sayı olmaması ve marka bilgisinin boş metin girildiği  durumlarda "Marka  Girilmedi" verisinin girilmesi sağlanmıştır.
+
+
+**Araba Class'ı**
+```csharp
+ class Araba
+    {
+        int yili;
+        public int Yili {
+            get
+            {
+                return yili;
+            }
+            set
+            {
+                if (value < 1900)
+                {
+                    yili = 0;
+                }
+                else
+                {
+                    yili = value;
+                }
+                
+            }
+        }
+        int hizi;
+        public int Hizi
+        {
+            get
+            {
+                return hizi;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    hizi = 0;
+                }
+                else
+                {
+                    hizi = value;
+                }
+
+            }
+        }
+
+        string markasi;
+        public string Markasi
+        {
+            get
+            {
+                return markasi;
+            }
+            set
+            {
+                if (value == "")
+                {
+                    markasi = "Marka Girilmedi";
+                }
+                else
+                {
+                    markasi = value;
+                }
+               
+            }
+        }
+        
+    }
+  
+  ```
+  **Araba Class'ını kullanan ana program**
+  
+  ```csharp
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Araba yeniAraba = new Araba();
+            yeniAraba.Hizi = 50;
+            yeniAraba.Yili = 1990;
+            yeniAraba.Markasi = "BMW";
+
+            
+
+            Console.WriteLine($"Hiz={yeniAraba.Hizi}");
+            Console.WriteLine($"Yili={yeniAraba.Yili}");
+            Console.WriteLine($"Markasi={yeniAraba.Markasi}");
+
+            Console.ReadKey();
+        }
+    }
+  ```
