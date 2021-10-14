@@ -17,4 +17,8 @@
 
 **Örnek**
 > Aşağıdaki uygulamada Person sınıfının içerisindeki adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu  tanımlanmıştır. Ancak başına erişim belirleyicisi yazılmadığı için varsayılan olarak private olarak belirlenmiştir.  Ana programda Person sınıfından kisi1 nesnesi üretimiştir. Ancak adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu private olduğundan ulaşılmaya çalışıldığında hata vermiştir.
-![image](https://user-images.githubusercontent.com/28144917/137263035-103db360-b551-465e-84de-d395ecd273fa.png)
+
+![image](https://user-images.githubusercontent.com/28144917/137263672-8490fef1-c8b0-4d0a-aa87-c9da99a1e793.png)
+
+**Çözüm**
+Yukarıdaki hatayı ortadan kaldırabilmek için adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodunun başına public erişim belirleyicisi yazılmalıdır.
