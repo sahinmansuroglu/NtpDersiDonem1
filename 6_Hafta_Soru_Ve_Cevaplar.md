@@ -221,3 +221,12 @@ class Dikdortgen
 
 ![image](https://user-images.githubusercontent.com/28144917/136916693-6b27c637-dde9-4d5a-9f64-c41a0448470f.png)
 
+**Soru-4**
+> Solution explorer penceresinde iki tane console uygulaması (anaProgram ve hesaplamaProjesi adında) oluşturunuz.
+> hesaplamaProjesi içerisinde aşağıdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız
+**a.** kisaKenarUzunlugu ve uzunKenarUzunlugu alanları bulunacak
+
+**b.** alanHesapla, cevreHesapla bilgileriEkranaYaz metotları olacak
+
+> anaProgram içerisinden  hesaplamaProjesi içerisindeki Dikdortgen class'ından 3 adet  dikdortgen nesnesi oluşturup alanını ve çevresini hesaplatarak ekrana yazdırınız.
+
