@@ -60,13 +60,21 @@ namespace proje3
 ![image](https://user-images.githubusercontent.com/28144917/137267123-85c562b8-2f25-4fe6-b0fd-ffa0da2b4373.png)
 
 **Class'larda Internal ve public kullanımı ile ilgili Örnek**
+
 > Aşağıdaki Adımları uygulayarak çalışmamızı tamamlayalım
+ 
 1. Aşağıdaki Çözüm (solution) penceresindeki proje1 ve proje2 projelerini oluşturunuz.
+ 
 ![image](https://user-images.githubusercontent.com/28144917/137272750-f39ebe92-65ce-4070-a9fe-a7859f78800a.png)
+
 2. Proje2 içerisinde aşağıdaki gibi Personel class'ını oluşturunuz.
+
 ![image](https://user-images.githubusercontent.com/28144917/137273292-cb0da68b-a3ba-48fc-be65-75f2ed08861e.png)
+
 3. Proje1'in dependencies(bağımlılıklar) bölümüne proje2'yi ekleyiniz.
+ 
 4. Proje1'in main bloğu içerisinde aşağıdaki gibi proje2'nin içerisindeki personel sınıfında nesne üretip üyelerine erişim sağlayınız.
+
 ![image](https://user-images.githubusercontent.com/28144917/137273728-351087c4-c1e4-4893-b06e-d45f52cecf61.png)
 
 **Not:** Yukarıdaki program da dikkat edilirse proje2 içerisindeki Personel class'ına erişimde hata oluşmaktadır. Bu hatanın nedeni proje2 içerisindeki Personel class'ının erişim belirleyicisi yazılmadığı için varsayılan olarak Internal olarak verilmiştir. Bundan dolayı da Personel class'ına erişimde hata oluşmuştur. Proje1 içinde proje2 içersindeki Personel class'ına erişilebilmesi için personel class'ının başına public yazılması gerekir.
