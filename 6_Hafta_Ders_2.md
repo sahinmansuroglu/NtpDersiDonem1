@@ -21,9 +21,12 @@ class Dikdortgen{
 }
 ```
 
+**Örnek**
+Aşağıdaki uygulama dikdörtgen sınıfındaki kisaKenar ve uzunKenar alanları(field) negatif değer girmeye karşı kapsüllenmiştir.
 
-namespace kapsullemem
-{
+
+**Dikdortgen Class'ı**
+```csharp
     class Dikdortgen
     {
         private int kisaKenar;//field(alan)
@@ -75,13 +78,10 @@ namespace kapsullemem
         }
     }
 }
-
-
-using System;
-
-namespace kapsullemem
-{
-    class Program
+```
+**Dikdortgen Class'ını kullanan ana program**
+```csharp
+ class Program
     {
         static void Main(string[] args)
         {
@@ -93,4 +93,5 @@ namespace kapsullemem
             Console.ReadKey();
         }
     }
-}
+
+```
