@@ -20,3 +20,77 @@ class Dikdortgen{
         }
 }
 ```
+
+
+namespace kapsullemem
+{
+    class Dikdortgen
+    {
+        private int kisaKenar;//field(alan)
+        private int uzunKenar;
+        public int KisaKenar { //Property
+            get { 
+                return kisaKenar; 
+            }
+            set { 
+                if (value < 0)
+                {
+                    kisaKenar = 0;
+                }
+                else
+                {
+                    kisaKenar = value;
+                }
+               
+            } 
+        
+        }
+
+        public int UzunKenar { 
+            get  {
+                return uzunKenar;
+            }
+            set
+            {
+                if (value < 0)
+                {
+                    uzunKenar = 0;
+                }
+                else
+                {
+                    uzunKenar = value;
+                }
+               
+            }
+        
+        }
+        public Dikdortgen(int kisaKenar, int uzunKenar)
+        {
+            this.KisaKenar = kisaKenar;
+            this.UzunKenar= uzunKenar;
+        }
+       public int alanHesapla()
+        {
+            return KisaKenar * UzunKenar;
+        }
+    }
+}
+
+
+using System;
+
+namespace kapsullemem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Dikdortgen yeniDikdortgen = new Dikdortgen(-5, 5);
+
+            Console.WriteLine($"Alan={yeniDikdortgen.alanHesapla()}");
+
+            Console.ReadKey();
+        }
+    }
+}
