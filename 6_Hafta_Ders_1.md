@@ -15,7 +15,7 @@
 
 **Not-2:**  Bir class üyesinin varsayılan erişim belirleyicisi private'dir.Class'ın başına herhangi bir şey yazılmadığında private kabul edilir.
 
-**Örnek**
+**Public ve Private kullanımı ile ilgili Örnek**
 > Aşağıdaki uygulamada Person sınıfının içerisindeki adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu  tanımlanmıştır. Ancak başına erişim belirleyicisi yazılmadığı için varsayılan olarak private olarak belirlenmiştir.  Ana programda Person sınıfından kisi1 nesnesi üretimiştir. Ancak adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu private olduğundan ulaşılmaya çalışıldığında hata vermiştir.
 
 ![image](https://user-images.githubusercontent.com/28144917/137263672-8490fef1-c8b0-4d0a-aa87-c9da99a1e793.png)
