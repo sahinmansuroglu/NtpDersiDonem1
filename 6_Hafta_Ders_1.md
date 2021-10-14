@@ -18,7 +18,7 @@
 **Public ve Private kullanımı ile ilgili Örnek**
 > Aşağıdaki uygulamada Person sınıfının içerisindeki adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu  tanımlanmıştır. Ancak başına erişim belirleyicisi yazılmadığı için varsayılan olarak private olarak belirlenmiştir.  Ana programda Person sınıfından kisi1 nesnesi üretimiştir. Ancak adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodu private olduğundan ulaşılmaya çalışıldığında hata vermiştir.
 
-![image](https://user-images.githubusercontent.com/28144917/137263672-8490fef1-c8b0-4d0a-aa87-c9da99a1e793.png)
+![image](https://user-images.githubusercontent.com/28144917/137266766-c76b531c-3d71-4c2e-a055-e6d8d10bdf93.png)
 
 **Çözüm**
 > Yukarıdaki hatayı ortadan kaldırabilmek için adSoyad ve yas Alanları ile  bilgileriEkranaYaz metodunun başına public erişim belirleyicisi yazılmalıdır.
@@ -31,17 +31,15 @@ namespace proje3
 {
     class Program
     {
-        int a;
         static void Main(string[] args)
         {
             Person kisi1 = new Person();
             kisi1.adSoyad = "Arda AR";
             kisi1.yas = 35;
             kisi1.bilgileriEkranaYaz();
-            Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
-
     class Person
     {
        public string adSoyad;
@@ -59,5 +57,6 @@ namespace proje3
 
 **Ekran Çıktısı**
 
-![image](https://user-images.githubusercontent.com/28144917/137266405-b83b0898-dd9d-42e5-8c4a-c74e53140130.png)
+![image](https://user-images.githubusercontent.com/28144917/137267123-85c562b8-2f25-4fe6-b0fd-ffa0da2b4373.png)
+
 
