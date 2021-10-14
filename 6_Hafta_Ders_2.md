@@ -5,10 +5,10 @@
 **Temel Kullanıma Örnek**
 ```csharp
 class Dikdortgen{
-        private int kisaKenar; 
-        public int KisaKenar
+        private int kisaKenar; // Field (Alan)
+        public int KisaKenar   // property (Özellik)
         {
-            get { 
+            get {              //KısaKenar property'sinin değerini okydyğ
                 return kisaKenar; 
             }
             set
@@ -23,8 +23,8 @@ class Dikdortgen{
 > Aşağıdaki örnekte Dikdortgen sınıfının içerisinde private olarak kisaKenar field'i (Alanı) tanımlanmış  ve bu field'a erişim KisaKenar özelliğinin get ve set metotları kullanılarak gerçekleştirilmiştir. 
 ```csharp
 class Dikdortgen{
-        private int kisaKenar; //
-        public int KisaKenar
+        private int kisaKenar; // Field (Alan)
+        public int KisaKenar  // property (Özellik)
         {
             get { return kisaKenar; }
             set
