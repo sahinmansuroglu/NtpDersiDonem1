@@ -56,3 +56,8 @@ namespace proje3
 
 }
 ```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/137266405-b83b0898-dd9d-42e5-8c4a-c74e53140130.png)
+
