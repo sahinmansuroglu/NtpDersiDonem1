@@ -77,7 +77,7 @@ namespace proje3
 
 ![image](https://user-images.githubusercontent.com/28144917/137273728-351087c4-c1e4-4893-b06e-d45f52cecf61.png)
 
-**Not:** Yukarıdaki program da dikkat edilirse proje2 içerisindeki Personel class'ına erişimde hata oluşmaktadır. Bu hatanın nedeni proje2 içerisindeki Personel class'ının erişim belirleyicisi yazılmadığı için varsayılan olarak Internal olarak verilmiştir. Bundan dolayı da Personel class'ına erişimde hata oluşmuştur. Proje1 içinde proje2 içersindeki Personel class'ına erişilebilmesi için personel class'ının başına public yazılması gerekir.
+**Not:** Yukarıdaki program da dikkat edilirse proje2 içerisindeki Personel class'ına erişimde hata oluşmaktadır. Bu hatanın nedeni proje2 içerisindeki Personel class'ının erişim belirleyicisi yazılmadığı için varsayılan olarak Internal olarak verilmiştir. Bundan dolayı da Personel class'ına erişimde hata oluşmuştur. proje1 içinde proje2 içersindeki Personel class'ına erişilebilmesi için personel class'ının başına public yazılması gerekir.
 
 5. Hatayı ortadan kaldırılmak için Personel class'ının başına aşağıdaki gibi public yazılması gerekir.
 
