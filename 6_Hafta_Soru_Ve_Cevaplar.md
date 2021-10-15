@@ -9,7 +9,7 @@
 
 > anaProgram içerisinden  hesaplamaProjesi içerisindeki Dikdortgen class'ından 3 adet  dikdortgen nesnesi oluşturup alanını ve çevresini hesaplatarak ekrana yazdırınız.
 
-**Not: Kurucu metot kullanılmalı **
+**Not: Kurucu metot kullanılmalı**
 
 **Sorunu Çözümü**
 
