@@ -28,7 +28,7 @@
 2. [Nesneye Yönelik programlama yaklaşımı(Object(Nesne) ve Class(Sınıf) Kavramı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_2.md)
 3. [Sınıf Üyeleri (alan(field), metot)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_3.md)
 4. [Kurucu Metotlar (Constructor)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_4.md)
-5. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Soru_Ve_Cevaplar.md) 
+5. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Soru_Ve_Cevaplar.md) 
 
 ### 6. Hafta ###
 1. [Erişim Belirleyiciler (Access Modifiers)(public, private, protected, internal)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_1.md)
