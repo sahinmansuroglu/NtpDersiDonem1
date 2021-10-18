@@ -33,7 +33,8 @@
 ### 6. Hafta ###
 1. [Erişim Belirleyiciler (Access Modifiers)(public, private, protected, internal)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_1.md)
 2. [Encapsulation (Kapsülleme)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_2.md)
-3. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Soru_Ve_Cevaplar.md) 
+3. [Sadece Okunabilir Özellikler, Sadece Yazılabilir Özellikler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_3.md)
+4. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Soru_Ve_Cevaplar.md) 
 
 ### 7. Hafta ###
 1. [Abstraction](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_1.md)
