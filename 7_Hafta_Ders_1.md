@@ -5,8 +5,6 @@
 > kucuktenBuyugeYaz methoduna ulaşabilecektir.Ancak dikkaet edilirse sınıfın kucuktenBuyugeYaz methodu parametre olarak gönderilen 2 sayıyı kuçukten büyüğe yazarken private olarak tanımlanmış üyeleri  kullanmıştır.
 > Ancak kullanıcı sınıfın içerisinde küçükten büyüğe doğru yazma işleminin nasıl olduğuna odaklanmaz. Sadece parametre olarak 2 sayıyı methoda gönderir ve sonucunu alır. İşte bu yaklaşıma NTP' de Abstraction denilmektedir.
 
-![image](https://user-images.githubusercontent.com/28144917/137730069-744592a6-328a-4328-b8fc-42e5c066491e.png)
-
 
  ```csharp
  
@@ -37,4 +35,5 @@ public class islem {
 }
 
 ```
- 
+
+![image](https://user-images.githubusercontent.com/28144917/137730069-744592a6-328a-4328-b8fc-42e5c066491e.png)
