@@ -36,7 +36,7 @@
 3. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Soru_Ve_Cevaplar.md) 
 
 ### 7. Hafta ###
-1. [Abstraction]()
+1. [Abstraction](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_1.md)
 2. []()
 3. []() 
 
