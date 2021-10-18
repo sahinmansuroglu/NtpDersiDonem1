@@ -56,14 +56,14 @@ public class Person
 {
     string ad;
     string soyad;
-    string Ad
+    public string Ad
     {
         set
         {
             ad = value;
         }
     }
-    string Soyad
+    public string Soyad
     {
         set
         {
@@ -71,7 +71,7 @@ public class Person
         }
     }
 
-    string AdSoyad
+    public string AdSoyad
     {
         get
         {
@@ -84,12 +84,14 @@ class program
 {
     static void Main(string[] args)
     {
-        Dikdortgen dikdortgen1 = new Dikdortgen(45, 66);
+        Person kisi1 = new Person();
+        kisi1a
         Console.WriteLine($"Alan={dikdortgen1.Alan}");
         Console.WriteLine($"Çevre={dikdortgen1.Cevre}");
 
 
     }
 }
+
 
 ```
