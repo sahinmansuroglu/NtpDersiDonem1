@@ -1,5 +1,5 @@
 ## Encapsulation  (Kapsülleme) ## 
-> Kapsülleme sınıf içerisindeki private olarak tanımlanmış alanlara güvenli bir şekilde erişilebilmesini sağlayan yapılardır.
+> Kapsülleme sınıf içerisindeki private olarak tanımlanmış alanlara güvenli bir şekilde erişilebilmesini sağlayan bir yaklaşımdır ve Nesneye Yönelik Programlama kavramının en önemli yaklaşımlarından biridir.
 > Kapsüllemenin temel yapısını get ve set metotları oluşturur. Private tanımlanmış bir alanın(field) değerini çekmek istediğimizde get methodunu, bu alana (field) değer vermek istediğimizde ise set methodunu kullanırız.
 
 **Temel Kullanıma Örnek**
