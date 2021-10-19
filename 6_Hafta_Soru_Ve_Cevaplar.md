@@ -236,3 +236,6 @@ class Program
     }
 }
 ```
+**Program Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/137854309-d4ef593c-585c-4198-989b-36ba944decdd.png)
