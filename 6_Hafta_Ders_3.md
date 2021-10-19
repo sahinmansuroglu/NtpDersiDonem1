@@ -15,7 +15,7 @@ class Araba
     {
         get
         {
-            return 2021 - yili;
+            return DateTime.Now.Year - yili;
         }
     }
     
