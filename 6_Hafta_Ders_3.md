@@ -1,6 +1,40 @@
 ## Sadece Okunabilir Özellikler ## 
 > Bir özelliğe (property) değer atamak için set, değerini almak(Okumak) için ise get metodu kullanıldığını biliyoruz. Eğer bir özelliğin sadece get metodu varsa bu özelliğin sadece değeri okunabilir. Herhangi bir değer ataması yapılamaz.
 
+
+**Örnek**
+
+```csharp
+using System;
+
+class Araba
+{
+    public int yili;
+    
+    public int ArabaninYasi
+    {
+        get
+        {
+            return 2021 - yili;
+        }
+    }
+    
+}
+
+class AnaProgram
+{
+    static void Main(string []args) {
+        Araba yeniAraba = new Araba();
+        yeniAraba.yili = 1985;
+        
+        Console.WriteLine($"Yili:{yeniAraba.yili}");
+        Console.WriteLine($"Yaşı:{yeniAraba.ArabaninYasi}");
+        Console.ReadKey();
+    }
+}
+```
+
+
 **Örnek**
 
 ```csharp
