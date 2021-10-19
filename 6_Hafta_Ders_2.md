@@ -8,10 +8,10 @@ class Dikdortgen{
         private int kisaKenar; // Field (Alan)
         public int KisaKenar   // property (Özellik)
         {
-            get {              //KısaKenar property'sinin değerini okydyğ
+            get {              //KısaKenar property'sinin değerinin okunduğu methot
                 return kisaKenar; 
             }
-            set
+            set   //KısaKenar property'sinin değer atandığı methot
             {
                kisaKenar = value; 
             }
