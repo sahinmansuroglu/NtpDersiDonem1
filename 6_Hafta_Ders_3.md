@@ -37,7 +37,7 @@ class program
     static void Main(string[] args)
     {
         Dikdortgen dikdortgen1 = new Dikdortgen(45, 66);
-        //dikdortgen1.Alan=45 ** Hata Alan property'si sadece okunabilir bir özellik olduğundan değer ataması yapmaya çalışırsak hata alırız..
+        //dikdortgen1.Alan=45   **Hata verir. Çünkü Alan property'si sadece okunabilir bir özellik olduğundan değer ataması yapmaya çalışırsak hata alırız..
         Console.WriteLine($"Alan={dikdortgen1.Alan}");
         Console.WriteLine($"Çevre={dikdortgen1.Cevre}");
     }
@@ -87,7 +87,7 @@ class program
         Person kisi1 = new Person();
         kisi1.Ad = "Şahin";
         kisi1.Soyad = "MANSUROĞLU";
-        //Console.WriteLine(kisi1.Ad); hata verir çünkü Ad property'si sadece yazılabilir bir özellik
+        //Console.WriteLine(kisi1.Ad); **Hata verir. Çünkü Ad property'si sadece yazılabilir bir özellik
         Console.WriteLine(kisi1.AdSoyad);
         Console.ReadKey();
     }
