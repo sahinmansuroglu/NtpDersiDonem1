@@ -27,7 +27,7 @@ public class Dikdortgen
     {
         get
         {
-            return (kisaKenar + uzunKenar)/2;
+            return (kisaKenar + uzunKenar)*2;
         }
     }
 }
