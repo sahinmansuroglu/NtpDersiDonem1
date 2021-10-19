@@ -1,4 +1,3 @@
-
 **Soru-1**
 > Solution explorer penceresinde iki tane console uygulaması (anaProgram ve hesaplamaProjesi adında) oluşturunuz.
 > hesaplamaProjesi içerisinde aşağıdaki verilenler göre Dikdörtgen adında bir sınıf tasarlayınız
@@ -80,6 +79,8 @@ namespace anaProgram
 }
 
 ```
+
+**Soru-2**
 
 > Aşağıda verilenlere göre  bir sınıf tasarlayınız.Ve bu sınıftan klavyeden girilen verilere göre for döngüsü yardımıyla 3 nesne oluşturup bilgilerini ekrana yazdırınız.
 
