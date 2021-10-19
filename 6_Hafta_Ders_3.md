@@ -37,6 +37,7 @@ class program
     static void Main(string[] args)
     {
         Dikdortgen dikdortgen1 = new Dikdortgen(45, 66);
+        //dikdortgen1.Alan=45 ** Hata Alan property'si sadece okunabilir bir özellik olduğundan değer ataması yapmaya çalışırsak hata alırız..
         Console.WriteLine($"Alan={dikdortgen1.Alan}");
         Console.WriteLine($"Çevre={dikdortgen1.Cevre}");
     }
@@ -48,7 +49,6 @@ class program
 > Eğer bir özelliğin sadece set metodu varsa bu özelliğe değer ataması yapılabilir ancak değeri okunamaz.
 
 ```csharp
-
 using System;
 
 
@@ -85,11 +85,11 @@ class program
     static void Main(string[] args)
     {
         Person kisi1 = new Person();
-        kisi1a
-        Console.WriteLine($"Alan={dikdortgen1.Alan}");
-        Console.WriteLine($"Çevre={dikdortgen1.Cevre}");
-
-
+        kisi1.Ad = "Şahin";
+        kisi1.Soyad = "MANSUROĞLU";
+        //Console.WriteLine(kisi1.Ad); hata verir çünkü Ad property'si sadece yazılabilir bir özellik
+        Console.WriteLine(kisi1.AdSoyad);
+        Console.ReadKey();
     }
 }
 
