@@ -45,7 +45,7 @@ class program
 
 ```
 
-## Sadece Okunabilir Özellikler ## 
+## Sadece Yazılabilir Özellikler ## 
 > Eğer bir özelliğin sadece set metodu varsa bu özelliğe değer ataması yapılabilir ancak değeri okunamaz.
 
 ```csharp
