@@ -169,7 +169,7 @@ Aşağıdaki uygulama dikdörtgen sınıfındaki kisaKenar ve uzunKenar alanlar�
             }
             set
             {
-                if (value == "")
+                if (value.trim() == "")
                 {
                     markasi = "Marka Girilmedi";
                 }
