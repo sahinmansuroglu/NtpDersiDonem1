@@ -1,5 +1,5 @@
 ## Abstraction ## 
-> Encapsulation ile beraber NTP'nin en önemli yaklaşımlarından bir diğeri de Abstraction'dır. Abstraction  bir class içerisinde tanımlanmış üyelere (kulanıcıyı ilgilendirmeyen  erişimi kısıtlayan yaklaşımdır.  
+> Encapsulation ile beraber NTP'nin en önemli yaklaşımlarından bir diğeri de Abstraction'dır. Abstraction  bir class içerisinde tanımlanmış üyelere (kulanıcıyı ilgilendirmeyen)  erişimi kısıtlayan yaklaşımdır.  
 > Temel olarak yapılacak işin nasıl yapılacağına değil de işin ne olacağına odaklanmamıza imkan verir. 
 > Aşağıdaki örneği inceleyecek olursak islem sınıfının içerisinde kucuktenBuyugeYaz methodu disindaki tüm sınıf üyeleri private tanımlanmıştır. Yanı bu sınıftan nesne oluşturan bir kullanıcı sadece 
 > kucuktenBuyugeYaz methoduna ulaşabilecektir.Ancak dikkaet edilirse sınıfın kucuktenBuyugeYaz methodu parametre olarak gönderilen 2 sayıyı kuçukten büyüğe yazarken private olarak tanımlanmış üyeleri  kullanmıştır.
