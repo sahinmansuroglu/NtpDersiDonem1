@@ -131,6 +131,35 @@ int topla (int s1,int s2, int s3){
 > **Not:** Parametre Dizilerinde metoda gönderilen parametreler metot içerisine bir dizi halinde gelir ve bu  dizi içerisindeki her bir elamana (her bir parametreye) foreach döngüsü ile erişim sağlanıp işlem yaptırılabilir.
 
 **Örnek**
+```csharp
+using System;
+public class islem
+{
+
+    public void sayilariTopla(params int [] sayilar)
+    {
+        int toplam = 0;
+        foreach (var herBirSayi in sayilar)
+        {
+            Console.Write($"{herBirSayi} ");
+            toplam += herBirSayi;
+            
+        }
+        Console.WriteLine($"Sonuc: {toplam}");
+    }
+}
+class AnaProgram
+{
+    static void Main(string [] args)
+    {
+        islem nsn = new islem();
+        nsn.sayilariTopla(98,85,56, 78);
+        Console.ReadKey();
+    }
+}
+```
+
+**Örnek**
 
 ```csharp
 using System;
