@@ -1,10 +1,10 @@
 ## Metotlar-2 ##
-> [Metotlar-1](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md) bölümünde  metot kavramını, geriye değer döndüren, geriye değer döndürmeyen ve paramtereli metot kullanımını görd
+> [Metotlar-1](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md) bölümünde  metot kavramını, geriye değer döndüren, geriye değer döndürmeyen ve paramtereli metod kullanımını görd
 > k. Bu bölümde ise metotlarda Varsayılan Değerli Parametreler, İsimlendirilmiş Parametreler, Parametre Dizileri kullanımını göreceğiz.
 
 ###  Varsayılan Değerli Parametreler ###
 
->Parametreli metotlarda metotlar çağrılırken parametre değerlerinin de methoda gönderilmesi gerekir. Eğer parametreli 
+>Parametreli metodlarda metotlar çağrılırken parametre değerlerinin de methoda gönderilmesi gerekir. Eğer parametreli 
 >bir methodun çağırırken değer göndermeden de çalışabilmesini istiyorsak bu tür durumlarda varsayılan değerli Parametreleri kullanabiliriz.
 
 **Örnek Kullanım**
@@ -12,12 +12,12 @@
 using System;
 class ornekSinif
 {
-    // Aşağıdaki metot çağrılırken sayi1 ve sayi2'nin değerleri gönderilmezse varsayılan olarak 34 ve 56 değerleri toplanır
+    // Aşağıdaki metod çağrılırken sayi1 ve sayi2'nin değerleri gönderilmezse varsayılan olarak 34 ve 56 değerleri toplanır
     public int topla(int sayi1=34,int sayi2 = 56)
     {
         return sayi1 + sayi2;
     }
-    //Aşağıdaki metot çağırılırken adSoyad değeri gönderilmezse varsayılan olarak "Mehmet EMİN" gönderilir..
+    //Aşağıdaki metod çağırılırken adSoyad değeri gönderilmezse varsayılan olarak "Mehmet EMİN" gönderilir..
     public void selamVer(string adSoyad="Mehmet EMİN")
     {
         Console.WriteLine($"Merhaba Sayın {adSoyad}");
@@ -99,27 +99,28 @@ class anaProgram
 ![image](https://user-images.githubusercontent.com/28144917/138220876-12305b53-e7e8-4f91-9ee7-9fe049eda155.png)
 
 ## Parametre Dizileri ##
-> Methotların parametre sayısının bilinmediği durumlarda parametre dizileri kullanılır. Ve bu işlem için params anahtar kelimesi kullanılır.
+> Methodların parametre sayısının bilinmediği durumlarda parametre dizileri kullanılır. Ve bu işlem için params anahtar kelimesi kullanılır.
 
-> Aşağıdaki methot dışardan s1 ve s2 adında iki parametre alır
+> Aşağıdaki method dışardan s1 ve s2 adında iki parametre alır
 ```csharp
 int topla (int s1,int s2){
     return (s1+s2);
 }
 ```
-> Aşağıdaki methot dışardan s1, s2 ve s3 adında iki parametre alır
+> Aşağıdaki method dışardan s1, s2 ve s3 adında iki parametre alır
 ```csharp
 int topla (int s1,int s2, int s3){
     return (s1+s2+s3);
 }
 ```
-> Aşağıdaki methot dışardan s1, s2 ve s3 adında iki parametre alır
+> Aşağıdaki method dışardan s1, s2 ve s3 adında iki parametre alır
 ```csharp
 int topla (int s1,int s2, int s3){
     return (s1+s2+s3);
 }
 ```
-> Aşağıdaki methot dışardan değişken sayıda parametre alır.
+> Aşağıdaki method dışardan değişken sayıda parametre alır.
+
 ```csharp
 public void sayilariTopla(params int [] sayilar)
     {
