@@ -47,10 +47,12 @@ class anaProgram
 
 
 ## İsimlendirilmiş Parametreler ##
-> Bir metod parametreler  ile çağrılırken  parametrelerin  tanımlama sırası ile aynı sırada gönderilmesi gerekir. Eğer bu kurala uyulmak istenmiyorsa İsimlendirilmiş parametreler gönderilebilir.
+
+> Bir metod parametre  ile çağrılırken,  parametrelerin  tanımlamanma sırası ile aynı sırada gönderilmesi gerekir. Eğer bu kurala uyulmak istenmiyorsa İsimlendirilmiş parametreler kullanılabilir.
 
 **Örnek Kullanım**
-> Aşağıdaki örnekte metoda parametre gönderirken parametre adının yanına ":" koyarak sıraya uymadan da değer gönderebiliriz.
+
+> Aşağıdaki örnekte metoda parametre gönderirken parametre adının yanına ":" koyarak parametre sırasına uymadan da değer gönderebiliriz.
 
 ![image](https://user-images.githubusercontent.com/28144917/138217847-07001129-7ba6-4c14-a085-1f8fa543a4f1.png)
 
