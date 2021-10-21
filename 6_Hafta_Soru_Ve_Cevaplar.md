@@ -259,34 +259,29 @@ class Program
 
 ```csharp
 using System;
-public class Ogrenci
+class Ogrenci
 {
     private string adSoyad;
-    private short puan1;
-    private short puan2;
-
     public string AdSoyad
     {
         get
         {
             return adSoyad;
         }
-
         set
         {
-            if (value == "")
+            if (value.Trim() == "")
             {
-                adSoyad = "Ad Soyad Girilmedi";
+                Console.WriteLine("Ad Soyad boş girildiği için hata oluştu ");
+                adSoyad = "Ad Soyad Girilmedi...";
             }
             else
             {
                 adSoyad = value;
             }
-
         }
     }
-
-
+    private short puan1;
     public short Puan1
     {
         get
@@ -295,17 +290,19 @@ public class Ogrenci
         }
         set
         {
-            if (value >= 0 && value <= 100)
+            if (value>=0 && value <= 100)
             {
                 puan1 = value;
             }
             else
             {
+                Console.WriteLine("Puan1 Geçersiz puan girildiğinden 0 atandı.");
                 puan1 = 0;
+                
             }
-
         }
     }
+    private short puan2;
     public short Puan2
     {
         get
@@ -320,13 +317,20 @@ public class Ogrenci
             }
             else
             {
+                Console.WriteLine("Puan2 Geçersiz puan girildiğinden 0 atandı.");
                 puan2 = 0;
-            }
 
+            }
         }
     }
+    public Ogrenci(string adSoyad, short puan1, short puan2)
+    {
+        this.AdSoyad = adSoyad;
+        this.Puan1 = puan1;
+        this.Puan2 = puan2;
+    }
 
-    public double Ortalama
+   public double OrtalamaPuan
     {
         get
         {
@@ -338,50 +342,39 @@ public class Ogrenci
     {
         get
         {
-           
-            if (Ortalama < 50)
-            {
-                return "Kaldınız..";
-            }
-            else
-            {
-                return "Geçtiniz....";
-            }
-
-            //yada aşağıdaki gibi ternary operatörü kullanılabilir.
-            // return Ortalama < 50 ? "Kaldınız..." : "Geçtiniz...";
+            return OrtalamaPuan < 50 ? "KALDI.." : "GEÇTİ";
         }
     }
 
-    public Ogrenci(string adSoyad,  short puan1, short puan2)
-    {
-        this.AdSoyad = adSoyad;
-        this.Puan1 = puan1;
-        this.Puan2 = puan2;
-      
-    }
     public void bilgileriEkranaYaz()
     {
-        Console.WriteLine("---------Öğrenci Bilgileri----------");
-        Console.WriteLine($" Ad Soyad:{adSoyad}");
-        Console.WriteLine($" Puan1: {puan1}");
-        Console.WriteLine($" Puan2: {puan2}");
-        Console.WriteLine($" Ortalama:{Ortalama}");
-        Console.WriteLine($" Durumu:{kaldıGectiDurumu}");
+        Console.WriteLine("----------Öğrenci Bilgileri---------");
+        Console.WriteLine($"Ad Soyad:{AdSoyad}");
+        Console.WriteLine($"Puan1:{Puan1}");
+        Console.WriteLine($"Puan2:{Puan2}");
+        Console.WriteLine($"Ortalama:{OrtalamaPuan}");
+        Console.WriteLine($"Durum:{kaldıGectiDurumu}");
 
     }
 }
 
-    class AnaProgram
+class AnaProgram
 {
-    public static void Main(string [] args)
+    static void Main(string [] args)
     {
-        Ogrenci ogr1 = new Ogrenci("Şahin MANSUROĞLU",  95, 100);
-        ogr1.bilgileriEkranaYaz();
-        Ogrenci ogr2 = new Ogrenci("Ali AR", 61, 50);
-        ogr2.bilgileriEkranaYaz();
-        Ogrenci ogr3 = new Ogrenci("Mehmet UÇTU",  95, 60);
-        ogr3.bilgileriEkranaYaz();
+        for (int i = 1; i < 4; i++)
+        {
+            Console.WriteLine($"{i}. Öğrenci Bilgileri Girişi");
+            Console.Write("Ad Soyad Giriniz:");
+            string adSoyad = Console.ReadLine();
+            Console.Write("1. Puanı Giriniz:");
+            short puan1 = Convert.ToInt16( Console.ReadLine());
+            Console.Write("2. Puanı Giriniz:");
+            short puan2 = Convert.ToInt16(Console.ReadLine());
+            Ogrenci ogrNesne = new Ogrenci(adSoyad, puan1, puan2);
+            ogrNesne.bilgileriEkranaYaz();
+        }
+    
         Console.ReadKey();
     }
 }
@@ -389,4 +382,4 @@ public class Ogrenci
 
 **Program Çıktısı**
 
-![image](https://user-images.githubusercontent.com/28144917/137868976-095860a9-a23e-4e2b-98f3-4a0370b805a3.png)
+![image](https://user-images.githubusercontent.com/28144917/138228177-140fb1d5-72be-4d30-8ba5-7150c62b4da4.png)
