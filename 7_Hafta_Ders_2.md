@@ -1,0 +1,44 @@
+## Metotlar-2 ##
+> [Metotlar-1](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md) bölümünde  metot kavramını, geriye değer döndüren, geriye değer döndürmeyen ve paramtereli metot kullanımını görd
+> k. Bu bölümde ise metotlarda Varsayılan Değerli Parametreler, İsimlendirilmiş Parametreler, Parametre Dizileri kullanımını göreceğiz.
+
+###  Varsayılan Değerli Parametreler ###
+
+>Parametreli metotlarda metotlar çağrılırken parametre değerlerinin de methoda gönderilmesi gerekir. Eğer parametreli 
+>bir methodun çağırırken değer göndermeden de çalışabilmesini istiyorsak bu tür durumlarda varsayılan değerli Parametreleri kullanabiliriz.
+
+**Örnek Kullanım**
+```csharp
+using System;
+class ornekSinif
+{
+    // Aşağıdaki metot çağrılırken sayi1 ve sayi2'nin değerleri gönderilmezse varsayılan olarak 34 ve 56 değerleri toplanır
+    public int topla(int sayi1=34,int sayi2 = 56)
+    {
+        return sayi1 + sayi2;
+    }
+    //Aşağıdaki metot çağırılırken adSoyad değeri gönderilmezse varsayılan olarak "Mehmet EMİN" gönderilir..
+    public void selamVer(string adSoyad="Mehmet EMİN")
+    {
+        Console.WriteLine($"Merhaba Sayın {adSoyad}");
+    }
+
+}
+
+class anaProgram
+{
+    static void Main(string []args) {
+        ornekSinif nesne = new ornekSinif();
+
+        Console.WriteLine($"Toplamın Sonucu: {nesne.topla()}");
+        Console.WriteLine($"Toplamın Sonucu: {nesne.topla(25)}");
+        Console.WriteLine($"Toplamın Sonucu: {nesne.topla(45,65)}");
+
+        nesne.selamVer();
+        nesne.selamVer("Şahin MANSUROĞLU");
+
+        Console.ReadKey();
+    }
+}
+```
+
