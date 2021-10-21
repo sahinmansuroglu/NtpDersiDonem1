@@ -41,4 +41,18 @@ class anaProgram
     }
 }
 ```
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/138216867-e36830e6-18c8-486a-a704-7ed50fd3a702.png)
+
+
+## İsimlendirilmiş Parametreler ##
+> Bir metod parametreler  ile çağrılırken  parametrelerin  tanımlama sırası ile aynı sırada gönderilmesi gerekir. Eğer bu kurala uyulmak istenmiyorsa İsimlendirilmiş parametreler gönderilebilir.
+
+**Örnek Kullanım**
+> Örneği incelediğimizde metoda parametre gönderirken parametre adının yanına ":" koyarak sıraya uymadan değer gönderebiliriz.
+![image](https://user-images.githubusercontent.com/28144917/138217847-07001129-7ba6-4c14-a085-1f8fa543a4f1.png)
+
+![image](https://user-images.githubusercontent.com/28144917/138217732-825f936d-e938-49bf-95a8-fc8bbe02bc39.png)
+
 
