@@ -57,3 +57,39 @@ class anaProgram
 ![image](https://user-images.githubusercontent.com/28144917/138217732-825f936d-e938-49bf-95a8-fc8bbe02bc39.png)
 
 
+**Örnek**
+
+using System;
+class ornekSinif
+{
+    public int farkHesapla(int sayi1, int sayi2)
+    {
+        return sayi1 - sayi2;
+    }
+
+    public void selamVer(string ad, string soyad)
+    {
+        Console.WriteLine($"Merhaba Sayın {ad} {soyad}");
+    }
+
+}
+
+class anaProgram
+{
+    static void Main(string []args) {
+
+        ornekSinif nesne = new ornekSinif();
+
+        Console.WriteLine($"Toplamın Sonucu: {nesne.farkHesapla(sayi2:25,sayi1:85)}");
+        Console.WriteLine($"Toplamın Sonucu: {nesne.farkHesapla( 25,  85)}");
+
+        nesne.selamVer(soyad: "MANSUROĞLU", ad: "Şahin");
+        nesne.selamVer( "MANSUROĞLU",  "Şahin");
+
+        Console.ReadKey();
+    }
+}
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/138220876-12305b53-e7e8-4f91-9ee7-9fe049eda155.png)
