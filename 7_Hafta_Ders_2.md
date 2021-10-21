@@ -48,7 +48,7 @@ class anaProgram
 
 ## İsimlendirilmiş Parametreler ##
 
-> Bir metod parametre  ile çağrılırken,  parametrelerin  tanımlamanma sırası ile aynı sırada gönderilmesi gerekir. Eğer bu kurala uyulmak istenmiyorsa İsimlendirilmiş parametreler kullanılabilir.
+> Bir metod parametre  ile çağrılırken  parametrelerin,  tanımlamanma sırası ile aynı sırada gönderilmesi gerekir. Eğer bu kurala uyulmak istenmiyorsa İsimlendirilmiş parametreler kullanılabilir.
 
 **Örnek Kullanım**
 
