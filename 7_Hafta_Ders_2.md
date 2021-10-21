@@ -99,3 +99,5 @@ class anaProgram
 ![image](https://user-images.githubusercontent.com/28144917/138220876-12305b53-e7e8-4f91-9ee7-9fe049eda155.png)
 
 ## Parametre Dizileri ##
+
+
