@@ -216,3 +216,52 @@ class AnaProgram
     }
 }
 ```
+
+**Örnek**
+> secim değişkeninin değerine göre  parametre listesini büyük veya küçük harfe çeviren methot
+
+> **Not:** Aşağıdaki  uygulamada olduğu gibi bir metot parametre dizisi ile beraber başka parametreler de alıyorsa params ifadeli parametre her zaman sonda bulunmalıdır. > > > Ayrıca bir metodda sadece bir tane params anahtar kelimesi kullanılır
+
+```
+using System;
+public class OrnekSinif
+{
+
+    public void buyukKucukHarfeCevir(string secim, params string [] kelimeler)
+    {
+        Console.WriteLine($"Seçim:{secim}");
+        foreach (var herBirKelime in kelimeler)
+        {
+            if (secim == "Büyük")
+            {
+                Console.WriteLine($"{herBirKelime.ToUpper()}");
+
+            }else if (secim == "Küçük")
+            {
+                Console.WriteLine($"{herBirKelime.ToLower()}");
+            }
+            else
+            {
+                Console.WriteLine($"{herBirKelime}");
+            }
+                
+        }
+       
+    }
+}
+class AnaProgram
+{
+    static void Main(string [] args)
+    {
+        OrnekSinif nesne = new OrnekSinif();
+        Console.WriteLine("\n-------Çıktı-1....--");
+        nesne.buyukKucukHarfeCevir("Büyük", "Veli", "Serdar","Ahmet");
+        Console.WriteLine("\n-------Çıktı-2....--");
+        nesne.buyukKucukHarfeCevir("Küçük", "Veli", "Serdar", "Ahmet");
+        Console.WriteLine("\n-------Çıktı-3....--");
+        nesne.buyukKucukHarfeCevir("adasdas", "Veli", "Serdar", "Ahmet");
+        Console.ReadKey();
+    }
+}
+
+```
