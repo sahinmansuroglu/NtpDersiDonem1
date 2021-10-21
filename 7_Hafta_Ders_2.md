@@ -99,5 +99,36 @@ class anaProgram
 ![image](https://user-images.githubusercontent.com/28144917/138220876-12305b53-e7e8-4f91-9ee7-9fe049eda155.png)
 
 ## Parametre Dizileri ##
+> Methotların parametre sayısının bilinmediği durumlarda parametre dizileri kullanılır. Ve bu işlem için params anahtar kelimesi kullanılır.
 
-
+> Aşağıdaki methot dışardan s1 ve s2 adında iki parametre alır
+```csharp
+int topla (int s1,int s2){
+    return (s1+s2);
+}
+```
+> Aşağıdaki methot dışardan s1, s2 ve s3 adında iki parametre alır
+```csharp
+int topla (int s1,int s2, int s3){
+    return (s1+s2+s3);
+}
+```
+> Aşağıdaki methot dışardan s1, s2 ve s3 adında iki parametre alır
+```csharp
+int topla (int s1,int s2, int s3){
+    return (s1+s2+s3);
+}
+```
+> Aşağıdaki methot dışardan değişken sayıda parametre alır.
+```csharp
+public void sayilariTopla(params int [] sayilar)
+    {
+        int toplam = 0;
+        foreach (var herBirSayi in sayilar)
+        {
+             toplam += herBirSayi;
+        }
+       return toplam;
+    }
+   
+   ```
