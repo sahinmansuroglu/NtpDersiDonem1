@@ -113,16 +113,11 @@ int topla (int s1,int s2, int s3){
     return (s1+s2+s3);
 }
 ```
-> Aşağıdaki method dışardan s1, s2 ve s3 adında iki parametre alır
-```csharp
-int topla (int s1,int s2, int s3){
-    return (s1+s2+s3);
-}
-```
+
 > Aşağıdaki method dışardan değişken sayıda parametre alır.
 
 ```csharp
-public void sayilariTopla(params int [] sayilar)
+    public void sayilariTopla(params int [] sayilar)
     {
         int toplam = 0;
         foreach (var herBirSayi in sayilar)
@@ -133,3 +128,4 @@ public void sayilariTopla(params int [] sayilar)
     }
    
    ```
+> **Not:** Parametre Dizilerinde metoda gönderilen parametreler metot içerisine bir dizi halinde gelir ve bu  dizi içerisindeki her bir elamana (her bir parametreye) foreach döngüsü ile erişim sağlanıp işlem yaptırılabilir.
