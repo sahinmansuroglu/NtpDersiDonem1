@@ -220,7 +220,8 @@ class AnaProgram
 **Örnek**
 > secim değişkeninin değerine göre  parametre listesini büyük veya küçük harfe çeviren methot
 
-> **Not:** Aşağıdaki  uygulamada olduğu gibi bir metot parametre dizisi ile beraber başka parametreler de alıyorsa params ifadeli parametre her zaman sonda bulunmalıdır. > > > Ayrıca bir metodda sadece bir tane params anahtar kelimesi kullanılır
+> **Not:** Aşağıdaki  uygulamada olduğu gibi bir metot parametre dizisi ile beraber başka parametreler de alıyorsa params ifadeli parametre her zaman sonda bulunmalıdır. 
+>  Ayrıca bir metodda sadece bir tane params anahtar kelimesi kullanılır
 
 ```csharp
 using System;
