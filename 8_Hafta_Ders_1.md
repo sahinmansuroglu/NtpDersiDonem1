@@ -1,5 +1,7 @@
 ## Öğrenci Sınıfını kullanan WPF Uygulaması ##
 
+**[Uygulamanın Tamamlanmış Proje Dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7410022/WpfApp1.zip)**
+
 ### WPF Form Arayüzü ###
 
 ![image](https://user-images.githubusercontent.com/28144917/138693911-a06ed2d5-8d67-41cb-8f38-435cd182f27c.png)
