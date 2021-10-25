@@ -10,7 +10,7 @@
 > sayısı farklı metotlar tanımlanırsa buna Metotların aşırı yüklenmesi denir.
 
 ### Örnek: ###
-> Aşağıdaki örnekde topla metodu 3 kez tanımlanarak aşırı yüklenmiştir.
+> Aşağıdaki örneği inceleyecek olursak farklı sayıdaki tip ve parametreli 4 tane  topla isminde methot tanımlanmıştır. Aynı isimde birden fazla topla methodu bulunduğundan topla methodu aşırı yüklenmiştir.
 ```csharp
 using System;
 
@@ -58,7 +58,8 @@ class program
 ![image](https://user-images.githubusercontent.com/28144917/138703104-ec66bd1d-38a4-4476-9a3b-2bd8f1e1265d.png)
 
 ### Örnek: ###
-> Aşağıdaki örneği inceleyecek olursak farklı sayıdaki tip ve parametreli 4 tane  topla isminde methot tanımlanmıştır. Aynı isimde birden fazla topla methodu bulunduğundan topla methodu aşırı yüklenmiştir.
+
+> Aşağıdaki örnekde topla metodu 3 kez tanımlanarak aşırı yüklenmiştir.
 
 ```csharp
 using System;
