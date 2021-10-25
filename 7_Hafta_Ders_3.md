@@ -1,9 +1,10 @@
 ## Metotların Aşırı Yüklenmesi ##
 > Her bir metodun kendine özel imza bilgileri bulunmaktadır 
-> Bu imza Bilgilier;
+> Bu imza Bilgilerini;
    1. Metot Adı 
    2. Parametre Tipi
-   3. Parametre Sayısı
+   3. Parametre Sayısı 
+ oluşturmaktadır.
 
 > Aynı imza bilgisine sahip birden fazla metot tanımlanamaz. Ancak  bu 3 bilgiden biri değiştirilerek farklı metotlar tanımlanabilir. Eğer Metot adı aynı iken Parametre tipi ve/veya
 > sayısı farklı metotlar tanımlanırsa buna Metotların aşırı yüklenmesi denir.
