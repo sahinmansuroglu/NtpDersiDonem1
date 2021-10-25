@@ -39,7 +39,7 @@
 ### 7. Hafta ###
 1. [Abstraction](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_1.md)
 2. [Metot Kavramı-2(Varsayılan Değerli Parametreler, İsimlendirilmiş Parametreler, Parametre Dizileri)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_2.md)
-3. [Metotların Aşırı Yüklenmesi ]() 
+3. [Metotların Aşırı Yüklenmesi ](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_3.md) 
 
 ### 8. Hafta ###
 1. [Öğrenci Sınıfını kullanan WPf Uygulaması (Textbox, Label, Listbox )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_1.md)
