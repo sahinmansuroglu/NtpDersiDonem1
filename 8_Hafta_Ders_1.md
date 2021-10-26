@@ -2,6 +2,8 @@
 
 **[Uygulamanın Tamamlanmış Proje Dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7417773/Uygulama.zip)**
 
+[Sadece Arayüzü](https://github.com/sahinmansuroglu/NtpDersi/files/7417855/WpfApp1.zip)
+
 ### WPF Form Arayüzü ###
 
 ![image](https://user-images.githubusercontent.com/28144917/138871866-02546bdd-36df-4569-9fd6-5f8dee95286e.png)
