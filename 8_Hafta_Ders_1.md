@@ -1,54 +1,39 @@
 ## Öğrenci Sınıfını kullanan WPF Uygulaması ##
 
-**[Uygulamanın Tamamlanmış Proje Dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7410022/WpfApp1.zip)**
+**[Uygulamanın Tamamlanmış Proje Dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7417773/Uygulama.zip)**
 
 ### WPF Form Arayüzü ###
 
-![image](https://user-images.githubusercontent.com/28144917/138693911-a06ed2d5-8d67-41cb-8f38-435cd182f27c.png)
+![image](https://user-images.githubusercontent.com/28144917/138871866-02546bdd-36df-4569-9fd6-5f8dee95286e.png)
 
 ### Dosya Yapisi ###
-![image](https://user-images.githubusercontent.com/28144917/138696521-05232a75-5f39-45d8-8b90-6229f30bca46.png)
+![image](https://user-images.githubusercontent.com/28144917/138872530-d94ac010-0f15-4d3b-b20c-b3f8edbd83dc.png)
 
 ### Öğrenci Sinifi ###
 
 ```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WpfApp1
-{
-    public class Ogrenci
+  class Ogrenci
     {
-        private string adSoyad;
-        private short okulNo;
-        private short puan1;
-        private short puan2;
-        private short puan3;
-
+        string adSoyad;
         public string AdSoyad
         {
             get
             {
                 return adSoyad;
             }
-
             set
             {
                 if (value.Trim() == "")
                 {
-                    adSoyad = "Ad Soyad Girilmedi";
+                    throw new Exception("Ad Soyad Boş Geçilemez....");
                 }
                 else
                 {
                     adSoyad = value;
                 }
-
             }
         }
-
+        short okulNo;
         public short OkulNo
         {
             get
@@ -57,10 +42,17 @@ namespace WpfApp1
             }
             set
             {
-                okulNo = value;
+                if (value <= 0)
+                {
+                    throw new Exception("Okul No negatif sayı olamaz...");
+                }
+                else
+                {
+                    okulNo = value;
+                }
             }
         }
-
+        short puan1;
         public short Puan1
         {
             get
@@ -75,11 +67,12 @@ namespace WpfApp1
                 }
                 else
                 {
-                    puan1 = 0;
+                    throw new Exception("Puan1 0 ile 100 arasında olmalı");
                 }
 
             }
         }
+        short puan2;
         public short Puan2
         {
             get
@@ -94,11 +87,12 @@ namespace WpfApp1
                 }
                 else
                 {
-                    puan2 = 0;
+                    throw new Exception("Puan2 0 ile 100 arasında olmalı");
                 }
 
             }
         }
+        short puan3;
         public short Puan3
         {
             get
@@ -113,9 +107,40 @@ namespace WpfApp1
                 }
                 else
                 {
-                    puan3 = 0;
+                    throw new Exception("Puan3 0 ile 100 arasında olmalı");
                 }
 
+
+
+            }
+        }
+        public string GoruntulemeBasligi
+        {
+            get
+            {
+                return $"{adSoyad} : {okulNo}";
+            }
+        }
+        public double Ortalama
+        {
+             get{
+                return (puan1 + puan2 + puan3) / 3.0;
+
+            }
+        }
+
+        public string Durum
+        {
+            get
+            {
+                return  Ortalama<50 ?" Kaldınız..":"Geçtiniz...";
+            }
+        }
+        public string TumBilgiler
+        {
+            get
+            {
+                return $" Ad Soyad:{adSoyad} Okul No:{okulNo} Puan1:{puan1} Puan2:{puan2} Puan3:{puan3} Ortalama:{Ortalama:#.##} Durum:{Durum}";
             }
         }
 
@@ -124,55 +149,16 @@ namespace WpfApp1
             this.AdSoyad = adSoyad;
             this.OkulNo = okulNo;
             this.Puan1 = puan1;
-            this.Puan2 = puan2;
+            this.Puan2 = puan2; 
             this.Puan3 = puan3;
         }
 
-        public double ortalamaHesapla()
-        {
-            return (puan1 + Puan2 + puan3) / 3.0;
-        }
-        public string kaldiGectiHesapla()
-        {
-            if (ortalamaHesapla() < 50)
-            {
-                return "Kaldı..";
-            }
-            else
-            {
-                return "Geçti";
-            }
-        }
-        public void bilgileriEkranaYaz()
-        {
-            Console.WriteLine("---------Öğrenci Bilgileri----------");
-            Console.WriteLine($" Ad Soyad:{adSoyad}");
-            Console.WriteLine($" Okul No:{okulNo}");
-            Console.WriteLine($" Puan1: {puan1}");
-            Console.WriteLine($" Puan2: {puan2}");
-            Console.WriteLine($" Puan3: {puan3}");
-            Console.WriteLine($" Ortalama:{ortalamaHesapla()}");
-            Console.WriteLine($" Durumu:{kaldiGectiHesapla()}");
-
-        }
-
-        public string TumBilgiler
-        {
-            get
-            {
-                string metin = $" Ad Soyad: {adSoyad} Okul No: {OkulNo} 1. Puan:{Puan1}  2. Puan:{Puan2} 3. Puan:{Puan3} Ortalama:{ortalamaHesapla()} Durum:{kaldiGectiHesapla()}";
-                return metin;
-            }
-        }
     }
-}
-
 ```
 
 ### Main Window Uygulaması ###
 
 ```csharp
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -198,37 +184,71 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void liste_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string adSoyad = txtAdSoyad.Text;
-            short puan1 = Convert.ToInt16(txtPuan1.Text);
-            short puan2 = Convert.ToInt16(txtPuan2.Text);
-            short puan3 = Convert.ToInt16(txtPuan3.Text);
-            short okulNo = Convert.ToInt16(txtOkulNo.Text);
-            Ogrenci ogrenci = new Ogrenci(adSoyad, okulNo, puan1, puan2, puan3);
-            liste.Items.Add(ogrenci);
-            liste.DisplayMemberPath = "AdSoyad";
-            textKutularinitemizle();
+            Ogrenci secilenOgrenci = (Ogrenci) liste.SelectedItem;
+            lblBilgi.Content = secilenOgrenci.TumBilgiler;
+            
         }
 
-        public void textKutularinitemizle()
+        private void btnEkle_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string adSoyad = txtAdSoyad.Text;
+                short okulNo = Convert.ToInt16(txtOkulNo.Text);
+                short puan1 = Convert.ToInt16(txtPuan1.Text);
+                short puan2 = Convert.ToInt16(txtPuan2.Text);
+                short puan3 = Convert.ToInt16(txtPuan3.Text);
+
+                //Todo List
+                //1. Girilen Verilerden Ogrenci Nesnesi oluşturulacak
+                Ogrenci yeniOgrenci = new Ogrenci(adSoyad, okulNo, puan1, puan2, puan3);
+
+                //2. Oluşturan nesne listbox'a eklenecek
+                liste.Items.Add(yeniOgrenci);
+                liste.DisplayMemberPath = "GoruntulemeBasligi";
+
+                //3. Kutucukları Temizleyecek
+                kutucuklariTemizle();
+                MessageBox.Show("Kayıt Ekleme İşlemi Başarılı", "Bilgi Mesajı", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (FormatException hata)
+            {
+                MessageBox.Show("Okul No ve Punlara lütfen rakam giriniz", "Hata İletisi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            catch (Exception hata)
+            {
+                MessageBox.Show(hata.Message, "Hata İletisi", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
+           
+           
+        }
+
+        public void kutucuklariTemizle()
+        {
+            txtAdSoyad.Clear();
+            txtOkulNo.Clear();
             txtPuan1.Clear();
             txtPuan2.Clear();
             txtPuan3.Clear();
-            txtAdSoyad.Clear();
-            txtOkulNo.Clear();
+            txtAdSoyad.Focus();
+
         }
-        private void liste_SelectionChanged(object sender, SelectionChangedEventArgs e)
+
+        private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
-            Ogrenci secilenOgrenci = (Ogrenci)liste.SelectedItem;
-            lblBilgi.Content = secilenOgrenci.TumBilgiler;
-           
+            Ogrenci yeniOgrenci1 = new Ogrenci("Arda EKIN", 185, 65, 55, 22);
+            Ogrenci yeniOgrenci2 = new Ogrenci("Ali Veli", 854, 45, 55, 22);
+            liste.Items.Add(yeniOgrenci1);
+            liste.Items.Add(yeniOgrenci2);
+            liste.DisplayMemberPath = "GoruntulemeBasligi";
         }
     }
 }
-
 
 ```
