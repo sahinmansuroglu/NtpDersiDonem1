@@ -59,7 +59,8 @@ class program
 
 ### Örnek: ###
 
-> Aşağıdaki örnekde topla metodu 3 kez tanımlanarak aşırı yüklenmiştir.
+> Aşağıdaki örnekde hesapla metodu 3 kez tanımlanarak aşırı yüklenmiştir.Tek parametreli çağrılırsa kare alma, 2 parametreli çağrılırsa toplama ve 3 parametreli çağrılırsa
+> ortalama  işlemi yapmaktadır.
 
 ```csharp
 using System;
