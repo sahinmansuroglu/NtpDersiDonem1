@@ -2,7 +2,7 @@
 
 **[Uygulamanın Tamamlanmış Proje Dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7417773/Uygulama.zip)**
 
-[Sadece Arayüzü](https://github.com/sahinmansuroglu/NtpDersi/files/7417855/WpfApp1.zip)
+**[Uygulamanın Başlangıç Arayüz proje dosyası](https://github.com/sahinmansuroglu/NtpDersi/files/7417855/WpfApp1.zip)**
 
 ### WPF Form Arayüzü ###
 
