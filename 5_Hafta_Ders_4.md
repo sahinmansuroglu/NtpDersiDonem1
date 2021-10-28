@@ -211,3 +211,58 @@ class Araba
 
 }
 ```
+
+### Yıkıcı Metotlar (Destructors) ###
+
+> Kurucu mototlar bir sınıftan nesne oluşturulduğu anda çalışan metotlarda. Yıkıcı metotlar ise nesne hafızadan atıldığında çalışan metotlardır.
+
+**Yıkıcı Metot kullanımı ile ilgili gerekli bilgiler**
+
+1. Bir sınıfta birden fazla yıkıcı olamaz.
+2. Bir Yıkıcı'nın dönüş tipi yoktur ve sınıf adıyla  aynı ada sahip olmalıdır.
+3. Adının önüne eklenen Tilde sembolü (~) nedeniyle bir kurucudan ayırt edilir.
+4. Bir Yıkıcı metot, herhangi bir parametre  kabul etmez.
+5. Aşırı yüklenemez.
+6. Nesne bellekten atıldığında çağrılır.
+
+**Örnek**
+
+``` csharp
+using System;
+class Araba
+{
+    string marka=string.Empty;
+    string renk = string.Empty;
+    public Araba()
+    {
+        marka = "TOFAŞ";
+        renk ="Mavi";
+        Console.WriteLine("Yeni Nesne oluşturuldu");
+    }
+    ~Araba()
+    {
+        Console.WriteLine("Nesne hafızadan atıldı.");
+    }
+}
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        Console.WriteLine("Program başladı.");
+        arabaNesnesiOlustur();
+        GC.Collect();
+        Console.WriteLine("Program sonlandırıldı.");
+        Console.ReadKey();
+    }
+
+    static void arabaNesnesiOlustur()
+    {
+        Araba araba = new Araba();
+    }
+}
+```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/139248860-13e5735a-5185-4a62-a339-e7ec616e8e06.png)
