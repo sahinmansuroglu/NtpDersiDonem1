@@ -43,6 +43,6 @@
 
 ### 8. Hafta ###
 1. [Öğrenci Sınıfını kullanan WPf Uygulaması (Textbox, Label, Listbox )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_1.md)
-2. [Sayı Oyunu Uygulaması V1](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_2.md)
+2. [Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_2.md)
 3. [Kolay Orta Zor Seçenekli Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_4.md)
-4. [Bitmeyen Sayı Oyunu Uygulaması V1](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_3.md)
+4. [Bitmeyen Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_3.md)
