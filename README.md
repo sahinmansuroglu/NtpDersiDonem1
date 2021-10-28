@@ -47,3 +47,5 @@
 2. [Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_2.md)
 3. [Kolay Orta Zor Seçenekli Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_4.md)
 4. [Bitmeyen Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_3.md)
+
+<span style="color:blue">some *blue* text</span>.
