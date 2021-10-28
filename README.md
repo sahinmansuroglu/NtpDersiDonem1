@@ -27,9 +27,11 @@
 1. [Metot Kavramı-1 (Geriye Değer Döndürmeyen,Geriye Değer Döndüren, Parametreli, Parametresiz)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md)
 2. [Nesneye Yönelik programlama yaklaşımı(Object(Nesne) ve Class(Sınıf) Kavramı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_2.md)
 3. [Sınıf Üyeleri (alan(field), metot)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_3.md)
-4. [```diff +Kapsam(Scope), Sınıf Kapsamı(Class level Scope), Methot Kapsamı (Methot Level Scope), İç içe kapsam(Nested Scope) ```]()
-5. [Kurucu Metotlar (Constructor) ve  "this" keyword kullanımı](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_4.md)
-6. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Soru_Ve_Cevaplar.md) 
+4. [```diff 
+    +Kapsam(Scope), Sınıf Kapsamı(Class level Scope), Methot Kapsamı (Methot Level Scope), İç içe kapsam(Nested Scope) ```
+    ]()
+6. [Kurucu Metotlar (Constructor) ve  "this" keyword kullanımı](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_4.md)
+7. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Soru_Ve_Cevaplar.md) 
 
 ### 6. Hafta ###
 1. [Erişim Belirleyiciler (Access Modifiers)(public, private, protected, internal)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_1.md)
