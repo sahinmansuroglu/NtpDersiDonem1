@@ -50,3 +50,10 @@
 
 ### 9. Bölüm ###
 1. [``` Değer ve Referans Tipleri (Value Type and Reference Type) ```]()
+2. [``` Metotlarda ref ve out Kullanımı ```]()
+
+### 10. Bölüm ###
+1. [``` Kalıtım (Inheritance) ```]()
+
+
+
