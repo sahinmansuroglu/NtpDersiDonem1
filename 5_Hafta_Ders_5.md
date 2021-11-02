@@ -28,12 +28,18 @@ Kapsam kavramı bir değişkene veya nesneye sınıf içerisindeyken hangi durum
 
 }
 ```
+### Kapsam türleri ###
+> C# 'da 3 çeşit kapsam türü vardır
+1. Metot kapsamı 
+2. Class kapsamı
+3. İç içe Kapsam
 
-Metot Kapsamı
 
+#### 1.Metot Kapsamı ####
+
+```csharp
  class Islem
     {
-
         public void topla()
         {
 	    // a ve b değişkenleri topla metodunun blokları içerisinde tanımlandığından 
@@ -50,11 +56,11 @@ Metot Kapsamı
             int sonuc = a - b;
             Console.WriteLine($"Fark:{sonuc}");
         }
-	
     }
+```
+#### 2.Class Kapsamı ####
 
-Class Kapsamı
-
+```csharp
 class Islem
     {
         // a  ve b değişkeni class kapsamında tanımlandığından
@@ -63,19 +69,15 @@ class Islem
         int b = 6;
         public void topla()
         {
-            
             int sonuc = a + b;
             Console.WriteLine($"Toplam:{sonuc}");
-            
         }
         public void cikar()
         {
             int sonuc = a - b;
             Console.WriteLine($"Toplam:{sonuc}");
         }
-
     }
-
 
 class Program
     {
@@ -89,6 +91,11 @@ class Program
         }
 
     }
+
+```
+
+#### 3. İç İçe Kapsamı ####
+
 
 
     class Islem
