@@ -96,7 +96,33 @@ class Program
 
 #### 3. İç İçe Kapsamı ####
 
+  class Islem
+    {
 
+        int puan1=95, puan2 = 65;
+        
+        public void Durum()
+        {
+           
+            double ortalama = (puan1+puan2)/2.0;
+            if (ortalama < 50)
+            {
+                string sonuc = "Kaldı";
+                Console.WriteLine($"Sonuc:{sonuc}");
+
+            }
+            else
+            {
+                string sonuc = "Geçti";
+                Console.WriteLine($"Sonuc:{sonuc}");
+            }
+            //Aşağıda sonuc değişkeninin değeri ekrana yazdırılmaya çalışılırsa hataya neden olur
+            //Çünkü sonuc değişkeni içerdeki bir blokda tanımlanmıştır
+            //Console.WriteLine($"Sonuc:{sonuc}");
+
+        }
+
+    }
 
     class Islem
     {
