@@ -352,7 +352,7 @@ namespace ConsoleApp4
 ```
 
 
-#### Örnek V3 #### (Murathan Deveci'nin hazırladığı)
+#### Örnek V3 (Murathan Deveci'nin hazırladığı) #### 
 >Yukarıdaki Örneğin farklı bir versiyonu
 ```csharp
 using System;
@@ -440,7 +440,7 @@ namespace ConsoleApp1
 }
 ```
 
-#### Örnek V4 #### (Mehmet Can SEVGİBAŞI'nın hazırladığı)
+#### Örnek V4 (Mehmet Can SEVGİBAŞI'nın hazırladığı) #### 
 >Yukarıdaki Örneğin farklı bir versiyonu
 
 ``` csharp
@@ -511,7 +511,7 @@ using System;
 
 ```
 
-#### Örnek V4 #### (Timuçin ÖZDEMİR'in hazırladığı)
+#### Örnek V4 (Timuçin ÖZDEMİR'in hazırladığı) #### 
 
 >Yukarıdaki Örneğin farklı bir versiyonu
 
