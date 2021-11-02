@@ -159,8 +159,10 @@ class Program
 
 #### Örnek V1 ####
 > Aşağıdaki uygulama sınıf yardımıyla klavyeden girilen 2 sayı arasında isteğe göre toplama, çıkartma, bölme ve çarpma işlemlerinden birini yapıp ekrana yazdıran program tasarımı
+
 > **Not:** Aşağıdaki uygulama istenilen işlemleri yapan ve doğru çalışan bir uygulamadır. Ancak çok kod tekrarı bulunmaktadır. Bir sonraki örnekte bu kod tekrarı ortadan kaldırılmıştır.
-> 
+[link text](#### Örnek V2 ####)
+
 ```csharp
 using System;
 
