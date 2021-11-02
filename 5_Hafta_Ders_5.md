@@ -1,6 +1,6 @@
 ## Kapsam ##
 
-Kapsam kavram bir değişkene veya nesneye sınıf içerisindeyken hangi durumlarda erişilebileceğini ifade eder.
+Kapsam kavramı bir değişkene veya nesneye sınıf içerisindeyken hangi durumlarda erişilebileceğini ifade eder.
 
 > **Not:** Aşağıdaki gibi  süslü parantezin açılıp kapatıldığı yapıya  blok denir. 
 > Bir Blok içerisinde tanımlanan değişken veya nesnelere o blok içerisindeki alt bloklardan erişim sağlanabilir.
