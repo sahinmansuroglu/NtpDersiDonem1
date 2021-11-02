@@ -27,7 +27,7 @@
 1. [Metot Kavramı-1 (Geriye Değer Döndürmeyen,Geriye Değer Döndüren, Parametreli, Parametresiz)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md)
 2. [Nesneye Yönelik programlama yaklaşımı(Object(Nesne) ve Class(Sınıf) Kavramı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_2.md)
 3. [Sınıf Üyeleri (alan(field), metot)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_3.md)
-4. [``` Kapsam(Scope), Sınıf Kapsamı(Class level Scope), Methot Kapsamı (Methot Level Scope), İç içe kapsam(Nested Scope) ```]()
+4. [Kapsam(Scope), Sınıf Kapsamı(Class level Scope), Methot Kapsamı (Methot Level Scope), İç içe kapsam(Nested Scope)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_5.md)
 5. [Kurucu Metotlar (Constructor), Yıkıcı Metotlar (Destructors) ve  "this" keyword kullanımı](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_4.md)
 6. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Soru_Ve_Cevaplar.md) 
 
