@@ -263,7 +263,7 @@ namespace ConsoleApp4
 ```
 
 #### Örnek V2 ####
-> Aşağıdaki uygulama bir önceki uygulama ile aynı işlemi yapmaktadır. Anncak değişkenler sınıf kapsamında tanımlanarak kod tekrarı ortadan kaldırılmaya çalışılmıştır.
+> Aşağıdaki uygulama bir önceki uygulama ile aynı işlemi yapmaktadır. Ancak değişkenler sınıf kapsamında tanımlanarak kod tekrarı ortadan kaldırılmaya çalışılmıştır.
 
 ```csharp
 using System;
@@ -349,4 +349,237 @@ namespace ConsoleApp4
         }
     }
 }
+```
+
+
+#### Örnek V3 #### (Murathan Deveci'nin hazırladığı)
+>Yukarıdaki Örneğin farklı bir versiyonu
+```csharp
+using System;
+
+namespace ConsoleApp1
+{
+    class Islem
+    {
+
+        private int s1;
+        private int s2;
+        public void sayilaraDegerVer(int s1,int s2)
+        {
+            this.s1 = s1;
+            this.s2 = s2;
+        }
+        
+        public int toplama()
+        {
+            return s1 + s2;
+        }
+        public int cikar()
+        {
+            return s1 - s2;
+        }
+        public int carp()
+        {
+            return s1 * s2;
+        }
+        public int bol()
+        {
+            return s1 / s2;
+        }
+        public void bilgileriey()
+        {
+            Console.WriteLine($"--------");
+            Console.WriteLine($"Toplama:{ toplama() }");
+            Console.WriteLine($"Çıkarma:{cikar()}");
+            Console.WriteLine($"Çarpma:{carp()}");
+            Console.WriteLine($"Bölme:{bol()}");
+            Console.WriteLine($"--------");
+        }
+    } 
+
+    class AnaProgram
+    {
+        static void Main(string[] args)
+        {
+            Islem islemNesnesi = new Islem();
+            while (true)
+            {
+                Console.Write($"1.Sayıyı Giriniz:");
+                int s1 = Convert.ToInt32(Console.ReadLine());
+                Console.Write($"2.Sayıyı Giriniz:");
+                int s2 = Convert.ToInt32(Console.ReadLine());
+                islemNesnesi.sayilaraDegerVer(s1, s2);
+                Console.Write("işlem Seçiniz:");
+                string islem = Console.ReadLine();
+               
+                if (islem == "+")
+                {
+                    Console.WriteLine($"Toplam={islemNesnesi.toplama()}");
+                }
+                else if (islem == "-")
+                {
+                    Console.WriteLine($"Fark={islemNesnesi.cikar()}");
+                }
+                else if (islem == "*")
+                {
+                    Console.WriteLine($"Çarpım={islemNesnesi.carp()}");
+                }
+                else if (islem == "/")
+                {
+                    Console.WriteLine($"Bölüm={islemNesnesi.bol()}");
+                }
+                else
+                {
+                    Console.WriteLine("Yanlış Seçim");
+                }
+
+            }
+            
+        }
+    }
+}
+```
+
+#### Örnek V4 #### (Mehmet Can SEVGİBAŞI'nın hazırladığı)
+>Yukarıdaki Örneğin farklı bir versiyonu
+
+``` csharp
+using System;
+  
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Islemler nesne = new Islemler();
+            while (true)
+            {
+                    string islem;
+                    Console.Write("Birinci Sayıyı Giriniz: ");
+                    int sayi1 = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("İkinci Sayıyı Giriniz: ");
+                    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("--------İŞLEM SEÇİNİZ (+,-,*,/)-------");
+                    islem = Console.ReadLine();
+
+                    if (islem == "+")
+                    {
+                         nesne.toplam(sayi1, sayi2);
+                    }
+                    else if (islem == "-")
+                    {
+                        nesne.cikar(sayi1, sayi2);
+                    }
+                    else if (islem == "*")
+                    {
+                        nesne.carp(sayi1, sayi2);
+                    }
+                    else if (islem == "/")
+                    {
+                        nesne.bol(sayi1, sayi2);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Yanlış Seçim Yaptınız");
+                    }
+                    Console.ReadKey();
+            }
+            
+        }
+    }
+    public class Islemler
+    {  
+    
+        public void toplam(int sayi1, int sayi2)
+        {
+            Console.WriteLine($"---- Toplam = {sayi1 + sayi2} ----");
+        }
+        public void cikar(int sayi1, int sayi2)
+        {
+            Console.WriteLine($"---- Çıkarma = {sayi1 - sayi2} ----");
+        }
+        public void carp(int sayi1, int sayi2)
+        {
+            Console.WriteLine($"---- Çarpma = {sayi1 * sayi2} ----");
+        }
+        public void bol(int sayi1, int sayi2)
+        {
+            Console.WriteLine($"---- Bölme = {sayi1 / sayi2} ----");
+        }
+}
+
+
+```
+
+#### Örnek V4 #### (Timuçin ÖZDEMİR'in hazırladığı)
+
+>Yukarıdaki Örneğin farklı bir versiyonu
+
+```csharp
+using System;
+
+namespace ConsoleApp1
+{
+    public class Islem
+    {
+        int sayi1, sayi2,sonuc=0;
+        public void secim()
+        {
+            sayilariKullanicidanAl();
+            Console.WriteLine("Topla(+)\nCikart(-)\nCarp(*)\nBol(/)");
+            Console.Write("Seciminiz: ");
+            string secim = Console.ReadLine();
+            if (secim == "+") { topla(); }
+            else if (secim == "-") { cikart(); }
+            else if (secim == "*") { carp(); }
+            else if (secim == "/") { bol(); }
+            else { Console.WriteLine("Yanlış Değer Girildi! Program Sonlandırıldı. "); }
+            sonucuEkranaYaz();
+        }
+        public void sayilariKullanicidanAl()
+        {
+            Console.Write("Sayı 1 Giriniz: ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Sayı 2 Giriniz: ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+        }
+        public void sonucuEkranaYaz()
+        {
+            Console.WriteLine($"Sonuç: {sonuc}");
+        }
+        public void topla()
+        {
+      
+   
+            sonuc = sayi1 + sayi2;
+           
+        }
+        public void cikart()
+        {
+           
+    
+            sonuc = sayi1 - sayi2;
+           
+        }
+        public void carp()
+        {
+            
+
+            sonuc = sayi1 * sayi2;
+        
+        }
+        public void bol()
+        {
+
+            sonuc = sayi1 / sayi2;
+           
+        }
+
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
+
 ```
