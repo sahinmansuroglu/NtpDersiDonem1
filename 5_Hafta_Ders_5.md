@@ -124,7 +124,7 @@ class Program
         }
 
     }
-```csharp
+```
 
 **Örnek:**
 ```csharp
@@ -154,10 +154,14 @@ class Program
         }
 
     }
+    
+```
+
 #### Örnek V1 ####
 > Aşağıdaki uygulama sınıf yardımıyla klavyeden girilen 2 sayı arasında isteğe göre toplama, çıkartma, bölme ve çarpma işlemlerinden birini yapıp ekrana yazdıran program tasarımı
 > **Not:** Aşağıdaki uygulama istenilen işlemleri yapan ve doğru çalışan bir uygulamadır. Ancak çok kod tekrarı bulunmaktadır. Bir sonraki örnekte bu kod tekrarı ortadan kaldırılmıştır.
 > 
+```csharp
 using System;
 
 namespace ConsoleApp4
@@ -253,8 +257,12 @@ namespace ConsoleApp4
         }
     }
 }
+```
 
-## Version-2 ##
+#### Örnek V2 ####
+> Aşağıdaki uygulama bir önceki uygulama ile aynı işlemi yapmaktadır. Anncak değişkenler sınıf kapsamında tanımlanarak kod tekrarı ortadan kaldırılmaya çalışılmıştır.
+
+```csharp
 using System;
 
 namespace ConsoleApp4
@@ -338,3 +346,4 @@ namespace ConsoleApp4
         }
     }
 }
+```
