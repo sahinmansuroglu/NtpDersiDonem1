@@ -162,7 +162,7 @@ class Program
 
 > **Not:** Aşağıdaki uygulama istenilen işlemleri yapan ve doğru çalışan bir uygulamadır. Ancak çok kod tekrarı bulunmaktadır. Bir sonraki örnekte bu kod tekrarı ortadan kaldırılmıştır.
 
-[link text](#### Örnek V2 ####)
+
 
 ```csharp
 using System;
