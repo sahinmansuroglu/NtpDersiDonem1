@@ -22,6 +22,7 @@
 
 ### 4. Bölüm ###
 1. [Hata Ayıklama (Try-Catch-Finally)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/4_Hafta_Ders_1.md)
+2. [Konsol Ekranında Menü Yapımı](https://github.com/sahinmansuroglu/NtpDersi/blob/main/4_Hafta_Ders_2.md)
 
 ### 5. Bölüm ###
 1. [Metot Kavramı-1 (Geriye Değer Döndürmeyen,Geriye Değer Döndüren, Parametreli, Parametresiz)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/5_Hafta_Ders_1.md)
