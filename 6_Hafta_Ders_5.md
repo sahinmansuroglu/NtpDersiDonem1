@@ -14,7 +14,7 @@
 
 Ana Programda bulunacak olan Menü
 
-*****İşlemler*******
+***** İşlemler *******
 1- Sayi Ekle
 2- Tek Sayıları Görüntüle
 3- Çift Sayıları Görüntüle
