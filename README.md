@@ -37,7 +37,8 @@
 2. [Encapsulation (Kapsülleme)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_2.md)
 3. [Sadece Okunabilir Özellikler, Sadece Yazılabilir Özellikler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_3.md)
 4. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Soru_Ve_Cevaplar.md) 
-
+5. [Ekstra Örnekler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/6_Hafta_Ders_4.md) 
+6. 
 ### 7. Bölüm ###
 1. [Abstraction](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_1.md)
 2. [Metot Kavramı-2(Varsayılan Değerli Parametreler, İsimlendirilmiş Parametreler, Parametre Dizileri)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_2.md)
