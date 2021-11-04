@@ -14,15 +14,8 @@
 
 Ana Programda bulunacak olan Menü
 
-***** İşlemler *******
-1- Sayi Ekle
-2- Tek Sayıları Görüntüle
-3- Çift Sayıları Görüntüle
-4- Tek Sayıların toplamını Göster
-5- Çift Sayıların toplamını Göster
-6- Tek Sayıların ortalamasını Göster
-7- Çift Sayıların ortalamasını Göster
-8- Çıkış
+![image](https://user-images.githubusercontent.com/28144917/140300734-6b6909aa-b236-4e5b-a275-b8774339fdf2.png)
+
 
 ### Islem sınıfının kodları ###
 
