@@ -1,9 +1,10 @@
 ## Console Ekranında Menü Tasarımı ##
-> Console ekranında menü tasarlarken while veya do-while dongüsünden faydalanabiliriz. Ayrıca kontrol işlemleri içinde if-else if-else yapısını veya switch case yapısını kullanabıliriz
+> Console ekranında menü tasarlarken while veya do-while dongüsünden faydalanabiliriz. Ayrıca kontrol işlemleri içinde if-else if-else yapısını veya switch case yapısını kullanabıliriz. 
+> Bu yöntemler kulanılarak aşağıdaki menünün tasarımı yapılacaktır.
 
 ![image](https://user-images.githubusercontent.com/28144917/140269705-6efa3df3-1afa-4b8d-be88-dac90e67312c.png)
 
-### While ve if-else if- else ile menünün tasarımı ###
+### While ve if - else if - else yapıları ile menünün tasarımı ###
 
 ```csharp
 using System;
