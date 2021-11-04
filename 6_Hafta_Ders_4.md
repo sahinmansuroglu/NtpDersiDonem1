@@ -1,5 +1,5 @@
   ## Örnek-1  ##
- Aşağıdaki Örnek çalıştırıldığında aşağıdaki çıktıyı verebilmesi için noktalı yere yazılması gerekn kodu yazınız.
+ Aşağıdaki Örnek çalıştırıldığında aşağıdaki çıktıyı verebilmesi için sayiEkle metodunun içerisindeki noktalı yerlere yazılması gerekn kodu yazınız.
   
   **Vermesi Gereken Çıktı**
   
@@ -58,8 +58,22 @@
     }
  ```
  
-    **Çözüm**
+ **Çözüm**
     
-  > //.......................... (1) satırının olduğu yere  ```csharp ciftSayilar = $"{ciftSayilar} {sayi}";  ```
-  
-  > //.......................... (2) satırının olduğu yere  ```csharp tekSayilar = $"{tekSayilar} {sayi}";  ```
+
+  ```csharp 
+   public void sayiEkle(int sayi)
+        {
+            if (sayi % 2 == 0)
+            {
+                //sayi çift ise bu blok çalışır
+                ciftSayilar = $"{ciftSayilar} {sayi}";
+            }
+            else
+            {
+                //sayi tek ise bu blok çalışır 
+                tekSayilar = $"{tekSayilar} {sayi}";
+            }
+        }
+  ```
+
