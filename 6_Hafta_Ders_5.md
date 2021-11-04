@@ -1,6 +1,6 @@
-##Soru:##
+## Soru: ##
 
-Uygulamanın Tamalanmış Hali
+[Uygulamanın Tamalanmış Hali](https://github.com/sahinmansuroglu/NtpDersi/files/7474154/program.zip)
 
 > Aşağıdaki işlemlerin yapılabileceği bir sınıf tanımlayınız ve ana programda bu sınıftan nesne oluşturarak çalıştırınız
 
