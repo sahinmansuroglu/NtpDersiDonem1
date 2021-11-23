@@ -30,6 +30,37 @@
 ![image](https://user-images.githubusercontent.com/28144917/142982345-33cae51a-ae10-419e-8f61-32f7a74e4e0c.png)
 
 
+**Örnek**
+```csharp
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            Dikdortgen dikdortgen1;
+            Dikdortgen dikdortgen2;
+            Dikdortgen dikdortgen3;
+            dikdortgen1 = new Dikdortgen();
+            dikdortgen2 = dikdortgen1;
+            dikdortgen3 = dikdortgen1;
+            dikdortgen1.kisaKenarUzunlugu = 10;
+            dikdortgen1.alanHesaplaEkranaYaz();
+            dikdortgen2.alanHesaplaEkranaYaz();
+            dikdortgen3.alanHesaplaEkranaYaz();
+            Console.ReadKey();
+        }
+    }
+
+
+    class Dikdortgen
+    {
+        public int kisaKenarUzunlugu=4;
+        public int uzunKenarUzunlugu=6;
+        public void alanHesaplaEkranaYaz()
+        {
+            Console.WriteLine($"Alan: {kisaKenarUzunlugu * uzunKenarUzunlugu}");
+        }
+    }
+```
 **Soru-1**
 
 > Aşağıdaki verilenlere göre bir Öğrenci Sınıfı oluşturunuz. Bu ogrenci Sınıfında 3 tane nesnere referansı oluşturup aynı nesneyi bu üç nesne referansına da atayarark bilgilerini ekrana yazdırınız.
