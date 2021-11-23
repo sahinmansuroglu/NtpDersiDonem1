@@ -8,10 +8,10 @@
 > bool byte char decimal double enum float int long sbyte short struct uint ulong short
 
 #### Değer tiplerinin bellekte yerleşimi ####
-> Aşağıdaki örnekte a ve aKopya değişkeninin belleğin yığın bölümündeki yerleşimi gözükmektedir.
+> Aşağıdaki örnekte a ve aKopya değişkenlerinin belleğin yığın bölümündeki yerleşimi gözükmektedir.
 ![image](https://user-images.githubusercontent.com/28144917/142982944-01a5bcde-ca89-4b7f-b770-3a9509963d6f.png)
 
-> Aşağıdaki örnekte a ve aKopya değişkeninin belleğin yığın bölümündeki yerleşimi gözükmektedir. Ancak bu iki değişken farklı bellek hücrelerini gösterdiği için herhangi birisindeki değişiklik diğerini etkilememektedir.
+> Aşağıdaki örnekte a ve aKopya değişkenlerinin belleğin yığın bölümündeki yerleşimi gözükmektedir. Ancak bu iki değişken farklı bellek hücrelerini gösterdiği için herhangi birisindeki değişiklik diğerini etkilememektedir.
 ![image](https://user-images.githubusercontent.com/28144917/142983245-f1b2b212-c7d4-4e96-a7f5-765a906cea1b.png)
 
 
