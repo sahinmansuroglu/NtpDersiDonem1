@@ -8,4 +8,8 @@
 
 ### 2. Referans Tipleri (Reference Type) ###
 
-![image](https://user-images.githubusercontent.com/28144917/142979201-c4ae9448-7bb3-4dc1-8585-923f75a47126.png)
+![image](https://user-images.githubusercontent.com/28144917/142981838-565fef99-894b-4b87-8ad5-4fee1ef22310.png)
+
+![image](https://user-images.githubusercontent.com/28144917/142982203-62079f19-7a0f-4b3e-b9f3-b546757244e1.png)
+
+![image](https://user-images.githubusercontent.com/28144917/142982345-33cae51a-ae10-419e-8f61-32f7a74e4e0c.png)
