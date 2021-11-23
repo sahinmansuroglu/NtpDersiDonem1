@@ -5,7 +5,7 @@
 
 ### 1. Değer Tipleri (Value Type) ###
 
-> bool byte char decimal double enum float int long sbyte short struct uint ulong short
+> "bool", "byte", "char", "decimal", "double", "enum", "float", "int", "long", "sbyte", "short", "struct", "uint", "ulong", "short".
 
 #### Değer tiplerinin bellekte yerleşimi ####
 > Aşağıdaki örnekte a ve aKopya değişkenlerinin belleğin yığın bölümündeki yerleşimi gözükmektedir.
@@ -16,6 +16,10 @@
 
 
 ### 2. Referans Tipleri (Reference Type) ###
+
+>  "string", "object", "class",  "array".
+
+#### Referans tiplerinin bellekte yerleşimi ####
 
 ![image](https://user-images.githubusercontent.com/28144917/142981838-565fef99-894b-4b87-8ad5-4fee1ef22310.png)
 
