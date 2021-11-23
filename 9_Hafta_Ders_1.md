@@ -5,6 +5,10 @@
 
 ### 1. Değer Tipleri (Value Type) ###
 
+![image](https://user-images.githubusercontent.com/28144917/142982944-01a5bcde-ca89-4b7f-b770-3a9509963d6f.png)
+
+![image](https://user-images.githubusercontent.com/28144917/142983245-f1b2b212-c7d4-4e96-a7f5-765a906cea1b.png)
+
 
 ### 2. Referans Tipleri (Reference Type) ###
 
