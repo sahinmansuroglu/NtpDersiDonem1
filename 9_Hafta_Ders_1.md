@@ -57,7 +57,7 @@ class Program
             Kare kare2 = kare1;
             kare1.Kenar = 20;
             Console.WriteLine($" Kare1 kenar uzunluğu:{kare1.Kenar}");
-            Console.WriteLine($" Kare2 kenar uzunluğu:{kare1.Kenar}");
+            Console.WriteLine($" Kare2 kenar uzunluğu:{kare2.Kenar}");
             Console.ReadKey();
         }
     }
