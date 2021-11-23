@@ -7,3 +7,5 @@
 
 
 ### 2. Referans Tipleri (Reference Type) ###
+
+![image](https://user-images.githubusercontent.com/28144917/142979201-c4ae9448-7bb3-4dc1-8585-923f75a47126.png)
