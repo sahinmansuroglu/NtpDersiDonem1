@@ -20,7 +20,7 @@
 >  "string", "object", "class",  "array".
 
 #### Referans tiplerinin bellekte yerleşimi ####
-
+>Aşağıdaki Örnekte Kare tipinde yeniKare adında bir referans oluşturulmuş ancak new ile bir nesne oluşturup atama yapılmadğından referans olarak **null** değeri bulunmaktadır
 ![image](https://user-images.githubusercontent.com/28144917/142981838-565fef99-894b-4b87-8ad5-4fee1ef22310.png)
 
 ![image](https://user-images.githubusercontent.com/28144917/142982203-62079f19-7a0f-4b3e-b9f3-b546757244e1.png)
