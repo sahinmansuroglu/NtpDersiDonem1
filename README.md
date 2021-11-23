@@ -51,7 +51,7 @@
 4. [Bitmeyen Sayı Oyunu Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_3.md)
 
 ### 9. Bölüm ###
-1. [``` Değer ve Referans Tipleri (Value Type and Reference Type) ```]()
+1. [``` Değer ve Referans Tipleri (Value Type and Reference Type) ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_1.md)
 2. [``` Metotlarda ref ve out Kullanımı ```]()
 
 ### 10. Bölüm ###
