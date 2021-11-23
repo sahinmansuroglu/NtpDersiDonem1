@@ -118,9 +118,9 @@ class Program
 
 **Soru-1**
 
-> Aşağıdaki verilenlere göre bir Öğrenci Sınıfı oluşturunuz. Bu ogrenci Sınıfında 3 tane nesnere referansı oluşturup aynı nesneyi bu üç nesne referansına da atayarark bilgilerini ekrana yazdırınız.
-a) Ad Soyad ve dogum Tarihi alanları bulunacak
-b) Bilgileri Ekrana yazdıran bir metot  bulunanacak.
+> Aşağıdaki verilenlere göre bir Öğrenci Sınıfı oluşturunuz. Bu ogrenci Sınıfından 3 tane nesne referansı oluşturup aynı nesneyi bu üç nesne referansına da atayarak bilgilerini ekrana yazdırınız.
+> a) Ad Soyad ve dogum Tarihi alanları bulunacak
+> b) Bilgileri Ekrana yazdıran bir metot  bulunanacak.
 
 **Çözüm**
 
