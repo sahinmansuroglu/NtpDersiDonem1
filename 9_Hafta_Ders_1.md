@@ -35,3 +35,43 @@
 > Aşağıdaki verilenlere göre bir Öğrenci Sınıfı oluşturunuz. Bu ogrenci Sınıfında 3 tane nesnere referansı oluşturup aynı nesneyi bu üç nesne referansına da atayarark bilgilerini ekrana yazdırınız.
 a) Ad Soyad ve dogum Tarihi alanları bulunacak
 b) Bilgileri Ekrana yazdıran bir metot  bulunanacak.
+
+**Çözüm**
+
+```csharp
+class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Ogrenci nesne1;
+            Ogrenci nesne2;
+            Ogrenci nesne3;
+            nesne1 = new Ogrenci();
+            nesne2 = nesne1;
+            nesne3 = nesne1;
+
+            nesne1.adSoyad = "Yetiş Can Çapan";
+            nesne1.dogumtarihi = 2005;
+            nesne1.bilgileriEkranaYaz();
+            nesne2.bilgileriEkranaYaz();
+            nesne3.bilgileriEkranaYaz();
+
+            Console.ReadKey();
+            
+        }
+    }
+    class Ogrenci
+    {
+        public string adSoyad = "KadirCan Kulu";
+        public int dogumtarihi = 2004;
+
+        public void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Ad Soyad : {adSoyad}\nDogum Tarihi:{dogumtarihi}");
+            Console.WriteLine("--------------------------------------------------");
+
+        }
+    }
+   
+```
