@@ -14,7 +14,24 @@
 > Aşağıdaki örnekte a ve aKopya değişkenlerinin belleğin yığın bölümündeki yerleşimi gözükmektedir. Ancak bu iki değişken farklı bellek hücrelerini gösterdiği için herhangi birisindeki değişiklik diğerini etkilememektedir.
 ![image](https://user-images.githubusercontent.com/28144917/142983245-f1b2b212-c7d4-4e96-a7f5-765a906cea1b.png)
 
+**Örnek**
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi = 45;
+            int sayiKopya = sayi;
+            sayi = 56;
+            Console.WriteLine($"sayi: {sayi}");
+            Console.WriteLine($"sayiKopya: {sayiKopya}");
 
+
+
+            Console.ReadKey();
+        }
+    }
+```
 ### 2. Referans Tipleri (Reference Type) ###
 
 >  "string", "object", "class",  "array".
@@ -29,6 +46,37 @@
 >Aşağıdaki Örnekte Kare tipinde kare1 ve kare2  adında iki farklı referans oluşturulmuş ve ardında  new ile heap'de bir nesne oluşturup oluşturulan bu oluşturulan nesneninin adresi hem kare1 hem de kare2' ye atılmıştır. Yani kare1 ve kare2 aynı nesneyi göstermektedir. 
 ![image](https://user-images.githubusercontent.com/28144917/142982345-33cae51a-ae10-419e-8f61-32f7a74e4e0c.png)
 
+**Örnek**
+```csharp
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Kare kare1 = new Kare();
+            kare1.Kenar = 10;
+            Kare kare2 = kare1;
+            kare1.Kenar = 20;
+            Console.WriteLine($" Kare1 kenar uzunluğu:{kare1.Kenar}");
+            Console.WriteLine($" Kare2 kenar uzunluğu:{kare1.Kenar}");
+            Console.ReadKey();
+        }
+    }
+    class Kare
+    {
+        int kenar;
+        public int Kenar
+        {
+            get
+            {
+                return kenar;
+            }
+            set
+            {
+                kenar = value;
+            }
+        }
+    }
+```
 
 **Örnek**
 ```csharp
