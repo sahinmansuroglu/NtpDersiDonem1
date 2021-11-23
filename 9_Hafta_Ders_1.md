@@ -26,6 +26,7 @@
 >Aşağıdaki Örnekte Kare tipinde yeniKare adında bir referans oluşturulmuş ve ardında  new ile bir nesne oluşturup atama yapıldığından dolayı yeniKare'ye  heap'de oluşturulan yeni nesnenin adresi atılmıştır.
 ![image](https://user-images.githubusercontent.com/28144917/142982203-62079f19-7a0f-4b3e-b9f3-b546757244e1.png)
 
+>Aşağıdaki Örnekte Kare tipinde kare1 ve kare2  adında iki farklı referans oluşturulmuş ve ardında  new ile heap'de bir nesne oluşturup oluşturulan bu oluşturulan nesneninin adresi hem kare1 hem de kare2' ye atılmıştır. Yani kare1 ve kare2 aynı nesneyi göstermektedir. 
 ![image](https://user-images.githubusercontent.com/28144917/142982345-33cae51a-ae10-419e-8f61-32f7a74e4e0c.png)
 
 
