@@ -52,7 +52,7 @@
 
 ### 9. Bölüm ###
 1. [``` Değer ve Referans Tipleri (Value Type and Reference Type) ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_1.md)
-2. [``` Metotlarda ref ve out Kullanımı ```]()
+2. [``` Metotlarda ref ve out Kullanımı ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_2.md)
 
 ### 10. Bölüm ###
 1. [``` Kalıtım (Inheritance) ```]()
