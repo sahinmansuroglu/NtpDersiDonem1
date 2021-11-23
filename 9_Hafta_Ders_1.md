@@ -1,9 +1,13 @@
 ## Değer ve Referans Tipleri (Value Type and Reference Type) ##
 >  C# veri tipleri da verilerin bellekte nasıl saklanacağına göre değer tipleri veya referans tipleri olmak üzere ikiye ayrılır.
->  Value types içerisinde sadece bir değişkeninin değerini tutarken Reference types değerin bulunduğu yerin adresini tutmaktadır.
->  Value type verileri belleğin yığın (Stack) bölümünde tutulurken, Reference type verileri belleğin öbek (Heap) bölümünde yer almaktadır.
+>  Değer tiplerinde sadece  değişkenin verisi tutulurken, Referans tiplerinde ise  verinin  bulunduğu yerin adresi tutulmaktadır.
+>  Değer tiplerinde veriler belleğin yığın (Stack) bölümünde tutulurken, Referans tiplerinde veriler belleğin öbek (Heap) bölümünde yer almaktadır.
 
 ### 1. Değer Tipleri (Value Type) ###
+
+> bool byte char decimal double enum float int long sbyte short struct uint ulong short
+
+#### Değer tiplerinin bellekte yerleşimi ####
 
 ![image](https://user-images.githubusercontent.com/28144917/142982944-01a5bcde-ca89-4b7f-b770-3a9509963d6f.png)
 
