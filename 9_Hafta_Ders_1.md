@@ -161,3 +161,6 @@ class Program
     }
    
 ```
+
+**Ekran Çıktısı**
+![image](https://user-images.githubusercontent.com/28144917/143006180-77ffcb8d-80bc-48d5-8775-d36bb85d410f.png)
