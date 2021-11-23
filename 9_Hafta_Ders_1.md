@@ -17,3 +17,10 @@
 ![image](https://user-images.githubusercontent.com/28144917/142982203-62079f19-7a0f-4b3e-b9f3-b546757244e1.png)
 
 ![image](https://user-images.githubusercontent.com/28144917/142982345-33cae51a-ae10-419e-8f61-32f7a74e4e0c.png)
+
+
+**Soru-1**
+
+> Aşağıdaki verilenlere göre bir Öğrenci Sınıfı oluşturunuz. Bu ogrenci Sınıfında 3 tane nesnere referansı oluşturup aynı nesneyi bu üç nesne referansına da atayarark bilgilerini ekrana yazdırınız.
+a) Ad Soyad ve dogum Tarihi alanları bulunacak
+b) Bilgileri Ekrana yazdıran bir metot  bulunanacak.
