@@ -77,6 +77,11 @@ class Program
         }
     }
 ```
+**Yukarıdaki uygulamada bulununan verilerin bellekteki yerleşimi
+![image](https://user-images.githubusercontent.com/28144917/142995271-8c115a0e-f4be-437a-b644-c7d264a6d007.png)
+
+**Ekran Çıktısı**
+![image](https://user-images.githubusercontent.com/28144917/142995378-a21f7bda-d6d4-4b4b-a591-62821383864f.png)
 
 **Örnek**
 ```csharp
