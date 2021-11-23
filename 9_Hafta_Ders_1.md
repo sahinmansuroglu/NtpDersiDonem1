@@ -137,7 +137,7 @@ class Program
             nesne2 = nesne1;
             nesne3 = nesne1;
 
-            nesne1.adSoyad = "Yetiş Can Çapan";
+            nesne1.adSoyad = "Serdar AY";
             nesne1.dogumtarihi = 2005;
             nesne1.bilgileriEkranaYaz();
             nesne2.bilgileriEkranaYaz();
@@ -149,7 +149,7 @@ class Program
     }
     class Ogrenci
     {
-        public string adSoyad = "KadirCan Kulu";
+        public string adSoyad = "Ahmet SEV";
         public int dogumtarihi = 2004;
 
         public void bilgileriEkranaYaz()
