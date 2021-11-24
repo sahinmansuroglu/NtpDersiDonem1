@@ -1,3 +1,5 @@
+    ## Metotları değer ile çağırma (call by value), referans ile çağırma(call by reference) ## 
+    > Bir metod parametre gönderilerek çağrıldığında gönderilen parametreler üzerinde değişiklik yapılıp yapılmayacağı denetlenebilir bir durumdur.
     class Program
     {
         static void Main(string[] args)
