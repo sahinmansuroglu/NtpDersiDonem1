@@ -2,7 +2,7 @@
     
 > Bir metod değer tipinde bir parametre gönderilerek çağrıldığında gönderilen parametrenin metod içerisinde bir kopyası oluşturulur ve bu kopya üzerinde değişiklik yapılır. Ancak metodun çağrıldığı yerde gönderilen parametre herhangi bir değişikliğe uğramaz. Bu kullanıma metotları değer ile çağırma adını veriyoruz. 
 
-**Not: Değer türlerinde tanımlanmış parametreler bir metoda geçirilirken arkaplanda  her zaman  kopyası oluşturulurak geçirilir. İstisna olarak string veri tipi referans veri tipi olmasına rağmen bu tipte metoda geçirilirken araka planda kopyası oluşturularak geçirilir. **  
+**Not: Değer türlerinde tanımlanmış parametreler bir metoda geçirilirken arkaplanda  her zaman  kopyası oluşturulurak geçirilir. İstisna olarak string veri tipi referans veri tipi olmasına rağmen bu tipte metoda geçirilirken araka planda kopyası oluşturularak geçirilir.**  
 
 **Örnek**
 ```csharp
