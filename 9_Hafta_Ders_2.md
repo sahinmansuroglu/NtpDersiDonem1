@@ -1,5 +1,32 @@
-    ## Metotları değer ile çağırma (call by value), referans ile çağırma(call by reference) ## 
-    > Bir metod parametre gönderilerek çağrıldığında gönderilen parametreler üzerinde değişiklik yapılıp yapılmayacağı denetlenebilir bir durumdur.
+## Metotları değer ile çağırma (call by value) ## 
+    
+> Bir metod değer tipinde bir parametre gönderilerek çağrıldığında gönderilen parametrenin metod içerisinde bir kopyası oluşturulur ve bu kopya üzerinde değişiklik yapılır. Ancak metodun çağrıldığı yerde gönderilen parametre herhangi bir değişikliğe uğramaz. Bu kullanıma metotları değer ile çağırma adını veriyoruz. 
+**Örnek**
+```csharp
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi = 15;
+            Console.WriteLine($"[Ana Program] Sayi:{sayi}");
+            arttir(sayi);
+            Console.WriteLine($"[Ana Program] Sayi:{sayi}");
+            Console.ReadKey();
+        }
+        public static void arttir(int sayi)
+        {
+            sayi++;
+           Console.WriteLine($"[Metod içerisinde] Sayi:{sayi}");
+        }
+
+    }
+```
+> Yukarıdaki kodu ve aşağıdaki çıktısını incelersek arttir metodu int tipindeki sayı parametresi ile çağrılmıştır. Ancak metod içerisinde ana programdaki sayi parametresinin kopyası oluşturulup o sayı arttırıldığı için ana programdaki sayi değişkeni herhangi bir değişime uğramamıştır. 
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/143385886-8b5b794f-9e32-4438-b730-22fa2a80ddb8.png)
+
+
     class Program
     {
         static void Main(string[] args)
@@ -43,3 +70,6 @@
         public string durum;
 
     }
+
+
+## Metotları değer ile çağırma (call by value), referans ile çağırma(call by reference) ## 
