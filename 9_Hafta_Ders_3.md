@@ -1,5 +1,39 @@
  ## Metotları referans ile çağırma(call by reference) ## 
- > Referans türündeki parametreler bir metoda geçirildiğinde parametrenin metod içerisinde
+> Referans türündeki parametreler bir metoda geçirildiğinde parametre üzerindeki herhangi bir değişiklik metodun çağrıldığı yere de yansıyacaktır.
+
+> Aşağıdaki programı inceleyecek olursak adDegistir metoduna Kisi sınıfından oluşturulmuş kisi1 nesnesi geçirilmektedir. Sınıflar referans türü olduğundan metoda nesnenin adresi gönderilir. Ve metod içerisinde nesne ile ilgili yapılan değişiklikler metodun çağrıldığı yerde de gözlenir.
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Kisi kisi1 = new Kisi();
+            kisi1.adSoyad = "Veli";
+            Console.WriteLine($"[Ana Program] ad:{kisi1.adSoyad}");
+            adDegistir(kisi1);
+            Console.WriteLine($"[Ana Program] ad:{kisi1.adSoyad}");
+            Console.ReadKey();
+        }
+
+        static void adDegistir(Kisi kisi)
+        {
+            kisi.adSoyad = "Ali";
+            Console.WriteLine($"[Method] ad:{kisi.adSoyad}");
+        }
+      
+        
+    }
+
+    class Kisi
+    {
+        public string adSoyad;
+    }
+```
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/143420085-b84a4f00-ced8-4b29-8660-40f94ba71d4a.png)
+
+```csharp
  class Program
     {
         static void Main(string[] args)
@@ -43,6 +77,6 @@
         public string durum;
 
     }
-
+```csharp
 
 
