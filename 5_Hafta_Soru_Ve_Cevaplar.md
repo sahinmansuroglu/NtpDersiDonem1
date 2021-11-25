@@ -220,3 +220,12 @@ class Dikdortgen
 **Sorunu Çözümü**
 
 ![image](https://user-images.githubusercontent.com/28144917/136916693-6b27c637-dde9-4d5a-9f64-c41a0448470f.png)
+
+
+**Soru-4**
+> Aşağıdaki verilenler göre Araba adında bir sınıf tasarlayınız. Bu sınıftan bir nesne oluşturarak  araba nesnesi oluşturup metodlarını çağırınız.
+
+a. marka, model, yil, mevcutHiz, maxHiz alanları bulunacak.
+b. hizlan, yavasla ve bilgileriEkranaYaz metodları bulunacak.
+c. kurucu metod bulunacak
+d. Property kullanılmalı
