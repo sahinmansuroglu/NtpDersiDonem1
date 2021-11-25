@@ -394,8 +394,10 @@ b. hizDegistir (pozit değer hızlandıracaki negatif değer yavaşlatacak) ve b
 
 d. Property kullanılmalı 
 
-Not: Nesne ilk Oluşturulduğunda mevcut hız maximum hızın yarısı olacak. Ek olarak araba durana kadar  hızı -50 ve +50 arasında rastgele hızlar ile değiştirilecektir.
+**Not:** Nesne ilk Oluşturulduğunda mevcut hız maximum hızın yarısı olacak. Ek olarak araba durana kadar  hızı -50 ve +50 arasında rastgele hızlar ile değiştirilecektir.
+
 **Araba Classı**
+```csharp
   class Araba
     {
         string marka;
@@ -526,8 +528,11 @@ Not: Nesne ilk Oluşturulduğunda mevcut hız maximum hızın yarısı olacak. E
             
         }
     }
+```    
+
 **Ana Program**
 
+```csharp
  class Program
     {
         static void Main(string[] args)
@@ -567,3 +572,4 @@ Not: Nesne ilk Oluşturulduğunda mevcut hız maximum hızın yarısı olacak. E
         
 
     }
+```
