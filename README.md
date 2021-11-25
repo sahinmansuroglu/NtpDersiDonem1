@@ -52,8 +52,9 @@
 
 ### 9. Bölüm ###
 1. [``` Değer ve Referans Tipleri (Value Type and Reference Type) ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_1.md)
-2. [``` Metotları değer ile çağırma (call by value), referans ile çağırma(call by reference)```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_2.md)
-3. [``` Metotlarda ref ve out Kullanımı ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_3.md)
+2. [``` Metotları değer ile çağırma (call by value)```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_2.md)
+3. [``` Metotları referans ile çağırma(call by reference)```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_3.md)
+4. [``` Metotlarda ref ve out Kullanımı ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_4.md)
 
 ### 10. Bölüm ###
 1. [``` Kalıtım (Inheritance) ```]()
