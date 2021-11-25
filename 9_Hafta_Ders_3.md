@@ -33,6 +33,11 @@
 
 ![image](https://user-images.githubusercontent.com/28144917/143420085-b84a4f00-ced8-4b29-8660-40f94ba71d4a.png)
 
+
+
+**Örnek**
+> Aşağıdaki örnek  referans ile metot çağrımına bir örnektir. Oluşturulan ogr1 nesnesinin ortalama ve durum alanları farklı bir metot içerisinde hesaplatılmıştır. Bu metotlara ogr1 nesnesinin referansı geçirildiği için metot içerisinde hesaplanan ortalama ve durum bilgileri ana programdaki nesnenin içerisine yerleşmiştir.
+
 ```csharp
  class Program
     {
@@ -78,5 +83,9 @@
 
     }
 ```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/143422206-2d6d7661-8e93-49b1-aab9-86c6268c9d52.png)
 
 
