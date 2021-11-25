@@ -4,7 +4,7 @@
 
 **Not: Değer türlerinde tanımlanmış parametreler bir metoda geçirilirken arkaplanda  her zaman  kopyası oluşturulurak geçirilir. İstisna olarak string veri tipi referans veri tipi olmasına rağmen bu tipte metoda geçirilirken araka planda kopyası oluşturularak geçirilir.**  
 
-**Örnek**
+**Örnek - 1**
 ```csharp
   class Program
     {
@@ -31,7 +31,7 @@
 ![image](https://user-images.githubusercontent.com/28144917/143385886-8b5b794f-9e32-4438-b730-22fa2a80ddb8.png)
 
 
-**Örnek**
+**Örnek - 2**
 ```csharp
   class Program
     {
