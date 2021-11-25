@@ -87,3 +87,41 @@ class Program
 
 ![image](https://user-images.githubusercontent.com/28144917/143429363-360acf3c-24f2-4021-885f-519a02e47ac6.png)
 
+
+**Örnek**
+> Parametre olarak aldığı iki sayının değerleri değiştiren program.
+
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int s1 = 45;
+            int s2 = 50;
+            Console.WriteLine($" [ana Program] s1:{s1}   s2:{s2}");
+
+            yerDegistir(ref s1,ref  s2);
+
+            Console.WriteLine($" [ana Program] s1:{s1}   s2:{s2}");
+            Console.ReadKey();
+        }
+        
+
+        static void yerDegistir(ref int s1, ref int s2)
+        {
+            int gecici;
+            gecici = s1;
+            s1 = s2;
+            s2 = gecici;
+
+            Console.WriteLine($" [Metod içerisi] s1:{s1}   s2:{s2}");
+        }
+
+
+    }
+    
+ ```
+ 
+ **Ekran Çıktısı**
+ 
+ ![image](https://user-images.githubusercontent.com/28144917/143430448-9c113834-b8f6-45f4-ac0b-1041ad59a0ee.png)
