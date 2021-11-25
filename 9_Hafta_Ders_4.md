@@ -57,3 +57,33 @@ class Program
 **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/143427455-45795af4-366b-4ca5-97ec-e55d2908c4ac.png)
+
+**Not: Ref Kullanımında değişkene başlangıç değeri verme zorunluluğu vardır. Ancak Out kullanılırsa buna gerek yoktur.**
+
+**Örnek**
+> Aşağıdaki örnekte ad değişkenin başlangıç değeri atanmadığı için ref ile referansı gönderildiğinde hata alınacaktır. Bu gibi başlangıç değerinin bulunmadığı durumlarda ref yerine out anahtar kelimesi kullanılır.
+
+```csharp
+class Program
+    {
+        static void Main(string[] args)
+        {
+            string ad ;
+            adDegistir(out ad);
+            Console.WriteLine($"[Ana Program] ad:{ad}");
+            Console.ReadKey();
+        }
+        public static void adDegistir(out string ad)
+        {
+            ad = "Ahmet";
+            Console.WriteLine($"[Metod içerisinde] Ad:{ad}");
+        }
+
+
+    }
+```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/143429363-360acf3c-24f2-4021-885f-519a02e47ac6.png)
+
