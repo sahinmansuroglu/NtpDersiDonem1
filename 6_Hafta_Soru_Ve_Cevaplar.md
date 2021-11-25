@@ -383,3 +383,187 @@ class AnaProgram
 **Program Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/138228177-140fb1d5-72be-4d30-8ba5-7150c62b4da4.png)
+
+**Soru-4**
+> Aşağıdaki verilenler göre Araba adında bir sınıf tasarlayınız. Bu sınıftan bir nesne oluşturarak  araba nesnesi oluşturup metodlarını çağırınız.
+
+
+a. marka, model, yil, mevcutHiz, maxHiz alanları bulunacak.
+
+b. hizDegistir (pozit değer hızlandıracaki negatif değer yavaşlatacak) ve bilgileriEkranaYaz metodları bulunacak.
+
+d. Property kullanılmalı 
+
+Not: Nesne ilk Oluşturulduğunda mevcut hız maximum hızın yarısı olacak. Ek olarak araba durana kadar  hızı -50 ve +50 arasında rastgele hızlar ile değiştirilecektir.
+**Araba Classı**
+  class Araba
+    {
+        string marka;
+        public string Marka
+        {
+            get
+            {
+                return marka;
+            }
+            set
+            {
+                if (value.Trim() == "")
+                {
+                    throw new Exception("Marka Boş Geçilemez");
+                }
+                else
+                {
+                    marka = value;
+                }
+            }
+        }
+        string model;
+        public string Model
+        {
+            get
+            {
+                return model;
+            }
+            set
+            {
+                if (value.Trim() == "")
+                {
+                    throw new Exception("Model Boş Geçilemez");
+                }
+                else
+                {
+                    model = value;
+                }
+            }
+        }
+        int yil;
+        public int Yil
+        {
+            get
+            {
+                return yil;
+            }
+            set
+            {
+                int guncelYil = DateTime.Now.Year;
+
+                if (value<=guncelYil && value >= 1900)
+                {
+                    yil = value;
+                }
+                else
+                {
+                    throw new Exception($"yil 1900 ile {guncelYil} arasında olmalı");
+
+                }
+                
+            }
+        }
+        int maxHiz;
+
+        public int MaxHiz
+        {
+            get
+            {
+                return maxHiz;
+            }
+            set { 
+                if (value >=150 && value <= 320)
+                {
+                    maxHiz = value;
+                }
+                else
+                {
+                    throw new Exception("Max hiz 150 ile 320 arasında olmalı");
+                }
+            }
+        }
+        int mevcutHiz;
+        public int MevcutHiz{
+            get
+            {
+                return mevcutHiz;
+            }
+            set
+            {
+                if (value >= maxHiz)
+                {
+                    mevcutHiz = maxHiz;
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Maximum hıza ulaşıldı");
+                    Console.WriteLine($"Mevcut Hızınız:{mevcutHiz}");
+                    Console.ResetColor();
+                }
+                else if (value<=0)
+                {
+                    mevcutHiz = 0;
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Araç Durmuştur");
+                    Console.ResetColor();
+                }
+                else
+                {
+                    mevcutHiz = value;
+                }
+            }
+        }
+
+     
+        public void hizDegistir(int hiz)
+        {
+            MevcutHiz += hiz;
+        }
+        
+
+        public void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Marka:{Marka}");
+            Console.WriteLine($"Model:{Model}");
+            Console.WriteLine($"Yil:{Yil}");
+            Console.WriteLine($"Max Hiz:{MaxHiz}");
+            
+        }
+    }
+**Ana Program**
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Random rastNesne = new Random();
+            try
+            {
+                Araba yeniAraba = new Araba();
+                Console.Write("Lütfen Aracın Markasını Giriniz:");
+                yeniAraba.Marka=Console.ReadLine();
+                Console.Write("Lütfen Aracın Modelini Giriniz:");
+                yeniAraba.Model= Console.ReadLine();
+                Console.Write("Lütfen Aracın Yılını Giriniz:");
+                yeniAraba.Yil = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Lütfen Aracın Max Hızını Giriniz:");
+                yeniAraba.MaxHiz = Convert.ToInt32(Console.ReadLine());
+                yeniAraba.MevcutHiz = yeniAraba.MaxHiz / 2;
+                
+                yeniAraba.bilgileriEkranaYaz();
+
+                while (yeniAraba.MevcutHiz != 0)
+                {
+                    int hizDegeri = rastNesne.Next(-50, 50);
+                    yeniAraba.hizDegistir(hizDegeri);
+                    Console.WriteLine($"Hız Değeri: {hizDegeri}  Mevcut Hiz:{yeniAraba.MevcutHiz}");
+                    System.Threading.Thread.Sleep(200);
+                }
+            }
+            catch (Exception hata)
+            {
+
+                Console.WriteLine($"[HATA] {hata.Message}");
+            }
+            
+            Console.ReadKey();
+        }
+        
+
+    }
