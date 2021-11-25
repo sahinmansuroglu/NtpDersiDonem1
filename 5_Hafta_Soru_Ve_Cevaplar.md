@@ -225,7 +225,11 @@ class Dikdortgen
 **Soru-4**
 > Aşağıdaki verilenler göre Araba adında bir sınıf tasarlayınız. Bu sınıftan bir nesne oluşturarak  araba nesnesi oluşturup metodlarını çağırınız.
 
+
 a. marka, model, yil, mevcutHiz, maxHiz alanları bulunacak.
+
 b. hizlan, yavasla ve bilgileriEkranaYaz metodları bulunacak.
+
 c. kurucu metod bulunacak
+
 d. Property kullanılmalı
