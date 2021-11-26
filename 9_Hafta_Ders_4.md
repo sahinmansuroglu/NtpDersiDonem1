@@ -89,7 +89,7 @@ class Program
 
 
 **Örnek**
-> Parametre olarak aldığı iki sayının değerleri değiştiren program.
+> Parametre olarak aldığı iki sayının değerlerini değiştiren program.
 
 ```csharp
  class Program
