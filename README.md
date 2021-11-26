@@ -55,7 +55,7 @@
 2. [Metotları değer ile çağırma (call by value)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_2.md)
 3. [Metotları referans ile çağırma(call by reference)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_3.md)
 4. [Metotlarda ref ve out Kullanımı](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_4.md)
-5. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_4.md)
+5. [Bölüm Soruları ve Cevapları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/9_Hafta_Ders_5.md)
 
 ### 10. Bölüm ###
 1. [``` Kalıtım (Inheritance) ```]()
