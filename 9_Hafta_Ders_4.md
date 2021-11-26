@@ -138,7 +138,7 @@ class Program
         {
             string ad1 = "Ali";
             string ad2 = "Veli";
-            // Tanımlanan Metodu Çağır..
+
             degistir(ref ad1,ref ad2);
             Console.WriteLine($"ad1:{ad1}");
             Console.WriteLine($"ad2:{ad2}");
@@ -150,8 +150,6 @@ class Program
             string gecici = ad1;
             ad1 = ad2;
             ad2 = gecici;
-            Console.WriteLine($" Metad1:{ad1}");
-            Console.WriteLine($" Metad2:{ad2}");
         }
 
     }
