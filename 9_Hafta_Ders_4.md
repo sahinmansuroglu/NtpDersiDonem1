@@ -125,3 +125,34 @@ class Program
  **Ekran Çıktısı**
  
  ![image](https://user-images.githubusercontent.com/28144917/143430448-9c113834-b8f6-45f4-ac0b-1041ad59a0ee.png)
+
+
+**Örnek**
+> Parametre olarak aldığı iki ad değişkeninin değerlerini değiştiren program.
+
+
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            string ad1 = "Ali";
+            string ad2 = "Veli";
+            // Tanımlanan Metodu Çağır..
+            degistir(ref ad1,ref ad2);
+            Console.WriteLine($"ad1:{ad1}");
+            Console.WriteLine($"ad2:{ad2}");
+            Console.ReadKey();
+        }
+  
+        static void  degistir(ref string ad1,ref string ad2)
+        {
+            string gecici = ad1;
+            ad1 = ad2;
+            ad2 = gecici;
+            Console.WriteLine($" Metad1:{ad1}");
+            Console.WriteLine($" Metad2:{ad2}");
+        }
+
+    }
+```
