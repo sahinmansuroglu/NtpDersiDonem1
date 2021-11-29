@@ -7,7 +7,7 @@
   
   **2. Temel Sınıf (Base Class veya Parent Class):** Metotları ve özellikleri **miras alınan** sınıf
   
-  
+
 > Bir sınıftam miras almak için ":" sembolü kullanılır
 
 ### Örnek-1 ###
@@ -41,6 +41,9 @@ class Program
 }
 
 ```
+
+**Not:** Türetilen sınıf temel sınıfın üyelerine  erişebiliyorken, temel sınıf türetilen sınıfın üyelerine erişemez.
+
 ### Örnek-2 ###
 > Aşağıdaki örnekte kare sınıfından dikdörtgen sınıfı türetilmiştir.
 
@@ -56,10 +59,32 @@ class Program
 
 **Not:** C# programlama dilinde bir sınıf sadece bir sınıftan türetilebilir. Ancak Burada tek bir istisna vardır. Object sınıfı tüm sınıfların üst sınıfıdır. Yani tüm sınıflar object sınıfından türetilmiştir.
 
-### Örnek-3 ###
+### Örnek-4 ###
 > Aşağıdaki örneği incelersek Kare sınıfında herhangi bir özellik ve metot olmamasına rağmen yeniKare nesnesinde dört tane metot gözükmektedir. Nedeni ise arka planda örtülü olarak Kare sınıfı Object sınıfından türetilmiştir ve bu dört metot object sınıfında miras yoluyla alınmıştır.
 
 ![image](https://user-images.githubusercontent.com/28144917/143864036-20ceb9cc-8e12-43df-9cec-f61eaeb7bd06.png)
 
+### Örnek-5 ###
+> Aşağıdaki örnekte Kare sınıfında ToString() metodu olmamasına rağmen Kare sınıfı örtülü olarak object sınıfında türetildiğinden kalıtım yoluyla alındı. Ve Çıktısı da varsayılan olarak sınıfın adıdırç
+
+```csharp
+class Kare
+{
+   
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Kare kare1 = new Kare();
+        Console.WriteLine(kare1.ToString());
+     
+    }
+}
+```
 
 
+### Örnek-5 ###
+
+> Yukarıdaki örnekte istersek aşağıdaki gibi kendi toString metodumuzu da yazabiliriz. 
