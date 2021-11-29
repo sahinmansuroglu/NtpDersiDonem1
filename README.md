@@ -58,7 +58,14 @@
 
 
 ### 10. Bölüm ###
-1. [``` Kalıtım (Inheritance) ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_1.md)
-
-
-
+1. [Kalıtım (Inheritance)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_1.md)
+2. [Hiyerarşik  Kalıtım](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_2.md)
+3. [Metot Gölgeleme (Method Shadowing)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_3.md)
+4. [Sanal Metotlar (Virtual and Override keyword  kullanımı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_4.md)
+5. [Üst Sınıfın üyelerine  erişim (Base keyword  kullanımı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_5.md)
+### 11. Bölüm ###
+1. [Soyut Sınıflar (Abstract Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_1.md)
+2. [Arayüzler (Interfaces)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_2.md)
+3. [Çok Biçimlilik (Polymorphism)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_3.md)
+4. [Statik Sınıflar (Static Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_4.md)
+5. [İsimsiz Sınıflar(Anonymous Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_5.md)
