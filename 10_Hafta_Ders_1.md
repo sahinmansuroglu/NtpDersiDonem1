@@ -6,3 +6,5 @@
 >  1. Türetilmiş Sınıf (Derived Class veya Child Class): Metotları ve özellikleri **miras alan** sınıf
 >  2. Temel Sınıf (Base Class veya Parent Class): Metotları ve özellikleri **miras alınan** sınıf
 
+
+
