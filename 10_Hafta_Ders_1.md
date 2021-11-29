@@ -10,7 +10,7 @@
   
 > Bir sınıftam miras almak için ":" sembolü kullanılır
 
-**Örnek Kullanım**
+###Örnek Kullanım###
 >Aşağıdaki örnekde hayvan sınıfından kedi sınıfı türetilmiştir. Bu örnekte kedi sınıfı türetilen sınıf hayvan sınıfı da temel sınıftır.
 
 ```csharp
@@ -41,3 +41,5 @@ class Program
 }
 
 ```
+
+
