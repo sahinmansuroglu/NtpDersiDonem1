@@ -10,8 +10,8 @@
   
 > Bir sınıftam miras almak için ":" sembolü kullanılır
 
-###Örnek Kullanım###
->Aşağıdaki örnekde hayvan sınıfından kedi sınıfı türetilmiştir. Bu örnekte kedi sınıfı türetilen sınıf hayvan sınıfı da temel sınıftır.
+### Örnek-1 ###
+>Aşağıdaki örnekde hayvan sınıfından kedi sınıfı türetilmiştir. Bu örnekte kedi sınıfı türetilen sınıf, hayvan sınıfı da temel sınıftır.
 
 ```csharp
 class Hayvan
@@ -41,5 +41,14 @@ class Program
 }
 
 ```
+### Örnek-2 ###
+> Aşağıdaki örnekte kare sınıfından dikdörtgen sınıfı türetilmiştir.
 
+
+### Örnek-3 ###
+> Aşağıdaki verilenlere göre ilk olarak Insan sınıfını oluşturunuz ardından Insan sınıfından Ogretmen ve Ogrenci sınıfını türeterek bilgilerini ekrana yazdırınız.
+
+1. Insan sınıfında Ad, Soyad özellikleri bulunacak
+2. Ogretmen sınıfı Insan sınıfından türetilecek ve ek olarak Brans özelligi ve bilgileriEkranaYaz metodu bulunacak
+3. Ogrenci sınıfı Insan sınıfından türetilecek ve ek olarak BulunduguSube özelligi ve bilgileriEkranaYaz metodu bulunacak
 
