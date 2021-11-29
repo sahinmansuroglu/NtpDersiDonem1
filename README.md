@@ -58,7 +58,7 @@
 
 
 ### 10. Bölüm ###
-1. [``` Kalıtım (Inheritance) ```]()
+1. [``` Kalıtım (Inheritance) ```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_1.md)
 
 
 
