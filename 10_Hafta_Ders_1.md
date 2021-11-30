@@ -90,7 +90,44 @@ class Program
 2. Ogretmen sınıfı Insan sınıfından türetilecek ve ek olarak Brans özelligi ve bilgileriEkranaYaz metodu bulunacak
 3. Ogrenci sınıfı Insan sınıfından türetilecek ve ek olarak BulunduguSube özelligi ve bilgileriEkranaYaz metodu bulunacak
 
+```csharp
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogretmen ogretmen1 = new Ogretmen { Ad = "Arda", Soyad = "AR", Brans = "Matematik" };
+            Ogrenci ogrenci1 = new Ogrenci { Ad = "Erhan", Soyad = "KAÇAR", BulunduguSube = "11ATBA" };
+            ogretmen1.bilgileriEkranaYaz();
+            ogrenci1.bilgileriEkranaYaz();
+            Console.ReadKey();
 
+        }
+    }
+    class Insan
+    {
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+    }
+
+    class Ogretmen : Insan
+    {
+        public string Brans { get; set; }
+        public void bilgileriEkranaYaz()
+        {
+
+            Console.WriteLine($"{Ad} {Soyad} {Brans}");
+        }
+    }
+
+    class Ogrenci : Insan
+    {
+        public string BulunduguSube { get; set; }
+        public void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"{Ad} {Soyad} {BulunduguSube}");
+        }
+    }
+```
 
 **Not:** C# programlama dilinde bir sınıf sadece bir sınıftan türetilebilir. Ancak Burada tek bir istisna vardır. Object sınıfı tüm sınıfların üst sınıfıdır. Yani tüm sınıflar object sınıfından türetilmiştir.
 
