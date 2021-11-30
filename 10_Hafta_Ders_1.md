@@ -160,3 +160,23 @@ class Program
 ### Örnek-5 ###
 
 > Yukarıdaki örnekte istersek aşağıdaki gibi kendi toString metodumuzu da yazabiliriz. 
+
+```csharp
+class Kare
+    {
+        public int AKenar { get; set; }
+        public string ToString()
+        {
+            return $"Kenar uzunluğu {AKenar} olan bir Kare Nesnesi";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kare kare1 = new Kare { AKenar = 34 };
+            Console.WriteLine(kare1.ToString());
+            Console.ReadKey();
+        }
+    }
+ ```   
