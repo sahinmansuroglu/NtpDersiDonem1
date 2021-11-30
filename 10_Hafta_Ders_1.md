@@ -48,6 +48,41 @@ class Program
 > Aşağıdaki örnekte kare sınıfından dikdörtgen sınıfı türetilmiştir.
 
 
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            // Aşağıdaki şekilde de nesne oluşturup property'lerine değer ataması yapılabilir.
+            // Dikdortgen dikdortgen1 = new Dikdortgen{ aKenar = 45, bKenar = 60};
+
+            Dikdortgen dikdortgen1 = new Dikdortgen();
+            dikdortgen1.aKenar = 45;
+            dikdortgen1.bKenar = 60;
+
+            Console.WriteLine($"Alan:{dikdortgen1.alan()}");
+            Console.ReadKey();
+
+        }
+    }
+    class Kare
+    {
+        public int aKenar { get; set; }
+
+    }
+
+    class Dikdortgen : Kare
+    {
+        public int bKenar { get; set; }
+
+        public int alan()
+        {
+            return aKenar * bKenar;
+        }
+    }
+
+```
+
 ### Örnek-3 ###
 > Aşağıdaki verilenlere göre ilk olarak Insan sınıfını oluşturunuz ardından Insan sınıfından Ogretmen ve Ogrenci sınıfını türeterek bilgilerini ekrana yazdırınız.
 
