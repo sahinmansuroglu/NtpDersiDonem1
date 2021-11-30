@@ -8,7 +8,7 @@
   **2. Temel Sınıf (Base Class veya Parent Class):** Metotları ve özellikleri **miras alınan** sınıf
   
 
-> Bir sınıftam miras almak için ":" sembolü kullanılır
+> Bir sınıftan miras almak için ":" sembolü kullanılır
 
 ### Örnek-1 ###
 >Aşağıdaki örnekde hayvan sınıfından kedi sınıfı türetilmiştir. Bu örnekte kedi sınıfı türetilen sınıf, hayvan sınıfı da temel sınıftır. (Her bir kedi aynı zamanda hayvandır.)
