@@ -44,4 +44,56 @@
 | TemelHesap      | topla(s1,s2), cikar(s1,s2)        |
 | DortIslem   | topla(s1,s2), cikar(s1,s2) , carp(s1,s2),bol(s1,s2)         |
 | GelismisHesaplama   | topla(s1,s2), cikar(s1,s2) , carp(s1,s2), bol(s1,s2), kalanBul(s1,s2), karesiniAl(s1)          |
-   
+
+**Çözüm**
+```csharp
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            GelismisHesaplama nesne = new GelismisHesaplama();
+            Console.WriteLine($"Toplam: {nesne.topla(45,5)}");
+            Console.WriteLine($"Fark: {nesne.cikar(45, 5)}");
+            Console.WriteLine($"Çarp: {nesne.carp(45, 5)}");
+            Console.WriteLine($"Böl: {nesne.bol(45, 5)}");
+            Console.WriteLine($"Kalan: {nesne.kalan(45, 5)}");
+            Console.WriteLine($"Karesi: {nesne.karesiniAl( 5)}");
+            Console.ReadKey();
+        }
+    }
+    class TemelHesap
+    {
+        public int topla(int s1, int s2)
+        {
+            return s1 + s2;
+        }
+        public int cikar(int s1, int s2)
+        {
+            return s1 - s2;
+        }
+    }
+    class DortIslem : TemelHesap
+    {
+        public int carp(int s1, int s2)
+        {
+            return s1 * s2;
+        }
+        public int bol(int s1, int s2)
+        {
+            return s1 / s2;
+        }
+    }
+    class GelismisHesaplama : DortIslem
+    {
+        public int kalan(int s1, int s2)
+        {
+            return s1 % s2;
+        }
+        public int karesiniAl(int s1)
+        {
+            return s1 * s1;
+        }
+
+    }
+
+```
