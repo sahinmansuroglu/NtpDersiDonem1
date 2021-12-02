@@ -5,8 +5,9 @@
 **Not**: Metot gölgeleme yapabilmek için Temel sınıftaki metot ile türetilmiş sınıftaki metodun aynı imzaya sahip olması gerekir.
 
 
-**Örnek** 
 
+
+**Örnek-1** 
 
 ```csharp
  class Program
@@ -43,7 +44,7 @@
     }
 ```
 
-**Örnek1**
+**Örnek-2**
 > Aşağıdaki verilenlere göre Kare sınıfını oluşturunuz. Ardından Kare sınıfından Dikdortgen Sınıfını turetiniz. Son olarak Kare ve Dikdortgen sınıfından birer nesne oluşturup Alanlarını ve Çevrelerini ekrana yazdırınız. (Methot Shadowing uygulayınız)
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
@@ -51,4 +52,48 @@
 | Kare      | KenarA     | alan(), cevre() |
 | Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
 
+**Örnek-2 Cevap**
 
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Kare kare1 = new Kare { KenarA = 3 };
+            Console.WriteLine("*****Kare Bilgileri******");
+            Console.WriteLine($"Alan:{kare1.alan()} Çevre:{kare1.cevre()} ");
+
+            Dikdortgen dikdortgen1 = new Dikdortgen { KenarA = 4, KenarB = 5 };
+            Console.WriteLine("*****Dikdortgen Bilgileri******");
+            Console.WriteLine($"Alan:{dikdortgen1.alan()} Çevre:{dikdortgen1.cevre()} ");
+            Console.ReadKey();
+        }
+    }
+    class Kare
+    {
+
+        public int KenarA { get; set; }
+        public int alan()
+        {
+            return KenarA * KenarA;
+        }
+        public int cevre()
+        {
+            return KenarA * 4;
+        }
+    }
+    
+    class Dikdortgen : Kare
+    {
+        public int KenarB { get; set; }
+        public new int alan()
+        {
+            return KenarA * KenarB;
+        }
+        public new int cevre()
+        {
+            return (KenarA+KenarB) * 2;
+        }
+    }
+    
+   ```
