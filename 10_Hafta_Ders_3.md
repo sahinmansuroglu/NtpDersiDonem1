@@ -1,11 +1,11 @@
 ## Metot Gölgeleme (Method Shadowing) ##
 
-> C#' da türetilmiş sınıfın içerisinde temel sınıfdaki bir metodu tekrar tanımladığınız da özel bir durum oluşur. Bu durumda derleyici bunu bilerek yapıp yapmadığımız konusunda bizi uyarır. Bunu bilerek yaptığımızı derleyiciye belirtmek için temel sınıftaki metodu gölgelememiz gerekir. Metot gölgeleme yapmak için türetilmiş sınıfta metot tekrar yazılırken **new** anahtar sözcüğü kullanılır.
+> C#' da türetilmiş sınıfın içerisinde temel sınıfdaki bir metodu tekrar tanımladığınızda özel bir durum oluşur. Bu durumda derleyici bunu bilerek yapıp yapmadığımız konusunda bizi uyarır. Bunu bilerek yaptığımızı derleyiciye belirtmek için temel sınıftaki metodu gölgelememiz gerekir. Metot gölgeleme yapmak için türetilmiş sınıfta metot tekrar yazılırken **new** anahtar sözcüğü kullanılır.
 
 **Not**: Metot gölgeleme yapabilmek için Temel sınıftaki metot ile türetilmiş sınıftaki metodun aynı imzaya sahip olması gerekir.
 
 
-
+|![image](https://user-images.githubusercontent.com/28144917/144388168-04ab5a7d-166f-41f9-89a9-03eab26466e2.png)|![image](https://user-images.githubusercontent.com/28144917/144388258-f733a6ac-1718-4ccf-86ae-03f169d63379.png)|
 
 **Örnek-1** 
 
