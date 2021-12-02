@@ -1,0 +1,2 @@
+## Metot Gölgeleme (Method Shadowing) ##
+
