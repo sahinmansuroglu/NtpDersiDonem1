@@ -37,11 +37,11 @@
     
    ```
    **Ornek-1**
-   > Aşağıdaki verilenlere göre ilk olarak TemelHesap sınıfını oluşturunuz, ardından DortIslem sınıfını Temel Hesaptan türetiniz ve son olarak GelismisHesaplama sınıfını da DortIslem sınıfından türetiniz. Ek olarak GelismisHesaplama sınıfından bir nesne oluşturarak içindeki tüm metotları çağırıp sonuclarını ekrana yazdırınız.
+   > Aşağıdaki verilenlere göre ilk olarak TemelHesap sınıfını oluşturunuz, ardından DortIslem sınıfını TemelHesap sınıfından türetiniz ve son olarak GelismisHesaplama sınıfını da DortIslem sınıfından türetiniz. Ek olarak GelismisHesaplama sınıfından bir nesne oluşturarak içindeki tüm metotları çağırıp sonuclarını ekrana yazdırınız.
 
 | Sınıf Adı      | İçinde Bulunacak Metotlar |
 | ----------- | ----------- |
-| TemelHesap      | topla(s1,s2),cikar(s1,s2)        |
-| DortIslem   | topla(s1,s2),cikar(s1,s2) ,carp(s1,s2),bol(s1,s2)         |
-| GelismisHesaplama   | topla(s1,s2),cikar(s1,s2) ,carp(s1,s2),bol(s1,s2), kalanBul(s1,s2), karesiniAl(s1)          |
+| TemelHesap      | topla(s1,s2), cikar(s1,s2)        |
+| DortIslem   | topla(s1,s2), cikar(s1,s2) , carp(s1,s2),bol(s1,s2)         |
+| GelismisHesaplama   | topla(s1,s2), cikar(s1,s2) , carp(s1,s2), bol(s1,s2), kalanBul(s1,s2), karesiniAl(s1)          |
    
