@@ -1,6 +1,6 @@
 ## Hiyerarşik Kalıtım ##
 
-> Nesneye yönelik programlama yaklaşımında türetilmiş bir sınıftan başka bir sınıf türetilebilir. Bu duruma hiyerarşik Kalıtım Denilir.
+> Nesneye yönelik programlama yaklaşımında türetilmiş bir sınıftan başka bir sınıf türetilebilir ve bu türetilen sınıf üstündeki sınıfların üyelerini miras yoluyla kullanabilir. Bu duruma hiyerarşik Kalıtım denilir.
 
 > Aşağıdaki Örnekte Memeli sınıfı Hayvan sınıfından Kopek sınıfı da Memeli sınıfından türetilmiştir. Hiyerarşik kalıtım yoluyla Kopek sınıfı hem Hayvan hemde Memeli sınıfının üyelerine erişim sağlayabilmektedir.
 
