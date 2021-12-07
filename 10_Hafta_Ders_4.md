@@ -29,3 +29,8 @@
         }
     }
 ```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/144972733-f0d246e8-9c5c-4495-8e56-a896a2f9b6f8.png)
+
