@@ -182,8 +182,9 @@
     }
   
   
-  **Ekran Çıktısı**
-  
-  ![image](https://user-images.githubusercontent.com/28144917/144978094-3428c9b5-276c-4e1a-a001-eace3d5e6aa4.png)
+ **Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/144978180-0e0b54ae-4707-46e4-945d-86b7b095d174.png)
+
 
     
