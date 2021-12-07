@@ -187,5 +187,11 @@
 ![image](https://user-images.githubusercontent.com/28144917/144978180-0e0b54ae-4707-46e4-945d-86b7b095d174.png)   
 
 
+**Örnek-4**
+> Aşağıdaki verilenlere Göre Insan Sınıfını türetiniz ve  ardından Insan Sınıfından Ogretmen ve Ogrenci Sınıfını türetiniz. Son olarak Ogretmen ve Ogrenci Sınıfından nesne oluşturarak bilgilerini ekrana yazdırınız.
+
+| Sınıf Adı     | Propertyler  | Metodlar|
+:-------------------------:|:-------------------------:
+|![image](https://user-images.githubusercontent.com/28144917/144388168-04ab5a7d-166f-41f9-89a9-03eab26466e2.png)|![image](https://user-images.githubusercontent.com/28144917/144388258-f733a6ac-1718-4ccf-86ae-03f169d63379.png)|
 
 
