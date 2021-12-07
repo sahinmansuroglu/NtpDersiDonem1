@@ -195,7 +195,7 @@ Not: Insan sınıfındaki bilgileriEkranaYaz metodu virtual tanımlanacak olup t
 | Sınıf Adı     | Propertyler  | Metodlar|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |Insan|Ad, Soyad, DogumTarihi| yasHesapla(), bilgileriEkranaYAz|
-|Ogretmen|Ad, Soyad, DogumTarihi, Brans| yasHesapla(), bilgileriEkranaYAz|
-|Ogrenci|Ad, Soyad, DogumTarihi, SubeAdi| yasHesapla(), bilgileriEkranaYAz|
+|Ogretmen|Ad, Soyad, DogumTarihi, Brans| yasHesapla(), bilgileriEkranaYaz|
+|Ogrenci|Ad, Soyad, DogumTarihi, SubeAdi| yasHesapla(), bilgileriEkranaYaz|
 
 
