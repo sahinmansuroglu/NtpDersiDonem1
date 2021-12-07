@@ -190,8 +190,8 @@
 **Örnek-4**
 > Aşağıdaki verilenlere Göre Insan Sınıfını türetiniz ve  ardından Insan Sınıfından Ogretmen ve Ogrenci Sınıfını türetiniz. Son olarak Insan, Ogretmen ve Ogrenci sınıflarından nesne oluşturarak bilgilerini ekrana yazdırınız.
 
-Not: Insan sınıfındaki bilgileriEkranaYaz metodu virtual tanımlanacak olup türetilmiş sınıflarda bu method override edilecektir.
-
+**Not1 :** Insan sınıfındaki bilgileriEkranaYaz metodu virtual tanımlanacak olup türetilmiş sınıflarda bu method override edilecektir.
+**Not2 :**  Üst sınıfın metodlarına ulaşmak için base keyword'ünü kullanabilirsiniz.
 | Sınıf Adı     | Propertyler  | Metodlar|
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |Insan|Ad, Soyad, DogumTarihi| yasHesapla(), bilgileriEkranaYAz|
