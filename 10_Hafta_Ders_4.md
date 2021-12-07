@@ -185,3 +185,7 @@
  **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/144978180-0e0b54ae-4707-46e4-945d-86b7b095d174.png)   
+
+
+
+
