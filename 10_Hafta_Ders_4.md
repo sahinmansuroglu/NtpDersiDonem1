@@ -126,3 +126,64 @@
 **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/144975536-b36d86de-8eee-4952-8248-49f382cdf4dd.png)
+
+
+**Ornek-4**
+
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Hesaplama hesap1 = new Kare { KenarA = 4 };
+            hesap1.AlanHesapla();
+            hesap1.CevreHesapla();
+            Hesaplama hesap2 = new Dikdortgen { KenarA = 5, KenarB = 3 };
+            hesap2.AlanHesapla();
+            hesap2.CevreHesapla();
+            Console.ReadKey();
+        }
+     }
+    class Hesaplama
+    {
+        public virtual void AlanHesapla()
+        {
+            Console.WriteLine("Herhangi Bir Parametre olmadığı için Alan Hesaplanamadı.");
+        }
+        public virtual void CevreHesapla()
+        {
+            Console.WriteLine("Herhangi Bir Parametre olmadığı için Çevre Hesaplanamadı.");
+        }
+    }
+    class Kare : Hesaplama
+    {
+        public int KenarA { get; set; }
+        public override void AlanHesapla()
+        {
+            Console.WriteLine($"Karenin Alanı:{KenarA*KenarA}");
+        }
+        public override void CevreHesapla()
+        {
+            Console.WriteLine($"Karenin ÇEvresi:{KenarA * 4}");
+        }
+    }
+
+    class Dikdortgen : Kare
+    {
+        public int KenarB { get; set; }
+        public override void AlanHesapla()
+        {
+            Console.WriteLine($"Dikdörtgenini Alanı:{KenarA * KenarB}");
+        }
+        public override void CevreHesapla()
+        {
+            Console.WriteLine($"Dikdörtgenini Çevresi:{(KenarA +KenarB) * 2}");
+        }
+    }
+  
+  
+  **Ekran Çıktısı**
+  
+  ![image](https://user-images.githubusercontent.com/28144917/144978094-3428c9b5-276c-4e1a-a001-eace3d5e6aa4.png)
+
+    
