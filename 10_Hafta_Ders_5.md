@@ -31,11 +31,27 @@ class Program
 
     class ChildSinif:ParentSinif
     {
-
         public ChildSinif(int sayi2) : base(sayi2)
         {
             Console.WriteLine("Child Sinif'in Kurucu Metodu");
-
         }
     }
 ```
+
+
+**Örnek-2**
+
+> Aşağıda verilenlere göre ilk olarak kare sınıfını tanımlayınız. Ardından Kare sınıfından Dikdortgen Sınıfını türetiniz. Son olarak Kare ve Dikdortgen sınıfından birer nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnelerin kenar uzunlukları kurucu metot ile atanacaktır.
+
+**Not:**  Virtual  override ve is keywordleri kullanılmalıdır.
+
+| Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
+| ----------- | ----------- |----------- |
+| Kare      | KenarA     | alan(), cevre() |
+| Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
+
+
+
+
+
+
