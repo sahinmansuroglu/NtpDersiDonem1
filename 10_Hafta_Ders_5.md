@@ -120,6 +120,7 @@ class Program
 > Yukarıdaki örneğe ek olarak aşağıda verilenlere göre Dikdörtgen sınıfından Üçgen sınıfını türetiniz. Son olarak Üçgen sınıfından bir nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnenin kenar uzunlukları kurucu metot ile atanacaktır. 
 
 **Not-1:**  Virtual  override  keywordleri kullanılmalıdır.
+
 **Not-2:**  Kenar uzunlukları negatif bit sayı girilirse class hata fırlatmalı ana programdan da bu hata yakalanmalıdır.
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
