@@ -7,6 +7,7 @@
 > temel sınıfın(ParentSinif) kurucu metoduna erişebilmek için  türetilmiş sınıfın kurucu metodu ``` public ChildSinif(int sayi2) : base(sayi2)``` şeklinde düzenlenerek ChildSınıfın kurucu metoduna gelen parametre ile ParentClass'ın kurucu metodu çağrılmıştır
 
 
+```csharp
 class Program
     {
         static void Main(string[] args)
@@ -37,3 +38,4 @@ class Program
 
         }
     }
+```
