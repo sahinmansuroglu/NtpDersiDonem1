@@ -263,3 +263,49 @@ class Ogrenci : Insan
 **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/144990196-3173e168-bb27-4839-a782-e4c26e2fd716.png)
+
+
+
+**Örnek-5**
+
+> Yukarıdaki uygulamada  oluşturulan nesneleri kullanıcıdan gelen verilerle doldurmak için ana programı aşağıdaki gibi düzenleyebiliriz.
+
+```csharp
+
+ class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Ogretmen ogretmenNesne = new Ogretmen();
+            Ogrenci ogrenciNesne = new Ogrenci();
+            kullanicidanVeriAl(ogrenciNesne);
+            kullanicidanVeriAl(ogretmenNesne);
+            ogretmenNesne.bilgileriEkranaYaz();
+            ogrenciNesne.bilgileriEkranaYaz();
+            Console.ReadKey();
+        }
+        static void kullanicidanVeriAl(Insan insanNesne) {
+            Console.Write("Ad giriniz:");
+            insanNesne.Ad = Console.ReadLine();
+            Console.Write("Soyad giriniz:");
+            insanNesne.Soyad = Console.ReadLine();
+            Console.Write("Dogum Tarihi giriniz:");
+            insanNesne.DogumTarihi = Convert.ToInt32(Console.ReadLine());
+            if (insanNesne is Ogretmen)
+            {
+                Console.Write("Branşı Giriniz:");
+                ((Ogretmen)insanNesne).Brans = Console.ReadLine();
+            }
+
+            if (insanNesne is Ogrenci)
+            {
+                Console.Write("Şubesini Giriniz:");
+                ((Ogrenci)insanNesne).BulunduguSube = Console.ReadLine();
+            }
+
+
+        }
+    }
+   
+```
