@@ -51,7 +51,22 @@ class Program
 | Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
 
 
+**Örnek-3**
 
+> Yukarıdaki örneğe ek olarak aşağıda verilenlere göre Dikdörtgen sınıfından Üçgen sınıfını türetiniz. Son olarak Üçgen sınıfından birer nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnelerin kenar uzunlukları kurucu metot ile atanacaktır. 
+
+**Not:**  Virtual  override ve is keywordleri kullanılmalıdır.
+
+| Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
+| ----------- | ----------- |----------- |
+| Kare      | KenarA     | alan(), cevre() |
+| Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
+| Ucgen   | KenarA, KenarB, KenarC       |alan(), cevre() |
+
+
+| Üç kenarı Bilinen Üçgenin Alanının Hesaplanması    | 
+| ----------- |
+|![image](https://user-images.githubusercontent.com/28144917/145355111-951084fd-c23b-4077-ba7a-5d6111470aaf.png)|
 
 
 
