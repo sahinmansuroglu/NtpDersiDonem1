@@ -133,5 +133,131 @@ class Program
 | ----------- |
 |![image](https://user-images.githubusercontent.com/28144917/145355111-951084fd-c23b-4077-ba7a-5d6111470aaf.png)|
 
+**Çözüm**
+```csharp
+class Program
+    {
+        static void Main(string[] args)
+        {
+            Ucgen ucgen1 = new Ucgen(15, 10, 24);
+            Console.WriteLine("Üçgen Verileri");
+            ucgen1.bilgileriEkranaYaz();
+            Console.ReadKey();
+        }
+    }
+    class Kare
+    {
+        int kenarA;
+        public int KenarA
+        {
+            get
+            {
+                return kenarA;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("A kenar uzunluğu pozitif sayı olmalıdir!!");
+                }
+                else
+                {
+                    kenarA = value;
+                }
+            }
+        }
+        public Kare(int kenarA)
+        {
+            this.KenarA = kenarA;
+        }
+        public virtual double AlanHesapla()
+        {
+            return KenarA * KenarA;
+        }
+        public virtual int CevreHesapla()
+        {
+            return KenarA * 4;
+        }
+        public  void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Alanı:{AlanHesapla():##.##}");
+            Console.WriteLine($"Çevresi:{CevreHesapla()}");
+        }
+    }
+    class Dikdortgen : Kare
+    {
+        int kenarB;
+        public int KenarB
+        {
+            get
+            {
+                return kenarB;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("B kenar uzunluğu pozitif sayı olmalıdir!!");
+                }
+                else
+                {
+                    kenarB = value;
+                }
+            }
+        }
+        public Dikdortgen(int kenarA, int kenarB) : base(kenarA)
+        {
+            this.KenarB = kenarB;
+        }
+        public override double AlanHesapla()
+        {
+            return KenarA * KenarB;
+
+        }
+        public override int CevreHesapla()
+        {
+            return (KenarA + KenarB) * 2;
+        }
+
+    }
+
+    class Ucgen : Dikdortgen
+    {
+        int kenarC;
+        public int KenarC
+        {
+            get
+            {
+                return kenarC;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new Exception("C kenar uzunluğu pozitif sayı olmalıdir!!");
+                }
+                else
+                {
+                    kenarC = value;
+                }
+            }
+        }
+        public Ucgen(int kenarAparam,int kenarBparam,int kenarCparam) : base(kenarAparam, kenarBparam)
+        {
+            this.KenarC = kenarCparam;
+        }
+
+        public override int CevreHesapla()
+        {
+            return KenarA+KenarB+KenarC;
+        }
+        public override double AlanHesapla()
+        {
+            double u = CevreHesapla() / 2.0;
+            double alan = Math.Sqrt(u * ( u - KenarA) * ( u - KenarB) * (u - KenarC));
+            return alan;
+        }
+    }
+```
 
 
