@@ -51,6 +51,69 @@ class Program
 | Kare      | KenarA    | alan(), cevre() |
 | Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
 
+**Çözüm**
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            Kare kare1 = new Kare(33);
+            Console.WriteLine("Kare Verileri");
+            kare1.bilgileriEkranaYaz();
+            Dikdortgen dikdorgen1 = new Dikdortgen(22, 22);
+            Console.WriteLine("Dikdörtgen Verileri");
+            dikdorgen1.bilgileriEkranaYaz();
+            Console.ReadKey();
+        }
+    }
+    class Kare
+    {
+        public int KenarA { get; set; }
+        public Kare(int kenarA)
+        {
+            this.KenarA = kenarA;
+        }
+        public virtual int AlanHesapla()
+        {
+            return KenarA * KenarA;
+        }
+        public virtual int CevreHesapla()
+        {
+            return KenarA * 4;
+        }
+        public virtual void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Alanı:{AlanHesapla()}");
+            Console.WriteLine($"Çevresi:{CevreHesapla()}");
+        }
+    }
+
+    class Dikdortgen : Kare
+    {
+        public int KenarB { get; set; }
+        public Dikdortgen(int kenarA,int bkenar) : base(kenarA)
+        {
+            this.KenarB = bkenar;
+        }
+        public override int AlanHesapla()
+        {
+            return KenarA * KenarB;
+
+        }
+        public override int CevreHesapla()
+        {
+            return (KenarA + KenarB) * 2;
+        }
+       
+    }
+ ```
+ 
+ **Ekran Çıktısı**
+
+   
+![image](https://user-images.githubusercontent.com/28144917/145364694-21baf714-8980-4f19-845f-8fd5a1f5d71d.png)
+
+
 
 **Örnek-3**
 
