@@ -26,7 +26,7 @@ List<tip> listeAdı = new List<tip>();
             adListesi.Add("Mehmet");
             adListesi.Add("Ahmet");
 ```
-**Örnek
+**Örnek**
 
 ```csharp
            static void Main(string[] args)
