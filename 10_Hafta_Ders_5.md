@@ -43,19 +43,21 @@ class Program
 
 > Aşağıda verilenlere göre ilk olarak kare sınıfını tanımlayınız. Ardından Kare sınıfından Dikdortgen Sınıfını türetiniz. Son olarak Kare ve Dikdortgen sınıfından birer nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnelerin kenar uzunlukları kurucu metot ile atanacaktır.
 
-**Not:**  Virtual  override ve is keywordleri kullanılmalıdır.
+**Not:**  Virtual  override  keywordleri kullanılmalıdır.
+
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
 | ----------- | ----------- |----------- |
-| Kare      | KenarA     | alan(), cevre() |
+| Kare      | KenarA    | alan(), cevre() |
 | Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
 
 
 **Örnek-3**
 
-> Yukarıdaki örneğe ek olarak aşağıda verilenlere göre Dikdörtgen sınıfından Üçgen sınıfını türetiniz. Son olarak Üçgen sınıfından birer nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnelerin kenar uzunlukları kurucu metot ile atanacaktır. 
+> Yukarıdaki örneğe ek olarak aşağıda verilenlere göre Dikdörtgen sınıfından Üçgen sınıfını türetiniz. Son olarak Üçgen sınıfından bir nesne oluşturarak alanını ve çevresini ekrana yazdırınız. Oluşturan nesnenin kenar uzunlukları kurucu metot ile atanacaktır. 
 
-**Not:**  Virtual  override ve is keywordleri kullanılmalıdır.
+**Not-1:**  Virtual  override  keywordleri kullanılmalıdır.
+**Not-2:**  Kenar uzunlukları negatif bit sayı girilirse class hata fırlatmalı ana programdan da bu hata yakalanmalıdır.
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
 | ----------- | ----------- |----------- |
