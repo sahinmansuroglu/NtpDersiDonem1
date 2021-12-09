@@ -69,3 +69,6 @@
 3. [Çok Biçimlilik (Polymorphism)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_3.md)
 4. [Statik Sınıflar (Static Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_4.md)
 5. [İsimsiz Sınıflar(Anonymous Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_5.md)
+
+### Karma Uygulamalar ###
+1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
