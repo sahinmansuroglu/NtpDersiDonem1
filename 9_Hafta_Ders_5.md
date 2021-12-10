@@ -35,4 +35,28 @@ class Islem
 ### Paylaşılan Alan Oluşturma ###
 > Bir class içerisinde static bir field(Alan) oluşturulduğunda dikkat edilmesi gerekir. Çünkü bu oluşturulan alan sınıftan oluşturulan tüm nesneler için paylaşılan yani ortak bir alandır.
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        Ogrenci ogrenci1=new Ogrenci { AdSoyad="Akın KOÇ"} ;
+        Ogrenci ogrenci2 = new Ogrenci { AdSoyad = "Akın KOÇ" };
+        Console.WriteLine(ogrenci1.OgrenciSayisi);
+        Console.ReadKey();
+    }
+}
 
+class Ogrenci
+{
+    static int ogrenciSayisi = 0;
+    public int OgrenciSayisi { get {
+            return ogrenciSayisi;
+        } }
+    public String AdSoyad { get; set; }
+    public Ogrenci()
+    {
+        ogrenciSayisi++;
+    }
+
+    
+}
