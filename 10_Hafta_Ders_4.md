@@ -273,7 +273,43 @@ class Ogrenci : Insan
 **Örnek-5**
 
 > Yukarıdaki uygulamada  oluşturulan nesneleri kullanıcıdan gelen verilerle doldurmak için ana programı aşağıdaki gibi düzenleyebiliriz.
+**Çözüm-1**
+```csharp
+static void Main(string[] args)
+    {
+        Ogretmen ogretmen = new Ogretmen ();
+        Console.WriteLine("****Öğretmen Bilgileri****");
+        Console.Write("Ad Giriniz");
+        ogretmen.Ad = Console.ReadLine();
+        Console.Write("Soyad Giriniz");
+        ogretmen.Soyad = Console.ReadLine();
+        Console.Write("Dogum Tarihi Giriniz");
+        ogretmen.DogumTarih =Convert.ToInt16( Console.ReadLine());
+        Console.Write("Branşını Giriniz");
+        ogretmen.Brans= Console.ReadLine();
+        ogretmen.bilgileriEkranaYaz();
 
+
+        Ogrenci ogrenci = new Ogrenci ();
+
+        Console.WriteLine("****Öğrenci Bilgileri****");
+        Console.Write("Ad Giriniz");
+        ogrenci.Ad = Console.ReadLine();
+        Console.Write("Soyad Giriniz");
+        ogrenci.Soyad = Console.ReadLine();
+        Console.Write("Dogum Tarihi Giriniz");
+        ogrenci.DogumTarih = Convert.ToInt16(Console.ReadLine());
+        Console.Write("Şubesini Giriniz");
+        ogrenci.Sube = Console.ReadLine();
+      
+        ogrenci.bilgileriEkranaYaz();
+
+        Console.ReadKey();
+
+    }
+```
+**Çözüm-2**
+**Not** Aşağıdaki Çözümde nesne metoda parametre olarak gönderilmiştir. 
 ```csharp
 
  class Program
