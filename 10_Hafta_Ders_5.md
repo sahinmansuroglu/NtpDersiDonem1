@@ -101,8 +101,8 @@ class ChildSinif : ParentSinif
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
 | ----------- | ----------- |----------- |
-| Kare      | KenarA    | alan(), cevre() |
-| Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
+| Kare      | KenarA    | alan(), cevre(), bilgileriEkranaYaz() |
+| Dikdortgen   | KenarA, KenarB       |alan(), cevre(), bilgileriEkranaYaz()  |
 
 **Çözüm**
 ```csharp
