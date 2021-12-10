@@ -325,7 +325,8 @@ static void Main(string[] args)
             ogrenciNesne.bilgileriEkranaYaz();
             Console.ReadKey();
         }
-        //Insan sınıfından veya insan sınıfından türetilmiş sınıflardan oluşturulan bir nesne aşağıdaki metoda parametre olarak gönderilmiştir.
+        //Insan sınıfından veya insan sınıfından türetilmiş sınıflardan oluşturulan 
+        //bir nesne aşağıdaki metoda parametre olarak gönderilmiştir.
         static void kullanicidanVeriAl(Insan insanNesne) {
             Console.Write("Ad giriniz:");
             insanNesne.Ad = Console.ReadLine();
@@ -333,13 +334,15 @@ static void Main(string[] args)
             insanNesne.Soyad = Console.ReadLine();
             Console.Write("Dogum Tarihi giriniz:");
             insanNesne.DogumTarihi = Convert.ToInt32(Console.ReadLine());
-            //Burada is keyword'ü insanNesne'sinin Ogretmen sınıfından türetilip türetilmediğini test eder.
+            //Burada is keyword'ü insanNesne'sinin Ogretmen sınıfından türetilip
+            //türetilmediğini test eder.
             if (insanNesne is Ogretmen)
             {
                 Console.Write("Branşı Giriniz:");
                 ((Ogretmen)insanNesne).Brans = Console.ReadLine();
             }
-         //Burada is keyword'ü insanNesne'sinin Ogrenci sınıfından türetilip türetilmediğini test eder.
+         //Burada is keyword'ü insanNesne'sinin Ogrenci sınıfından türetilip 
+         //türetilmediğini test eder.
             if (insanNesne is Ogrenci)
             {
                 Console.Write("Şubesini Giriniz:");
