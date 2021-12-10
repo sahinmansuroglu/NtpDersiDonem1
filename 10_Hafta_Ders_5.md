@@ -1,4 +1,4 @@
-## Üst Sınıfın (Base vs Parent) üyelerine erişim (Base keyword kullanımı) ##
+## Temel Sınıfın (Base veya Parent) üyelerine erişim (Base keyword kullanımı) ##
 
 > C# programlama dilinde base class yani üst sınıfın üyelerine erişim için base keyword'ü kullanılır.
 
