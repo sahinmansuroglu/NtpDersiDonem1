@@ -37,7 +37,48 @@ class Program
         }
     }
 ```
+**Örnek-2**
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        ChildSinif childNesne = new ChildSinif(25);
+        childNesne.mesajYaz();
+        Console.ReadKey();
+    }
+}
 
+class ParentSinif
+{
+
+    public virtual void mesajYaz()
+    {
+        Console.WriteLine("Merhaba Dünya");
+    }
+    public ParentSinif(int sayi1)
+    {
+        Console.WriteLine($"Parent Sinif'in Kurucu Metodu (Sayi:{sayi1} )");
+
+    }
+
+}
+
+class ChildSinif : ParentSinif
+{
+    public ChildSinif(int sayi2):base(sayi2)
+    {
+        Console.WriteLine("Child Sinif'in Kurucu Metodu");
+    }
+
+    public override void mesajYaz()
+    {
+        base.mesajYaz();
+        Console.WriteLine("Merhaba Güneş Sistemi");
+    }
+}
+
+```
 
 **Örnek-2**
 
