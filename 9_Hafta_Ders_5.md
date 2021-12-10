@@ -24,3 +24,9 @@ class Islem
     }
 }
 ```
+
+**Not:** Bir sınıfdaki Static bir metot içerisinden static olmayan metotlara erişim yapılamaz.
+
+| Static Metot içerisinde Static olmayan metoda ulaşılmaya çalışılmış (**HATA**)    | 
+| ----------- | 
+| ![image](https://user-images.githubusercontent.com/28144917/145557806-8e6b51e9-0541-42f4-97b1-211478e31b64.png)|
