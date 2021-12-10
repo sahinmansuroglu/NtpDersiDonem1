@@ -110,4 +110,47 @@ static void Main(string[] args)
 ![image](https://user-images.githubusercontent.com/28144917/134909115-711627ef-1b02-46a7-a021-ec54c5066355.png)
 
 
+### Örnek ###
+
+```csharp
+ static void Main(string[] args)
+    {
+		while (true)
+		{
+			try
+			{
+				Console.Write("Lütfen Puan Giriniz:");
+				int puan = Convert.ToInt32(Console.ReadLine());
+
+				if (puan > 100 || puan < 0)
+				{
+					throw new Exception("Puan 0 ile 100 arasında olmalı");
+				}
+				if (puan < 50)
+				{
+					Console.WriteLine("Kaldınız...");
+				}
+				else
+				{
+					Console.WriteLine("Geçtiniz...");
+				}
+			}
+			catch (FormatException hata)
+			{
+				Console.WriteLine("Rakam Girilmediği için hata sonlandı...");
+
+			}
+			catch (Exception hata)
+			{
+				Console.WriteLine(hata.Message);
+			}
+		}
+		
+		
+    }
+
+```
+
+
+![image](https://user-images.githubusercontent.com/28144917/145569386-3934baf3-6070-4c26-b422-da2c2faf6126.png)
 
