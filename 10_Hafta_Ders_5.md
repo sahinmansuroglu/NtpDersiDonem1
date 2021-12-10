@@ -84,6 +84,7 @@ class ChildSinif : ParentSinif
 
     public override void mesajYaz()
     {
+        //Aşağıdaki kod satırı ile temel (ParentSinif) sınıfın mesajYaz metodu çağrılmıştır.
         base.mesajYaz();
         Console.WriteLine("Merhaba Güneş Sistemi");
     }
