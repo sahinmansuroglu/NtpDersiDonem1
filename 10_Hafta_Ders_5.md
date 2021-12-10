@@ -178,9 +178,9 @@ class ChildSinif : ParentSinif
 
 | Sınıf Adı      | İçinde Bulunacak Property'ler | İçinde Bulunacak Metotlar |
 | ----------- | ----------- |----------- |
-| Kare      | KenarA     | alan(), cevre() |
-| Dikdortgen   | KenarA, KenarB       |alan(), cevre() |
-| Ucgen   | KenarA, KenarB, KenarC       |alan(), cevre() |
+| Kare      | KenarA     | alan(), cevre(),  bilgileriEkranaYaz()  |
+| Dikdortgen   | KenarA, KenarB       |alan(), cevre(),  bilgileriEkranaYaz()  |
+| Ucgen   | KenarA, KenarB, KenarC       |alan(), cevre(),  bilgileriEkranaYaz()  |
 
 
 | Üç kenarı Bilinen Üçgenin Alanının Hesaplanması    | 
