@@ -117,6 +117,7 @@ static void Main(string[] args)
     {
 		while (true)
 		{
+			Console.ForegroundColor = ConsoleColor.White;
 			try
 			{
 				Console.Write("Lütfen Puan Giriniz:");
@@ -126,23 +127,26 @@ static void Main(string[] args)
 				{
 					throw new Exception("Puan 0 ile 100 arasında olmalı");
 				}
+				Console.ForegroundColor = ConsoleColor.Yellow;
 				if (puan < 50)
 				{
-					Console.WriteLine("Kaldınız...");
+					Console.WriteLine("[Mesaj] Kaldınız...");
 				}
 				else
 				{
-					Console.WriteLine("Geçtiniz...");
+					Console.WriteLine("[Mesaj] Geçtiniz...");
 				}
 			}
 			catch (FormatException hata)
 			{
-				Console.WriteLine("Rakam Girilmediği için hata sonlandı...");
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine("[Hata] Lütfen sayı giriniz");
 
 			}
 			catch (Exception hata)
 			{
-				Console.WriteLine(hata.Message);
+				Console.ForegroundColor = ConsoleColor.Red;
+				Console.WriteLine($"[Hata] {hata.Message}");
 			}
 		}
 		
