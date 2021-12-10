@@ -1,8 +1,8 @@
-## Statik Üyeler(Field, Property, Metod) ##
+## Statik Üyeler  ##
 
-> Bir sınıfın statik olmayan üyelerine erişmek için öncelikle sınıftan bir nesne oluşturulması gerekir. Statik üyeler erişmek için ise nesne oluşturmak yerine sadece sadece class adı kullanılır.
+> Bir sınıfın **statik olmayan** üyelerine(metod, field)  erişmek için öncelikle sınıftan bir nesne oluşturulması gerekir. **Statik üyelere** erişmek için ise nesne oluşturmak yerine  class adı kullanılır.
 
-**Örnek**
+**Örnek (Static Metotlara Erişimle ilgili)**
 > Aşağıdaki programı inceleyecek olursak Islem sınıfının içerisinde topla(int s1,int s2)  metodu static tanımlandığından dolayı ana programda nesne oluşturmaya gerek kalmadan (Islem.topla(25, 15)) direk sınıf ismini kullanarak topla metodunu çağırabildik.
 
 ```csharp
@@ -30,3 +30,9 @@ class Islem
 | Static Metot içerisinde Static olmayan metoda ulaşılmaya çalışılmış (**HATA**)    | 
 | ----------- | 
 | ![image](https://user-images.githubusercontent.com/28144917/145557806-8e6b51e9-0541-42f4-97b1-211478e31b64.png)|
+
+
+### Paylaşılan Alan Oluşturma ###
+> Bir class içerisinde static bir field(Alan) oluşturulduğunda dikkat edilmesi gerekir. Çünkü bu oluşturulan alan sınıftan oluşturulan tüm nesneler için paylaşılan yani ortak bir alandır.
+
+
