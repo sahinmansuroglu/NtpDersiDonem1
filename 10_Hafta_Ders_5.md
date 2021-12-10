@@ -38,6 +38,17 @@ class Program
     }
 ```
 **Örnek-2**
+> Yukarıdaki Örnekteki sınıflara aşağıdaki şekilde eklemeler yapınız. Ardından ana programda ChildSinif'dan nesne oluşturup içerisindeki mesajYaz metodunu çağırınız.
+
+**Not:** ChildSinif'daki mesajYaz metodunun içerisinde ParentSinif'in mesajYaz metodunu çağırınız. 
+
+| Sınıf Adı      | Eklenecek Metod | Açıklama |
+| ----------- | ----------- |----------- |
+| ParentSinif | mesajYaz() (Virtual)| Ekrana "Merhaba Dünya" Yazacak  |
+| ChildSinif | mesajYaz()(Override)| Ekrana "Merhaba Güneş Sistemi" Yazacak  |
+
+**Çözüm**
+
 ```csharp
 class Program
 {
