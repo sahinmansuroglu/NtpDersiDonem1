@@ -73,7 +73,39 @@ class Islem
 **Örnek:**
 > Aşağıdaki örnekte Ogrenci class'ının içerisinde ogrenciSayisi adında static bir field oluşturulmuştur. Yani bu field oluşturulacak tüm nesneler için ortak olacaktır. ogrenciSayisi field'i her yeni nesne oluşturulduğunda otomatik olarak bir arttırılacaktır. Böylece oluşturulan herhangi bir nesne içerisinden bu field'a ulaşılarak oluşturulan Ogrenci nesnesi sayısına ulaşılabilecektir.
 
+**Çözüm-1**
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        Ogrenci ogr1 = new Ogrenci();
+        Ogrenci ogr2 = new Ogrenci();
+        Ogrenci ogr3 = new Ogrenci();
+        
+        Console.WriteLine(ogr1.NesneAdet);
+     
+        Console.ReadKey();
+    }
+}
 
+class Ogrenci
+{
+    private static int nesneAdet = 0;
+
+    public int NesneAdet {
+        get {
+            return nesneAdet;
+        }  
+    }
+    public Ogrenci()
+    {
+        nesneAdet++;
+    }
+}
+
+```
+**Çözüm-2**
 ```csharp
 class Program
 {
