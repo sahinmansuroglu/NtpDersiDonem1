@@ -2,6 +2,7 @@
 > Temel Sınıfta tanımlanmış bir metod türetilmiş sınıf içerisinde yeniden tanımlanmak istedindiğinde  Virtual ve override keyword'lerinden faydalanılır.
 
 >**Virtual:** Temel Sınıfta tanımlanan metotlarda kullanılır. Bir metodun başında Virtual keyword'ü varsa türetilmiş sınıfta bu metod tekrar yazılarak ezilebileceği (override) anlamına gelir.
+
 >**Override:** Temel sınıftaki tanımlanmış metodun türetilmiş sınıfta yeniden yazılmasını sağlar. 
 **Ornek-1**
 > Aşağıdaki Örnekte Temel Sınıf olan A sınıfında
