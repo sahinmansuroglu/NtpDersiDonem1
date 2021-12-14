@@ -74,14 +74,14 @@ class Ogrenci
 }
 ```
 
-|Uygulamanın|
-|:------------:|
-|![image](https://user-images.githubusercontent.com/28144917/145949322-49b37ab3-4568-4bf5-9ee5-14bccdbddb84.png)|
+| Durum||Uygulamanın UML Diyagramı|
+|:------------:|:------------:|
+|Nense oluşturulmamışken|![image](https://user-images.githubusercontent.com/28144917/145949322-49b37ab3-4568-4bf5-9ee5-14bccdbddb84.png)|
 
-![image](https://user-images.githubusercontent.com/28144917/145949275-4b5507cf-3aa6-438a-b57d-43b718c16d13.png)
+|1 Nesne oluşturulduğunda |![image](https://user-images.githubusercontent.com/28144917/145949275-4b5507cf-3aa6-438a-b57d-43b718c16d13.png)|
 
-![image](https://user-images.githubusercontent.com/28144917/145949195-930e1b88-e6ef-466c-99c2-975e8a322177.png)
+|2 Nesne oluşturulduğunda|![image](https://user-images.githubusercontent.com/28144917/145949195-930e1b88-e6ef-466c-99c2-975e8a322177.png)|
 
 
-![image](https://user-images.githubusercontent.com/28144917/145949135-1c20f77d-6be5-4e9b-b4d5-954d69aa83da.png)
+|3 Nesne oluşturulduğunda|![image](https://user-images.githubusercontent.com/28144917/145949135-1c20f77d-6be5-4e9b-b4d5-954d69aa83da.png)|
 
