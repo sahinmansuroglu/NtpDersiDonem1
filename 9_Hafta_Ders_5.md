@@ -33,7 +33,11 @@ class Islem
 
 
 ### Paylaşılan Alan Oluşturma ###
-> Bir class içerisinde static bir field(Alan) oluşturulduğunda dikkat edilmesi gerekir. Çünkü bu oluşturulan alan sınıftan oluşturulan tüm nesneler için paylaşılan yani ortak bir alandır.
+> Bir class içerisinde static bir field(Alan) oluşturulduğunda dikkat edilmesi gerekir. Çünkü bu oluşturulan alan sınıftan yaratılan tüm nesneler için paylaşılan yani ortak bir alandır.
+
+**Örnek:**
+> Aşağıdaki örnekte Ogrenci class'ının içerisinde ogrenciSayisi adında static bir field oluşturulmuştur. Yani bu field oluşturulacak tüm nesneler için ortak olacaktır. ogrenciSayisi field'i her yeni nesne oluşturulduğunda otomatik olarak bir arttırılacaktır. Böylece oluşturulan herhangi bir nesne içerisinden bu field'a ulaşılarak oluşturulan Ogrenci nesnesi sayısına ulaşılabilecektir.
+
 
 ```csharp
 class Program
@@ -69,3 +73,15 @@ class Ogrenci
 
 }
 ```
+
+|Uygulamanın|
+|:------------:|
+|![image](https://user-images.githubusercontent.com/28144917/145949322-49b37ab3-4568-4bf5-9ee5-14bccdbddb84.png)|
+
+![image](https://user-images.githubusercontent.com/28144917/145949275-4b5507cf-3aa6-438a-b57d-43b718c16d13.png)
+
+![image](https://user-images.githubusercontent.com/28144917/145949195-930e1b88-e6ef-466c-99c2-975e8a322177.png)
+
+
+![image](https://user-images.githubusercontent.com/28144917/145949135-1c20f77d-6be5-4e9b-b4d5-954d69aa83da.png)
+
