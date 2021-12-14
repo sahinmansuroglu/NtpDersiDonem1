@@ -74,7 +74,7 @@ class Ogrenci
 }
 ```
 
-| Durum||Uygulamanın UML Diyagramı|
+| Durum|Uygulamanın UML Diyagramı|
 |------------|------------|
 |Nense oluşturulmamışken|![image](https://user-images.githubusercontent.com/28144917/145949322-49b37ab3-4568-4bf5-9ee5-14bccdbddb84.png)|
 
