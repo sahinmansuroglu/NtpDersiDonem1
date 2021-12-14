@@ -25,6 +25,41 @@ class Islem
 }
 ```
 
+
+**Örnek**
+> Aşağıdaki uygulamada **_carp_** metodu static tanımlanmadığı için nesne oluşturarak erişim sağladık.
+
+```csharp
+using System;
+static class Program
+{
+    static void Main(string[] args)
+    {
+        int sonuc1 = Islem.topla(15, 35);
+        Islem nesne = new Islem();
+        int sonuc2 = nesne.carp(25, 36);
+
+        Console.WriteLine($"Toplam:{sonuc1}");
+        Console.WriteLine($"Çarpım:{sonuc2}");
+
+        Console.ReadKey();
+    }
+}
+
+class Islem
+{
+    public static int topla(int s1,int s2)
+    {
+        return s1 + s2;
+    }
+    public  int carp(int s1, int s2)
+    {
+        return s1 + s2;
+    }
+}
+
+```
+
 **Not:** Bir sınıfdaki Static bir metot içerisinden static olmayan metotlara erişim yapılamaz.
 
 | Static Metot içerisinde Static olmayan metoda ulaşılmaya çalışılmış (**HATA**)    | 
