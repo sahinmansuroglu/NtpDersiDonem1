@@ -65,9 +65,10 @@ class Ogrenci
         }
     }
     public String AdSoyad { get; set; }
-    public Ogrenci()
+    public Ogrenci(string adSoyad)
     {
         ogrenciSayisi++;
+        this.AdSoyad = adSoyad;
     }
 
 
