@@ -116,12 +116,21 @@ using System;
 **Örnek-3**
 
 > Aşağıdaki Verilenlere Göre Ogrenci abstract class'ını tanımlayınız.
-1. AdSoyad property'si olacak
-2.bilgileriEkranaYaz metodu alacak
-3. enOnemliOlayi() adında bir abstract metodu olacak
-> LiseOgrencisi isminde bir class'ı Ogrenci Class'ından türetin enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
-> OrtaOkulOgrencisi isminde bir class'ı Ogrenci Classindan türetin enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün
+
+    1. AdSoyad property'si olacak
+    2. bilgileriEkranaYaz metodu alacak
+    3. enOnemliOlayi() adında bir abstract metodu olacak
+    
+> LiseOgrencisi isminde bir class'ı Ogrenci Class'ından türetin.
+    
+    enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
+    
+> OrtaOkulOgrencisi isminde bir class'ı Ogrenci Classindan türetin
+    
+    enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün
+    
 > Son olarak LiseOgrencisi ve  OrtaOkulOgrencisi  sınıflarından nesne türetip ekrana yazdırınız
+
 
 ![media_b77_b77f3c00-7558-48ed-bb77-be8a6a91aa2a_phpMh7bCs](https://user-images.githubusercontent.com/28144917/146252569-f604be53-6e1c-4a41-bba6-f718c7a893f2.png)
 ![image](https://user-images.githubusercontent.com/28144917/146254137-c125e5cb-46b5-44c6-b906-09310b8234a8.png)
