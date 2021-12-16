@@ -46,3 +46,33 @@ enum Kategoriler
 > Klavyeden girilen 1-7 arası rakama göre gün adını ekrana yazan uygulamayı Enum yapısını kullanarak tasarlayınız.
 
 ```csharp
+ enum Gunler { 
+         Pazartesi=1,
+         Sali,
+         Çarşamba,
+         Perşembe,
+         Cuma,
+         Cumartesi,
+         Pazar
+    };
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("1 ile 7 arası rakam giriniz:");
+            int gunSira = Convert.ToInt32(Console.ReadLine());
+            Gunler seciliGun =(Gunler) gunSira;
+
+            Console.WriteLine($"Seçilen Gün:{seciliGun}");
+           
+            Console.ReadKey();
+        }
+    }
+
+```
+
+**Program Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/146364037-a3437d3b-09fb-41d9-81f8-a27ac4813da3.png)
