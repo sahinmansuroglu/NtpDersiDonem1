@@ -100,11 +100,14 @@ namespace ConsoleApp20
 
 > İçerisinde matematikİcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
 > LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
+
     1. enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
     2. matematikİcerigi() metodu " Geometri, Temel Matematik, İleri MAtematik" şeklinde string döndürsün.
+    
 > OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
     1. enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
     2. matematikİcerigi() metodu "Matemaik" şeklinde string döndürsün.
+    
 > Son olarak LiseOgrencisi ve  OrtaOkulOgrencisi  sınıflarından nesne türetip bilgilerini ekrana yazdırınız
 
 
