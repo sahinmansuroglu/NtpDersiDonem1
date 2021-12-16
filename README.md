@@ -70,6 +70,7 @@
 4. [Statik Sınıflar (Static Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_4.md)
 5. [İsimsiz Sınıflar(Anonymous Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_5.md)
 6. [Mühürlü Sınıflar (Sealed Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_6.md)
+7. [Enums (Numaralandırmalar)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_7.md)
 
 ### Karma Uygulamalar ###
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
