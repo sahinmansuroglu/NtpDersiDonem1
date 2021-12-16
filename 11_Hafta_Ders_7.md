@@ -3,7 +3,7 @@
 > Bu değerler sadece okunabilirdir ve değiştirilemez. Enum genellikle programların okunmasını kolaylaştırmak için kullanılır.
 > Bir numaralandırma oluşturabilmek için enum anahtar kelimesi ve değerleri birbirinden ayırmak için , (virgül) karakteri kullanılır.
 
-**Örnek**
+**Örnek-1**
 
 ```csharp
  enum puanlar { 
@@ -27,3 +27,22 @@
         }
     }
 ```
+
+> enum içindeki değerler 0’dan (sıfır) başlayarak birer birer artar. İstenirse farklı tam sayı değerleri de 
+verilebilir. 
+
+```csharp
+enum Kategoriler
+{
+ Bilgisayar = 3,
+ Mobilya = 10,
+ Kırtasiye = 7,
+ Hırdavat, // 8
+ Otomobil // 9
+}
+```
+
+**Örnek-2**
+> Klavyeden girilen 1-7 arası rakama göre gün adını ekrana yazan uygulamayı Enum yapısını kullanarak tasarlayınız.
+
+```csharp
