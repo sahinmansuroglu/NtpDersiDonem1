@@ -32,17 +32,21 @@ Bir isimsiz sınıf, var anahtar kelimesi ile tanımlanır ve new anahtar kelime
 
            var Ogrenci = new    {
                 Ad = "Ahmet",
-                soyad="EREN",
-                dogumYeri=new {
+                Soyad="EREN",
+                DogumYeri=new {
                     il="Mersin",
                     ilce="Mezitli"
                 },
-                Puan1 = 45,
-                Puan2 = 33,
-                
+
+                Puanlar=new
+                {
+                    Puan1 = 45,
+                    Puan2 = 33,
+                }
             };
-            Console.WriteLine($" Ad Soyad: {Ogrenci.Ad} {Ogrenci.soyad}");
-            Console.WriteLine($"Puan1: {Ogrenci.Puan1} {Ogrenci.Puan2}");
-            Console.WriteLine($"Dogum Yeri: {Ogrenci.dogumYeri.il}-{Ogrenci.dogumYeri.ilce}");
+  
+            Console.WriteLine($"Ad Soyad: {Ogrenci.Ad} {Ogrenci.Soyad}");
+            Console.WriteLine($"Puan1: {Ogrenci.Puanlar.Puan1} {Ogrenci.Puanlar.Puan2}");
+            Console.WriteLine($"Dogum Yeri: {Ogrenci.DogumYeri.il} {Ogrenci.DogumYeri.ilce}");
             Console.ReadKey();
 ```
