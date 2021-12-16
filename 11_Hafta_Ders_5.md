@@ -4,6 +4,8 @@
 veri tipleri, aldığı değere göre otomatik olarak  belirlenir.
 
 Bir isimsiz sınıf, var anahtar kelimesi ile tanımlanır ve new anahtar kelimesi ile oluşturulur.
+
+**Örnek-1**
 ```csharp
    class Program
     {
@@ -24,4 +26,23 @@ Bir isimsiz sınıf, var anahtar kelimesi ile tanımlanır ve new anahtar kelime
     }
     
 
+```
+**Örnek-2**
+```csharp
+
+           var Ogrenci = new    {
+                Ad = "Ahmet",
+                soyad="EREN",
+                dogumYeri=new {
+                    il="Mersin",
+                    ilce="Mezitli"
+                },
+                Puan1 = 45,
+                Puan2 = 33,
+                
+            };
+            Console.WriteLine($" Ad Soyad: {Ogrenci.Ad} {Ogrenci.soyad}");
+            Console.WriteLine($"Puan1: {Ogrenci.Puan1} {Ogrenci.Puan2}");
+            Console.WriteLine($"Dogum Yeri: {Ogrenci.dogumYeri.il}-{Ogrenci.dogumYeri.ilce}");
+            Console.ReadKey();
 ```
