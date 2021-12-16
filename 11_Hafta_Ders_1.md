@@ -1,3 +1,5 @@
+## Soyut Sınıflar (Abstract Classes) ##
+
 **Örnek-1**
 ```csharp
 using System;
