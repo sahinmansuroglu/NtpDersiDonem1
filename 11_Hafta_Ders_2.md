@@ -94,9 +94,10 @@ namespace ConsoleApp20
 **Örnek-3**
 
 > Aşağıdaki Verilenlere Göre Ogrenci abstract class'ını tanımlayınız.
-1. AdSoyad property'si olacak
-2. bilgileriEkranaYaz metodu alacak
-3. enOnemliOlayi() adında bir abstract metodu olacak
+
+    1. AdSoyad property'si olacak
+    2. bilgileriEkranaYaz metodu alacak
+    3. enOnemliOlayi() adında bir abstract metodu olacak
 
 > İçerisinde matematikİcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
 > LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
@@ -105,6 +106,7 @@ namespace ConsoleApp20
     2. matematikİcerigi() metodu " Geometri, Temel Matematik, İleri MAtematik" şeklinde string döndürsün.
     
 > OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
+
     1. enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
     2. matematikİcerigi() metodu "Matemaik" şeklinde string döndürsün.
     
