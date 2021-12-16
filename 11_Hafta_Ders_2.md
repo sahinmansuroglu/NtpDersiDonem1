@@ -116,4 +116,70 @@ namespace ConsoleApp20
 ```csharp
 
 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogrenci ogrenci1 = new LiseOgrenci { AdSoyad = "Arda AR" };
+            Ogrenci ogrenci2 = new OrtaOkulOgrenci { AdSoyad = "Ahmet AR" };
+            ogrenci1.bilgileriEkranaYaz();
+            ogrenci2.bilgileriEkranaYaz();
+            Console.ReadKey();
+        }
+    }
+    
+    abstract class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+        public abstract string enOnemliOlayi();
+        public virtual void bilgileriEkranaYaz() {
+            Console.WriteLine($"Ad Soyad:{AdSoyad}"); 
+            Console.WriteLine($"En Önemli Olayı:{enOnemliOlayi()}"); 
+        }
+    }
+    interface IMatematik
+    {
+        string MatematikIcerik();
+    }
+
+    class LiseOgrenci : Ogrenci, IMatematik
+    {
+        public override string enOnemliOlayi()
+        {
+            return "YKS Sınavı";
+        }
+
+        public string MatematikIcerik()
+        {
+            return "Geometri, Temel Matematik, İleri Matematik";
+        }
+
+        public override void bilgileriEkranaYaz()
+        {
+            base.bilgileriEkranaYaz();
+            Console.WriteLine($"Matematik Ders İçeriği:{MatematikIcerik()}");
+
+        }
+    }
+
+    class OrtaOkulOgrenci : Ogrenci, IMatematik
+    {
+        public override string enOnemliOlayi()
+        {
+            return "LGS Sınavı";
+        }
+
+        public string MatematikIcerik()
+        {
+            return "Temel Matematik";
+        }
+
+        public override void bilgileriEkranaYaz()
+        {
+            base.bilgileriEkranaYaz();
+            Console.WriteLine($"Matematik Ders İçeriği:{MatematikIcerik()}");
+
+        }
+    }
+
 ```
