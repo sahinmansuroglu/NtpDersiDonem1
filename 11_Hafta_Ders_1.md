@@ -28,9 +28,11 @@ using System;
     }
 
 
-
+```
 
 **Örnek-2**
+
+```csharp
 using System;
 
 
@@ -108,7 +110,7 @@ using System;
             return Convert.ToInt32(Math.PI * Yaricap * 2);
         }
     }
-
+```
 **Örnek-3**
 
 > Aşağıdaki Verilenlere Göre Ogrenci abstract class'ını tanımlayınız.
