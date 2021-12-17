@@ -1,10 +1,18 @@
 ## Arayüzler (Interfaces) ##
 > __1.__ C# da soyutlama yapabilmek için abstract metotları kullanmıştık. Soyutlama yapabilmenin bir diğer yolu da interface (Arayüz) kullanımıdır.
-> __2.__ Interface içerisinde metotların sadece gövdesi bulunur (İçi Interface kullanan class içerisinde doldurulur)
+
+> __2.__ Interface içerisinde metotların sadece gövdesi bulunur (İçi Interface'i miras alan class içerisinde doldurulur)
+
 > __3.__ Interface içerisindeki metotlar varsayılan olarak public ve abstract olarak kabul edilir.
+
 > __4.__ Bir class sadece bir class'dan türetilebiliyorken, bir class birden fazla Interface'den türetilebilir.
+ 
+> __5.__ Interface'den nesne üretilemez ancak nesne başvurusu(referansı) oluşturulabilir.
+
 
 **Örnek-1**
+> Aşağıdaki örnekte IAlan isminde bir Inteface ve içerisinde de alanHesapla() metodunun gövdesi tanımlanmıştır.
+> Kare sınıfı IAlan interface'inden üretilmiştir. Bundan dolayı   alanHesapla() metodunun içi Kare sınıfının içerisinde doldurulmuştur
 
 ```csharp
 using System;
@@ -104,12 +112,12 @@ namespace ConsoleApp20
     3. enOnemliOlayi() adında bir abstract metodu olacak
 
 > İçerisinde **_string matematikDersIcerigi()_** metodu bulunan  IMatematik adında bir interface tanımlayınız
-> LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
+> Aşağıda verilenlere göre LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
     2. matematikDersIcerigi() metodu " Geometri, Temel Matematik, İleri Matematik" şeklinde string döndürsün.
     
-> OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
+> Aşağıda verilenlere göre OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
     2. matematikDersIcerigi() metodu "Matemaik" şeklinde string döndürsün.
