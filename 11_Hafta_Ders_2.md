@@ -12,6 +12,7 @@
 
 **Örnek-1**
 > Aşağıdaki örnekte IAlan isminde bir Inteface ve içerisinde de alanHesapla() metodunun gövdesi tanımlanmıştır.
+
 > Kare sınıfı IAlan interface'inden üretilmiştir. Bundan dolayı   alanHesapla() metodunun içi Kare sınıfının içerisinde doldurulmuştur
 
 ```csharp
@@ -41,12 +42,10 @@ using System;
         }
     }
 
-
-
 ```
 
 **Örnek-2**
-
+> Aşağıdaki uygulamada içerisinde  int alan() ve int cevre() metotlarının gövdesi bulunan IHesap interface'i tanımlanmıştır. Kare ve Dikdortgen class'larıda IHesap interface'inden türetilmiştir.
 ```csharp
 
 using System;
