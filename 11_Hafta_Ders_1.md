@@ -57,11 +57,17 @@ using System;
 
 **Örnek-2**
 > Aşağıda verilenlere göre Hesap isimli abstract class oluşturunuz.
+
+
     1.  int alan() ve int cevre() adında abstract metot bulunacak.
     2.  Baslik isminde abstract Property bulunacak
     3.  bilgileriEkranaYaz() isimli bir metot bulunacak
+    
 > Hesap isimli class'dan Kare, Dikdörtgen ve Daire classlarını türetiniz.
+
 > Kare, Dikdörtgen ve Daire classlarından birer nesne oluşturup bilgilerini bilgilerini ekrana yazdırınız 
+
+
 ```csharp
 using System;
 
