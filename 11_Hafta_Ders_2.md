@@ -109,6 +109,7 @@ namespace ConsoleApp20
     1. AdSoyad property'si olacak
     2. bilgileriEkranaYaz metodu alacak
     3. enOnemliOlayi() adında bir abstract metodu olacak
+    4. bilgileriEkranaYaz() metodu bulunacak.(Virtual olacak)
 
 > İçerisinde **_string matematikDersIcerigi()_** metodu bulunan  IMatematik adında bir interface tanımlayınız
 > Aşağıda verilenlere göre LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
