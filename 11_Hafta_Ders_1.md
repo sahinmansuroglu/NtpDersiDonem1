@@ -56,18 +56,32 @@ using System;
 ```
 
 **Örnek-2**
-> Aşağıda verilenlere göre Hesap isimli abstract class oluşturunuz.
+> 1. Aşağıda verilenlere göre Hesap isimli abstract class oluşturunuz.
 
 
-    1.  int alan() ve int cevre() adında abstract metot bulunacak.
-    2.  Baslik isminde abstract Property bulunacak
-    3.  bilgileriEkranaYaz() isimli bir metot bulunacak
+    a.  int alan() ve int cevre() adında abstract metot bulunacak.
+    b.  Baslik isminde abstract Property bulunacak
+    c.  bilgileriEkranaYaz() isimli bir metot bulunacak
     
-> Hesap isimli class'dan Kare, Dikdörtgen ve Daire classlarını türetiniz.
+> 2. Aşağıda verilenlere Hesap isimli class'dan Kare classını türetiniz.
 
-> Kare, Dikdörtgen ve Daire classlarından birer nesne oluşturup bilgilerini bilgilerini ekrana yazdırınız 
+    a. a kenar uzunluğu için KenarA adında bir property tanımlayın.
+    b. Baslik isimli property override edilerek değeri "Kare Hesaplama Bilgileri" atanacaktır.
+    c. alan() ve cevre() metotları override edilerek hesaplaması yaptırılacak
+    
+> 3. Aşağıda verilenlere Hesap isimli class'dan Dikdörtgen classını türetiniz.
 
+    a. a kenar uzunluğu için KenarA ve b kenar uzunluğu için KenarB adında  property tanımlayın.
+    b. Baslik isimli property override edilerek değeri "Dikdörtgen Hesaplama Bilgileri" atanacaktır.
+    c. alan() ve cevre() metotları override edilerek hesaplaması yaptırılacak
+  
+> 3. Aşağıda verilenlere Hesap isimli class'dan  Dikdörtgen  classını türetiniz.
 
+    a. Yarıçap uzunluğu  için Yaricap adında  bir property tanımlayın.
+    b. Baslik isimli property override edilerek değeri "Daire Hesaplama Bilgileri" atanacaktır.
+    c. alan() ve cevre() metotları override edilerek hesaplaması yaptırılacak
+
+> 4. Oluşturulan sınıflardan nesneler oluşturarak bilgilerini ekrana yazdırınız.
 ```csharp
 using System;
 class Program
