@@ -1,7 +1,7 @@
 ## Enums (Numaralandırmalar) ##
 > Bir enum (enumerations kelimesinin kısaltması) sadece int tipindeki sabitlerden oluşan özel bir sınıftır. 
 > Bu değerler sadece okunabilirdir ve değiştirilemez. Enum genellikle programların okunmasını kolaylaştırmak için kullanılır.
-> Bir numaralandırma oluşturabilmek için enum anahtar kelimesi ve değerleri birbirinden ayırmak için , (virgül) karakteri kullanılır.
+> Bir numaralandırma oluşturabilmek için enum anahtar kelimesi ve değerleri birbirinden ayırmak için de ", (virgül)" karakteri kullanılır.
 
 **Örnek-1**
 
