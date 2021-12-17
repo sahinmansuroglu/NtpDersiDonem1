@@ -83,84 +83,94 @@ using System;
 
 > 4. Oluşturulan sınıflardan nesneler oluşturarak bilgilerini ekrana yazdırınız.
 ```csharp
+
 using System;
 class Program
 {
     static void Main(string[] args)
     {
-        Kare kare1 = new Kare { KenarA = 4 };
+
+        Kare kare1 = new Kare { KenarA = 3 };
+        Dikdortgen dikdortgen1 = new Dikdortgen { KenarA = 3,KenarB=5 };
+        Daire daire1 = new Daire{ Yaricap=4 };
         kare1.bilgileriEkranaYaz();
-
-        Dikdortgen dikdortgen1 = new Dikdortgen {KenarA = 20, KenarB = 10 };
         dikdortgen1.bilgileriEkranaYaz();
-
-        Daire daire1 = new Daire { Yaricap = 3 };
         daire1.bilgileriEkranaYaz();
         Console.ReadKey();
     }
 }
+
 abstract class Hesap
 {
-    abstract public string Baslik { get; set; }
-    abstract public int alan();
-    abstract public int cevre();
+    public abstract string Baslik { get; set; }
+    public abstract double alan();
+
+    public abstract double cevre();
+
     public void bilgileriEkranaYaz()
     {
-        Console.WriteLine($"{Baslik} Bilgileri");
-        Console.WriteLine($"Alan:{alan()}");
-        Console.WriteLine($"Çevre:{cevre()}");
+        Console.WriteLine($"*********{Baslik}************");
+        Console.WriteLine($" Alan:{alan()}");
+        Console.WriteLine($" Çevre:{cevre()}");
     }
+
 }
 
 class Kare : Hesap
 {
     public int KenarA { get; set; }
-    public override string Baslik { get; set; } = "Kare";
+    public override string Baslik { get; set; } = "Kare Hesaplama Bilgileri";
 
-    public override int alan()
+    public override double alan()
     {
         return KenarA * KenarA;
     }
 
-    public override int cevre()
+    public override double cevre()
     {
         return KenarA * 4;
     }
-
 }
 
 class Dikdortgen : Hesap
 {
-    public override string Baslik { get; set; } = "Dikdortgen";
     public int KenarA { get; set; }
     public int KenarB { get; set; }
-    public override int alan()
+    public override string Baslik { get; set; } = "Dikdörtgen Hesaplama Bilgileri";
+    public override double alan()
     {
         return KenarA * KenarB;
     }
 
-    public override int cevre()
+    public override double cevre()
     {
-        return (KenarA + KenarB) * 2;
+        return (KenarA +KenarB)*2;
     }
 }
-
 class Daire : Hesap
 {
-    public override string Baslik { get; set; } = "Daire";
     public int Yaricap { get; set; }
-
-    public override int alan()
+    public override string Baslik { get; set; } = "Daire Hesaplama Bilgileri";
+    public override double alan()
     {
-        return Convert.ToInt32(Math.PI * Yaricap * Yaricap);
+        return Math.PI * Yaricap * Yaricap;
     }
 
-    public override int cevre()
+    public override double cevre()
     {
-        return Convert.ToInt32(Math.PI * Yaricap * 2);
+        return Math.PI * Yaricap * 2;
     }
 }
+
+
+
 ```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/146509550-b2c68678-7778-4654-89fb-0bd871a544ac.png)
+
+
 **Örnek-3**
 
 > Aşağıdaki Verilenlere Göre Ogrenci abstract class'ını tanımlayınız.
