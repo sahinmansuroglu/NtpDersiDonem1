@@ -12,6 +12,7 @@
     {
         static void Main(string[] args)
         {
+            //Islemler nesne = new Islemler();     ***HATA*** Static sınıfların nesnesi oluşturulamaz. 
             Islemler.topla(65, 35);
             Islemler.carp(66, 32);
             Islemler.bol(66, 32);
