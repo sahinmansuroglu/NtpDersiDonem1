@@ -20,10 +20,10 @@ enum puanlar
         {
             puanlar puan1 = (puanlar) 1;
             puanlar puan2 = puanlar.Orta;
-            Console.WriteLine($"{(int)puan1}");
-            Console.WriteLine($"{puan1}");
-            Console.WriteLine($"{(int) puan2}");
-            Console.WriteLine($"{puan2}");
+            Console.WriteLine($"{(int)puan1}"); // Ekrana 1 Yazar
+            Console.WriteLine($"{puan1}"); // Ekrana Basarisiz Yazar
+            Console.WriteLine($"{(int) puan2}"); // Ekrana 3 Yazar
+            Console.WriteLine($"{puan2}"); // Ekrana Orta Yazar
             Console.ReadKey();
         }
     }
@@ -69,7 +69,7 @@ enum Kategoriler
 }
 ```
 
-**Örnek-2**
+**Örnek-3**
 > Klavyeden girilen 1-7 arası rakama göre gün adını ekrana yazan uygulamayı Enum yapısını kullanarak tasarlayınız.
 
 ```csharp
