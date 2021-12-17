@@ -1,5 +1,5 @@
 ## Arayüzler (Interfaces) ##
-
+> C# da soyutlama yapabilmek için abstract metotları kullanmıştık. Soyutlama yapabilmenin bir diğer yolu da interface (Arayüz) kullanımıdır.
 **Örnek-1**
 
 ```csharp
