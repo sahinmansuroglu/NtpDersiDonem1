@@ -1,5 +1,9 @@
 ## Arayüzler (Interfaces) ##
-> C# da soyutlama yapabilmek için abstract metotları kullanmıştık. Soyutlama yapabilmenin bir diğer yolu da interface (Arayüz) kullanımıdır.
+> __1.__ C# da soyutlama yapabilmek için abstract metotları kullanmıştık. Soyutlama yapabilmenin bir diğer yolu da interface (Arayüz) kullanımıdır.
+> __2.__ Interface içerisinde metotların sadece gövdesi bulunur (İçi Interface kullanan class içerisinde doldurulur)
+> __3.__ Interface içerisindeki metotlar varsayılan olarak public ve abstract olarak kabul edilir.
+> __4.__ Bir class sadece bir class'dan türetilebiliyorken birden fazla Interface'den türetilebilir.
+
 **Örnek-1**
 
 ```csharp
@@ -99,7 +103,7 @@ namespace ConsoleApp20
     2. bilgileriEkranaYaz metodu alacak
     3. enOnemliOlayi() adında bir abstract metodu olacak
 
-> İçerisinde matematikİcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
+> İçerisinde matematikIcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
 > LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
