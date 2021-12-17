@@ -1,4 +1,8 @@
 ## Statik Sınıflar (Static Classes) ##
+> Statik sınıflar statik sınıflara benzerdir ancak 2 önemli farkı vardır. Bunlar;
+  
+   1. Static Sınıfların tüm üyeleri static tanımlanmalıdır.
+   2. Static Sınıfların normal sınıflar gibi "new" ile  nesnesi oluşturulamaz. İçerisindeki metotlara erişim için Sınıf adı kullanılır.
 
 
 **Örnek**
