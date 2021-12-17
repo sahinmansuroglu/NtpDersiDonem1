@@ -4,6 +4,33 @@
 > Bir numaralandırma oluşturabilmek için enum anahtar kelimesi ve değerleri birbirinden ayırmak için de ", (virgül)" karakteri kullanılır.
 
 **Örnek-1**
+```csharp
+enum puanlar
+    {
+        Bos,
+        Basarisiz,
+        Gecer,
+        Orta,
+        Iyi,
+        Pekiyi
+    };
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            puanlar puan1 = (puanlar) 1;
+            puanlar puan2 = puanlar.Orta;
+            Console.WriteLine($"{(int)puan1}");
+            Console.WriteLine($"{puan1}");
+            Console.WriteLine($"{(int) puan2}");
+            Console.WriteLine($"{puan2}");
+            Console.ReadKey();
+        }
+    }
+    
+```
+
+**Örnek-2**
 
 ```csharp
  enum puanlar { 
