@@ -82,6 +82,9 @@ using System;
     c. alan() ve cevre() metotları override edilerek hesaplaması yaptırılacak
 
 > 4. Oluşturulan sınıflardan nesneler oluşturarak bilgilerini ekrana yazdırınız.
+
+**Çözüm**
+
 ```csharp
 
 using System;
@@ -189,4 +192,48 @@ class Daire : Hesap
     
 > Son olarak LiseOgrencisi ve  OrtaOkulOgrencisi  sınıflarından nesne türetip ekrana yazdırınız
 
+**Çözüm**
 
+```csharp
+
+using System;
+
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            LiseOgrencisi liseOgrencisinesne = new LiseOgrencisi() { AdSoyad = "Ali AYDIN" };
+            OrtaokulOgrencisi ortaokulOgrencisinesne = new OrtaokulOgrencisi() { AdSoyad = "Mehmet AKIN" };
+            liseOgrencisinesne.bilgileriEkranaYaz();
+            ortaokulOgrencisinesne.bilgileriEkranaYaz();
+        }
+    }
+    abstract class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+
+        public abstract string enOnemliOlayi();
+
+        public void bilgileriEkranaYaz()
+        {
+            Console.WriteLine($"Ad Soyad:{AdSoyad}");
+            Console.WriteLine($"En Önemli Olayı: {enOnemliOlayi()}");
+        }
+    }
+    class LiseOgrencisi : Ogrenci
+    {
+        public override string enOnemliOlayi()
+        {
+            return "YKS Sınavı";
+        }
+    }
+    class OrtaokulOgrencisi : Ogrenci
+    {
+        public override string enOnemliOlayi()
+        {
+            return "LGS Sınavı";
+        }
+    }
+
+```
