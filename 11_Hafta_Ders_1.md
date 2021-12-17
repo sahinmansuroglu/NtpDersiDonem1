@@ -18,7 +18,7 @@ public abstract class TemelSinif
 {
     public void metot1()
     {
-        Console.WriteLine("Temel sınıf içerisinde tanımlanmış bir nmetot");
+        Console.WriteLine("Temel sınıf içerisinde tanımlanmış bir metot");
     }
     public abstract void metot2();
 }
