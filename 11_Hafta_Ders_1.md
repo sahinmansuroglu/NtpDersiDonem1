@@ -1,5 +1,23 @@
 ## Soyut Sınıflar (Abstract Classes) ##
+> __1.__ Soyut  Sınıflar Nesne tabanlı programlamanın  önemli kavramlarından biridir. 
+> __2.__ Birden fazla classın kullanıldığı uygulamalarda ortak özelliklerin bir class içerisinde toplanabilmesi için kullanılır.
+> __3.__ Soyut sınıf ve metot tanımlamak için "abstract" keywordu kullanılır.
+> __4.__ Soyut Sınıfların içerisinde soyut olmayan metot ve özellikler de bulunabilir.
+> __5.__ Soyut sınıflardan nesne oluşturulamaz. Ancak başvurusu(referansı) oluşturulabilir.
+> __6.__ Soyut sınıflardan türetilen sınıflar abstract metotları override ederek içerisinde tekrar tanımmalaması gerekir.
 
+**Örnek Kullanım**
+
+````csharp 
+public abstract class TemelSinif
+{
+    public void metot1()
+    {
+        Console.WriteLine("Temel sınıf içerisinde tanımlanmış bir nmetot");
+    }
+    public abstract void metot2();
+}
+````
 **Örnek-1**
 ```csharp
 using System;
