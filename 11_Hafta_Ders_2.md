@@ -2,7 +2,7 @@
 > __1.__ C# da soyutlama yapabilmek için abstract metotları kullanmıştık. Soyutlama yapabilmenin bir diğer yolu da interface (Arayüz) kullanımıdır.
 > __2.__ Interface içerisinde metotların sadece gövdesi bulunur (İçi Interface kullanan class içerisinde doldurulur)
 > __3.__ Interface içerisindeki metotlar varsayılan olarak public ve abstract olarak kabul edilir.
-> __4.__ Bir class sadece bir class'dan türetilebiliyorken birden fazla Interface'den türetilebilir.
+> __4.__ Bir class sadece bir class'dan türetilebiliyorken, bir class birden fazla Interface'den türetilebilir.
 
 **Örnek-1**
 
@@ -103,16 +103,16 @@ namespace ConsoleApp20
     2. bilgileriEkranaYaz metodu alacak
     3. enOnemliOlayi() adında bir abstract metodu olacak
 
-> İçerisinde matematikIcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
+> İçerisinde matematikDersIcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
 > LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
-    2. matematikİcerigi() metodu " Geometri, Temel Matematik, İleri MAtematik" şeklinde string döndürsün.
+    2. matematikDersIcerigi() metodu " Geometri, Temel Matematik, İleri MAtematik" şeklinde string döndürsün.
     
 > OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
-    2. matematikİcerigi() metodu "Matemaik" şeklinde string döndürsün.
+    2. matematikDersIcerigi() metodu "Matemaik" şeklinde string döndürsün.
     
 > Son olarak LiseOgrencisi ve  OrtaOkulOgrencisi  sınıflarından nesne türetip bilgilerini ekrana yazdırınız
 
