@@ -181,11 +181,11 @@ class Daire : Hesap
     
 > LiseOgrencisi isminde bir class'ı Ogrenci Class'ından türetin.
     
-    enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
+    enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
     
 > OrtaOkulOgrencisi isminde bir class'ı Ogrenci Classindan türetin
     
-    enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün
+    enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün
     
 > Son olarak LiseOgrencisi ve  OrtaOkulOgrencisi  sınıflarından nesne türetip ekrana yazdırınız
 
