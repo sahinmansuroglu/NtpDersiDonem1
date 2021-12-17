@@ -103,13 +103,13 @@ namespace ConsoleApp20
     2. bilgileriEkranaYaz metodu alacak
     3. enOnemliOlayi() adında bir abstract metodu olacak
 
-> İçerisinde matematikDersIcerigi() metodu bulunan  IMAtematik adında bir interface tanımlayınız
-> LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
+> İçerisinde **_string matematikDersIcerigi()_** metodu bulunan  IMatematik adında bir interface tanımlayınız
+> LiseOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "LGS Sınavı" şeklinde string döndürsün.
-    2. matematikDersIcerigi() metodu " Geometri, Temel Matematik, İleri MAtematik" şeklinde string döndürsün.
+    2. matematikDersIcerigi() metodu " Geometri, Temel Matematik, İleri Matematik" şeklinde string döndürsün.
     
-> OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMAtematik interface'inden  türetin. 
+> OrtaOkulOgrencisi isminde bir class'ı Ogrenci Class'ı ve IMatematik interface'inden  türetin. 
 
     1. enOnemliOlayi() metodu "YKS Sınavı" şeklinde string döndürsün.
     2. matematikDersIcerigi() metodu "Matemaik" şeklinde string döndürsün.
