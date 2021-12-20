@@ -1,5 +1,5 @@
 ## Quiz Sorusu ##
-> **Aşağıdaki istenilenler tek bir soru içindir Verilenleri sırayla takip ederek uygulamayı tamamlayınız.**
+> **Aşağıdaki istenilenler tek bir soru içindir. Verilenleri sırayla takip ederek uygulamayı tamamlayınız.**
 1. Aşağıda Verilenlere Göre **```Ogrenci```** adında **```abstract```** bir sınıf tanımlayınız
 
 
