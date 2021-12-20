@@ -25,9 +25,8 @@
    
    - IlkOkulOgrencisi class'i
 
-
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
-                 (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
+                     - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "Yaz Kampları" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
         - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
