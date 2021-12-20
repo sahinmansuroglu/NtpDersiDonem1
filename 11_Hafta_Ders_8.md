@@ -31,7 +31,7 @@
         - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
         - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
-            -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
+            - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
    
    - IlkOkulOgrencisi class'i
