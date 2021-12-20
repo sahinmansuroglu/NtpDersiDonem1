@@ -23,7 +23,7 @@
 
 3. Aşağıda verilenlere göre IlkOkulOgrencisi, OrtaOkulOgrencisi, LiseOgrencisi adında classları Ogrenci class'ından ve IOgrenciIslem interface'inden türetiniz. 
    
-   - IlkOkulOgrencisi class'i
+   - IlkOkulOgrencisi class'ı
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
@@ -34,14 +34,14 @@
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
    
-   - IlkOkulOgrencisi class'i
+   - OrtaOkulOgrencisi class'ı
 
-        - Ek olarak başlamaYili adında bir field ve bu field ile ilişkili bir property bulunacak
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
-        - enOnemliOlayi() metodu "Yaz Kampları" adında bir String döndürecek
-        - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
+        - enOnemliOlayi() metodu "LGS Sınavı" adında bir String döndürecek
+        - matematikDersIcerigi()  metodu "Temel Matematik" adında bir String döndürecek
         - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
+4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını çağırınız.
