@@ -27,20 +27,15 @@
 
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
-        
-                (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
-                
+                 (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "Yaz Kampları" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
         - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
-        
                 İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
-                
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
    
    - IlkOkulOgrencisi class'i
-
 
         - Ek olarak başlamaYili adında bir field ve bu field ile ilişkili bir property bulunacak
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
