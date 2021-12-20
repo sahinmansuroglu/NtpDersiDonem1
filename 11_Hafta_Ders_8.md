@@ -1,5 +1,5 @@
 ## Quiz Sorusu ##
-**``` ```**
+> **Aşağıdaki istenilenler tek bir soru içindir Verilenleri sırayla takip ederek uygulamayı tamamlayınız.**
 1. Aşağıda Verilenlere Göre **```Ogrenci```** adında **```abstract```** bir sınıf tanımlayınız
 
 
@@ -44,4 +44,4 @@
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
-4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını çağırınız.
+4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını da çağırınız.
