@@ -42,13 +42,43 @@ static void Main()
 > İçerisinde 10 adet 0 ile 100 arası puan bulunan bir dizi tanımlayıp tüm puanları ekrana yazdırınız.
 
 ```csharp
-
+ static void Main()
+        {
+            int[] puanlar = new int[10] { 98, 65, 21, 25, 45, 96,63,18,58,59 };
+            Console.WriteLine($"1. Puan:{puanlar[0]}");
+            Console.WriteLine($"2. Puan:{puanlar[1]}");
+            Console.WriteLine($"3. Puan:{puanlar[2]}");
+            Console.WriteLine($"4. Puan:{puanlar[3]}");
+            Console.WriteLine($"5. Puan:{puanlar[4]}");
+            Console.WriteLine($"6. Puan:{puanlar[5]}");
+            Console.WriteLine($"7. Puan:{puanlar[6]}");
+            Console.WriteLine($"8. Puan:{puanlar[7]}");
+            Console.WriteLine($"9. Puan:{puanlar[8]}");
+            Console.WriteLine($"10. Puan:{puanlar[9]}");
+            Console.ReadKey();
+        }
+        
 ```
 ### Dizi Elemanlarını Döngü Yardımıyla Erişme ###
 
 #### 1- For Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
-```csharp
 
+```csharp
+static void Main()
+        {
+            int[] puanlar = new int[11] { 98, 65, 21, 25, 45, 96,63,18,58,59,95 };
+
+            Console.WriteLine($"Dizideki elaman Sayısı:{puanlar.Length}");
+            for (int i = 0; i < puanlar.Length; i++)
+            {
+                Console.WriteLine($"{i+1}. Puan:{puanlar[i]}");
+            }
+            
+            
+            Console.ReadKey();
+        }
 ```
+**Ekran Çıktısı**
+![image](https://user-images.githubusercontent.com/28144917/146888035-18c6eaed-7daa-41e3-8b81-10b9a0ffb4b0.png)
 
 #### 2- Foreach Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
