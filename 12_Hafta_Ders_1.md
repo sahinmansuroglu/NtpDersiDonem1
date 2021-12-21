@@ -113,10 +113,81 @@ static void Main()
             int rastgeleSayi = random.Next(0, 100);
 ```
 
-**Çözüm: **
+**Çözüm:**
 
 ```csharp
-           
+  static void Main()
+        {
+            int[] dizi = new int[20];
+
+            // Dizi 0-100 arası Rastgele sayılarla doldurulacak
+            Random randomNesnesi = new Random();
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                dizi[i] = randomNesnesi.Next(0, 100);
+            }
+            //Dizideki Sayıları Listeleme
+            Console.Write("Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+
+            //Dizideki sayıların toplamın Hesaplatma
+            int toplam = 0;
+            foreach (int herBirSayi in dizi)
+            {
+                toplam += herBirSayi;
+            }
+
+            double ortalama = toplam / dizi.Length;
+            Console.WriteLine($"\nToplam:{toplam}");
+            Console.WriteLine($"Ortalama:{ortalama}");
+
+            //Tek Sayıları Ekrana YAzdırma
+            Console.Write("Dizideki Tek Sayılar:");
+            foreach (int herBirSayi in dizi)
+            {
+                if (herBirSayi % 2 == 1)
+                {
+                    Console.Write($"{herBirSayi} ");
+                }
+               
+            }
+            Console.WriteLine("");
+            //Tek Sayıları Ekrana YAzdırma
+            Console.Write("Dizideki Çift Sayılar:");
+            foreach (int herBirSayi in dizi)
+            {
+                if (herBirSayi % 2 == 0)
+                {
+                    Console.Write($"{herBirSayi} ");
+                }
+
+            }
+            Console.WriteLine("");
+            //Tek ve Çift sayıların adedini Hesaplatma
+            int tekAdet = 0;
+            int ciftAdet = 0;
+            foreach (int herBirSayi in dizi)
+            {
+                if (herBirSayi % 2 == 0)
+                {
+                    ciftAdet++;
+                }
+                else
+                {
+                    tekAdet++;
+                }
+            }
+
+            Console.WriteLine($"Teklerin Adedi:{tekAdet}");
+            Console.WriteLine($"Çiftlerin Adedi:{ciftAdet}");
+
+            Console.ReadKey();
+        }         
 ```
 
-ekran
+**ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/146893903-6abd3187-83a3-4d86-8319-0e757a75cb25.png)
