@@ -119,8 +119,15 @@ static void Main()
             Console.ReadKey();
         }
 ```
-
 **Örnek-3**
+> adlar isminde 10 elemanlı boş bir dizi oluşturun. Ardından döngü yardımıyla klavyeden girilen adları diziye ekleyiniz. Son olarak foreach ile girilen adları ekrana alt alta yazdırınız.
+
+**Çözüm**
+```csharp
+
+```
+
+**Örnek-4**
 > Aşağıda verilenlere göre int tipinde 20 elemanlı bir dizi oluşturun. 
 
         - Dizinini elemanlarını Random sınıfını kullanarak 0 ile 100 arasında rastgele değer ile doldurunuz. 
