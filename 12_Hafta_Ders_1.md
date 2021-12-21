@@ -79,6 +79,20 @@ static void Main()
         }
 ```
 **Ekran Çıktısı**
+
 ![image](https://user-images.githubusercontent.com/28144917/146888035-18c6eaed-7daa-41e3-8b81-10b9a0ffb4b0.png)
 
 #### 2- Foreach Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
+
+```csharp
+        static void Main()
+        {
+            int[] puanlar = new int[11] { 98, 65, 21, 25, 45, 96,63,18,58,59,95 };
+
+            foreach (int herBirPuan in puanlar)
+            {
+                Console.WriteLine(herBirPuan);
+            }
+            Console.ReadKey();
+        }
+```
