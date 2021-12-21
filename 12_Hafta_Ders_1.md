@@ -105,7 +105,7 @@ static void Main()
 
 #### 2- Foreach Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
 
-![image](https://user-images.githubusercontent.com/28144917/146917979-4b545723-78b9-400a-b9e2-e77e03ba92f8.png)
+![image](https://user-images.githubusercontent.com/28144917/146919329-e14d333f-ae43-4a92-9faf-6ffc0dc6d937.png)
 
 ```csharp
         static void Main()
