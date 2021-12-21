@@ -22,7 +22,7 @@ static void Main()
             //Dizi Tanımlandı ve aynı anda Değerleri de verildi
             string[] dizi2 = new string[5] { "bir", "iki", "üç", "dört", "beş" };
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Üç Yazar
-            dizi2[2] = "Yedi"; / Dizi'inin 2 index numaralı değeri "Yedi" olarak değiştirildi.
+            dizi2[2] = "Yedi"; // Dizi'inin 2 index numaralı değeri "Yedi" olarak değiştirildi.
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Yedi Yazar
             Console.WriteLine($"{dizi2[0]}"); // Ekrana Bir Yazar
             //Console.WriteLine($"{dizi2[10]}"); // IndexOutOfRangeException hatası verir. max index numarası 5 dir
