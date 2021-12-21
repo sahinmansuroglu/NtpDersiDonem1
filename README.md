@@ -63,6 +63,7 @@
 3. [Metot Gölgeleme (Method Shadowing)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_3.md)
 4. [Sanal Metotlar (Virtual and Override keyword  kullanımı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_4.md)
 5. [Temel Sınıfın (Base veya Parent) üyelerine  erişim (Base keyword  kullanımı)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/10_Hafta_Ders_5.md)
+
 ### 11. Bölüm ###
 1. [Soyut Sınıflar (Abstract Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_1.md)
 2. [Arayüzler (Interfaces)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_2.md)
@@ -72,5 +73,9 @@
 6. [Mühürlü Sınıflar (Sealed Classes)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_6.md)
 7. [Enums (Numaralandırmalar)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_7.md)
 8. [Quiz Sorusu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/11_Hafta_Ders_8.md)
+
+### 12. Bölüm ###
+1. [Diziler (Array)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_1.md)
+
 ### Karma Uygulamalar ###
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
