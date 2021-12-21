@@ -100,7 +100,23 @@ static void Main()
 **Örnek-3**
 > Aşağıda verilenlere göre int tipinde 20 elemanlı bir dizi oluşturun. 
 
-        - Dizinini elemanlarını Random sınıfını kullanarak 0 ile 100 arasında rastglşe değer ile doldurunuz. 
+        - Dizinini elemanlarını Random sınıfını kullanarak 0 ile 100 arasında rastgele değer ile doldurunuz. 
+        - Dizinini elemanlarını ekrana yan yana yazdırınız.
         - Dizi içerisindeki sayıların toplamını ve ortalamasını hesaplatınız.
         - Dizi içerisinde kaç adet tek sayı kaç adet çift sayı bulunmaktadır hesaplatıp ekrana yazdırınız.
 
+**Hatırlatma**
+> Random sınıfı ile 0 ile 100 arasından rastgele sayı üreten program örneği
+
+```csharp
+            Random random = new Random();
+            int rastgeleSayi = random.Next(0, 100);
+```
+
+**Çözüm: **
+
+```csharp
+           
+```
+
+ekran
