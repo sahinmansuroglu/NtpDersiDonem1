@@ -3,8 +3,16 @@
 > Programlama dillerinde bir değişkenin içerisinde sadece bir değer tutabiliriz. Ancak dizi yapıları   birden çok veriyi bellekte blok halinde tutabilmemize olanak sağlar.
 
 ### Tek boyutlu Diziler ###
+> Tek Boyutulu dizileri aşağıdaki gibi hücrelerden oluşan bir satırlık veri gibi düşünebiliriz
 
-![image](https://user-images.githubusercontent.com/28144917/146877163-d1412045-61e2-401a-959a-92062c625edd.png)
+![image](https://user-images.githubusercontent.com/28144917/146899850-b70006e2-1ef9-42d3-b67a-6c5bc319f282.png)
+
+
+### İki boyutlu Diziler ###
+> İki Boyutulu dizileri aşağıdaki gibi satır ve sutunlardan oluşan bir tablo gibi  düşünebiliriz
+
+![image](https://user-images.githubusercontent.com/28144917/146899499-5e05e219-da05-4d35-a4df-3660723e61eb.png)
+
 
 **Örnek-1**
 
@@ -14,7 +22,7 @@ static void Main()
             //Dizi Tanımlandı ve aynı anda Değerleri de verildi
             int[] dizi1 = new int[5] { 10, 20, 30, 40, 50 };
             Console.WriteLine($"{dizi1[4]}"); // Ekrana 50 yazar.
-            dizi1[4] = 60; // Dizi'inin 4 index numaralı değeri 60 olarak değiştirildi.
+            dizi1[4] = 60;
             Console.WriteLine($"{dizi1[4]}"); // Ekrana 60 yazar.
             Console.WriteLine($"{dizi1[0]}"); // Ekrana 10 yazar.
             Console.WriteLine($"{dizi1[3]}"); // Ekrana 40 yazar.
@@ -22,7 +30,7 @@ static void Main()
             //Dizi Tanımlandı ve aynı anda Değerleri de verildi
             string[] dizi2 = new string[5] { "bir", "iki", "üç", "dört", "beş" };
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Üç Yazar
-            dizi2[2] = "Yedi"; // Dizi'inin 2 index numaralı değeri "Yedi" olarak değiştirildi.
+            dizi2[2] = "Yedi";
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Yedi Yazar
             Console.WriteLine($"{dizi2[0]}"); // Ekrana Bir Yazar
             //Console.WriteLine($"{dizi2[10]}"); // IndexOutOfRangeException hatası verir. max index numarası 5 dir
