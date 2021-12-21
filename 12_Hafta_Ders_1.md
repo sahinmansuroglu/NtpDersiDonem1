@@ -10,7 +10,7 @@
 
 ![image](https://user-images.githubusercontent.com/28144917/146901675-3a2cb89b-5c32-4648-8704-c1ab86451139.png)
 
-Not: Farklı tipte verileri dizide tutmak için değişkenkerin türünü object olarak tanımlayabiliriz
+**Not:** Farklı tipte verileri dizide tutmak için değişkenkerin türünü object olarak tanımlayabiliriz
 
 ![image](https://user-images.githubusercontent.com/28144917/146902239-4a317a37-9c9d-4982-b6df-68e604fb38ac.png)
 
