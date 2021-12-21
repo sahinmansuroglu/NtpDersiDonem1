@@ -46,6 +46,9 @@
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
 4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını da çağırınız.
 
+
+**Çözüm**
+
 ```csharp
 using System;
 
@@ -279,3 +282,5 @@ namespace ArraysExample
 }
 
 ```
+**Ekran Çıktısı**
+![image](https://user-images.githubusercontent.com/28144917/146882147-00317b4b-f03f-4c84-916c-35e11143782f.png)
