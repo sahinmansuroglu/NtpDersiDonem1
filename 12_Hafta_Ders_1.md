@@ -96,3 +96,10 @@ static void Main()
             Console.ReadKey();
         }
 ```
+
+**Örnek-3**
+> Aşağıda verilenlere göre int tipinde 20 elemanlı bir dizi oluşturun. 
+        - Dizinini elemanlarını Random sınıfını kullanarak 0 ile 100 arasında rastglşe değer ile doldurunuz. 
+        - Dizi içerisindeki sayıların toplamını ve ortalamasını hesaplatınız.
+        - Dizi içerisinde kaç adet tek sayı kaç adet çift sayı bulunmaktadır hesaplatıp ekrana yazdırınız.
+
