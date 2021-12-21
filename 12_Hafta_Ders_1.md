@@ -14,7 +14,7 @@ static void Main()
             //Dizi Tanımlandı ve aynı anda Değerleri de verildi
             int[] dizi1 = new int[5] { 10, 20, 30, 40, 50 };
             Console.WriteLine($"{dizi1[4]}"); // Ekrana 50 yazar.
-            dizi1[4] = 60;
+            dizi1[4] = 60; // Dizi'inin 4 index numaralı değeri 60 olarak değiştirildi.
             Console.WriteLine($"{dizi1[4]}"); // Ekrana 60 yazar.
             Console.WriteLine($"{dizi1[0]}"); // Ekrana 10 yazar.
             Console.WriteLine($"{dizi1[3]}"); // Ekrana 40 yazar.
@@ -22,7 +22,7 @@ static void Main()
             //Dizi Tanımlandı ve aynı anda Değerleri de verildi
             string[] dizi2 = new string[5] { "bir", "iki", "üç", "dört", "beş" };
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Üç Yazar
-            dizi2[2] = "Yedi";
+            dizi2[2] = "Yedi"; / Dizi'inin 2 index numaralı değeri "Yedi" olarak değiştirildi.
             Console.WriteLine($"{dizi2[2]}"); // Ekrana Yedi Yazar
             Console.WriteLine($"{dizi2[0]}"); // Ekrana Bir Yazar
             //Console.WriteLine($"{dizi2[10]}"); // IndexOutOfRangeException hatası verir. max index numarası 5 dir
