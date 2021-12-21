@@ -283,4 +283,5 @@ namespace ArraysExample
 
 ```
 **Ekran Çıktısı**
+
 ![image](https://user-images.githubusercontent.com/28144917/146882147-00317b4b-f03f-4c84-916c-35e11143782f.png)
