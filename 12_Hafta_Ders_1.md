@@ -38,7 +38,17 @@ static void Main()
             Console.ReadKey();
         }
 ```
+**Örnek-2**
+> İçerisinde 10 adet 0 ile 100 arası puan bulunan bir dizi tanımlayıp tüm puanları ekrana yazdırınız.
 
+```csharp
 
+```
+### Dizi Elemanlarını Döngü Yardımıyla Erişme ###
 
+#### 1- For Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
+```csharp
 
+```
+
+#### 2- Foreach Döngüsü Kullanılarak Döngü Elemanlarına Erişim ####
