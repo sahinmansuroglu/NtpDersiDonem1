@@ -124,7 +124,24 @@ static void Main()
 
 **Çözüm**
 ```csharp
+static void Main()
+        {
+            string[] adlar = new string[10];
+            //Veri Girişi
+            for (int i = 0; i < adlar.Length; i++)
+            {
+                Console.Write($"{i+1}. Adı Giriniz:");
+                adlar[i] = Console.ReadLine();
+            }
 
+            //Verileri Listeleme
+            Console.WriteLine("Girirlen Adlar");
+            foreach (var herBirAd in adlar)
+            {
+                Console.WriteLine($"{herBirAd}");
+            }
+            Console.ReadKey();
+        }
 ```
 
 **Örnek-4**
