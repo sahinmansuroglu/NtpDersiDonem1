@@ -76,6 +76,7 @@
 
 ### 12. Bölüm ###
 1. [Diziler (Array)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_1.md)
+2. [Quiz Soruları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_2.md)
 
 ### Karma Uygulamalar ###
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
