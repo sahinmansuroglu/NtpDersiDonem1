@@ -1,7 +1,7 @@
 ## Quiz Soruları ##
 
 ### Soru-1 ###
- > adlar isminde 10 elemanlı boş bir dizi oluşturun. Ardından döngü yardımıyla klavyeden girilen adları diziye ekleyiniz. Son olarak foreach ile girilen adları ekrana alt alta yazdırınız.
+ > adlar isminde 10 elemanlı boş bir dizi oluşturun. Ardından döngü yardımıyla klavyeden girilen adları diziye ekleyiniz. Son olarak foreach döngüsü ile girilen adları ekrana alt alta yazdırınız.
 
 **Çözüm**
 ```csharp
