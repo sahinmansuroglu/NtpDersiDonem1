@@ -12,5 +12,5 @@
 | Resize|Dizinin Boyutunu azaltmaya/arttırmaya yarar|   Array.Resize(diziAdi, yeniBoyut) |
 | Sort|Dizideki elemanları artan sıralar.|  Array.Sort(diziAdi)  |
 | Reverse|Diziyi ters çevirir |  Array.Reverse(diziAdi) |
-|CopyTo|Kaynak dizideki elemanları hedef dizinin istenilen sırasına kopyalar|  kaynakDizi.CopyTo(hedefDizi,indexNo) |
-|Clone| Dizinin kopyası verir (Object tipinde döndürür.İStenilen tipe Cast edilmesi gerekir).|  diziadi.Clone() |
+| CopyTo|Kaynak dizideki elemanları hedef dizinin istenilen sırasına kopyalar|  kaynakDizi.CopyTo(hedefDizi,indexNo) |
+| Clone| Dizinin kopyası verir (Object tipinde döndürür.İStenilen tipe Cast edilmesi gerekir).|  diziadi.Clone() |
