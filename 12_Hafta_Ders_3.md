@@ -1,6 +1,6 @@
 ## Bir Boyutlu Dizilerde kullanılan Metot ve Özellikler ##
-|Özellik/Metot Adı|Açıklama| Örnek Kullanim
-|:---------:||:---------:|:---------:
+|Özellik/Metot Adı|Açıklama| Örnek Kullanim|
+|:---------:||:---------:|:---------:|
 
  |Length Özelliği: |Dizideki eleman sayısını verir. |Bu özelliğin kullanımı diziadi.Length şeklindedir.|
 • Rank Özelliği: Dizideki boyut sayısını verir. Bu özelliğin kullanımı diziadi.Rank şeklindedir.
