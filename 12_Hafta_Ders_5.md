@@ -19,3 +19,93 @@ Not: id değeri Aşağıdaki kod örneği kullanılarak class içerisinde otomat
     string str = guid.ToString("N");
 ```
 
+```csharp
+  using System;
+using System.Linq;
+namespace ConsoleApp24
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogrenci[] ogrenciDizisi = new Ogrenci[5];
+            int[] puanDizi1 = new int[] { 65, 35, 96, 78 };
+            ogrenciDizisi[0] = new Ogrenci("Ali", "AYDIN",puanDizi1 );
+            ogrenciDizisi[1] = new Ogrenci("Ahmet", "ECE", new int[] { 20, 35, 96, 78,15 });
+            ogrenciDizisi[2] = new Ogrenci("Serdar", "AT", new int[] { 65,  78, 96 });
+            ogrenciDizisi[3] = new Ogrenci("Sezgin", "TOL", new int[] { 65, 35, 96, 78, 96,52});
+            ogrenciDizisi[4] = new Ogrenci("Akın", "EYMEN", new int[] { 78, 96 });
+
+            foreach (Ogrenci ogrenci in ogrenciDizisi)
+            {
+                Console.ForegroundColor = Console.ForegroundColor == ConsoleColor.White? ConsoleColor.Red : ConsoleColor.White;
+                ogrenci.bilgileriEkranaYaz();
+            }
+
+            Console.ReadKey();
+        }
+
+
+    }
+
+    class Ogrenci
+    {
+        string id;
+        public string ID { 
+            get {
+                return id;
+            }
+        }
+        public string Ad { get; set; }
+        public string Soyad { get; set; }
+        public int[] Puanlar { get; set; }
+        public double Ortalama
+        {
+            get
+            {
+                return Puanlar.Average();
+            }
+        }
+
+        public String Durum
+        {
+            get
+            {
+                return Ortalama < 50 ? "Kaldı" : "Geçti";
+
+            }
+        }
+        public Ogrenci(string ad, string soyad, int [] puanlar)
+        {
+            this.Ad = ad;
+            this.Soyad = soyad;
+            this.Puanlar = puanlar;
+            Guid guid = Guid.NewGuid();
+            this.id = guid.ToString("N");
+        }
+        
+        public void bilgileriEkranaYaz()
+        {
+            
+            Console.WriteLine($"ID: {id}");
+            Console.WriteLine($"Ad Soyad : {Ad} {Soyad}");
+            Console.Write($"Puanlar:");
+            foreach (var herbirPuan in Puanlar)
+            {
+                Console.Write($"{herbirPuan} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Ortalama:{Ortalama}");
+            Console.WriteLine($"Durum:{Durum}");
+        }
+
+    }
+}
+
+
+
+```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/147231239-00c238f0-59d9-44e0-a516-102ba75abe29.png)
