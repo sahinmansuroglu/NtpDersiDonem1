@@ -4,7 +4,7 @@ Aşağıda verilenleri sırasıyla uygulayarak projeyi  tanımlayınız
 
     1. Aşağıda verilenlere göre Ogrenci Adında bir class oluşturunuz.
        - id, ad, Soyad, adında property olacak
-       - puanlar[3] adında bir içinde istenilen sayıda puan bulunabilecek bir dizi olacak
+       - puanlar adında bir içinde istenilen sayıda puan bulunabilecek bir dizi olacak
        - tüm propertylerin değerleri kurucu metot ile verilecek. (Puanlar kurucu metoda dizi olarak gönderilecek)
        - Ortalama ve Durum adında readOnly Property olacak
        - bilgileriEkranaYaz adında bir metot bulunacak
