@@ -9,8 +9,7 @@
 | BinarySearch| IndexOf ile aynı işlemi yapar. Ancak Daha hızlı yapar.(Öncesinde Sıralama Yapılamlı)|Array.BinarySearch( diziAdi, object aranacakDeger) |
 | Clear|Dizinin istenilen kısmındaki verileri temizler|   Array.Clear( diziAdi, baslangıçSırası, uzunluk|
 | Resize|Dizinin Boyutunu azaltmaya/arttırmaya yarar|   Array.Resize(diziAdi, yeniBoyut) |
-| Sort|Dizideki sayıların toplamını verir.|  diziadi.Sum() |
-| Average Metodu| Dizideki sayıların ortalamasını verir.|  diziadi.Average() |
-| Reverse|Dizideki ilk elemanı verir. | diziadi.First() |
+| Sort|Dizideki elemanları artan sıralar.|  Array.Reverse(diziAdi)  |
+| Reverse|Diziyi ters çevirir | diziadi.First() |
 |CopyTo| Dizideki son elemanı verir.|  diziadi.Last() |
 |Clone| Dizideki son elemanı verir.|  diziadi.Last() |
