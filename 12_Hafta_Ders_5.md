@@ -1,6 +1,6 @@
 ## Class ve Dizi Kullanımı ile ilgili Örnek ##
 
-> Aşağıda verilenleri sırasıyla uygulayarak projeyi  tanımlayınız
+Aşağıda verilenleri sırasıyla uygulayarak projeyi  tanımlayınız
     1. Aşağıda verilenlere göre Ogrenci Adında bir class oluşturunuz.
        - ad, Soyad, adında property olacak
        - puanlar[3] adında bir içinde 3 puan bulunabilecek bir dizi olacak
