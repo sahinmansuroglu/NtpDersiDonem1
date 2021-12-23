@@ -41,7 +41,7 @@ static void Main()
         }
 ```
 **Örnek-2**
-> Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak tasarlayınız.
+> Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak DiziIslem adında bir class içerisinde tasarlayınız.
 
        a) Aşağıdaki Menüyü "Menu" adından bir metot içerisinde tanımlayınız.
                 - ***İşlemler***
