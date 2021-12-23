@@ -40,5 +40,17 @@ static void Main()
 
         }
 ```
+**Örnek-2**
+> Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak tasarlayınız.
 
-
+       a) Aşağıdaki Menüyü "Menu" adından bir metot içerisinde tanımlayınız.
+                - ***İşlemler***
+                - 1- Rastgele Dizi oluştur (Klavyeden dizinin boyutu girilecek o boyuta göre int dizisi oluşturulacak)
+                - 2- Dizideki sayıları ekrana  yanyayan yazdır.
+                - 3- Diziyi Sırala
+                - 4- Diziyi Ters Çevir
+                - 5- Diziyi Genişlet/Daral (Klavyeden girilen boyuta göre genişletilecek veya daraltılacak)
+                - 6- Dizinin Kopyasını oluştur.(Herbir sayı Ana dizideki sayının iki katı olacak )
+                - 6- Dizide Sayı Arama
+                - 7- Çıkış
+        b) Yukarıdaki her bir işlem ayrı bir metot içerisinde gerçekleştirilecektir. 
