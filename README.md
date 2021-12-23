@@ -79,5 +79,6 @@
 2. [Quiz Soruları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_2.md)
 3. [Bir Boyutlu Dizilerde kullanılan Metot ve Özellikler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_3.md)
 3. [System.Array class'i ile diziler ÜZerinde İşlemler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_4.md)
+4. [Class ve Dizi Kullanımı ile ilgili Örnek](https://github.com/sahinmansuroglu/NtpDersi/blob/main/12_Hafta_Ders_5.md)
 ### Karma Uygulamalar ###
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
