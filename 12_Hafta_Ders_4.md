@@ -1,4 +1,4 @@
-## System.Array class'i ile diziler ÜZerinde İşlemler ##
+## System.Array class'i ile diziler Üzerinde İşlemler ##
 
 > Tüm diziler System.Array sınıfı için bir nesne olarak kabul edilir
 > 
