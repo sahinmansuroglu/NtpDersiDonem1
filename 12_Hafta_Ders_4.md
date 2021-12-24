@@ -120,6 +120,7 @@ namespace ConsoleApp24
 
 ```
 
+> **Not:**  Yukarıdaki uygulamaya dikkat edilirse foreach döngüsü ile diziyi ekrana yazdırma işlemi 5 kez tekrar etmiştir. bu işlem metot haline getirilirek uygulamadaki kod tekrarı giderilerek daha sade hale getirilebilir.
 **Örnek-2**
 > Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak DiziIslem adında bir class içerisinde tasarlayınız.
 
