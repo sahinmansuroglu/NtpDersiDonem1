@@ -121,6 +121,72 @@ namespace ConsoleApp24
 ```
 
 > **Not:**  Yukarıdaki uygulamaya dikkat edilirse foreach döngüsü ile diziyi ekrana yazdırma işlemi 5 kez tekrar etmiştir. bu işlem metot haline getirilirek uygulamadaki kod tekrarı giderilerek daha sade hale getirilebilir.
+**Diziyi ekrana Yazdırma Kodu**
+```csharp
+static void diziyiEkranaYazdir(string baslik,int [] dizi1)
+        {
+            Console.Write($"{baslik}");
+            foreach (int herBirSayi in dizi1)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+```
+**Uygulamanın Metot kullanılarak tamamlanmış hali**
+```csharp
+ class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] dizi = new int[20];
+
+            // Dizi 0-1000 arası Rastgele sayılarla doldurulacak
+            Random randomNesnesi = new Random();
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                dizi[i] = randomNesnesi.Next(0, 100);
+            }
+            diziyiEkranaYazdir("Dizideki Elemanlar:", dizi);
+                        
+            //Siralama
+            Array.Sort(dizi);
+            diziyiEkranaYazdir("Sıralı Dizideki Elemanlar:", dizi);
+           
+            //Reverse İşlemi
+            Array.Reverse(dizi);
+            diziyiEkranaYazdir("Reverse Sonrası Dizideki Elemanlar:", dizi);
+           
+            Console.Write($"Max: {dizi.Max()} ");
+            Console.Write($"Min: {dizi.Min()}\n ");
+            
+            //resize ile 10 Elemanlı dizi haline getirme
+            Array.Resize(ref dizi, 10);
+
+            diziyiEkranaYazdir("Resize Sonrası Dizideki Elemanlar:", dizi);
+            
+            //resize ile 15 Elemanlı dizi haline getirme
+            Array.Resize(ref dizi, 15);
+
+            diziyiEkranaYazdir("Resize Sonrası Dizideki Elemanlar:", dizi);
+            Console.ReadKey();
+        }
+        static void diziyiEkranaYazdir(string baslik,int [] dizi1)
+        {
+            Console.Write($"{baslik}");
+            foreach (int herBirSayi in dizi1)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+    }
+```
+
+
 **Örnek-2**
 > Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak DiziIslem adında bir class içerisinde tasarlayınız.
 
