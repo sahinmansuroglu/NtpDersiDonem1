@@ -1,5 +1,66 @@
-## Class ve Dizi Kullanımı ile ilgili Örnek ##
+## Class ve Dizi Kullanımı ile ilgili Örnekler ##
 
+**Örnek-1**
+> Aşağıda verilenleri sırasıyla uygulayarak projeyi  tanımlayınız
+
+     1. Aşağıda verilenlere göre Ogretmen Adında bir class oluşturunuz.
+       - AdSoyad  adında property olacak,
+       - GirdigiDersler  adında ve  içinde istenilen sayıda Ders adı bulunabilecek bir dizi yapısında property olacak,
+       - bilgileriEkranaYaz adında bir metot bulunacak. Bu metot Ad Soyad ve girdiği tüm dersleri ekrana yazdıracak.
+     2. Ana Programda Ogretmen Nesnelerinden oluşan 5 elemanlı bir dizi tanımlayın.
+     3. Dizideki tüm Ogretmen nesnelerinin bilgilerini foreach döngüsi ile ekrana yazdırınız.
+     
+     
+**Çözüm**
+
+```csharp
+using System;
+
+namespace ConsoleApp25
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Ogretmen[] ogretmenler = new Ogretmen[5];
+            ogretmenler[0] = new Ogretmen { AdSoyad = "AKIN SAK", GirdigiDersler = new string[] { "Kimya", "Matematik" } };
+            string[] dersler1 = new string[] { "Fizik", "Mat", "Beden" };
+            ogretmenler[1] = new Ogretmen { AdSoyad = "İrem SAK", GirdigiDersler = dersler1 };
+            ogretmenler[2] = new Ogretmen { AdSoyad = "Mehmet SAK", GirdigiDersler = new string[] { "Fizik", "Matematik" } };
+            ogretmenler[3] = new Ogretmen { AdSoyad = "Arda SAK", GirdigiDersler = new string[] { "Fizik", "Matematik","Kimya" } };
+            ogretmenler[4] = new Ogretmen { AdSoyad = "Mehmet SAK", GirdigiDersler = new string[] { "Fizik", "Mat","Bil.","Tarih" } };
+
+            foreach (var herBirOgretmen in ogretmenler)
+            {
+                herBirOgretmen.BilgileriEkranaYaz();
+            }
+            Console.ReadKey();
+        }
+    }
+
+    class Ogretmen
+    {
+        public string AdSoyad { get; set; }
+        public string [] GirdigiDersler { get; set; }
+
+        public void BilgileriEkranaYaz()
+        {
+            Console.WriteLine("");
+            Console.WriteLine($"Ad Soyad,:{AdSoyad}");
+            Console.Write($"Girdiği Dersler:");
+            foreach (var herBirDers in GirdigiDersler)
+            {
+                Console.Write($"{herBirDers} ");
+            }
+            Console.WriteLine("");
+        }
+
+    }
+}
+   
+```
+     
+**Örnek-2**
 Aşağıda verilenleri sırasıyla uygulayarak projeyi  tanımlayınız
 
     1. Aşağıda verilenlere göre Ogrenci Adında bir class oluşturunuz.
