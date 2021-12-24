@@ -40,6 +40,16 @@ static void Main()
 
         }
 ```
+
+**Örnek-2**
+> 20 Elemanlı 0-1000 arası rastgele sayılardan oluşan bir diz tanımlayarak aşağıdaki istenilenleri sırası ile uygulayınız.
+
+        - Dizinin Büyükten küçüğe ve küçükten büyüğe sıralanmış halini ekrana yazdırınız.
+        - Dizideki en büyük ve en küçük sayıları ekrana yazdırınız.
+        - Diziyi 10 elemanlı dizi haline getirip elemanlarını ekrana yazdırınız. (resize)
+        - 10 elemanlı diziyi  15 elemanlı dizi haline getirerek elemanlarını ekrana yazdırınız. (resize)
+
+
 **Örnek-2**
 > Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak DiziIslem adında bir class içerisinde tasarlayınız.
 
