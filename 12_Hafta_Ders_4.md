@@ -48,7 +48,9 @@ static void Main()
         - Dizideki en büyük ve en küçük sayıları ekrana yazdırınız.
         - Diziyi 10 elemanlı dizi haline getirip elemanlarını ekrana yazdırınız. (resize)
         - 10 elemanlı diziyi  15 elemanlı dizi haline getirerek elemanlarını ekrana yazdırınız. (resize)
+
 **Çözüm**
+
 ```csharp
 using System;
 using System.Linq;
@@ -121,7 +123,9 @@ namespace ConsoleApp24
 ```
 
 > **Not:**  Yukarıdaki uygulamaya dikkat edilirse foreach döngüsü ile diziyi ekrana yazdırma işlemi 5 kez tekrar etmiştir. bu işlem metot haline getirilirek uygulamadaki kod tekrarı giderilerek daha sade hale getirilebilir.
+
 **Diziyi ekrana Yazdırma Kodu**
+
 ```csharp
 static void diziyiEkranaYazdir(string baslik,int [] dizi1)
         {
