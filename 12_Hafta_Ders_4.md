@@ -48,7 +48,77 @@ static void Main()
         - Dizideki en büyük ve en küçük sayıları ekrana yazdırınız.
         - Diziyi 10 elemanlı dizi haline getirip elemanlarını ekrana yazdırınız. (resize)
         - 10 elemanlı diziyi  15 elemanlı dizi haline getirerek elemanlarını ekrana yazdırınız. (resize)
+**Çözüm**
+```csharp
+using System;
+using System.Linq;
+namespace ConsoleApp24
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] dizi = new int[20];
 
+            // Dizi 0-1000 arası Rastgele sayılarla doldurulacak
+            Random randomNesnesi = new Random();
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                dizi[i] = randomNesnesi.Next(0, 100);
+            }
+            //Dizideki Sayıları Listeleme
+            Console.Write("Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            //Siralama
+            Array.Sort(dizi);
+            //Dizideki Sayıları Listeleme
+            Console.Write("Sıralı Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            //Reverse İşlemi
+            Array.Reverse(dizi);
+            //Dizideki Sayıları Listeleme
+            Console.Write("Reverse Sonrası Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            Console.Write($"Max: {dizi.Max()} ");
+            Console.Write($"Min: {dizi.Min()} ");
+            Console.WriteLine();
+            //resize ile 10 Elemanlı dizi haline getirme
+            Array.Resize(ref dizi, 10);
+
+            Console.Write("Resize Sonrası Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.WriteLine();
+            //resize ile 15 Elemanlı dizi haline getirme
+            Array.Resize(ref dizi, 15);
+
+            Console.Write("Resize Sonrası Dizideki Elemanlar:");
+            foreach (int herBirSayi in dizi)
+            {
+                Console.Write($"{herBirSayi} ");
+            }
+            Console.ReadKey();
+        }
+
+
+    }
+}
+
+```
 
 **Örnek-2**
 > Aşağıdaki Verilenlere göre uygulamayı her bir işlem için metot tanımlayarak DiziIslem adında bir class içerisinde tasarlayınız.
