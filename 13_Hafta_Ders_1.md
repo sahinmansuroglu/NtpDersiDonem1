@@ -17,11 +17,11 @@
 
 > C# da kullanılabilen hazır koleksiyonlar aşağıdadır.
 
-  • ArrayList
-  • List
-  • Queue-Stack
-  • Dictionary
-  • HashTable
-  • SortedList
+    • ArrayList
+    • List
+    • Queue-Stack
+    • Dictionary
+    • HashTable
+    • SortedList
 
  
