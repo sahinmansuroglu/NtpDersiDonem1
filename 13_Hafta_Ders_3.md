@@ -15,6 +15,8 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 |AddRange()|Başka bir koleksiyon içindeki tüm elemanları liste sonuna ekler | hayvanlar.AddRange(digerListe) |
 |Insert()|Elemanı Listenin istenilen sirasına ekler | hayvanlar.Insert(3,"Koyun"); |
 |InsertRange()|Başka bir koleksiyon içindeki tüm elemanları Listenin istenilen sirasına ekler |  hayvanlar.InsertRange(3,digerListe); |
+|Remove()|Elemanı Listeden siler | hayvanlar.Remove("Koyun"); |
+|RemoveRange()|Başka bir koleksiyon içindeki tüm elemanları Listeden siler |  hayvanlar.RemoveRange(digerListe); |
 |RemoveAt()|Index numarası verilen elemanı listeden siler|  hayvanlar.InsertRange(3,digerListe); |
 | Clear()|Listenin tüm elemanlarını  temizler|  hayvanlar.Clear()|
 | Sort()|Listedeki elemanları  sıralar.|  hayvanlar1.Sort( |
@@ -35,6 +37,26 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
       - Listenin son halini ekrana yazdırınız.
       - Listede "Zürafa" string'inin olup olmadığını test ederek uygun mesajı ekrana yazdırınız.
       - Listedeki tüm elemanları temizleyiniz.
+  
+ **Çözüm**
+  
+  ```csharp
+  
+  
+  ```
+
+  
+  ### Örnek-2 ###
+> Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
+  
+      - puanlar adında bir ArrayList listesi oluşturunuz.
+      - Oluşturduğunuz listeye 30 adet 0-100 arası rasgele puan ekletiniz(Random nesnesi kullanılacak)
+      - Listedeki punaları  ekrana yan yana yazdırınız. 
+      - Listenin 2 index numaralı hücresine 99 puanını  ekletin.
+      - Listenin 10, 11, 12, 13, 14, 15, 16 ve 17 index numaralı elemanlarını sildirip listeyi ekrana yan yana yazdırınız
+      - Listeyi büyükten küçüğe sıralayarak ekrana yazdırınız.
+      - (**Bonus**) listede 50'nin altında bulunan puanları sildirip listenin son halini ekrana yazdırınız
+    
   
  **Çözüm**
   
