@@ -14,7 +14,14 @@
 ```
   using System.Collections;
 ```
-  
 
+> C# da kullanılabilen hazır koleksiyonlar aşağıdadır.
+
+  • ArrayList
+  • List
+  • Queue-Stack
+  • Dictionary
+  • HashTable
+  • SortedList
 
  
