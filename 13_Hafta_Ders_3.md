@@ -3,7 +3,7 @@
 > ArrayList koleksiyonu diziler gibi birden fazla veriyi tutmak için kullanılan yapılardır. Ancak ArrayList dinamik bir yapıya sahiptir. Çalışma zamanında ekleme, silme değiştirme ve araya ekleme gibi işlemlere imkan vermektedir.
 > ArrayList içine eklenen elemanlar object tipinde olacağı için veri eklerken boxing (kutulama), veri alırken de unboxing (kutu açma) işlemi yapılmaktadır.
 
-** Not: ** Eleman sayısının fazla olduğu ArrayList'lerde boxing ve unBoxing işleminden dolayı performans kaybı yaşanabilir. Bu problemi yaşamamak için ay tipte verilerden
+**Not:** Eleman sayısının fazla olduğu ArrayList'lerde boxing ve unBoxing işleminden dolayı performans kaybı yaşanabilir. Bu problemi yaşamamak için ay tipte verilerden
 liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
   
 ## ArrayList'lerde kullanılan Metot ve Özellikler ##
