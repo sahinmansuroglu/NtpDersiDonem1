@@ -16,7 +16,29 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 |Insert()|Elemanı Listenin istenilen sirasına ekler | hayvanlar.Insert(3,"Koyun"); |
 |InsertRange()|Başka bir koleksiyon içindeki tüm elemanları Listenin istenilen sirasına ekler |  hayvanlar.InsertRange(3,digerListe); |
 |RemoveAt()|Index numarası verilen elemanı listeden siler|  hayvanlar.InsertRange(3,digerListe); |
-| Clear|Listenin tüm elemanlarını  temizler|  hayvanlar.Clear()|
-| Sort|Listedeki elemanları  sıralar.|  hayvanlar1.Sort( |
-| Reverse|Listeyi ters çevirir |  hayvanlar.Reverse() |
-| CopyTo|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
+| Clear()|Listenin tüm elemanlarını  temizler|  hayvanlar.Clear()|
+| Sort()|Listedeki elemanları  sıralar.|  hayvanlar1.Sort( |
+| Reverse()|Listeyi ters çevirir |  hayvanlar.Reverse() |
+| CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
+| Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
+| IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
+  
+### Örnek-1 ###
+> Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
+    
+      - hayvanlar adında bir ArrayList listesi oluşturunuz.
+      - oluşturduğunuz listeye 5 adet hayvan adı (Kedi, Köpek, Ayı, Aslan, Fil) ekleyiniz.
+      - Listedeki hayvan adlarını hem foreach hem de for döngüsü ile ekrana yazdırınız. 
+      - Listeyi A'dan Z'ye sıralatarak ekrana yazdırınız.
+      - Listenin 2 index numaralı hücresine "Koala" string'ini ekletin.
+      - Listenin 3 index numaralı elemanını sildirin.
+      - Listenin son halini ekrana yazdırınız.
+      - Listede "Zürafa" string'inin olup olmadığını test ederek uygun mesajı ekrana yazdırınız.
+      - Listedeki tüm elemanları temizleyiniz.
+  
+ **Çözüm **
+  
+  ```csharp
+  
+  
+  ```
