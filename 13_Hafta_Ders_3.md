@@ -25,6 +25,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
   
 ### Örnek-1 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
+  
         - hayvanlar adında bir ArrayList listesi oluşturunuz.
       -oluşturduğunuz listeye 5 adet hayvan adı (Kedi, Köpek, Ayı, Aslan, Fil) ekleyiniz.
       -Listedeki hayvan adlarını hem foreach hem de for döngüsü ile ekrana yazdırınız. 
