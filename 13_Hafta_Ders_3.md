@@ -55,7 +55,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
       - Listenin 2 index numaralı hücresine 99 puanını  ekletin.
       - Listenin 10, 11, 12, 13, 14, 15, 16 ve 17 index numaralı elemanlarını sildirip listeyi ekrana yan yana yazdırınız
       - Listeyi büyükten küçüğe sıralayarak ekrana yazdırınız.
-      - (**Bonus**) listede 50'nin altında bulunan puanları sildirip listenin son halini ekrana yazdırınız
+      - (__Bonus__) listede 50'nin altında bulunan puanları sildirip listenin son halini ekrana yazdırınız
     
   
  **Çözüm**
