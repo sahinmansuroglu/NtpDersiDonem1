@@ -45,4 +45,4 @@ dikkat edilmesi gereken nokta, dönüştürülmek istenen nesne hangi tipte boxi
             System.Console.WriteLine(obj); //Output: 10
 ```
 
-**Önemli** Boxing ve unboxing işlemi esnasına veri Heap ile Stack arasına yer değiştirmektedir ve uygulamaların performansını düşürmektedir. Bundan dolayı aşırı kullanımdan kaçınılmalıdır yada  Object tipindeki listeler yerine değer tipinde dizi veya list yapısı kullanılabilir.
+**Önemli :** Boxing ve unboxing işlemi esnasına veri Heap ile Stack arasına yer değiştirmektedir ve uygulamaların performansını düşürmektedir. Bundan dolayı aşırı kullanımdan kaçınılmalıdır yada  Object tipindeki listeler yerine değer tipinde dizi veya list yapısı kullanılabilir.
