@@ -24,23 +24,95 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 | CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
 | Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
 | IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
- ### Örnek Kullanım ###
+ ### Örnek Kullanım-1 ###
   ```csharp
   static void Main(string[] args)
         {
-            ArrayList adList = new ArrayList();
+  
+             ArrayList adList = new ArrayList();
+            //Listeye Elaman Ekleme
             adList.Add("Ahmet");
             adList.Add("Aydın");
             adList.Add("Mehmet");
-
+            adList.Add("Akın");
+            adList.Add("Erdi");
+            adList.Remove("Mehmet");// Mehmet Elemanını siler
+            adList.RemoveAt(2);// 2 İndex no lu elamanı siler
+            adList.Insert(3, "Sezgin");
+            Console.Write("Liste:");
+            //Ekrana **Liste:Ahmet Aydın Erdi Sezgin** Yazar
             foreach (var ad in adList)
             {
-                Console.WriteLine($"{ad}");
+                Console.Write($"{ad} ");
+            }
+            Console.WriteLine();
+
+            adList.Sort();
+            adList.Reverse();
+
+            //Ekrana **Liste: Sezgin Erdi Aydın Ahmet** Yazar
+            Console.Write("Liste:");
+            foreach (var ad in adList)
+            {
+                Console.Write($"{ad} ");
             }
             Console.ReadKey();
         }
   ```
-### Örnek-1 ###
+  
+**Ekran Çıktısı**
+  
+  ![image](https://user-images.githubusercontent.com/28144917/147539336-d9785171-2105-4c2c-9a15-5d7423c16ce0.png)
+
+  ### Örnek Kullanım-2 ###
+  ```csharp
+   static void Main(string[] args)
+        {
+            ArrayList sayilist = new ArrayList();
+            //Listeye Elaman Ekleme
+            sayilist.Add(68);
+            sayilist.Add(25);
+            sayilist.Add(96);
+            sayilist.Add(25);
+
+            int toplam = (int)sayilist[0] + (int)sayilist[1] + (int)sayilist[2] + (int)sayilist[2];
+            double ortalama = (double)toplam / sayilist.Count;
+
+            Console.Write("Sayi Listesi:");
+            foreach (var sayi in sayilist)
+            {
+                Console.Write($"{sayi} ");
+            }
+            Console.WriteLine();
+            Console.WriteLine($" Toplam:{toplam}");
+            Console.WriteLine($" Ortalama:{ortalama}");
+            Console.ReadKey();
+            
+        }
+  ```
+  
+**Ekran Çıktısı**
+  
+![image](https://user-images.githubusercontent.com/28144917/147539692-a6bf4c45-7d4b-4b39-b892-dd1f7408f38d.png)
+  
+  
+  ### Örnek-1 ###
+> Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
+  
+      - Liste adında bir ArrayList oluşturun.
+      - Klavyeden girilen 10 sayıyı listeye eklettirin
+      - Listeyi ekrana yazdırın
+      - Listedeki sayıların toplamını hesaplatıp ekrana yazdırın
+      - Listedeki tek sayıların adedini hesaplatıp ekrana yazdırın
+      - Listedeki çift sayıların adedini hesaplatıp ekrana yazdırın
+      - Listeyi sıralatıp ekrana yazdırın
+
+  
+ **Çözüm**
+  
+  ```csharp
+  
+### Örnek-2 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
       - hayvanlar adında bir ArrayList listesi oluşturunuz.
@@ -182,7 +254,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
     }
   ```
   
-  ### Örnek-2 ###
+  ### Örnek-3 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
       - puanlar adında bir ArrayList listesi oluşturunuz.
