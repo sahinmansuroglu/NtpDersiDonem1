@@ -17,14 +17,29 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 |InsertRange()|Başka bir koleksiyon içindeki tüm elemanları Listenin istenilen sirasına ekler |  hayvanlar.InsertRange(3,digerListe); |
 |Remove()|Elemanı Listeden siler | hayvanlar.Remove("Koyun"); |
 |RemoveRange()|Başka bir koleksiyon içindeki tüm elemanları Listeden siler |  hayvanlar.RemoveRange(digerListe); |
-|RemoveAt()|Index numarası verilen elemanı listeden siler|  hayvanlar.InsertRange(3,digerListe); |
+|RemoveAt()|Index numarası verilen elemanı listeden siler|  hayvanlar.RemoveAt(3); |
 | Clear()|Listenin tüm elemanlarını  temizler|  hayvanlar.Clear()|
 | Sort()|Listedeki elemanları  sıralar.|  hayvanlar1.Sort( |
 | Reverse()|Listeyi ters çevirir |  hayvanlar.Reverse() |
 | CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
 | Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
 | IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
-  
+ ### Örnek Kullanım ###
+  ```csharp
+  static void Main(string[] args)
+        {
+            ArrayList adList = new ArrayList();
+            adList.Add("Ahmet");
+            adList.Add("Aydın");
+            adList.Add("Mehmet");
+
+            foreach (var ad in adList)
+            {
+                Console.WriteLine($"{ad}");
+            }
+            Console.ReadKey();
+        }
+  ```
 ### Örnek-1 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
