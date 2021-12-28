@@ -93,7 +93,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
   
 **Ekran Çıktısı**
   
-![image](https://user-images.githubusercontent.com/28144917/147539692-a6bf4c45-7d4b-4b39-b892-dd1f7408f38d.png)
+![image](https://user-images.githubusercontent.com/28144917/147548285-c61c64ac-d1c7-4fc9-a423-56079b9a7979.png)
   
   
   ### Örnek - 3 ###
