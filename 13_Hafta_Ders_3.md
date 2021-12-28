@@ -56,7 +56,60 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
  **Çözüm**
   
   ```csharp
-  
+  static void Main(string[] args)
+        {
+            ArrayList hayvanlar = new ArrayList();
+            hayvanlar.Add("Kedi");
+            hayvanlar.Add("Köpek");
+            hayvanlar.Add("Ayı");
+            hayvanlar.Add("Aslan");
+            hayvanlar.Add("Fil");
+            Console.Write("Listeleme (Foreach):");
+            foreach (var hayvan in hayvanlar)
+            {
+                Console.Write($"{hayvan} ");
+            }
+            Console.WriteLine();
+            Console.Write("Listeleme (For):");
+            for (int i = 0; i < hayvanlar.Count; i++)
+            {
+                Console.Write($"{hayvanlar[i]} ");
+            }
+            Console.WriteLine();
+            hayvanlar.Sort();
+            Console.Write("Sıralı Liste:");
+            foreach (var hayvan in hayvanlar)
+            {
+                Console.Write($"{hayvan} ");
+            }
+            Console.WriteLine();
+            hayvanlar.Insert(2, "Koala");
+            hayvanlar.RemoveAt(3);
+            Console.Write("Ekleme ve Silme Sonrası:");
+            foreach (var hayvan in hayvanlar)
+            {
+                Console.Write($"{hayvan} ");
+            }
+            //Contains ile
+            if (hayvanlar.Contains("Zürafa"))
+            {
+                Console.WriteLine("Listede zürafa bulunmaktadır ");
+            }
+            else
+            {
+                Console.WriteLine("Listede zürafa bulunmamaktadır ");
+            }
+            //IndexOfla
+            if (hayvanlar.IndexOf("Zürafa")!=-1)
+            {
+                Console.WriteLine("Listede zürafa bulunmaktadır ");
+            }
+            else
+            {
+                Console.WriteLine("Listede zürafa bulunmamaktadır ");
+            }
+            Console.ReadKey();
+        }
   
   ```
 
