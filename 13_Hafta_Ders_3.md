@@ -24,7 +24,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 | CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
 | Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
 | IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
- ### Örnek Kullanım-1 ###
+ ### Örnek-1 ###
   ```csharp
   static void Main(string[] args)
         {
@@ -64,7 +64,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
   
   ![image](https://user-images.githubusercontent.com/28144917/147539336-d9785171-2105-4c2c-9a15-5d7423c16ce0.png)
 
-  ### Örnek Kullanım-2 ###
+  ### Örnek - 2 ###
   ```csharp
    static void Main(string[] args)
         {
@@ -96,7 +96,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
 ![image](https://user-images.githubusercontent.com/28144917/147539692-a6bf4c45-7d4b-4b39-b892-dd1f7408f38d.png)
   
   
-  ### Örnek-1 ###
+  ### Örnek - 3 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
       - Liste adında bir ArrayList oluşturun.
@@ -172,7 +172,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
   ![image](https://user-images.githubusercontent.com/28144917/147541600-bdb6675e-c748-4213-bf68-c59b36ed9227.png)
 
   
-### Örnek-2 ###
+### Örnek - 4 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
       - hayvanlar adında bir ArrayList listesi oluşturunuz.
@@ -314,7 +314,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
     }
   ```
   
-  ### Örnek-3 ###
+  ### Örnek - 5 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
   
       - puanlar adında bir ArrayList listesi oluşturunuz.
