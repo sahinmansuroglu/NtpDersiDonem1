@@ -112,7 +112,75 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
         }
   
   ```
+> Yukarıdaki uygulama methot kullanılarak aşağıdaki gibi daha okunabilir hale getirilebilir
+  
+  ```csharp
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            Random random = new Random();
+            int sayi = random.Next(0, 100);
 
+            ArrayList hayvanlar = new ArrayList();
+            hayvanlar.Add("Kedi");
+            hayvanlar.Add("Köpek");
+            hayvanlar.Add("Ayı");
+            hayvanlar.Add("Aslan");
+            hayvanlar.Add("Fil");
+            listeyiEkranaYazForeachIle(hayvanlar, "Listeleme (Foreach):");
+            listeyiEkranaYazForIle(hayvanlar, "Listeleme (For):");
+            
+            hayvanlar.Sort();
+            listeyiEkranaYazForeachIle(hayvanlar, "Sıralı Liste:");
+            hayvanlar.Insert(2, "Koala");
+            hayvanlar.RemoveAt(3);
+            listeyiEkranaYazForeachIle(hayvanlar, "Ekleme ve Silme Sonrası:");
+            
+            //Contains ile
+            if (hayvanlar.Contains("Zürafa"))
+            {
+                Console.WriteLine("Listede zürafa bulunmaktadır ");
+            }
+            else
+            {
+                Console.WriteLine("Listede zürafa bulunmamaktadır ");
+            }
+            //IndexOfla
+            if (hayvanlar.IndexOf("Zürafa")!=-1)
+            {
+                Console.WriteLine("Listede zürafa bulunmaktadır ");
+            }
+            else
+            {
+                Console.WriteLine("Listede zürafa bulunmamaktadır ");
+            }
+            Console.ReadKey();
+        }
+
+        public static void listeyiEkranaYazForIle(ArrayList liste, string baslik)
+        {
+            Console.WriteLine();
+            Console.Write($"{baslik}");
+            for (int i = 0; i < liste.Count; i++)
+            {
+                Console.Write($"{liste[i]} ");
+            }
+            Console.WriteLine();
+
+        }
+        public static void listeyiEkranaYazForeachIle(ArrayList liste, string baslik)
+        {
+            Console.WriteLine();
+            Console.Write($"{baslik}");
+            foreach (var eleman in liste)
+            {
+                Console.Write($"{eleman} ");
+            }
+            Console.WriteLine();
+        }
+    }
+  ```
   
   ### Örnek-2 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
