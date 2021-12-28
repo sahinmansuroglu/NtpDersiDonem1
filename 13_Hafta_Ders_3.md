@@ -156,7 +156,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
             foreach (var sayi in liste)
             {
                 Console.Write($"{sayi} ");
-                toplam += (int)sayi;
+               
             }
             Console.ReadKey();
             
