@@ -197,6 +197,50 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
  **Çözüm**
   
   ```csharp
-  
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList puanlar = new ArrayList();
+            Random random = new Random();
+            for (int i = 0; i < 30; i++)
+            {
+                int rastgelePuan = random.Next(0, 100);
+                puanlar.Add(rastgelePuan);
+            }
+            listeyiEkranaYaz(puanlar, "Puan Listesi:");
+            puanlar.Insert(2, 99);
+            for (int i = 0; i < 7; i++)
+            {
+                puanlar.RemoveAt(10);
+            }
+            listeyiEkranaYaz(puanlar, "Silme Sonrası Puan Listesi:");
+            puanlar.Sort();
+            puanlar.Reverse();
+            listeyiEkranaYaz(puanlar, "Sıralı  Puan Listesi:");
+            int elemanSayisi = puanlar.Count;
+            for (int i = elemanSayisi-1; i>=0; i--)
+            {
+                if ((int)puanlar[i] < 50)
+                {
+                    puanlar.RemoveAt(i);
+                }
+            }
+            listeyiEkranaYaz(puanlar, "Kalanları Silme Sonrası  Puan Listesi:");
+            Console.ReadKey();
+        }
+
+        
+        public static void listeyiEkranaYaz(ArrayList liste, string baslik)
+        {
+            Console.WriteLine();
+            Console.Write($"{baslik}");
+            foreach (var eleman in liste)
+            {
+                Console.Write($"{eleman} ");
+            }
+            Console.WriteLine();
+        }
+    } 
   
   ```
