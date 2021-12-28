@@ -111,6 +111,66 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
  **Çözüm**
   
   ```csharp
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList liste = new ArrayList();
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.Write($"{i}. sayıyı giriniz:");
+                int girilenSayi = Convert.ToInt32(Console.ReadLine());
+                liste.Add(girilenSayi);
+            }
+            int toplam = 0;
+            Console.Write("Sayı Listesi:");
+
+            foreach (var sayi in liste)
+            {
+                Console.Write($"{sayi} ");
+                toplam +=(int) sayi;
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Toplam:{toplam}");
+
+            int tekAdet = 0, ciftAdet=0;
+            foreach (var sayi in liste)
+            {
+              
+                if ((int)sayi % 2 == 0)
+                {
+                    ciftAdet++;
+                }
+                else
+                {
+                    tekAdet++;
+                }
+            }
+
+            Console.WriteLine($"Litedeki tek Sayıların Adedi:{tekAdet}");
+            Console.WriteLine($"Litedeki Çift Sayıların Adedi:{ciftAdet}");
+
+            liste.Sort();
+            Console.Write("Sıralı Sayı Listesi:");
+
+            foreach (var sayi in liste)
+            {
+                Console.Write($"{sayi} ");
+                toplam += (int)sayi;
+            }
+            Console.ReadKey();
+            
+        }
+
+        
+      
+    }
+  ```
+  
+  **Ekran Çıktısı**
+  
+  ![image](https://user-images.githubusercontent.com/28144917/147541600-bdb6675e-c748-4213-bf68-c59b36ed9227.png)
+
   
 ### Örnek-2 ###
 > Aşağıdaki işlemleri sırasıyla yaparak uygulamayı tamamlayınız.
