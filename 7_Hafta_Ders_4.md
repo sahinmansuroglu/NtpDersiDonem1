@@ -122,3 +122,62 @@ static void Main(string[] args)
 **Ekran Çıktısı**
     
 ![image](https://user-images.githubusercontent.com/28144917/147665391-d41904ab-d04d-42b1-b6fa-6faf8ac03ae1.png)
+
+#### Örnek-5 ###
+
+```csharp
+ 
+ // using System.Linq; eklenmeli
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Araba> arabalar = new List<Araba>();
+            arabalar.Add(new Araba { Markasi = "Toyota", Model="Corolla", ModelYili = 1980 });
+            arabalar.Add(new Araba { Markasi = "Citroen", Model = "C3", ModelYili = 2005 });
+            arabalar.Add(new Araba { Markasi = "Toyota", Model = "Avensis", ModelYili = 2020 });
+            arabalar.Add(new Araba { Markasi = "BMW", Model = "X5", ModelYili = 2019 });
+            arabalar.Add(new Araba { Markasi = "Toyota", Model = "Auris", ModelYili = 2001 });
+            arabalar.Add(new Araba { Markasi = "Audi", Model = "Q7", ModelYili = 2010 });
+
+            Console.WriteLine("Tüm Arabalar");
+            Console.WriteLine(string.Join("\n", arabalar));
+
+            List<Araba> toyotaMarkaArabalar = arabalar.FindAll(n => n.Markasi == "Toyota");
+            Console.WriteLine("Toyota Marka Arabalar");
+            Console.WriteLine(string.Join("\n", toyotaMarkaArabalar));
+
+            Araba bulunanAraba1 = arabalar.Find(n => n.Markasi == "BMW");
+            Console.WriteLine($"Bulunan Araba 1:{bulunanAraba1}");
+
+            Araba bulunanAraba2 = arabalar.Find(n => n.Markasi == "Toyota" & n.Model=="Avensis");
+            Console.WriteLine($"Bulunan Araba 2:{bulunanAraba2}");
+
+            int siraNo= arabalar.FindIndex(n => n.Markasi == "Citroen");
+
+            Console.WriteLine($"Citroen Sıra No:{siraNo}");
+
+
+
+        }
+        
+        
+
+    }
+    class Araba
+    {
+        public string Markasi { get; set; }
+        public string Model { get; set; }
+        public int ModelYili { get; set; }
+
+       public override string ToString()
+        {
+            return $"{Markasi} - {Model} - {ModelYili}";
+        }
+    }
+       
+```
+    
+**Ekran Çıktısı**
+    
+![image](https://user-images.githubusercontent.com/28144917/147667794-f451fb63-4b7d-4572-b99a-4eef20c3027d.png)
