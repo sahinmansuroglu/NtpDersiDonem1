@@ -125,3 +125,22 @@
     - Eğer listede girilen AdSoyad'a ait bir öğrenci varsa Yas ve DogumYeri bilgisini de ekrana yazdırınız.
     - Eğer listede girilen AdSoyad'a ait bir öğrenci yoksa bir uyarı mesajını ekrana yazdırınız.
     - AdSoyad boş geçilirse döngü kırılarak program sonlansın.
+
+  
+  ### Örnek-6 ###
+> Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
+
+  - Aşağıda verilenlere göre Ogrenci Adında bir class oluşturunuz.
+     - OkulNo, Ad, Soyad adında property olacak
+     - puanlar adında ve  içinde istenilen sayıda puan bulunabilecek bir dizi olacak
+     - tüm propertylerin değerleri kurucu metot ile verilecek. (Puanlar kurucu metoda dizi olarak gönderilecek)
+     - Ortalama ve Durum adında readOnly Property olacak
+     - ToString() override edilerek öğrencinin tüm bilgileri yan yana metin haline getirilecek
+  -ogrenciler list'inin tüm elemanları ekrana yazdırılacak
+
+  ### Örnek-7 ###
+> Aşağıda verilenleri  Örnek-6' da oluşturduğunuz ogrenciler listesini kullanarak yapınız
+  
+  - kalanOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'ni altında olan öğrencileri ekleyiniz
+  - basarilşOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'den büyük veya eşit  öğrencileri ekleyiniz
+ 
