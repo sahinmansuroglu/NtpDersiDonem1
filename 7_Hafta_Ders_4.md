@@ -44,9 +44,9 @@ static void Main(string[] args)
          
 ```
     
-    **Ekran Çıktısı**
+**Ekran Çıktısı**
     
-    ![image](https://user-images.githubusercontent.com/28144917/147664405-e965754d-9db8-4335-b57b-b1f7ff2cbde8.png)
+![image](https://user-images.githubusercontent.com/28144917/147664405-e965754d-9db8-4335-b57b-b1f7ff2cbde8.png)
     
     #### Örnek-2 ###
 ```csharp
