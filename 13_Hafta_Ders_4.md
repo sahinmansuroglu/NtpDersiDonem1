@@ -56,9 +56,14 @@
   
  
  ### List koleksiyonlarına özel metotlar ###
+ > Aşağıdaki metotlar verilen lambda ifadesini List'deki her bir eleman için çalıştırırlar.
   
  |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
  |---------|---------|---------|
-|ForEach() |Verilen Lambda ifadesini her bir eleman için çalıştırır| listeAdi.ForEach( n => { Console.WriteLine(n); } ) |
-|Exists() |Verilen Lambda ifadesine Göre uygun elemanın olup olmadığını test eder (true veya false döndürür)| sayilar.Exists( n => n > 15 )|
-  
+|ForEach() | Lambda ifadesini her bir eleman için çalıştırır| listeAdi.ForEach( n => { Console.WriteLine(n); } ) |
+|Exists() | Lambda ifadesine Göre uygun elemanın olup olmadığını test eder| sayilar.Exists( n => n > 15 )|
+|Find() | Lambda ifadesine Göre uygun ilk elemanın kendisini verir| sayilar.Find( n => n > 15 )| 
+|FindIndex() | Lambda ifadesine Göre uygun ilk elemanın index no'sunu verir| sayilar.FindIndex( n => n > 15 )| 
+|FindLast() | Lambda ifadesine Göre uygun son elemanın kendisini verir| sayilar.FindLast( n => n > 15 )| 
+|FindLastIndex() | Lambda ifadesine Göre uygun son elemanın index no'sunu verir| sayilar.FindLastIndex( n => n > 15 )| 
+|FindAll() | Lambda ifadesine Göre uygun tüm elemanların listesini verir| sayilar.FindAll( n => n > 15 )| 
