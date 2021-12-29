@@ -91,7 +91,7 @@ static void Main(string[] args)
             var dizininKAresi = numbers.Select(x => x * x);
 
             //4 - 9 - 16 - 25 yazar
-            Console.WriteLine($"Çıktı-4: { string.Join(" - ", dizininKAresi) }"); 
+            Console.WriteLine($"Çıktı { string.Join(" - ", dizininKAresi) }"); 
 
         }
          
@@ -99,7 +99,7 @@ static void Main(string[] args)
     
 **Ekran Çıktısı**
     
-![image](https://user-images.githubusercontent.com/28144917/147665447-f8eb5956-bd33-4db2-a239-9f2e0d81e8c2.png)
+![image](https://user-images.githubusercontent.com/28144917/147666324-4ccb0ad3-64e6-4249-9abe-d5089bc7f675.png)
 
     
 #### Örnek-4 ###
