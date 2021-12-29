@@ -43,7 +43,7 @@
 1. [Abstraction](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_1.md)
 2. [Metot Kavramı-2(Varsayılan Değerli Parametreler, İsimlendirilmiş Parametreler, Parametre Dizileri)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_2.md)
 3. [Metotların Aşırı Yüklenmesi ](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_3.md) 
-4. [Lambda İfadeleri (Lambda Expression) ( "=>" Lambda operatörü )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_4.md) 
+
 
 ### 8. Bölüm ###
 1. [Öğrenci Sınıfını kullanan WPf Uygulaması (Textbox, Label, Listbox )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/8_Hafta_Ders_1.md)
@@ -88,6 +88,9 @@
 3. [ArrayList](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_3.md)
 3. [```List<Type>```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_4.md)
 4. [](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_5.md)
-### Karma Uygulamalar ###
+
+### Karma Çalışmalar ###
   
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
+2. [Lambda İfadeleri (Lambda Expression) ( "=>" Lambda operatörü )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_4.md) 
+3. 
