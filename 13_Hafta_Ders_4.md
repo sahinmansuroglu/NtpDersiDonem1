@@ -114,7 +114,7 @@
  ``` 
   
   
-  ### Örnek-3 ###
+  ### Örnek-5 ###
 > Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
     
   - İçerisinde AdSoyad, DogumYeri ve  Yas property'si bulunan Ogrenci adında bir class oluşturunuz.
