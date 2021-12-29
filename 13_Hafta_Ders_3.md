@@ -321,7 +321,7 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
       - Oluşturduğunuz listeye 30 adet 0-100 arası rasgele puan ekletiniz(Random nesnesi kullanılacak)
       - Listedeki punaları  ekrana yan yana yazdırınız. 
       - Listenin 2 index numaralı hücresine 99 puanını  ekletin.
-      - Listenin 10, 11, 12, 13, 14, 15, 16 ve 17 index numaralı elemanlarını sildirip listeyi ekrana yan yana yazdırınız
+      - Listenin 2, 3, 4, 5, 6, 7, 8 ve 9 index numaralı elemanlarını sildirip listeyi ekrana yan yana yazdırınız
       - Listeyi büyükten küçüğe sıralayarak ekrana yazdırınız.
       - (__Bonus__) listede 50'nin altında bulunan puanları sildirip listenin son halini ekrana yazdırınız
     
@@ -342,9 +342,9 @@ liste oluşturulabilmesini sağlayan List<object> yapısı kullanılabilir.
             }
             listeyiEkranaYaz(puanlar, "Puan Listesi:");
             puanlar.Insert(2, 99);
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
-                puanlar.RemoveAt(10);
+                puanlar.RemoveAt(2);
             }
             listeyiEkranaYaz(puanlar, "Silme Sonrası Puan Listesi:");
             puanlar.Sort();
