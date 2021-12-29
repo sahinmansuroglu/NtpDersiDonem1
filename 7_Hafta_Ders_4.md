@@ -121,4 +121,4 @@ static void Main(string[] args)
     
 **Ekran Çıktısı**
     
-    ![image](https://user-images.githubusercontent.com/28144917/147665391-d41904ab-d04d-42b1-b6fa-6faf8ac03ae1.png)
+![image](https://user-images.githubusercontent.com/28144917/147665391-d41904ab-d04d-42b1-b6fa-6faf8ac03ae1.png)
