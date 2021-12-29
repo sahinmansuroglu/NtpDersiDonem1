@@ -8,7 +8,7 @@
  ````csharp
 (giriş parametreleri) => çalıştırılıcak İfade
  ````
-yada (bir satırdan fazla çalışıtırılacak ifade varsa)
+ya da (bir satırdan fazla çalışıtırılacak ifade varsa)
 
  ````csharp
 (giriş parametreleri) => {
