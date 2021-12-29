@@ -113,3 +113,14 @@
     }
  ``` 
   
+  
+  ### Örnek-3 ###
+> Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
+    
+    - İçerisinde AdSoyad, DogumYeri ve  Yas property'si bulunan Ogrenci adında bir class oluşturunuz.
+    - içerisinde Ogrenci nesnelerinin bulubabileceği ogrenciler adında bir List tanımlayın.
+    - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
+    - Sonsuz while döngüsü içerisinde kullanıcıdan AdSoyad bilgisi alınız
+      - Eğer listede girilen AdSoyad'a ait bir öğrenci **varsa** Yas ve DogumYeri bilgisini de ekrana yazdırınız.
+      - Eğer listede girilen AdSoyad'a ait bir öğrenci **yoksa** "Girilen Ad Soyada ait öğrenci bulunamadı" mesajı verilsin.
+      - AdSoyad boş geçilirse döngü kırılarak program sonlansın.
