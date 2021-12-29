@@ -85,7 +85,8 @@
 1. [Koleksiyonlar](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_1.md)
 2. [Kutulama (Boxing) ve Kutuyu Açma (UnBoxing)](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_2.md)
 3. [ArrayList](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_3.md)
-3. [List<T> ](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_4.md)
+3. [List <T> ](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_4.md)
 4. [](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_5.md)
 ### Karma Uygulamalar ###
+  
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
