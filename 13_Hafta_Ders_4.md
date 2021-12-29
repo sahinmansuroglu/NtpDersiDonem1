@@ -35,7 +35,7 @@
     - içerisinde Ogrenci nesnelerinin bulubabileceği ogrenciler adında bir List tanımlayın.
     - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
     - ogrenciler List'i içerisindeki Ogrenci nesnelerini foreach döngüsü ile ekrana yazdırınız.
-### Aşağıdaki Özellik ve metotlar ArrayList'lerde kullanıldığı gibi List yapılarında da aynı şekilde kullanılırlar
+### Aşağıdaki Özellik ve metotlar ArrayList'lerde kullanıldığı gibi List yapılarında da aynı şekilde kullanılırlar ###
   
  |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
 |---------|---------|---------|
@@ -53,3 +53,12 @@
 | CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
 | Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
 | IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
+  
+ 
+ ### List koleksiyonlarına özel metotlar ###
+  
+ |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
+ |---------|---------|---------|
+|ForEach() |Verilen Lambda ifadesini her bir eleman için çalıştırır| listeAdi.ForEach( n => { Console.WriteLine(n); } ) |
+|Exists() |Verilen Lambda ifadesine Göre uygun elemanın olup olmadığını test eder (true veya false döndürür)| sayilar.Exists( n => n > 15 )|
+  
