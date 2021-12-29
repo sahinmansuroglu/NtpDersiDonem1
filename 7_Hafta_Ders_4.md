@@ -28,7 +28,7 @@ ya da (bir satırdan fazla çalışıtırılacak ifade varsa)
  
 static void Main(string[] args)
         {
-            //Değer Döndürecekse Funx kullanılır
+            //Değer Döndürecekse Func kullanılır
             Func<int, int> kareAl = x => x * x;
             Func<int, int,int> topla = (x,y) => x + y;
             Func<int, int, double> bolum = (x, y) => (double)x / y;
