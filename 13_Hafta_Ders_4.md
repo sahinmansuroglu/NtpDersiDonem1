@@ -142,5 +142,5 @@
 > Aşağıda verilenleri  Örnek-6' da oluşturduğunuz ogrenciler listesini kullanarak yapınız
   
   - kalanOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'ni altında olan öğrencileri ekleyiniz
-  - basarilşOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'den büyük veya eşit  öğrencileri ekleyiniz
+  - basariliOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'den büyük veya eşit  öğrencileri ekleyiniz
  
