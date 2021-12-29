@@ -22,4 +22,34 @@
             ogrenciler.Add(new ogrenci { ad = "veli", yas = 96 });
   
 ```
+ ### Örnek-1  ###
+ > hayvanlar adında bir List tanımlayın içerisine 5 tane hayvan adi ekleyip for döngüsü ile ekrana yazdırınız.
   
+### Örnek-2  ###
+> puanlar adında bir List tanımlayın içerisine 5 tane puan adi ekleyip foreach döngüsü ile ekrana yazdırınız.
+  
+### Örnek-3 ###
+> Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
+    
+    - İçerisinde AdSoyad ve Yas property'si bulunan Ogrenci adında bir class oluşturunuz.
+    - içerisinde Ogrenci nesnelerinin bulubabileceği ogrenciler adında bir List tanımlayın.
+    - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
+    - ogrenciler List'i içerisindeki Ogrenci nesnelerini foreach döngüsü ile ekrana yazdırınız.
+### Aşağıdaki Özellik ve metotlar ArrayList'lerde kullanıldığı gibi List yapılarında da aynı şekilde kullanılırlar
+  
+ |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
+|---------|---------|---------|
+|Count Özelliği |listedeki eleman sayısını verir. | listeAdi.Count |
+|Add()|Listenin sonuna tek bir eleman ekler| hayvanlar.Add("Kedi") |
+|AddRange()|Başka bir koleksiyon içindeki tüm elemanları liste sonuna ekler | hayvanlar.AddRange(digerListe) |
+|Insert()|Elemanı Listenin istenilen sirasına ekler | hayvanlar.Insert(3,"Koyun"); |
+|InsertRange()|Başka bir koleksiyon içindeki tüm elemanları Listenin istenilen sirasına ekler |  hayvanlar.InsertRange(3,digerListe); |
+|Remove()|Elemanı Listeden siler | hayvanlar.Remove("Koyun"); |
+|RemoveRange()|Başka bir koleksiyon içindeki tüm elemanları Listeden siler |  hayvanlar.RemoveRange(digerListe); |
+|RemoveAt()|Index numarası verilen elemanı listeden siler|  hayvanlar.RemoveAt(3); |
+| Clear()|Listenin tüm elemanlarını  temizler|  hayvanlar.Clear()|
+| Sort()|Listedeki elemanları  sıralar.|  hayvanlar1.Sort( |
+| Reverse()|Listeyi ters çevirir |  hayvanlar.Reverse() |
+| CopyTo()|Listedeki tüm elemanları bir diziye kopyalar |  hayvanlar.CopyTo(Dizi) |  
+| Contains()|Herhangi bir elemanın listede bulunup bulunmadığını test eder. |  hayvanlar.Contains("Kedi") |   
+| IndexOf|verilen elemanı arar. Bulursa index değerini verir, bulamazsa -1 döndürür | hayvanlar.IndexOf("Kedi") |
