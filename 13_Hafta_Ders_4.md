@@ -121,4 +121,5 @@
   - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
   - Sonsuz while döngüsü içerisinde kullanıcıdan AdSoyad bilgisi alınız
     - Eğer listede girilen AdSoyad'a ait bir öğrenci varsa Yas ve DogumYeri bilgisini de ekrana yazdırınız.
+    - Eğer listede girilen AdSoyad'a ait bir öğrenci yoksa bir uyarı mesajını ekrana yazdırınız.
     - AdSoyad boş geçilirse döngü kırılarak program sonlansın.
