@@ -48,7 +48,7 @@ static void Main(string[] args)
     
 ![image](https://user-images.githubusercontent.com/28144917/147664405-e965754d-9db8-4335-b57b-b1f7ff2cbde8.png)
     
-    #### Örnek-2 ###
+#### Örnek-2 ###
 ```csharp
  
  // using System.Linq; eklenmeli
@@ -70,7 +70,7 @@ static void Main(string[] args)
          
 ```
     
-    **Ekran Çıktısı**
+**Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/147664833-a9f718a7-dcfd-4cca-b89a-f8d9266b83e5.png)
 
