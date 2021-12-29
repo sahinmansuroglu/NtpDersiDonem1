@@ -1,0 +1,1 @@
+## Lambda İfadeleri (Lambda Expression) ##
