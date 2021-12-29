@@ -58,6 +58,8 @@
  ### List koleksiyonlarına özel metotlar ###
  > Aşağıdaki metotlar verilen lambda ifadesini List'deki her bir eleman için çalıştırırlar.
   
+ Not: [Lambda İfadelerinin Kullanımına Linkden Ulaşabilirsiniz.. ( "=>" Lambda operatörü )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_4.md) 
+  
  |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
  |---------|---------|---------|
 |ForEach() | Lambda ifadesini her bir eleman için çalıştırır| listeAdi.ForEach( n => { Console.WriteLine(n); } ) |
