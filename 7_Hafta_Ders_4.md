@@ -79,6 +79,7 @@ static void Main(string[] args)
            
             
 #### Örnek-3 ###
+
 ```csharp
  
  // using System.Linq; eklenmeli
@@ -98,11 +99,12 @@ static void Main(string[] args)
     
 **Ekran Çıktısı**
     
-    ![image](https://user-images.githubusercontent.com/28144917/147665447-f8eb5956-bd33-4db2-a239-9f2e0d81e8c2.png)
+![image](https://user-images.githubusercontent.com/28144917/147665447-f8eb5956-bd33-4db2-a239-9f2e0d81e8c2.png)
 
     
 #### Örnek-4 ###
- ```csharp
+
+```csharp
  
  // using System.Linq; eklenmeli
   static void Main(string[] args)
@@ -115,7 +117,7 @@ static void Main(string[] args)
 
         }
        
-    ```
+```
     
 **Ekran Çıktısı**
     
