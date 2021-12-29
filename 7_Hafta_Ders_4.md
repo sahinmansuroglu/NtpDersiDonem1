@@ -5,23 +5,24 @@
 > Lamda ifadesi yazabilmek için "=>" operatörünü kullanırız.
 
 ### Genel Kullanım ###
- ````csharp
+
+```csharp
 (giriş parametreleri) => çalıştırılıcak İfade
- ````
+```
 ya da (bir satırdan fazla çalışıtırılacak ifade varsa)
 
- ````csharp
+```csharp
 (giriş parametreleri) => {
 
   çalıştırılıcak İfadeler
   
  }
  
-  ````
+```
 
 #### Örnek-1  ###
 
- ```csharp
+```csharp
  
  // using System.Linq; eklenmeli
  
@@ -41,14 +42,14 @@ static void Main(string[] args)
 
          }
          
-    ```
+```
     
     **Ekran Çıktısı**
     
     ![image](https://user-images.githubusercontent.com/28144917/147664405-e965754d-9db8-4335-b57b-b1f7ff2cbde8.png)
     
     #### Örnek-2 ###
- ```csharp
+```csharp
  
  // using System.Linq; eklenmeli
  
@@ -67,7 +68,7 @@ static void Main(string[] args)
 
         }
          
-    ```
+```
     
     **Ekran Çıktısı**
 
@@ -77,8 +78,8 @@ static void Main(string[] args)
 
            
             
-             #### Örnek-3 ###
- ```csharp
+#### Örnek-3 ###
+```csharp
  
  // using System.Linq; eklenmeli
  
@@ -93,14 +94,14 @@ static void Main(string[] args)
 
         }
          
-    ```
+```
     
-    **Ekran Çıktısı**
+**Ekran Çıktısı**
     
     ![image](https://user-images.githubusercontent.com/28144917/147665447-f8eb5956-bd33-4db2-a239-9f2e0d81e8c2.png)
 
     
-     #### Örnek-4 ###
+#### Örnek-4 ###
  ```csharp
  
  // using System.Linq; eklenmeli
@@ -116,6 +117,6 @@ static void Main(string[] args)
        
     ```
     
-    **Ekran Çıktısı**
+**Ekran Çıktısı**
     
     ![image](https://user-images.githubusercontent.com/28144917/147665391-d41904ab-d04d-42b1-b6fa-6faf8ac03ae1.png)
