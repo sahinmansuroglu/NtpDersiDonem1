@@ -4,7 +4,8 @@
 **Not:** Veri tipinin belli olduğu collection'lara Generic Colleciton, veri tipinin belli olmadığı collection'lara da  Non-generic collection denilir.Generic collectionlar'da veri tipi belli olduğu için boxing-unboxing işlemi gerçekleşmez. Örnek olarak List Colection'ı da bir generic colleciton olduğu için boxing-unboxing işlemleri gerçekleşmez. 
 
 ### List Tanımlama Örneği ###
-  ```csharp
+  
+```csharp
             List<int> sayilar = new List<int>();
             sayilar.Add(85);
             sayilar.Add(56);
@@ -16,5 +17,5 @@
             var sehirler = new List<string>() {"Ankara","Adana", "Mersin","Antalya"};
             sehirler.Add("İzmir");
   
-    ```
+```
   
