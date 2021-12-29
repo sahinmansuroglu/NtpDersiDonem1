@@ -67,3 +67,49 @@
 |FindLast() | Lambda ifadesine Göre uygun son elemanın kendisini verir| sayilar.FindLast( n => n > 15 )| 
 |FindLastIndex() | Lambda ifadesine Göre uygun son elemanın index no'sunu verir| sayilar.FindLastIndex( n => n > 15 )| 
 |FindAll() | Lambda ifadesine Göre uygun tüm elemanların listesini verir| sayilar.FindAll( n => n > 15 )| 
+
+  ### Örnek-4 ###
+> Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
+  
+  - Int tipinde sayilar, tekSayilar, ciftSayilar adında üç tane List tanımlayın
+  - Random class'ını kullanarak sayilar List'ine 20 adet 0-100 arası sayı ekleyiniz.
+  - sayilar List'indeki tek sayıları tekSayilar List'ine ekletiniz.
+  - sayilar List'indeki çift sayıları ciftSayilar List'ine ekletiniz.
+  - sayilar, tekSayilar ve ciftSayilar List'indeki elemanları ayrı ayrı yan yana yazdırınız.
+  
+**Çözüm**  
+  
+```csharp  
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> sayilar = new List<int>();
+            Random random = new Random();
+            for (int i = 0; i < 20; i++)
+            {
+                sayilar.Add(random.Next(0, 100));
+            }
+            List<int> tekSayilar = sayilar.FindAll(n => n % 2 == 1);
+            List<int> ciftSayilar = sayilar.FindAll(n => n % 2 == 0);
+
+            listeyiEkranaYazdir(sayilar, "Tüm Sayılar");
+            listeyiEkranaYazdir(tekSayilar, "Listedeki Tek Sayılar");
+            listeyiEkranaYazdir(ciftSayilar, "Listedeki Çift Sayılar");
+            Console.ResetColor();
+        }
+       static void listeyiEkranaYazdir(List<int> liste,string baslik)
+        {
+           
+         
+            Console.WriteLine(baslik);
+            foreach (var eleman in liste)
+            {
+                Console.Write($"{eleman} ");
+            }
+            Console.WriteLine("");
+        }
+
+    }
+ ``` 
+  
