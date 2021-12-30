@@ -168,36 +168,45 @@
 **Çözüm**  
   
 ```csharp  
-    class Program
+   class Program
     {
         static void Main(string[] args)
         {
             List<int> sayilar = new List<int>();
+            
             Random random = new Random();
             for (int i = 0; i < 20; i++)
             {
-                sayilar.Add(random.Next(0, 100));
+                sayilar.Add(random.Next(0,100));
             }
-            List<int> tekSayilar = sayilar.FindAll(n => n % 2 == 1);
-            List<int> ciftSayilar = sayilar.FindAll(n => n % 2 == 0);
+            Console.WriteLine("Tüm Sayılar");
+            Console.WriteLine(string.Join(" - ",sayilar));
+      
+            List<int> tekSayilar =sayilar.FindAll(n=>n % 2==1);
+            List<int> CiftSayilar = sayilar.FindAll(n => n % 2 == 0);
 
-            listeyiEkranaYazdir(sayilar, "Tüm Sayılar");
-            listeyiEkranaYazdir(tekSayilar, "Listedeki Tek Sayılar");
-            listeyiEkranaYazdir(ciftSayilar, "Listedeki Çift Sayılar");
-            Console.ResetColor();
-        }
-       static void listeyiEkranaYazdir(List<int> liste,string baslik)
-        {
-           
-         
-            Console.WriteLine(baslik);
-            foreach (var eleman in liste)
-            {
-                Console.Write($"{eleman} ");
-            }
-            Console.WriteLine("");
-        }
+            // Yukarıdaki metot yerine aşağıdaki şekilde foreach yapısı kullanılarak tek ve çift sayılar listesi oluşturulabilir.
+            //foreach (int sayi in sayilar)
+            //{
+            //    if (sayi % 2 == 0)
+            //    {
+            //        CiftSayilar.Add(sayi);
+            //    }
+            //    else
+            //    {
+            //        tekSayilar.Add(sayi);
+            //    }
 
+            //}
+
+
+            Console.WriteLine("Çift Sayılar");
+            Console.WriteLine(string.Join(" - ", CiftSayilar));
+            Console.WriteLine("Tek Sayılar");
+            Console.WriteLine(string.Join(" - ", tekSayilar));
+            Console.ReadKey();
+
+        }
     }
  ``` 
   
