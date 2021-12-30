@@ -221,6 +221,62 @@
     - Eğer listede girilen AdSoyad'a ait bir öğrenci yoksa bir uyarı mesajını ekrana yazdırınız.
     - AdSoyad boş geçilirse döngü kırılarak program sonlansın.
 
+  ```csharp
+  using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp27
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Ogrenci> ogreciler = new List<Ogrenci>();
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet ERTEK", DogumYeri="Adana", Yas = 65 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ali ERTEK", DogumYeri = "Ankara", Yas = 14 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet AKIN", DogumYeri = "Ankara", Yas = 22 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Sezgin ERTEK", DogumYeri = "Mersin", Yas = 41 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet AYSEL", DogumYeri = "Adana", Yas = 61 });
+
+
+
+            while (true)
+            {
+                Console.Write("Aramak İstedğiniz kişini ad soyadını Giriniz:");
+                string adSoyad = Console.ReadLine();
+                if (adSoyad.Trim() == "")
+                {
+                    break;
+                }
+                Ogrenci bulunanOgrenci = ogreciler.Find(a => a.AdSoyad == adSoyad);
+                if (bulunanOgrenci == null)
+                {
+                    Console.WriteLine("Girilen Ad Soyada ait Öğrenci bulunmamaktadır");
+                }
+                else
+                {
+                    Console.WriteLine(bulunanOgrenci);
+                }
+            }
+            Console.ReadKey();
+
+        }
+    }
+
+    class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+        public int Yas { get; set; }
+        public string DogumYeri { get; set; }
+        public override string ToString()
+        {
+            return $"{AdSoyad}, {DogumYeri}, {Yas}";
+        }
+
+    }
+}
+
+  ```
   
   ### Örnek-6 ###
 > Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
