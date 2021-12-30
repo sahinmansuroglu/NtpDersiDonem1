@@ -25,6 +25,7 @@
  ### Örnek-1  ###
  > hayvanlar adında bir List tanımlayın içerisine 5 tane hayvan adi ekleyip for döngüsü ile ekrana yazdırınız.
   ```csharp
+  //using System.Collections.Generic;    ad uzayı eklenmeli
   static void Main(string[] args)
         {
             List<string> hayvanlar = new List<string>();
@@ -46,6 +47,26 @@
  ```
 ### Örnek-2  ###
 > puanlar adında bir List tanımlayın içerisine 5 tane puan adi ekleyip foreach döngüsü ile ekrana yazdırınız.
+```csharp
+  
+  //using System.Collections.Generic; ad uzayı eklenmeli
+ static void Main(string[] args)
+        {
+            List<int> puanlar = new List<int>();
+            puanlar.Add(96);
+            puanlar.Add(96);
+            puanlar.Add(65);
+            puanlar.Add(24);
+            puanlar.Add(32);
+
+            foreach (int puan in puanlar)
+            {
+                Console.WriteLine($"{puan}");
+            }
+            Console.ReadKey();
+
+        }  
+```
   
 ### Örnek-3 ###
 > Aşağıda verilenleri sırasıyla uygulayarak uygulamayı tamamlayınız.
