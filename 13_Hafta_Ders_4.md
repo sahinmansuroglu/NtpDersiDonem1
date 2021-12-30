@@ -82,6 +82,44 @@
     - içerisinde Ogrenci nesnelerinin bulubabileceği ogrenciler adında bir List tanımlayın.
     - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
     - ogrenciler List'i içerisindeki Ogrenci nesnelerini foreach döngüsü ile ekrana yazdırınız.
+```csharp
+   class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Ogrenci> ogreciler = new List<Ogrenci>();
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet ERTEK", Yas = 65 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ali ERTEK", Yas = 14 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet AKIN", Yas = 22 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Sezgin ERTEK", Yas = 41 });
+            ogreciler.Add(new Ogrenci { AdSoyad = "Ahmet AYSEL", Yas = 61 });
+
+            //Foreach ile ekrana yazdırma
+            foreach (var ogrenci in ogreciler)
+            {
+                Console.WriteLine($"{ogrenci.AdSoyad} - {ogrenci.Yas} ");
+            }
+
+            //String.Join ile ekrana yazdırma
+            string metinListe = string.Join("\n", ogreciler);
+            Console.WriteLine(metinListe);
+            Console.ReadKey();
+
+        }
+    }
+
+    class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+        public int Yas { get; set; }
+        public override string ToString()
+        {
+            return $"{AdSoyad}, {Yas}";
+        }
+
+    }
+```csharp
+  
 ### Aşağıdaki Özellik ve metotlar ArrayList'lerde kullanıldığı gibi List yapılarında da aynı şekilde kullanılırlar ###
   
  |Özellik/Metot Adı|Açıklama| Örnek Kullanim|
