@@ -24,7 +24,26 @@
 ```
  ### Örnek-1  ###
  > hayvanlar adında bir List tanımlayın içerisine 5 tane hayvan adi ekleyip for döngüsü ile ekrana yazdırınız.
-  
+  ```csharp
+  static void Main(string[] args)
+        {
+            List<string> hayvanlar = new List<string>();
+            hayvanlar.Add("Aslan");
+            hayvanlar.Add("Kaplan");
+            hayvanlar.Add("Kurt");
+            hayvanlar.Add("Köpek");
+            hayvanlar.Add("Tavşan");
+
+            for (int i = 0; i < hayvanlar.Count; i++)
+            {
+                Console.WriteLine($"{hayvanlar[i]}");
+                
+
+            }
+            Console.ReadKey();
+
+        }
+ ```
 ### Örnek-2  ###
 > puanlar adında bir List tanımlayın içerisine 5 tane puan adi ekleyip foreach döngüsü ile ekrana yazdırınız.
   
