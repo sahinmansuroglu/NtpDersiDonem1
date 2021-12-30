@@ -41,6 +41,9 @@
                 
 
             }
+            //ekrana yazdırmak için aşağıdaki string.Join yapısı da kullanılabilir                                   
+            string listeMetin=string.Join("\n", hayvanlar);
+            Console.WriteLine(listeMetin);
             Console.ReadKey();
 
         }
@@ -63,6 +66,10 @@
             {
                 Console.WriteLine($"{puan}");
             }
+  
+            //ekrana yazdırmak için aşağıdaki string.Join yapısı da kullanılabilir                                   
+            string listeMetin=string.Join("\n", puanlar);
+            Console.WriteLine(listeMetin);
             Console.ReadKey();
 
         }  
