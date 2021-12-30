@@ -287,7 +287,7 @@ namespace ConsoleApp27
      - tüm propertylerin değerleri kurucu metot ile verilecek. (Puanlar kurucu metoda dizi olarak gönderilecek)
      - Ortalama ve Durum adında readOnly Property olacak
      - ToString() override edilerek öğrencinin tüm bilgileri yan yana metin haline getirilecek
-  - ogrenciler list'inin tüm elemanları ekrana yazdırılacak
+  - ogrenciler list'ine 6 ogrenci ekleyerek tüm Öğrencileri ekrana yazdırılacak
 
   ### Örnek-7 ###
 > Aşağıda verilenleri  Örnek-6' da oluşturduğunuz ogrenciler listesini kullanarak yapınız
