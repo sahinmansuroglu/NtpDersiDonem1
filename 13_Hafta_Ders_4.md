@@ -82,6 +82,7 @@
     - içerisinde Ogrenci nesnelerinin bulubabileceği ogrenciler adında bir List tanımlayın.
     - ogrenciler List'ine 5 tane Ogrenci nesnesi ekleyiniz.
     - ogrenciler List'i içerisindeki Ogrenci nesnelerini foreach döngüsü ile ekrana yazdırınız.
+  
 ```csharp
    class Program
     {
@@ -118,7 +119,7 @@
         }
 
     }
-```csharp
+```
   
 ### Aşağıdaki Özellik ve metotlar ArrayList'lerde kullanıldığı gibi List yapılarında da aynı şekilde kullanılırlar ###
   
