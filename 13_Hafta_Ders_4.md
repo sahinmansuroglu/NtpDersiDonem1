@@ -431,3 +431,7 @@ namespace ConsoleApp27
 }
  
 ```
+  **Ekran Çıktısı**
+  
+  ![image](https://user-images.githubusercontent.com/28144917/147745413-4ae381a9-7e6c-4a40-9f3f-e08f2a5dceca.png)
+
