@@ -288,10 +288,146 @@ namespace ConsoleApp27
      - Ortalama ve Durum adında readOnly Property olacak
      - ToString() override edilerek öğrencinin tüm bilgileri yan yana metin haline getirilecek
   - ogrenciler list'ine 6 ogrenci ekleyerek tüm Öğrencileri ekrana yazdırılacak
+  
+  ```csharp
+  using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace ConsoleApp27
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Ogrenci> ogreciler = new List<Ogrenci>();
+            ogreciler.Add(new Ogrenci("Ali AKIN", 654, new List<int> { 85, 69, 24, 25, 85 }));
+            ogreciler.Add(new Ogrenci("Ahmet EKİN", 48, new List<int> { 14, 69, 45, 63, 69 }));
+            ogreciler.Add(new Ogrenci("Sertaç AKIN", 11, new List<int> { 85, 25, 36, 25, 69 }));
+            ogreciler.Add(new Ogrenci("Mehmet TEKİN", 112, new List<int> { 85, 69, 85, 25, 69 }));
+            ogreciler.Add(new Ogrenci("Okan AKIN", 457, new List<int> { 36, 55, 75, 25, 39 }));
+            ogreciler.Add(new Ogrenci("Can KUŞ", 658, new List<int> { 85, 24, 58, 25, 69 }));
+            Console.WriteLine("----Tüm Öğrenciler------");
+            Console.WriteLine(string.Join("\n",ogreciler));
 
+
+            Console.ReadKey();
+
+        }
+    }
+
+    class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+        public int OkulNo { get; set; }
+        public List<int> Puanlar { get; set; }
+
+        public double Ortalama
+        {
+            get
+            {
+               return Puanlar.Average();
+            }
+        }
+
+        public string Durum
+        {
+            get
+            {
+                return Ortalama < 50 ? "Kaldı" : "Geçti";
+            }
+        }
+
+        public Ogrenci(string adSoyad, int okulNo,List<int> puanlar)
+        {
+            this.AdSoyad = adSoyad;
+            this.OkulNo = okulNo;
+            this.Puanlar = puanlar;
+        }
+        public override string ToString()
+        {
+            return $"{AdSoyad} - {OkulNo} - {Durum} : {Ortalama}";
+        }
+
+    }
+}
+
+  ```
   ### Örnek-7 ###
 > Aşağıda verilenleri  Örnek-6' da oluşturduğunuz ogrenciler listesini kullanarak yapınız
   
   - kalanOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'ni altında olan öğrencileri ekleyiniz
   - basariliOgrenciler adında list tanımlayın ve içerisine ogrenciler listesindeki ortalaması 50'den büyük veya eşit  öğrencileri ekleyiniz
  
+```csharp
+ using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace ConsoleApp27
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<Ogrenci> ogreciler = new List<Ogrenci>();
+            ogreciler.Add(new Ogrenci("Ali AKIN", 654, new List<int> { 85, 69, 24, 25, 85,96,45 }));
+            ogreciler.Add(new Ogrenci("Ahmet EKİN", 48, new List<int> {  45, 63, 69 }));
+            ogreciler.Add(new Ogrenci("Sertaç AKIN", 11, new List<int> { 85, 25, 36, 25, 69 }));
+            ogreciler.Add(new Ogrenci("Mehmet TEKİN", 112, new List<int> { 85, 69, 85,  }));
+            ogreciler.Add(new Ogrenci("Okan AKIN", 457, new List<int> { 36, 55, 75,  39 }));
+            ogreciler.Add(new Ogrenci("Can KUŞ", 658, new List<int> {  25, 69,54 }));
+   
+            Console.WriteLine("----Tüm Öğrenciler------");
+            Console.WriteLine(string.Join("\n",ogreciler));
+            Console.WriteLine(); 
+            List<Ogrenci> basarisizOgrenciler = ogreciler.FindAll(x => x.Ortalama < 50);
+            Console.WriteLine("----Başarısız Öğrenciler------");
+            Console.WriteLine(string.Join("\n", basarisizOgrenciler));
+            Console.WriteLine(); 
+            List<Ogrenci> basariliOgrenciler = ogreciler.FindAll(x => x.Ortalama >= 50);
+
+            Console.WriteLine("----Başarılı Öğrenciler------");
+            Console.WriteLine(string.Join("\n", basariliOgrenciler));
+
+
+            Console.ReadKey();
+
+        }
+    }
+
+    class Ogrenci
+    {
+        public string AdSoyad { get; set; }
+        public int OkulNo { get; set; }
+        public List<int> Puanlar { get; set; }
+
+        public double Ortalama
+        {
+            get
+            {
+               return Puanlar.Average();
+            }
+        }
+
+        public string Durum
+        {
+            get
+            {
+                return Ortalama < 50 ? "Kaldı" : "Geçti";
+            }
+        }
+
+        public Ogrenci(string adSoyad, int okulNo,List<int> puanlar)
+        {
+            this.AdSoyad = adSoyad;
+            this.OkulNo = okulNo;
+            this.Puanlar = puanlar;
+        }
+        public override string ToString()
+        {
+            return $"{AdSoyad,-20}  {OkulNo,5}  {Durum,10}  {Ortalama:##.##} ({string.Join(" ",Puanlar)})";
+        }
+
+    }
+}
+ 
+```
