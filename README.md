@@ -93,4 +93,5 @@
   
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
 2. [Lambda İfadeleri (Lambda Expression) ( "=>" Lambda operatörü )](https://github.com/sahinmansuroglu/NtpDersi/blob/main/7_Hafta_Ders_4.md) 
-3. 
+5. [Liste Class Uygulaması](https://github.com/sahinmansuroglu/NtpDersi/blob/main/ListeClassIleri.md) 
+
