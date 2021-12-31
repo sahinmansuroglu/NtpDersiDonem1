@@ -69,7 +69,8 @@ static void Main(string[] args)
         }
          
 ```
-    
+   > Yukarıdaki örneği ad ve Soyad paramatrelerine Göre tekrar düzenleyiniz.
+   
 **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/147664833-a9f718a7-dcfd-4cca-b89a-f8d9266b83e5.png)
