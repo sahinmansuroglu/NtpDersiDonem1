@@ -1,6 +1,6 @@
 ## Lambda İfadeleri (Lambda Expression)  ( "=>" Lambda operatörü ) ##
 
-> Lambda ifadeleri anonim (isimsiz) fonksyionlardır.  Lambda ifadeleri kullanılarak parametre alabilen ve değer döndüren basit fonksiyonlar oluşturulabilir.  Genellikle listeler üzerinde işlem yaparken çok işe yararlar.
+> Lambda ifadeleri anonim (isimsiz) fonksiyonlardır.  Lambda ifadeleri kullanılarak parametre alabilen ve değer döndüren basit fonksiyonlar oluşturulabilir.  Genellikle listeler üzerinde işlem yaparken çok işe yararlar.
 
 > Lamda ifadesi yazabilmek için "=>" operatörünü kullanırız.
 
