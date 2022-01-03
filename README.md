@@ -89,6 +89,13 @@
 3. [```List<Type>```](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_4.md)
 4. [](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_5.md)
 
+### 14. Bölüm ###
+1. [Queue-Stack Koleksiyonları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_1.md)
+2. [Dictionary Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_2.md)
+3. [Hashtable Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_3.md)
+4. [SortedList Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_4.md)
+
+
 ### Karma Çalışmalar ###
   
 1. [Listeler](https://github.com/sahinmansuroglu/NtpDersi/blob/main/liste1.md)
