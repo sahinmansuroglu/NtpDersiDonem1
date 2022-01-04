@@ -66,7 +66,7 @@ static void Main(string[] args)
 ```
     
 
-#### Count Özelliği ####
+#### 4- Count Özelliği ####
 > Eleman Sayısını döndürür
 
 ```csharp
@@ -126,7 +126,7 @@ static void Main(string[] args)
             Console.WriteLine(string.Join(" ", ogrenciAdList));
 ```
 
-**Örnek **
+**Örnek**
 
 > ogrenciler adında bir dictionary oluşturun ardından aşağıdaki menuyu tasarlayarak uygun işlemleri oluşturulan dictioary üzerinde yaptırın.
 
