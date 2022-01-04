@@ -90,10 +90,10 @@
 4. [](https://github.com/sahinmansuroglu/NtpDersi/blob/main/13_Hafta_Ders_5.md)
 
 ### 14. Bölüm ###
-1. [Queue-Stack Koleksiyonları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_1.md)
-2. [Dictionary Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_2.md)
-3. [Hashtable Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_3.md)
-4. [SortedList Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_4.md)
+1. [Queue-Stack Koleksiyonları](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_11.md)
+2. [Dictionary Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_21.md)
+3. [Hashtable Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_31.md)
+4. [SortedList Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_41.md)
 
 
 ### Karma Çalışmalar ###
