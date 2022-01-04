@@ -25,9 +25,9 @@ static void Main(string[] args)
 
 ### Metotlar ve Özellikler ###
 > 1- ContainsKey(Aranan_Key) Metodu
->   Koleksiyon içerisinde, parametre olarak girilen değerde bir Anahtar (Key) mevcutsa TRUE  değilse FALSE döndürecektir.
+> Koleksiyon içerisinde, parametre olarak girilen değerde bir Anahtar (Key) mevcutsa TRUE  değilse FALSE döndürecektir.
 
-    ```csharp
+```csharp
             Dictionary<int, string> ogrenci = new Dictionary<int, string>();
             ogrenci.Add(658, "Ahmet");
             ogrenci.Add(95, "Arda");
@@ -36,12 +36,12 @@ static void Main(string[] args)
          
             Console.WriteLine(ogrenci.ContainsKey(45));//False Yazar
             Console.WriteLine(ogrenci.ContainsKey(68));//True Yazar
-    ```
+```
 
 > 2- ContainsValue(Aranan_Value) Metodu
 > Koleksiyon içerisinde, parametre olarak girilen değerde bir Değer (Value) mevcutsa TRUE  değilse FALSE döndürecektir.
  
- ```csharp
+```csharp
             Dictionary<int, string> ogrenci = new Dictionary<int, string>();
             ogrenci.Add(658, "Ahmet");
             ogrenci.Add(95, "Arda");
@@ -50,7 +50,7 @@ static void Main(string[] args)
          
             Console.WriteLine(ogrenci.ContainsValue("Ece"));//False Yazar
             Console.WriteLine(ogrenci.ContainsValue("Veli"));//True Yazar
-    ```
+```
     
 > 3- Clear() Metodu
 > Koleksiyon içerisinde yer alan tüm Anahtar-Değer çiftlerini silmektedir.
