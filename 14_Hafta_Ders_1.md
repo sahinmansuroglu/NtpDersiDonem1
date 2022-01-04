@@ -49,7 +49,7 @@ static void Main(string[] args)
 
         }
 ```
-**Ekran Çıktısı**
+v
 
 ![image](https://user-images.githubusercontent.com/28144917/148013498-13d18522-4fa1-46f1-96a1-cdb38fa6a9f7.png)
 
@@ -132,3 +132,44 @@ static void Main(string[] args)
 > Stack koleksiyonları LIFO mantığına göre çalışır. Yani kolesiyondan bir elaman çıkarılmak istendiğinde kuyruğa eklenen son eleman çıkarılacaktır. Push() ve  Pop() olmak üzere ik metodu vardır
   - Push(): Yığına eleman eklemek için kullanılır.
   - Pop(): Yığından eleman çıkarmak için kullanılır
+  - Peek(): Yığından çıkarılacak olan elemanı Gösterir.
+
+
+**Örnek-3**
+```csharp
+static void Main(string[] args)
+        {
+            Stack<string> yigin = new Stack<string>();
+
+            yigin.Push("Bir");
+            yigin.Push("İki");
+            yigin.Push("Üç");
+            yigin.Push("Dört");
+            yigin.Push("Beş");
+
+            Console.WriteLine($"Yığın: {string.Join(" <- ",yigin.ToArray())}");
+            Console.WriteLine($"Yığından çıkma sıradaki  Eleman:{yigin.Peek()}");
+            Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
+
+            Console.WriteLine($"Yığından çıkarılan Eleman:{yigin.Pop()}");
+            Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
+
+            Console.WriteLine($"Yığından çıkarılan Eleman:{yigin.Pop()}");
+            Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
+
+            Console.WriteLine($"Yığından çıkarılan Eleman:{yigin.Pop()}");
+            Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
+
+            Console.WriteLine($"Yığından çıkarılan Eleman:{yigin.Pop()}");
+            Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
+
+
+            Console.ReadKey();
+        }
+
+```
+
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/148017568-5fcbf154-258e-4fa7-a7ab-7b036470258e.png)
+
