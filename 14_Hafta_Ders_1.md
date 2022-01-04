@@ -5,6 +5,8 @@
   - Enqueue(): Kuyruğa eleman eklemek için kullanılır.
   - Dequeue(): Kuyruktan eleman çıkarmak için kullanılır.
   - Peek(): Kuyruktan çıkarılacak olan elemanı Gösterir.
+
+
 **Not:** Queue ve Stack koleksiyonun kullanılabilmesi için System.Collections.Generic ad uzayının uygulamaya dahil edilmesi gerekir.
 
 **Örnek-1**
