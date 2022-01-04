@@ -3,14 +3,15 @@
 ### 1. Queue (Kuyruk) koleksiyonları (FIFO:First In First Out) ###
 > Kuyruk koleksiyonları FIFO mantığına göre çalışır. Yani kolesiyondan bir elaman çıkarılmak istendğinde kuyruğa eklenen ilk eleman çıkarıalcaktır. Enqueue() ve  Dequeue() olmak üzere ik metodu vardır
   - Enqueue(): Kuyruğa eleman eklemek için kullanılır.
-  - Dequeue(): Kuyruktan eleman çıkarmak için kullanılır
-**Not:** Queue ve Stack koleksiyonun kullanılabilmesi için System.Collections ad uzayının uygulamaya dahil edilmesi gerekir.
+  - Dequeue(): Kuyruktan eleman çıkarmak için kullanılır.
+  - Peek(): Kuyruktan çıkarılacak olan elemanı Gösterir.
+**Not:** Queue ve Stack koleksiyonun kullanılabilmesi için System.Collections.Generic ad uzayının uygulamaya dahil edilmesi gerekir.
 
 **Örnek-1**
 ```csharp
 static void Main(string[] args)
         {
-            Queue kuyruk = new Queue();
+            Queue<string> kuyruk = new Queue<string>();
 
             kuyruk.Enqueue("Ahmet");
             kuyruk.Enqueue("Mehmet");
@@ -31,7 +32,7 @@ static void Main(string[] args)
 ```csharp
 static void Main(string[] args)
         {
-            Queue kuyruk = new Queue();
+            Queue<string> kuyruk = new Queue<string>();
 
 
             kuyruk.Enqueue("Mehmet");
@@ -59,7 +60,73 @@ static void Main(string[] args)
   - 2-Sıradaki Kişiyi Göster
   - 3-Sıradaki Kişiyi Çıkar
   - 4-Çıkış
+  
+**Çözüm**
 
+```csharp
+static void Main(string[] args)
+        {
+            Queue<string> kuyruk = new Queue<string>();
+            while (true)
+            {
+                Console.WriteLine("- İşlemler");
+                Console.WriteLine("- 1 - Banka Sırasına Kişi ekle");
+                Console.WriteLine("- 2 - Sıradaki Kişiyi Göster");
+                Console.WriteLine("- 3 - Sıradaki Kişiyi Çıkar");
+                Console.WriteLine("- 4 - Çıkış");
+                Console.Write("Seçiminiz:");
+                string secim = Console.ReadLine();
+                if (secim == "4")
+                {
+                    break;
+                }
+
+                if (secim == "1")
+                {
+                    Console.Write("Sıraya eklenecek Kişinin Adını giriniz:");
+                    string ad = Console.ReadLine();
+                    kuyruk.Enqueue(ad);
+                    Console.WriteLine($"{ad} adlı kişi sıraya eklendi");
+                } else if (secim == "2")
+                {
+                    if (kuyruk.Count == 0)
+                    {
+                        Console.WriteLine("Kuyrukda Eleman Bulunmamaktadır..");
+                    }
+                    else
+                    {
+                        Console.WriteLine(string.Join("<-",kuyruk.ToArray()));
+                        Console.WriteLine($"Sıradaki Kişin:{kuyruk.Peek()}");
+                    }
+                    
+                }
+                else if (secim == "3")
+                {
+                    if (kuyruk.Count == 0)
+                    {
+                        Console.WriteLine("Kuyrukda Eleman Bulunmamaktadır..");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{kuyruk.Dequeue()} adlı kişi sıradan çıkarıldı");
+                    }
+                   
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen 1-4 Arası değer giriniz!!");
+                }
+                Console.WriteLine("Devam Etmek İçin Bir Tuşa basınız..");
+                Console.ReadKey();
+                Console.Clear();
+
+            }
+
+
+            Console.ReadKey();
+
+        }
+```
 
 ### 2. Stack (Yığın) koleksiyonları (LIFO:Last In First Out) ###
 > Stack koleksiyonları LIFO mantığına göre çalışır. Yani kolesiyondan bir elaman çıkarılmak istendiğinde kuyruğa eklenen son eleman çıkarılacaktır. Push() ve  Pop() olmak üzere ik metodu vardır
