@@ -8,7 +8,8 @@
 Dictionary<Key_Tipi, Value_Tipi> Referans_Adi = new Dictionary<Key_Tipi, Value_Tipi>();
 ```
 
-**Örnek **
+**Örnek**
+
 ```csharp
 static void Main(string[] args)
         {
