@@ -148,7 +148,7 @@ static void Main(string[] args)
             yigin.Push("Beş");
 
             Console.WriteLine($"Yığın: {string.Join(" <- ",yigin.ToArray())}");
-            Console.WriteLine($"Yığından çıkma sıradaki  Eleman:{yigin.Peek()}");
+            Console.WriteLine($"Çıkma Sırasındaki Eleman:{yigin.Peek()}");
             Console.WriteLine($"Yığın: {string.Join(" <- ", yigin.ToArray())}");
 
             Console.WriteLine($"Yığından çıkarılan Eleman:{yigin.Pop()}");
@@ -171,5 +171,6 @@ static void Main(string[] args)
 
 **Ekran Çıktısı**
 
-![image](https://user-images.githubusercontent.com/28144917/148017568-5fcbf154-258e-4fa7-a7ab-7b036470258e.png)
+![image](https://user-images.githubusercontent.com/28144917/148017939-85d78b7c-0ba9-4e80-9766-ebfffce45855.png)
+
 
