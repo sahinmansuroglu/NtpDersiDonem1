@@ -48,8 +48,16 @@
 4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını da çağırınız.
 
 
-5. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin.
-6. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız.
+5. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin. Eklenecek Öğrenciler
+
+    - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
+    - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
+    - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
+    - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
+    - OrtaOkulOgrencisi("Ahmet", "ÇELİK", 658, 2011, 2022);
+    - IlkOkulOgrencisi("Arda", "AYDIN", 498, 2013, 2008);
+
+7. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız.
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
