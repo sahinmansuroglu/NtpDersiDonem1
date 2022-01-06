@@ -25,7 +25,7 @@
 
 ![image](https://user-images.githubusercontent.com/28144917/148027394-5c29cc2b-45f2-4f0a-9946-3cb4f4118e78.png)
 
-**Örnek-3 **
+**Örnek-3**
 
 ```csharp
            
@@ -41,7 +41,7 @@
 
 ![image](https://user-images.githubusercontent.com/28144917/148027362-fa01180c-ba6d-4836-8382-8cf1cc1fdc4e.png)
 
-**Örnek-4 **
+**Örnek-4**
 
 ```csharp
            
