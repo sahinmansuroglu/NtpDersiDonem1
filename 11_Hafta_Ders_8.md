@@ -33,7 +33,7 @@
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
-   
+        - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek hesaplama yapıp sonucu ekrana yazacak
    - OrtaOkulOgrencisi class'ı
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
@@ -43,7 +43,8 @@
         - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
-        - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
+        - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
+        - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
 4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını da çağırınız.
 
 
@@ -244,6 +245,10 @@ namespace ArraysExample
             Console.WriteLine($"Matematik Ders İçeriği:{matematikDersIcerigi()}");
             Console.WriteLine($"Mezuniyet Yaşı:{mezunOlacagiYasiHesapla()}");
         }
+        
+        public void  ortaokuldanMezunOlmaYiliniEkranaYaz() {
+           Console.WriteLine($"Ortaokuldan Mezun Olma Yılı:{BaslamaYili+8}");
+        }
     }
     class OrtaOkulOgrencisi : Ogrenci, IOgrenciIslem
     {
@@ -276,6 +281,9 @@ namespace ArraysExample
             Console.WriteLine($"En Önemli Olayı:{enOnemliOlayi()}");
             Console.WriteLine($"Matematik Ders İçeriği:{matematikDersIcerigi()}");
             Console.WriteLine($"Mezuniyet Yaşı:{mezunOlacagiYasiHesapla()}");
+        }
+        public void gidebileceğiOkullariEkranaYaz(){
+            Console.WriteLine($"Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi ");
         }
     }
 
