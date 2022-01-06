@@ -135,3 +135,87 @@ static void Main(string[] args)
          2- Öğrencileri  listele
          3- Öğrenci Sil
          4- Çıkış
+  
+**Çözüm**
+```csharp
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace ConsoleApp30
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dictionary<int, string> ogrenciler = new Dictionary<int, string>();
+
+            while (true)
+            {
+                Console.WriteLine("İşlemler");
+                Console.WriteLine("1 - Ogrenci Ekle(Numarası ile ekle)(Aynı Numarada 2 öğrenci olamaz)");
+                Console.WriteLine("2 - Öğrencileri  listele");
+                Console.WriteLine("3 - Öğrenci Sil");
+                Console.WriteLine("4 - Çıkış");
+                Console.Write("Seçiminiz:");
+                string secim = Console.ReadLine();
+                if (secim=="4")
+                {
+                    break;
+                }
+                if (secim=="1")
+                {
+                    Console.Write("Öğrenci No Giriniz:");
+                    int ogrNo = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("Öğrenci adı Giriniz:");
+                    string ogrAdi = Console.ReadLine();
+                    if (ogrenciler.ContainsKey(ogrNo))
+                    {
+                        Console.WriteLine($"{ogrNo} zaten bulunmaktadır. Ekleme İşlemi Başarısız..");
+                    }
+                    else
+                    {
+                        ogrenciler.Add(ogrNo, ogrAdi);
+                        Console.WriteLine("ekleme İşlemi Başarılı");
+
+                    }
+                    
+                }
+                else if (secim == "2")
+                {
+                    Console.WriteLine($"{"Ogrenci No",10} {"Ogrenci Adı",20}");
+                    foreach (int ogrNo in ogrenciler.Keys)
+                    {
+                        Console.WriteLine($"{ogrNo,10} {ogrenciler[ogrNo],20}");
+                    }
+                }
+                else if (secim == "3")
+                {
+                    Console.Write("Silinecek Öğrenci No Giriniz:");
+                    int ogrNo = Convert.ToInt32(Console.ReadLine());
+                    if (ogrenciler.ContainsKey(ogrNo))
+                    {
+                        ogrenciler.Remove(ogrNo);
+                        Console.WriteLine($"{ogrNo} numaralı öğrenci silinlmiştir");
+                    }
+                    else
+                    {
+                       Console.WriteLine("Girilen noya ait Öğrenci Bulunamadı");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Lütfen 1-4 arası rakam giriniz..");
+                }
+                Console.WriteLine("Devam Etmek İçin bir tuşa basınız.");
+                Console.ReadKey();
+                Console.Clear();
+     
+     
+            }
+            Console.WriteLine("Program sonlandı..");
+            Console.ReadKey();
+        }
+    }
+}
+```
