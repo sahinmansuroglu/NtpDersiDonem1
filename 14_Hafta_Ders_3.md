@@ -1,7 +1,7 @@
 ## Hashtable Koleksiyonu ##
 > Hashtable, non-generic bir koleksiyondur. Veriler Dictionary yapısındaki gibi  key-value ikilisi şeklinde saklanır. Ancak Dictionary'den farkı key değeri hesaplamada hashing denen bir mekanızma kullanıldığından dolayı verilere erişim daha hızlıdır.
 
-**Örnek-1 **
+**Örnek-1**
 
 ```csharp
             Hashtable hashtable = new Hashtable();
@@ -9,7 +9,7 @@
             hashtable.Add("65", "ahmet");
 ```
 
-**Örnek-2 **
+**Örnek-2**
 
 ```csharp
            
