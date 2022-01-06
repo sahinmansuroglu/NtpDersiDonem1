@@ -19,6 +19,9 @@
             }
             Console.ReadKey();
 ```
+**Ekran Çıktısı**
+
+![image](https://user-images.githubusercontent.com/28144917/148353215-8e1f1859-9a79-4b9f-8841-f15e5eb7a7d7.png)
 
 **Örnek**
 
