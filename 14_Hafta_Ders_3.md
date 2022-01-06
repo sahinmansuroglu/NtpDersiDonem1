@@ -1,6 +1,8 @@
 ## Hashtable Koleksiyonu ##
 > Hashtable, non-generic bir koleksiyondur. Veriler Dictionary yapısındaki gibi  key-value ikilisi şeklinde saklanır. Ancak Dictionary'den farkı key değeri hesaplamada hashing denen bir mekanızma kullanıldığından dolayı verilere erişim daha hızlıdır.
 
+**Not:** [Dictionary Koleksiyonu](https://github.com/sahinmansuroglu/NtpDersi/blob/main/14_Hafta_Ders_2.md) yapısındaki metot ve özellikler Hashtable'da da kullanılır. 
+
 **Örnek-1**
 
 ```csharp
