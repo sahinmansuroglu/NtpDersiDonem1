@@ -34,6 +34,7 @@
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
         - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek hesaplama yapıp sonucu ekrana yazacak
+        
    - OrtaOkulOgrencisi class'ı
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
@@ -45,10 +46,8 @@
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
-4.  IlkOkulOgrencisi ve OrtaOkulOgrencisi class'larından birer tane nesne oluşturarak nesnelerin toString() metodunu çağırıp ekrana yazdırınız. Ayrıca oluşturulan nesnelerin içerisindeki bilgileriEkranaYaz() metodlarını da çağırınız.
-
-
-5. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin. Eklenecek Öğrenciler
+        
+4. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin. Eklenecek Öğrenciler
 
     - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
     - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
@@ -57,10 +56,10 @@
     - OrtaOkulOgrencisi("Ahmet", "ÇELİK", 658, 2011, 2022);
     - IlkOkulOgrencisi("Arda", "AYDIN", 498, 2013, 2008);
 
-7. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız.
+5. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız.
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
     
- 7. Listeden Ad:Ahmet soyadı:EKER olan öğrenciyi sildiriniz. Ardından listeyi tekrar ekrana yazdırınız.
+ 6. Listeden Ad:Ahmet soyadı:EKER olan öğrenciyi sildiriniz. Ardından listeyi tekrar ekrana yazdırınız.
