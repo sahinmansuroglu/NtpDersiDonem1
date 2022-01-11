@@ -1,6 +1,6 @@
 ## Sınav  Sorusu ##
 > **Aşağıdaki istenilenler tek bir soru içindir. Verilenleri sırayla takip ederek uygulamayı tamamlayınız.**
-1. Aşağıda Verilenlere Göre **```Ogrenci```** adında **```abstract```** bir sınıf tanımlayınız
+1. Aşağıda Verilenlere Göre **```Ogrenci```** adında **```abstract```** bir sınıf tanımlayınız *```(25 Puan)```**
 
 
     - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili olmak üzere 5 tane **```private field```** bulunacak. 
@@ -14,7 +14,7 @@
     - Öğrencinin tüm bilgilerini ekrana yazdıran bilgileriEkranaYaz() adında **```virtual```** metot tanımlayınız.
 
 
-2. Aşağıda verilenlere göre IOgrenciIslem() adında bir **``` interface ```** tanımlayınız.
+2. Aşağıda verilenlere göre IOgrenciIslem() adında bir **``` interface ```** tanımlayınız. (5 Puan)
 
 
     - string tipinde matematikDersIcerigi() adında bir metot gövdesi bulunacak
@@ -23,7 +23,7 @@
 
 3. Aşağıda verilenlere göre IlkOkulOgrencisi, OrtaOkulOgrencisi, LiseOgrencisi adında classları Ogrenci class'ından ve IOgrenciIslem interface'inden türetiniz. 
    
-   - IlkOkulOgrencisi class'ı
+   - IlkOkulOgrencisi class'ı (15 Puan)
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
@@ -35,7 +35,7 @@
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
         - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek hesaplama yapıp sonucu ekrana yazacak
         
-   - OrtaOkulOgrencisi class'ı
+   - OrtaOkulOgrencisi class'ı  (15 Puan)
 
         - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili parametrelerinin bulunduğu kurucu metot tanımlanacak 
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
@@ -47,19 +47,21 @@
         - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
         
-4. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin. Eklenecek Öğrenciler
+4. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin.  (15 Puan)
 
-    - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
-    - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
-    - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
-    - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
-    - OrtaOkulOgrencisi("Ahmet", "ÇELİK", 658, 2011, 2022);
-    - IlkOkulOgrencisi("Arda", "AYDIN", 498, 2013, 2008);
+    -Eklenecek Öğrenciler 
 
-5. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız.
+        - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
+        - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
+        - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
+        - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
+        - OrtaOkulOgrencisi("Ahmet", "ÇELİK", 658, 2011, 2022);
+        - IlkOkulOgrencisi("Arda", "AYDIN", 498, 2013, 2008);
+
+5. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız. (20 Puan)
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
     
- 6. Listeden Ad:Ahmet soyadı:EKER olan öğrenciyi sildiriniz. Ardından listeyi tekrar ekrana yazdırınız.
+ 6. Listeden Ad:Ahmet soyadı:EKER olan öğrenciyi sildiriniz. Ardından listeyi tekrar ekrana yazdırınız. (5 Puan)
