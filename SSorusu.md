@@ -6,7 +6,7 @@
     - ad, soyad, ogrenciNo, dogumTarihi ve başlamaYili olmak üzere 5 tane **```private field```** bulunacak. 
     - herbir field için birer tane **```property ```** oluşturarak aşağıdaki durumlara göre **```encapsulation```** yapılacak. 
       - Ad ve Soyad boş girilirse **``` throw ```** ile hata fırlatılmalı.
-      - OgrenciNo 5 basamaklı bir rakamdan oluşmuyorsa **``` throw ```** ile hata fırlatılmalı.
+      - OgrenciNo 3 basamaklı bir rakamdan oluşmuyorsa **``` throw ```** ile hata fırlatılmalı.
       - DogumTarihi ve başlamaYili içinde bulunduğumuz yıl ile 1990 arasında değilse **``` throw  ```** ile hata fırlatılmalı.
     - Yas adında **```readonly property```**  tanımlanarak dogumTarihinden yası hesaplattırılacak. (Sadece **```get```** metodu bulunacak)
     - Tanımlanan 5 **``` field ```** için değer ataması kurucu metot içerisinde yapılacak.
