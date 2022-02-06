@@ -1,4 +1,4 @@
-# Nesne Tabanlı Programlama Dersi İçerikleri
+# Nesne Tabanlı Programlama Dersi 1. Dönem Ders İçerikleri
 **Hazırlayan:** Şahin MANSUROĞLU
 ## Konular ##
 ### 1. Bölüm ###
