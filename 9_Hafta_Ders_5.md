@@ -111,9 +111,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Ogrenci ogrenci1 = new Ogrenci { AdSoyad = "Akın KOÇ" };
-        Ogrenci ogrenci2 = new Ogrenci { AdSoyad = "Ahmet SEZGİN" };
-        Ogrenci ogrenci3 = new Ogrenci { AdSoyad = "Ali KOÇ" };
+        Ogrenci ogrenci1 = new Ogrenci ( "Akın KOÇ" );
+        Ogrenci ogrenci2 = new Ogrenci ("Ahmet SEZGİN" );
+        Ogrenci ogrenci3 = new Ogrenci ( "Ali KOÇ" );
         Console.WriteLine($"Öğrenci Sayısı:{ogrenci1.OgrenciSayisi}");
         Console.WriteLine($"Öğrenci Sayısı:{ogrenci2.OgrenciSayisi}");
         Console.WriteLine($"Öğrenci Sayısı:{ogrenci3.OgrenciSayisi}");
