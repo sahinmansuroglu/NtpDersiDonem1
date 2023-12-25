@@ -29,7 +29,8 @@
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "Yaz Kampları" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
-        - bilgileriEkranaYaz() metodu override edilerek ( ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi ) bilgileri ekrana yazdırılacak.
+        - bilgileriEkranaYaz() metodu override edilerek Aşağıdaki bilgiler ekrana yazdırılacak
+            - ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek  sonucu ekrana yazacak
         
