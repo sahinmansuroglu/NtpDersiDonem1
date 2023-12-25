@@ -33,7 +33,7 @@
         - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
-        - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek hesaplama yapıp sonucu ekrana yazacak
+        - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek  sonucu ekrana yazacak
         
    - OrtaOkulOgrencisi class'ı  _**```(15 Puan)```**_
 
