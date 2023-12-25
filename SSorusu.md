@@ -260,10 +260,11 @@ abstract class Ogrenci
     {
         public static void Main(String[] args)
         {
-          Ogrenci ogrenci1=  new OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
-          Ogrenci ogrenci2 = new IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
-          Ogrenci ogrenci3 = new OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
-          Ogrenci ogrenci4 = new IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
+            Ogrenci ogrenci1=  new OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
+            Ogrenci ogrenci2 = new IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
+            Ogrenci ogrenci3 = new OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
+            Ogrenci ogrenci4 = new IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
+
             ekranaYaz(ogrenci1);
             ekranaYaz(ogrenci2);
             ekranaYaz(ogrenci3);
@@ -274,6 +275,7 @@ abstract class Ogrenci
         public static void ekranaYaz(Ogrenci ogrenci)
         {
             ogrenci.bilgileriEkranaYaz();
+
             if (ogrenci is IlkOkulOgrencisi)
             {
                 ((IlkOkulOgrencisi)ogrenci).ortaokuldanMezunOlmaYiliniEkranaYaz();
