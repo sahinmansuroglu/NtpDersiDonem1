@@ -47,15 +47,15 @@
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
         
 
-5. Ana Program Class'ında EkranaYaz adında bir static method tanımlayarak bu method içerisinde Parametre olarak aldığı öğrencinin  bilgileriEkranaYaz() methodu çağrılmalı . _**```(20 Puan)```**_
+4. Ana Program Class'ında EkranaYaz adında bir static method tanımlayarak bu method içerisinde Parametre olarak aldığı öğrencinin  bilgileriEkranaYaz() methodu çağrılmalı . _**```(20 Puan)```**_
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
 
-6. Ana Programda Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
+5. Ana Programda Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
         - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
         - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
         - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
         - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
-7. Her bir Öğrenci nesnesini 5. adımda oluşturulan EkranaYaz methoduna parametre olarak göndererek bilgileri ekrana yazdırınız.
+6. Her bir Öğrenci nesnesini 5. adımda oluşturulan EkranaYaz methoduna parametre olarak göndererek bilgileri ekrana yazdırınız.
