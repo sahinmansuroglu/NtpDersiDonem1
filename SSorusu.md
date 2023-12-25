@@ -18,7 +18,7 @@
 
 
     - string tipinde matematikDersIcerigi() adında bir metot gövdesi bulunacak
-    - int tipinde mezunOlacagiYasiHesapla() adında bir metot gövdesi tanımlayınız.
+
 
 
 3. Aşağıda verilenlere göre IlkOkulOgrencisi ve OrtaOkulOgrencisi  adlarında classları Ogrenci class'ından ve IOgrenciIslem interface'inden türetiniz. 
@@ -29,10 +29,8 @@
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "Yaz Kampları" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "İlk Matematik" adında bir String döndürecek
-        - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
-        - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
+        - bilgileriEkranaYaz() metodu override edilerek ( ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi ) bilgileri ekrana yazdırılacak.
             - İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
-        - toString() metodu override edilerek ad Soyad  bilgileri birleştirilerek döndürülecek
         - ortaokuldanMezunOlmaYiliniEkranaYaz() metodu başlamaYili'na 8 ekleyerek  sonucu ekrana yazacak
         
    - OrtaOkulOgrencisi class'ı  _**```(15 Puan)```**_
@@ -41,24 +39,21 @@
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "LGS Sınavı" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "Temel Matematik" adında bir String döndürecek
-        - mezunOlacagiYasiHesapla() metodu  öğrencinin yasına 4 yıl eklenerek hesaplanacak
-        - bilgileriEkranaYaz() metodu override edilerek tüm tüm bilgiler ekrana yazdırılacak.
+        - bilgileriEkranaYaz() metodu override edilerek ( ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi ) bilgileri ekrana yazdırılacak.
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
         
-4. Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
 
-
-        - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
-        - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
-        - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
-        - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
-
-
-5. Her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız. _**```(20 Puan)```**_
+5. Ana Program Class'ında EkranaYaz adında bir static method tanımlayarak bu method içerisinde Parametre olarak aldığı öğrencinin  bilgileriEkranaYaz() methodu çağrılmalı . _**```(20 Puan)```**_
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
-    
+
+6. Ana Programda Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
+        - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
+        - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
+        - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
+        - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
+7. Her bir Öğrenci nesnesini 5. adımda oluşturulan EkranaYaz methoduna parametre olarak göndererek bilgileri ekrana yazdırınız.
