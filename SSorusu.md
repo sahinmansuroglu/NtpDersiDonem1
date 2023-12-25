@@ -54,11 +54,13 @@
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
 
 5. Ana Programda Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
+
         - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
         - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
         - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
         - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
-6. Her bir Öğrenci nesnesini 5. adımda oluşturulan EkranaYaz methoduna parametre olarak göndererek bilgileri ekrana yazdırınız.
+   
+7. Her bir Öğrenci nesnesini 5. adımda oluşturulan EkranaYaz methoduna parametre olarak göndererek bilgileri ekrana yazdırınız.
 
 
 
