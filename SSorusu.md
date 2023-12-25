@@ -7,7 +7,7 @@
     - herbir field için birer tane **```property ```** oluşturarak aşağıdaki durumlara göre **```encapsulation```** yapılacak. 
       - Ad ve Soyad boş girilirse **``` throw ```** ile hata fırlatılmalı.
       - OgrenciNo 3 basamaklı bir rakamdan oluşmuyorsa **``` throw ```** ile hata fırlatılmalı.
-      - DogumTarihi ve başlamaYili içinde bulunduğumuz yıl ile 1990 arasında değilse **``` throw  ```** ile hata fırlatılmalı.
+      - DogumTarihi ve başlamaYili 2023  ile 1990 arasında değilse **``` throw  ```** ile hata fırlatılmalı.
     - Yas adında **```readonly property```**  tanımlanarak dogumTarihinden yası hesaplattırılacak. (Sadece **```get```** metodu bulunacak)
     - Tanımlanan 5 **``` field ```** için değer ataması kurucu metot içerisinde yapılacak.
     - **```string```** tipinde enOnemliOlayi adından bir **```abstract```** metod tanımlayınız. 
