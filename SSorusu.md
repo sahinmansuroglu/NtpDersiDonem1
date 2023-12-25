@@ -21,7 +21,7 @@
     - int tipinde mezunOlacagiYasiHesapla() adında bir metot gövdesi tanımlayınız.
 
 
-3. Aşağıda verilenlere göre IlkOkulOgrencisi, OrtaOkulOgrencisi, LiseOgrencisi adında classları Ogrenci class'ından ve IOgrenciIslem interface'inden türetiniz. 
+3. Aşağıda verilenlere göre IlkOkulOgrencisi ve OrtaOkulOgrencisi  adlarında classları Ogrenci class'ından ve IOgrenciIslem interface'inden türetiniz. 
    
    - IlkOkulOgrencisi class'ı _**```(15 Puan)```**_
 
@@ -47,21 +47,18 @@
         - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
         
-4. İçerisinde ilkokul ve ortaokul öğrencilerinin bulunabileceği bir liste tanımlayın. Bu Listeye 3 Adet İlkokul öğrencisi ve 3 adet ortaokulÖğrencisi ekleyin.  _**```(15 Puan)```**_
+4. Aşağıdaki gibi  2 Adet İlkokul öğrencisi ve 2 adet ortaokul Öğrencisi nesnesi oluşturunuz.  _**```(15 Puan)```**_
 
-    -Eklenecek Öğrenciler 
 
         - OrtaOkulOgrencisi("Zehra", "ACI", 354, 2009, 2019);
         - IlkOkulOgrencisi("Esra", "ZEYBEK", 985, 2014, 2000);
         - OrtaOkulOgrencisi("Ali", "AKIN", 654, 2010, 2020);
         - IlkOkulOgrencisi("Ahmet", "EKER", 387, 2015, 2000);
-        - OrtaOkulOgrencisi("Ahmet", "ÇELİK", 658, 2011, 2022);
-        - IlkOkulOgrencisi("Arda", "AYDIN", 498, 2013, 2008);
 
-5. foreach döngüsü ile listedeki her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız. _**```(20 Puan)```**_
+
+5. Her bir öğrencinin  bilgileriEkranaYaz() metodunu çağırarak bilgilerini ekrana yazdırınız. _**```(20 Puan)```**_
 
     - Ayrıca;
     - Eğer Öğrenci İlkokul öğrencisi ise ortaokuldanMezunOlmaYiliniEkranaYaz()  metodunu da çağırın.
     - Eğer Öğrenci Ortaokul öğrencisi ise gidebileceğiOkullariEkranaYaz()  metodunu da çağırın.
     
- 6. Listeden Ad:Ahmet soyadı:EKER olan öğrenciyi sildiriniz. Ardından listeyi tekrar ekrana yazdırınız._**```(5 Puan)```**_
