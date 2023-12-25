@@ -39,7 +39,8 @@
             - (Base kullanılarak temel(parent) sınıfın kurucusu çağrılacak)
         - enOnemliOlayi() metodu "LGS Sınavı" adında bir String döndürecek
         - matematikDersIcerigi()  metodu "Temel Matematik" adında bir String döndürecek
-        - bilgileriEkranaYaz() metodu override edilerek ( ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi ) bilgileri ekrana yazdırılacak.
+        - bilgileriEkranaYaz() metodu override edilerek Aşağıdaki bilgiler ekrana yazdırılacak
+            -ad, soyad, ogrenciNo, dogumTarihi, başlamaYili, yas, enOnemliOlayi ve matematikDersIcerigi
             -İçerisinde base.bilgileriEkranaYaz() ile temel classın metodu da çağrılacak
         - toString() metodu override edilerek ad, Soyad ve ogrenciNo  bilgileri birleştirilerek döndürülecek
         - gidebileceğiOkullariEkranaYaz() metodu ekrana "Gidebileceği Okullar: MTAL, Anadolu Lisesi, Fen Lisesi" metinin yazacak
