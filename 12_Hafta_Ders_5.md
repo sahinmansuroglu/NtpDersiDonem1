@@ -170,3 +170,96 @@ namespace ConsoleApp24
 **Ekran Çıktısı**
 
 ![image](https://user-images.githubusercontent.com/28144917/147231239-00c238f0-59d9-44e0-a516-102ba75abe29.png)
+
+
+## Quiz Sorusu: Kitap Sınıfı ve Bölüm Bilgileri ##
+Aşağıdaki adımları takip ederek verilen kriterlere uygun bir program yazınız:
+
+Kitap Sınıfı Tanımlama:
+
+Kitap adında bir sınıf oluşturun.
+Bu sınıfta şu property'ler yer almalı:
+ID (read-only)
+Ad (string)
+Yazar (string)
+Bolumler (string[] - kitabın bölüm adlarını tutan bir dizi olacak)
+Kurucu Metot Kullanımı:
+
+Tüm property’ler kurucu metot ile verilecek.
+ID property'si, her kitap için otomatik olarak Guid.NewGuid() ile oluşturulacak.
+Ek Özellikler:
+
+BolumSayisi adında bir read-only property oluşturun. Bu property, kitapta kaç bölüm olduğunu döndürecek.
+Metot:
+
+BilgileriYazdir adında bir metot tanımlayın. Bu metot, kitabın bilgilerini (ID, Ad, Yazar, Bölüm Adları ve Bölüm Sayısı) ekrana yazdırmalı.
+Ana Program:
+
+3 adet Kitap nesnesi oluşturun ve bunları bir diziye ekleyin.
+Her bir kitabın Bolumler property'si için rastgele değerler içeren bir dizi kullanın. Örneğin: {"Giriş", "Kahramanın Doğuşu", "Sonuç"}.
+foreach döngüsü kullanarak dizideki tüm kitapların bilgilerini BilgileriYazdir metodu ile ekrana yazdırın.
+
+```csharp
+
+using System;
+
+namespace Quiz
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Kitap[] kitapDizisi = new Kitap[3];
+
+            kitapDizisi[0] = new Kitap("Savaş ve Barış", "Lev Tolstoy", new string[] { "Giriş", "Kahramanın Doğuşu", "Barış Zamanı", "Savaş Zamanı" });
+            kitapDizisi[1] = new Kitap("Hayvan Çiftliği", "George Orwell", new string[] { "Giriş", "Devrim", "Sonuç" });
+            kitapDizisi[2] = new Kitap("Suç ve Ceza", "Fyodor Dostoyevski", new string[] { "Giriş", "Raskolnikov’un Suçu", "Cezası", "Sonuç" });
+
+            foreach (var kitap in kitapDizisi)
+            {
+                kitap.BilgileriYazdir();
+            }
+
+            Console.ReadKey();
+        }
+    }
+
+    class Kitap
+    {
+        private string id;
+        public string ID => id;
+        public string Ad { get; set; }
+        public string Yazar { get; set; }
+        public string[] Bolumler { get; set; }
+        public int BolumSayisi { get
+            {
+                return Bolumler.Length;
+            }
+        }
+        
+
+        public Kitap(string ad, string yazar, string[] bolumler)
+        {
+            Ad = ad;
+            Yazar = yazar;
+            Bolumler = bolumler;
+            id = Guid.NewGuid().ToString("N");
+        }
+
+        public void BilgileriYazdir()
+        {
+            Console.WriteLine($"ID: {ID}");
+            Console.WriteLine($"Ad: {Ad}");
+            Console.WriteLine($"Yazar: {Yazar}");
+            Console.Write("Bölümler: ");
+            foreach (var bolum in Bolumler)
+            {
+                Console.Write($"{bolum}, ");
+            }
+            Console.WriteLine($"\nBölüm Sayısı: {BolumSayisi}");
+            Console.WriteLine(new string('-', 30));
+        }
+    }
+}
+
+```
